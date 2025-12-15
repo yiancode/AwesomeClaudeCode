@@ -109,6 +109,10 @@ MANIFEST
 .mypy_cache
 .pytest_cache
 .hypothesis
+venv/
+env/
+ENV/
+.venv/
 
 # IDE
 .vscode/
@@ -141,6 +145,7 @@ tmp/
 temp/
 logs/
 *.local
+.migration_backup/
 
 # Documentation build
 docs/_build/

@@ -1,0 +1,125 @@
+ID,DisplayName,DisplayName_ZH,Category,SubCategory,PrimaryLink,SecondaryLink,Author,AuthorProfile,IsActive,DateAdded,LastModified,LastChecked,License,Description,Description_ZH,Tags_ZH,IsPinned,Section
+off-c260c9d7,Claude Code 官方文档,Claude Code 官方文档,official-resources,general,https://docs.anthropic.com/en/docs/claude-code,,,,TRUE,2025-12-15,2025-12-15,,,官方文档和 API 参考,官方文档和 API 参考,官方资源,TRUE,official
+off-3b72cefc,Anthropic 博客,Anthropic 博客,official-resources,general,https://www.anthropic.com/news,,,,TRUE,2025-12-15,2025-12-15,,,最新功能和更新,最新功能和更新,官方资源,TRUE,official
+off-85c51f88,Claude Code GitHub Issues,Claude Code GitHub Issues,official-resources,general,https://github.com/anthropics/claude-code/issues,,,,TRUE,2025-12-15,2025-12-15,,,问题反馈和功能请求,问题反馈和功能请求,官方资源,TRUE,official
+off-3adc885a,Discord 社区,Discord 社区,official-resources,general,https://discord.gg/anthropic,,,,TRUE,2025-12-15,2025-12-15,,,官方 Discord 社区,官方 Discord 社区,官方资源,TRUE,official
+off-6449d7b7,Context7 文档资源,Context7 文档资源,official-resources,general,https://context7.com/?q=antropic,,,,TRUE,2025-12-15,2025-12-15,,,最新的 Anthropic 文档资源汇总,最新的 Anthropic 文档资源汇总,官方资源,TRUE,official
+off-6b97014f,技术支持,技术支持,official-resources,general,https://support.anthropic.com/,,,,TRUE,2025-12-15,2025-12-15,,,官方技术支持,官方技术支持,官方资源,TRUE,official
+off-98804842,状态页面,状态页面,official-resources,general,https://status.anthropic.com/,,,,TRUE,2025-12-15,2025-12-15,,,服务状态监控,服务状态监控,官方资源,TRUE,official
+off-89dabad2,安全漏洞报告,安全漏洞报告,official-resources,general,https://www.anthropic.com/security,,,,TRUE,2025-12-15,2025-12-15,,,安全问题反馈,安全问题反馈,官方资源,TRUE,official
+off-b5702046,Anthropic Claude 英文文档,Anthropic Claude 英文文档,official-resources,general,https://docs.anthropic.com/en/docs/,,,,TRUE,2025-12-15,2025-12-15,,,** - 最全面的英文官方文档,** - 最全面的英文官方文档,Anthropic 文档与 API,TRUE,official
+off-83c78874,Context7 镜像,Context7 镜像,official-resources,general,https://context7.com/websites/anthropic_en,,,,TRUE,2025-12-15,2025-12-15,,,"(253K tokens, 959 snippets)","(253K tokens, 959 snippets)",Anthropic 文档与 API,TRUE,official
+off-ae063df2,Anthropic Claude 中文文档,Anthropic Claude 中文文档,official-resources,general,https://docs.anthropic.com/zh-CN/docs/,,,,TRUE,2025-12-15,2025-12-15,,,** - 官方中文文档,** - 官方中文文档,Anthropic 文档与 API,TRUE,official
+off-83c78874,Context7 镜像,Context7 镜像,official-resources,general,https://context7.com/websites/anthropic_zh-cn,,,,TRUE,2025-12-15,2025-12-15,,,"(409.5K tokens, 1.3K snippets)","(409.5K tokens, 1.3K snippets)",Anthropic 文档与 API,TRUE,official
+off-114fcb77,Anthropic Claude 俄文文档,Anthropic Claude 俄文文档,official-resources,general,https://docs.anthropic.com/ru/docs/,,,,TRUE,2025-12-15,2025-12-15,,,** - 官方俄文文档,** - 官方俄文文档,Anthropic 文档与 API,TRUE,official
+off-83c78874,Context7 镜像,Context7 镜像,official-resources,general,https://context7.com/websites/anthropic-ru,,,,TRUE,2025-12-15,2025-12-15,,,"(447.5K tokens, 1.4K snippets)","(447.5K tokens, 1.4K snippets)",Anthropic 文档与 API,TRUE,official
+off-563d3c1b,Anthropic API 首页,Anthropic API 首页,official-resources,general,https://docs.anthropic.com/en/home,,,,TRUE,2025-12-15,2025-12-15,,,** - API 入门指南,** - API 入门指南,Anthropic 文档与 API,TRUE,official
+off-83c78874,Context7 镜像,Context7 镜像,official-resources,general,https://context7.com/websites/docs_anthropic_com-en-home,,,,TRUE,2025-12-15,2025-12-15,,,"(1.4K tokens, 7 snippets)","(1.4K tokens, 7 snippets)",Anthropic 文档与 API,TRUE,official
+off-22c0b2d6,Anthropic API,Anthropic API,official-resources,general,https://www.anthropic.com/api/,,,,TRUE,2025-12-15,2025-12-15,,,** - 官方 API 文档,** - 官方 API 文档,Anthropic 文档与 API,TRUE,official
+off-83c78874,Context7 镜像,Context7 镜像,official-resources,general,https://context7.com/websites/anthropic-api,,,,TRUE,2025-12-15,2025-12-15,,,"(545 tokens, 3 snippets)","(545 tokens, 3 snippets)",Anthropic 文档与 API,TRUE,official
+off-eb98ecbd,LLMs.txt 格式文档,LLMs.txt 格式文档,official-resources,general,https://docs.anthropic.com/llms.txt,,,,TRUE,2025-12-15,2025-12-15,,,** - 简化版文档,** - 简化版文档,Anthropic 文档与 API,TRUE,official
+off-83c78874,Context7 镜像,Context7 镜像,official-resources,general,https://context7.com/docs.anthropic.com/llmstxt,,,,TRUE,2025-12-15,2025-12-15,,,"(289.6K tokens, 1.2K snippets)","(289.6K tokens, 1.2K snippets)",Anthropic 文档与 API,TRUE,official
+off-ebb5112a,完整版 LLMs.txt,完整版 LLMs.txt,official-resources,general,https://docs.anthropic.com/llms-full.txt,,,,TRUE,2025-12-15,2025-12-15,,,** - 详细版文档,** - 详细版文档,Anthropic 文档与 API,TRUE,official
+off-83c78874,Context7 镜像,Context7 镜像,official-resources,general,https://context7.com/docs.anthropic.com-7a01857/llmstxt,,,,TRUE,2025-12-15,2025-12-15,,,"(300.1K tokens, 1.3K snippets)","(300.1K tokens, 1.3K snippets)",Anthropic 文档与 API,TRUE,official
+off-53b03e0b,Python SDK,Python SDK,official-resources,general,https://github.com/anthropics/anthropic-sdk-python,,,,TRUE,2025-12-15,2025-12-15,,,** - 官方 Python 客户端库,** - 官方 Python 客户端库,Anthropic SDK 库,TRUE,official
+off-26ba2596,Context7 文档,Context7 文档,official-resources,general,https://context7.com/anthropics/anthropic-sdk-python,,,,TRUE,2025-12-15,2025-12-15,,,"(16.4K tokens, 72 snippets)","(16.4K tokens, 72 snippets)",Anthropic SDK 库,TRUE,official
+off-7d4122f9,TypeScript/JavaScript SDK,TypeScript/JavaScript SDK,official-resources,general,https://github.com/anthropics/anthropic-sdk-typescript,,,,TRUE,2025-12-15,2025-12-15,,,** - 官方 TypeScript 客户端库,** - 官方 TypeScript 客户端库,Anthropic SDK 库,TRUE,official
+off-26ba2596,Context7 文档,Context7 文档,official-resources,general,https://context7.com/anthropics/anthropic-sdk-typescript,,,,TRUE,2025-12-15,2025-12-15,,,"(14.5K tokens, 123 snippets)","(14.5K tokens, 123 snippets)",Anthropic SDK 库,TRUE,official
+off-904dda29,Go SDK,Go SDK,official-resources,general,https://github.com/anthropics/anthropic-sdk-go,,,,TRUE,2025-12-15,2025-12-15,,,** - 官方 Go 客户端库,** - 官方 Go 客户端库,Anthropic SDK 库,TRUE,official
+off-26ba2596,Context7 文档,Context7 文档,official-resources,general,https://context7.com/anthropics/anthropic-sdk-go,,,,TRUE,2025-12-15,2025-12-15,,,"(12.1K tokens, 95 snippets)","(12.1K tokens, 95 snippets)",Anthropic SDK 库,TRUE,official
+off-f9820bb1,Ruby SDK,Ruby SDK,official-resources,general,https://github.com/anthropics/anthropic-sdk-ruby,,,,TRUE,2025-12-15,2025-12-15,,,** - 官方 Ruby 客户端库,** - 官方 Ruby 客户端库,Anthropic SDK 库,TRUE,official
+off-26ba2596,Context7 文档,Context7 文档,official-resources,general,https://context7.com/anthropics/anthropic-sdk-ruby,,,,TRUE,2025-12-15,2025-12-15,,,,,Anthropic SDK 库,TRUE,official
+off-fed022b0,Java SDK,Java SDK,official-resources,general,https://github.com/anthropics/anthropic-sdk-java,,,,TRUE,2025-12-15,2025-12-15,,,** - 官方 Java 客户端库,** - 官方 Java 客户端库,Anthropic SDK 库,TRUE,official
+off-26ba2596,Context7 文档,Context7 文档,official-resources,general,https://context7.com/anthropics/anthropic-sdk-java,,,,TRUE,2025-12-15,2025-12-15,,,,,Anthropic SDK 库,TRUE,official
+off-850c5366,TypeScript Tokenizer,TypeScript Tokenizer,official-resources,general,https://github.com/anthropics/anthropic-tokenizer-typescript,,,,TRUE,2025-12-15,2025-12-15,,,** - 官方分词器,** - 官方分词器,Anthropic SDK 库,TRUE,official
+off-26ba2596,Context7 文档,Context7 文档,official-resources,general,https://context7.com/anthropics/anthropic-tokenizer-typescript,,,,TRUE,2025-12-15,2025-12-15,,,,,Anthropic SDK 库,TRUE,official
+off-cc517aa2,Anthropic 课程,Anthropic 课程,official-resources,general,https://github.com/anthropics/courses,,,,TRUE,2025-12-15,2025-12-15,,,** - 官方课程材料,** - 官方课程材料,Anthropic 教程与示例,TRUE,official
+off-26ba2596,Context7 文档,Context7 文档,official-resources,general,https://context7.com/anthropics/courses,,,,TRUE,2025-12-15,2025-12-15,,,"(153K tokens, 773 snippets)","(153K tokens, 773 snippets)",Anthropic 教程与示例,TRUE,official
+off-2e6db7b8,Anthropic Cookbook,Anthropic Cookbook,official-resources,general,https://github.com/anthropics/anthropic-cookbook,,,,TRUE,2025-12-15,2025-12-15,,,** - 实用代码示例,** - 实用代码示例,Anthropic 教程与示例,TRUE,official
+off-26ba2596,Context7 文档,Context7 文档,official-resources,general,https://context7.com/anthropics/anthropic-cookbook,,,,TRUE,2025-12-15,2025-12-15,,,"(173.4K tokens, 542 snippets)","(173.4K tokens, 542 snippets)",Anthropic 教程与示例,TRUE,official
+off-38338ee4,Anthropic 快速开始,Anthropic 快速开始,official-resources,general,https://github.com/anthropics/anthropic-quickstarts,,,,TRUE,2025-12-15,2025-12-15,,,** - 快速入门项目,** - 快速入门项目,Anthropic 教程与示例,TRUE,official
+off-26ba2596,Context7 文档,Context7 文档,official-resources,general,https://context7.com/anthropics/anthropic-quickstarts,,,,TRUE,2025-12-15,2025-12-15,,,"(11.7K tokens, 41 snippets)","(11.7K tokens, 41 snippets)",Anthropic 教程与示例,TRUE,official
+wf-6c57b280,macOS 安装指南,macOS 安装指南,workflows,general,docs/installation/macos.md,,,,TRUE,2025-12-15,2025-12-15,,,,,安装与配置,FALSE,community
+wf-702906cb,Windows 安装指南,Windows 安装指南,workflows,general,docs/installation/windows.md,,,,TRUE,2025-12-15,2025-12-15,,,,,安装与配置,FALSE,community
+wf-3b9c45bf,Linux 安装指南,Linux 安装指南,workflows,general,docs/installation/linux.md,,,,TRUE,2025-12-15,2025-12-15,,,,,安装与配置,FALSE,community
+wf-15037993,配置指南,配置指南,workflows,general,docs/installation/configuration.md,,,,TRUE,2025-12-15,2025-12-15,,,,,安装与配置,FALSE,community
+wf-f9e51fc7,环境变量设置,环境变量设置,workflows,general,docs/installation/environment.md,,,,TRUE,2025-12-15,2025-12-15,,,,,安装与配置,FALSE,community
+wf-6d57fce2,故障排除,故障排除,workflows,general,docs/installation/troubleshooting.md,,,,TRUE,2025-12-15,2025-12-15,,,,,安装与配置,FALSE,community
+wf-32060b5f,你的第一个 Claude Code 会话,你的第一个 Claude Code 会话,workflows,general,docs/getting-started/first-session.md,,,,TRUE,2025-12-15,2025-12-15,,,,,入门教程,FALSE,community
+wf-2cb5dbca,基本命令和操作,基本命令和操作,workflows,general,docs/getting-started/basic-commands.md,,,,TRUE,2025-12-15,2025-12-15,,,,,入门教程,FALSE,community
+wf-12321afb,理解工作流程,理解工作流程,workflows,general,docs/getting-started/workflow.md,,,,TRUE,2025-12-15,2025-12-15,,,,,入门教程,FALSE,community
+wf-ecaef636,文件操作基础,文件操作基础,workflows,general,docs/getting-started/file-operations.md,,,,TRUE,2025-12-15,2025-12-15,,,,,入门教程,FALSE,community
+wf-a635e32e,代码生成与编辑,代码生成与编辑,workflows,general,docs/getting-started/code-generation.md,,,,TRUE,2025-12-15,2025-12-15,,,,,入门教程,FALSE,community
+wf-92ac0385,使用 TODO 任务管理,使用 TODO 任务管理,workflows,general,docs/getting-started/todo-management.md,,,,TRUE,2025-12-15,2025-12-15,,,,,入门教程,FALSE,community
+wf-47eae86e,调试和错误处理,调试和错误处理,workflows,general,docs/getting-started/debugging.md,,,,TRUE,2025-12-15,2025-12-15,,,,,入门教程,FALSE,community
+wf-d8a3fe30,测试驱动开发,测试驱动开发,workflows,general,docs/getting-started/tdd.md,,,,TRUE,2025-12-15,2025-12-15,,,,,入门教程,FALSE,community
+wf-03dcf94c,版本控制集成,版本控制集成,workflows,general,docs/getting-started/git-integration.md,,,,TRUE,2025-12-15,2025-12-15,,,,,入门教程,FALSE,community
+wf-c491e7c7,Agent 任务自动化,Agent 任务自动化,workflows,general,docs/advanced/agents.md,,,,TRUE,2025-12-15,2025-12-15,,,,,高级功能,FALSE,community
+wf-ea302fdf,多文件编辑,多文件编辑,workflows,general,docs/advanced/multi-file-editing.md,,,,TRUE,2025-12-15,2025-12-15,,,,,高级功能,FALSE,community
+wf-5b1c610e,代码重构,代码重构,workflows,general,docs/advanced/refactoring.md,,,,TRUE,2025-12-15,2025-12-15,,,,,高级功能,FALSE,community
+wf-f04b32b6,自定义 Hooks,自定义 Hooks,workflows,general,docs/advanced/hooks.md,,,,TRUE,2025-12-15,2025-12-15,,,,,高级功能,FALSE,community
+wf-2db17a5d,MCP (Model Context Protocol) 集成,MCP (Model Context Protocol) 集成,workflows,general,docs/advanced/mcp.md,,,,TRUE,2025-12-15,2025-12-15,,,,,高级功能,FALSE,community
+wf-5168d9a1,性能优化技巧,性能优化技巧,workflows,general,docs/advanced/performance.md,,,,TRUE,2025-12-15,2025-12-15,,,,,高级功能,FALSE,community
+wf-29dde6e6,上下文管理,上下文管理,workflows,general,docs/advanced/context-management.md,,,,TRUE,2025-12-15,2025-12-15,,,,,高级功能,FALSE,community
+wf-3d26a657,自定义工作流,自定义工作流,workflows,general,docs/advanced/custom-workflows.md,,,,TRUE,2025-12-15,2025-12-15,,,,,高级功能,FALSE,community
+wf-10c94164,批量操作,批量操作,workflows,general,docs/advanced/batch-operations.md,,,,TRUE,2025-12-15,2025-12-15,,,,,高级功能,FALSE,community
+wf-d66f6f6a,扩展功能,扩展功能,workflows,general,docs/advanced/extensions.md,,,,TRUE,2025-12-15,2025-12-15,,,,,高级功能,FALSE,community
+wf-3dc5f662,高效提示词模板,高效提示词模板,workflows,general,docs/case-studies/prompt-templates.md,,,,TRUE,2025-12-15,2025-12-15,,,,,最佳实践,FALSE,community
+wf-27fb3454,任务分解策略,任务分解策略,workflows,general,docs/case-studies/task-breakdown.md,,,,TRUE,2025-12-15,2025-12-15,,,,,最佳实践,FALSE,community
+wf-2a14ea9e,上下文优化,上下文优化,workflows,general,docs/case-studies/context-optimization.md,,,,TRUE,2025-12-15,2025-12-15,,,,,最佳实践,FALSE,community
+wf-d1b54d6e,团队协作最佳实践,团队协作最佳实践,workflows,general,docs/case-studies/team-collaboration.md,,,,TRUE,2025-12-15,2025-12-15,,,,,最佳实践,FALSE,community
+wf-cb77f68f,CI/CD 集成,CI/CD 集成,workflows,general,docs/case-studies/cicd-integration.md,,,,TRUE,2025-12-15,2025-12-15,,,,,最佳实践,FALSE,community
+wf-4189d396,代码审查流程,代码审查流程,workflows,general,docs/case-studies/code-review.md,,,,TRUE,2025-12-15,2025-12-15,,,,,最佳实践,FALSE,community
+case-8f1ec3f3,构建全栈 Web 应用,构建全栈 Web 应用,case-studies,general,examples/web/fullstack-app/,,,,TRUE,2025-12-15,2025-12-15,,,,,案例研究,FALSE,community
+case-7a6b8fc4,React/Vue/Angular 项目开发,React/Vue/Angular 项目开发,case-studies,general,examples/web/frontend/,,,,TRUE,2025-12-15,2025-12-15,,,,,案例研究,FALSE,community
+case-66711edf,Node.js API 开发,Node.js API 开发,case-studies,general,examples/web/backend/,,,,TRUE,2025-12-15,2025-12-15,,,,,案例研究,FALSE,community
+case-87747229,数据库设计与优化,数据库设计与优化,case-studies,general,examples/web/database/,,,,TRUE,2025-12-15,2025-12-15,,,,,案例研究,FALSE,community
+case-0bbdf50b,React Native 应用开发,React Native 应用开发,case-studies,general,examples/mobile/react-native/,,,,TRUE,2025-12-15,2025-12-15,,,,,案例研究,FALSE,community
+case-7401a3df,Flutter 应用开发,Flutter 应用开发,case-studies,general,examples/mobile/flutter/,,,,TRUE,2025-12-15,2025-12-15,,,,,案例研究,FALSE,community
+case-4e4fa090,原生应用开发,原生应用开发,case-studies,general,examples/mobile/native/,,,,TRUE,2025-12-15,2025-12-15,,,,,案例研究,FALSE,community
+case-b78f09ed,数据分析与可视化,数据分析与可视化,case-studies,general,examples/data-science/analysis/,,,,TRUE,2025-12-15,2025-12-15,,,,,案例研究,FALSE,community
+case-cbac7e6d,机器学习模型开发,机器学习模型开发,case-studies,general,examples/data-science/ml/,,,,TRUE,2025-12-15,2025-12-15,,,,,案例研究,FALSE,community
+case-456b4d3a,数据处理管道,数据处理管道,case-studies,general,examples/data-science/pipeline/,,,,TRUE,2025-12-15,2025-12-15,,,,,案例研究,FALSE,community
+case-ea044fbc,自动化部署脚本,自动化部署脚本,case-studies,general,examples/devops/deployment/,,,,TRUE,2025-12-15,2025-12-15,,,,,案例研究,FALSE,community
+case-647f3036,容器化应用,容器化应用,case-studies,general,examples/devops/docker/,,,,TRUE,2025-12-15,2025-12-15,,,,,案例研究,FALSE,community
+case-b890589b,Kubernetes 配置,Kubernetes 配置,case-studies,general,examples/devops/k8s/,,,,TRUE,2025-12-15,2025-12-15,,,,,案例研究,FALSE,community
+tool-9bc51bfc,VS Code 扩展,VS Code 扩展,tooling,general,docs/third-party/vscode.md,,,,TRUE,2025-12-15,2025-12-15,,,,,第三方工具,FALSE,community
+tool-3c5efff9,IntelliJ IDEA 插件,IntelliJ IDEA 插件,tooling,general,docs/third-party/intellij.md,,,,TRUE,2025-12-15,2025-12-15,,,,,第三方工具,FALSE,community
+tool-27856620,Vim/Neovim 集成,Vim/Neovim 集成,tooling,general,docs/third-party/vim.md,,,,TRUE,2025-12-15,2025-12-15,,,,,第三方工具,FALSE,community
+tool-78ced67e,Emacs 集成,Emacs 集成,tooling,general,docs/third-party/emacs.md,,,,TRUE,2025-12-15,2025-12-15,,,,,第三方工具,FALSE,community
+tool-589e27e3,Oh My Zsh 插件,Oh My Zsh 插件,tooling,general,docs/third-party/oh-my-zsh.md,,,,TRUE,2025-12-15,2025-12-15,,,,,第三方工具,FALSE,community
+tool-b86b19c3,Fish Shell 集成,Fish Shell 集成,tooling,general,docs/third-party/fish.md,,,,TRUE,2025-12-15,2025-12-15,,,,,第三方工具,FALSE,community
+tool-cd721ed7,PowerShell 模块,PowerShell 模块,tooling,general,docs/third-party/powershell.md,,,,TRUE,2025-12-15,2025-12-15,,,,,第三方工具,FALSE,community
+tool-599b6b90,GitHub Actions 集成,GitHub Actions 集成,tooling,general,docs/third-party/github-actions.md,,,,TRUE,2025-12-15,2025-12-15,,,,,第三方工具,FALSE,community
+tool-8ac8f528,GitLab CI 集成,GitLab CI 集成,tooling,general,docs/third-party/gitlab-ci.md,,,,TRUE,2025-12-15,2025-12-15,,,,,第三方工具,FALSE,community
+tool-5d68f1f0,Jenkins 插件,Jenkins 插件,tooling,general,docs/third-party/jenkins.md,,,,TRUE,2025-12-15,2025-12-15,,,,,第三方工具,FALSE,community
+eco-2f9d9677,Claude Code 社区论坛,Claude Code 社区论坛,ecosystem,general,https://community.claude.ai,,,,TRUE,2025-12-15,2025-12-15,,,,,生态系统,FALSE,community
+eco-752f8d6b,Reddit r/ClaudeCode,Reddit r/ClaudeCode,ecosystem,general,https://reddit.com/r/claudecode,,,,TRUE,2025-12-15,2025-12-15,,,,,生态系统,FALSE,community
+eco-ea75f4f1,Stack Overflow 标签,Stack Overflow 标签,ecosystem,general,https://stackoverflow.com/questions/tagged/claude-code,,,,TRUE,2025-12-15,2025-12-15,,,,,生态系统,FALSE,community
+eco-f6124ac7,YouTube 教程频道,YouTube 教程频道,ecosystem,general,docs/ecosystem/youtube-channels.md,,,,TRUE,2025-12-15,2025-12-15,,,,,生态系统,FALSE,community
+eco-a2cff1a1,在线课程,在线课程,ecosystem,general,docs/ecosystem/courses.md,,,,TRUE,2025-12-15,2025-12-15,,,,,生态系统,FALSE,community
+eco-b3c233f1,书籍推荐,书籍推荐,ecosystem,general,docs/ecosystem/books.md,,,,TRUE,2025-12-15,2025-12-15,,,,,生态系统,FALSE,community
+eco-a8892e13,博客文章,博客文章,ecosystem,general,docs/ecosystem/blogs.md,,,,TRUE,2025-12-15,2025-12-15,,,,,生态系统,FALSE,community
+eco-598f97a6,播客节目,播客节目,ecosystem,general,docs/ecosystem/podcasts.md,,,,TRUE,2025-12-15,2025-12-15,,,,,生态系统,FALSE,community
+eco-7dd1a6ee,项目模板集合,项目模板集合,ecosystem,general,docs/ecosystem/templates.md,,,,TRUE,2025-12-15,2025-12-15,,,,,生态系统,FALSE,community
+eco-d5495b68,代码片段库,代码片段库,ecosystem,general,docs/ecosystem/snippets.md,,,,TRUE,2025-12-15,2025-12-15,,,,,生态系统,FALSE,community
+eco-902cc4f8,配置文件示例,配置文件示例,ecosystem,general,docs/ecosystem/configs.md,,,,TRUE,2025-12-15,2025-12-15,,,,,生态系统,FALSE,community
+mcp-d6f310ac,Filesystem Server,Filesystem Server,mcp-servers,general,docs/mcp/filesystem.md,,,,TRUE,2025-12-15,2025-12-15,,,文件系统操作,文件系统操作,MCP 服务器,FALSE,community
+mcp-3a0a8687,GitHub Server,GitHub Server,mcp-servers,general,docs/mcp/github.md,,,,TRUE,2025-12-15,2025-12-15,,,GitHub 集成,GitHub 集成,MCP 服务器,FALSE,community
+mcp-28ae17a5,Google Drive Server,Google Drive Server,mcp-servers,general,docs/mcp/google-drive.md,,,,TRUE,2025-12-15,2025-12-15,,,Google Drive 集成,Google Drive 集成,MCP 服务器,FALSE,community
+mcp-ac318841,Slack Server,Slack Server,mcp-servers,general,docs/mcp/slack.md,,,,TRUE,2025-12-15,2025-12-15,,,Slack 集成,Slack 集成,MCP 服务器,FALSE,community
+mcp-9f87a506,Database Servers,Database Servers,mcp-servers,general,docs/mcp/database.md,,,,TRUE,2025-12-15,2025-12-15,,,各种数据库集成,各种数据库集成,MCP 服务器,FALSE,community
+mcp-89bd8cfd,Cloud Services,Cloud Services,mcp-servers,general,docs/mcp/cloud.md,,,,TRUE,2025-12-15,2025-12-15,,,AWS、Azure、GCP 集成,AWS、Azure、GCP 集成,MCP 服务器,FALSE,community
+mcp-f6a8eaa1,API Integrations,API Integrations,mcp-servers,general,docs/mcp/api.md,,,,TRUE,2025-12-15,2025-12-15,,,第三方 API 集成,第三方 API 集成,MCP 服务器,FALSE,community
+mcp-154a2921,Custom Servers,Custom Servers,mcp-servers,general,docs/mcp/custom.md,,,,TRUE,2025-12-15,2025-12-15,,,创建自定义 MCP 服务器,创建自定义 MCP 服务器,MCP 服务器,FALSE,community
+mcp-fc1e41b6,MCP 协议规范,MCP 协议规范,mcp-servers,general,https://modelcontextprotocol.io/docs,,,,TRUE,2025-12-15,2025-12-15,,,,,MCP 服务器,FALSE,community
+mcp-d7328f95,创建你的第一个 MCP 服务器,创建你的第一个 MCP 服务器,mcp-servers,general,docs/mcp/development.md,,,,TRUE,2025-12-15,2025-12-15,,,,,MCP 服务器,FALSE,community
+mcp-d4eed5d3,MCP 服务器最佳实践,MCP 服务器最佳实践,mcp-servers,general,docs/mcp/best-practices.md,,,,TRUE,2025-12-15,2025-12-15,,,,,MCP 服务器,FALSE,community
+proj-8d219c47,Claude Code Go,Claude Code Go,open-source-projects,general,https://github.com/lancekrogers/claude-code-go,,,,TRUE,2025-12-15,2025-12-15,,,** - Go 语言的 Claude Code 实现,** - Go 语言的 Claude Code 实现,开源项目,FALSE,community
+proj-26ba2596,Context7 文档,Context7 文档,open-source-projects,general,https://context7.com/lancekrogers/claude-code-go,,,,TRUE,2025-12-15,2025-12-15,,,,,开源项目,FALSE,community
+proj-67e79a1c,Claude Code 模板,Claude Code 模板,open-source-projects,general,https://github.com/davila7/claude-code-templates,,,,TRUE,2025-12-15,2025-12-15,,,** - 项目模板集合,** - 项目模板集合,开源项目,FALSE,community
+proj-26ba2596,Context7 文档,Context7 文档,open-source-projects,general,https://context7.com/davila7/claude-code-templates,,,,TRUE,2025-12-15,2025-12-15,,,,,开源项目,FALSE,community
+proj-68925cf0,Claudette,Claudette,open-source-projects,general,https://github.com/answerdotai/claudette,,,,TRUE,2025-12-15,2025-12-15,,,** - 轻量级 Claude API 客户端,** - 轻量级 Claude API 客户端,开源项目,FALSE,community
+proj-26ba2596,Context7 文档,Context7 文档,open-source-projects,general,https://context7.com/answerdotai/claudette,,,,TRUE,2025-12-15,2025-12-15,,,,,开源项目,FALSE,community
+proj-4b657b7d,MCP Think Tool,MCP Think Tool,open-source-projects,general,https://github.com/cgize/claude-mcp-think-tool,,,,TRUE,2025-12-15,2025-12-15,,,** - Claude Desktop 思考工具,** - Claude Desktop 思考工具,开源项目,FALSE,community
+proj-26ba2596,Context7 文档,Context7 文档,open-source-projects,general,https://context7.com/cgize/claude-mcp-think-tool,,,,TRUE,2025-12-15,2025-12-15,,,,,开源项目,FALSE,community

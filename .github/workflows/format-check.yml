@@ -1,0 +1,86 @@
+name: Format Check
+
+on:
+  pull_request:
+    paths:
+      - '**.py'
+      - 'pyproject.toml'
+  push:
+    branches:
+      - main
+    paths:
+      - '**.py'
+  workflow_dispatch:
+
+jobs:
+  format-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install ruff
+        run: |
+          pip install --upgrade pip
+          pip install ruff
+
+      - name: Run ruff format check
+        id: format_check
+        run: |
+          ruff format --check .
+        continue-on-error: true
+
+      - name: Run ruff lint check
+        id: lint_check
+        run: |
+          ruff check .
+        continue-on-error: true
+
+      - name: Comment on PR with results
+        if: github.event_name == 'pull_request' && (steps.format_check.outcome == 'failure' || steps.lint_check.outcome == 'failure')
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const formatFailed = '${{ steps.format_check.outcome }}' === 'failure';
+            const lintFailed = '${{ steps.lint_check.outcome }}' === 'failure';
+
+            let message = '## ⚠️ 代码格式检查 / Code Format Check\n\n';
+
+            if (formatFailed) {
+              message += '❌ **格式检查失败 / Format check failed**\n\n';
+              message += '请运行以下命令修复格式问题：\n';
+              message += '```bash\nmake format\n```\n\n';
+            }
+
+            if (lintFailed) {
+              message += '❌ **Lint 检查失败 / Lint check failed**\n\n';
+              message += '请修复 lint 警告，或运行以下命令查看详情：\n';
+              message += '```bash\nmake format-check\n```\n\n';
+            }
+
+            message += '---\n\n';
+            message += '💡 **提示**: 本地开发时建议配置 pre-commit hook，自动格式化代码。\n';
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: message
+            });
+
+      - name: Fail if checks failed
+        if: steps.format_check.outcome == 'failure' || steps.lint_check.outcome == 'failure'
+        run: |
+          echo "::error::Code formatting or linting checks failed. Please run 'make format' to fix issues."
+          exit 1
+
+      - name: Success message
+        if: steps.format_check.outcome == 'success' && steps.lint_check.outcome == 'success'
+        run: |
+          echo "✅ All format and lint checks passed!"

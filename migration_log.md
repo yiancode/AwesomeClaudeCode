@@ -576,6 +576,214 @@ def generate_readme(..., overrides_path: Optional[Path] = None)
 
 ---
 
+## Stage 5: GitHub Actions 配置 ✅
+
+**执行时间**: 2025-12-15
+**状态**: 已完成
+
+### 执行任务
+
+#### 5.1 创建 GitHub Actions 工作流 ✅
+
+**目录结构**:
+```
+.github/
+├── workflows/
+│   ├── generate-readme.yml    # 自动生成 README
+│   ├── validate-links.yml     # 链接验证
+│   └── format-check.yml       # 代码格式检查
+├── ISSUE_TEMPLATE/
+│   ├── submit_resource.yml    # 资源提交表单
+│   └── config.yml             # Issue 模板配置
+└── dependabot.yml             # 依赖自动更新
+```
+
+#### 5.2 generate-readme.yml - README 自动生成 ✅
+**触发条件**:
+- PR 修改 `THE_RESOURCES_TABLE.csv`
+- PR 修改 `templates/**`
+- PR 修改 `scripts/generate_readme.py`
+- 手动触发 (workflow_dispatch)
+
+**功能**:
+- ✅ 自动运行 `scripts/generate_readme.py`
+- ✅ 检测 README.md 变更
+- ✅ 自动提交更新 (commit message: "docs: 自动生成 README [skip ci]")
+- ✅ 在 PR 中添加评论通知
+
+**关键特性**:
+- 中文环境配置 (LANG: zh_CN.UTF-8)
+- 使用 Python 3.11
+- pip 依赖缓存加速
+- 跳过 CI 避免循环触发
+
+#### 5.3 validate-links.yml - 链接验证 ✅
+**触发条件**:
+- 定期执行：每周一 UTC 0:00 (北京时间 8:00)
+- PR 修改 `THE_RESOURCES_TABLE.csv`
+- 手动触发
+
+**功能**:
+- ✅ 运行 `scripts/validate_links.py` 验证所有资源链接
+- ✅ 生成验证报告并上传为 Artifact (保留 30 天)
+- ✅ 检测失败链接自动创建或更新 Issue (标签: `broken-links`)
+- ✅ PR 中自动评论验证结果
+
+**智能特性**:
+- 避免重复创建 Issue（更新现有 Issue）
+- 详细报告折叠显示
+- 区分定期验证和 PR 验证
+
+**依赖脚本**:
+- 从参考项目复制 `scripts/validate_links.py`
+
+#### 5.4 format-check.yml - 代码格式检查 ✅
+**触发条件**:
+- PR 修改 `**.py` 文件
+- PR 修改 `pyproject.toml`
+- 推送到 main 分支
+- 手动触发
+
+**功能**:
+- ✅ 运行 `ruff format --check` 检查代码格式
+- ✅ 运行 `ruff check` 检查 lint 问题
+- ✅ 格式/lint 失败时在 PR 评论修复建议
+- ✅ 提供本地修复命令 (`make format`)
+
+**用户友好**:
+- 清晰的错误消息（双语）
+- 提供具体修复步骤
+- 建议配置 pre-commit hook
+
+#### 5.5 Issue 模板 - 资源提交表单 ✅
+**文件**: `.github/ISSUE_TEMPLATE/submit_resource.yml`
+
+**特性**:
+- ✅ 完整的双语界面（中英文）
+- ✅ 所有 13 个主分类的下拉选项
+- ✅ 30+ 子分类选项
+- ✅ 必填字段验证：
+  - 资源名称
+  - 资源链接
+  - 主分类
+  - 资源描述
+- ✅ 可选字段：
+  - 子分类
+  - 作者信息
+  - 许可证
+  - 备用链接
+  - 额外信息
+- ✅ 5 项提交检查清单（全部必选）
+
+**分类覆盖**:
+根据 `templates/categories.yaml` 生成完整分类列表：
+- 🏛️ 官方资源 / Official Documentation
+- 🤖 代理技能 / Agent Skills
+- 🧠 工作流与知识指南 / Workflows & Knowledge Guides
+- 🧰 工具 / Tooling
+- 📊 状态栏 / Status Lines
+- 🪝 钩子 / Hooks
+- 🔪 斜杠命令 / Slash-Commands
+- 📂 CLAUDE.md 文件 / CLAUDE.md Files
+- 📱 替代客户端 / Alternative Clients
+- 🔌 MCP 服务器 / MCP Servers
+- 📦 开源项目 / Open Source Projects
+- 📂 案例研究 / Case Studies
+- 🌐 生态系统 / Ecosystem
+
+#### 5.6 Dependabot 配置 ✅
+**文件**: `.github/dependabot.yml`
+
+**功能**:
+- ✅ 自动更新 GitHub Actions 版本
+- ✅ 自动更新 Python 依赖
+- ✅ 每周一检查更新
+- ✅ 自动添加标签分类
+
+**调度**:
+- 时间：每周一 08:00 (Asia/Shanghai)
+- 频率：weekly
+
+### 验收标准检查
+
+- ✅ 3 个核心工作流创建完成
+- ✅ Issue 模板（资源提交表单）创建
+- ✅ Issue 模板配置文件创建
+- ✅ Dependabot 配置创建
+- ✅ 所有 YAML 文件语法验证通过
+- ✅ 工作流配置正确（触发条件、步骤、权限）
+- ✅ 双语支持完整（工作流评论、Issue 模板）
+- ✅ 从���考项目复制 `validate_links.py` 脚本
+
+### 技术亮点
+
+1. **自动化闭环**:
+   - 用户提交 Issue → 维护者审核 → CSV 更新 → README 自动生成 → 链接自动验证
+   - 完整的 CI/CD 流程
+
+2. **智能 Issue 管理**:
+   - 避免重复创建 broken-links Issue
+   - 自动标签分类
+   - 详细报告折叠显示
+
+3. **开发者体验**:
+   - 清晰的错误消息和修复建议
+   - 本地命令提示 (`make format`)
+   - pre-commit hook 建议
+
+4. **双语支持**:
+   - 所有用户可见内容双语
+   - 工作流评论中英并重
+   - Issue 模板完全双语
+
+5. **性能优化**:
+   - pip 依赖缓存
+   - 条件执行（仅在需要时提交）
+   - Artifact 保留期限控制
+
+### 文件清单
+
+**新增文件**:
+- `.github/workflows/generate-readme.yml` (README 自动生成)
+- `.github/workflows/validate-links.yml` (链接验证)
+- `.github/workflows/format-check.yml` (格式检查)
+- `.github/ISSUE_TEMPLATE/submit_resource.yml` (资源提交表单)
+- `.github/ISSUE_TEMPLATE/config.yml` (Issue 模板配置)
+- `.github/dependabot.yml` (依赖自动更新)
+- `scripts/validate_links.py` (从参考项目复制)
+
+**已存在文件**:
+- `.github/ISSUE_TEMPLATE/bug_report.md` (保留)
+- `.github/ISSUE_TEMPLATE/feature_request.md` (保留)
+
+### 工作流测试验证
+
+**验证方法**:
+1. ✅ YAML 语法验证通过（使用 Python yaml 库）
+2. ⏸️ 实际触发测试（需要推送到 GitHub 后进行）
+
+**注意事项**:
+- 工作流需要推送到 GitHub 后才能实际运行
+- 某些功能需要配置 GitHub 仓库权限：
+  - Actions: Read and write permissions
+  - Issues: Read and write permissions
+  - Pull Requests: Read and write permissions
+
+### 下一步
+
+**Stage 5 已完成**，准备进入：
+- **Stage 6**: 视觉系统集成（可选，2-3天）
+  - SVG 资产生成
+  - 中文文本渲染
+  - 主题自适应
+- **Stage 7**: 测试与验证 (2天)
+  - 编写测试用例
+  - 配置 pytest
+  - 中文编码测试
+  - 覆盖率验证
+
+---
+
 ## Stage 3: 核心脚本迁移与本地化 (待开始)
 
 ### 计划任务

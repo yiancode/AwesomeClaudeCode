@@ -1,0 +1,164 @@
+name: 提交新资源 / Submit New Resource
+description: 提交新的 Claude Code 资源到 Awesome Claude Code 列表 / Submit a new Claude Code resource to the Awesome Claude Code list
+title: "[Resource] "
+labels: ["resource-submission", "needs-review"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 感谢您的贡献！ / Thank you for your contribution!
+
+        在提交新资源前，请确保：/ Before submitting, please ensure:
+        - ✅ 资源与 Claude Code 相关 / Resource is Claude Code related
+        - ✅ 资源 URL 可访问 / Resource URL is accessible
+        - ✅ 资源质量良好 / Resource is of good quality
+        - ✅ 未重复提交 / Not a duplicate submission
+
+  - type: input
+    id: resource_name
+    attributes:
+      label: 资源名称 / Resource Name
+      description: 资源的显示名称 / Display name of the resource
+      placeholder: "例如: Claude Code 快速开始指南 / e.g., Claude Code Quick Start Guide"
+    validations:
+      required: true
+
+  - type: input
+    id: resource_url
+    attributes:
+      label: 资源链接 / Resource URL
+      description: 资源的主要链接（GitHub、文档站点等）/ Primary link to the resource
+      placeholder: "https://github.com/username/repo 或 https://example.com/guide"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 主分类 / Primary Category
+      description: 选择最适合的主分类 / Select the most appropriate primary category
+      options:
+        - "🏛️ 官方资源 / Official Documentation"
+        - "🤖 代理技能 / Agent Skills"
+        - "🧠 工作流与知识指南 / Workflows & Knowledge Guides"
+        - "🧰 工具 / Tooling"
+        - "📊 状态栏 / Status Lines"
+        - "🪝 钩子 / Hooks"
+        - "🔪 斜杠命令 / Slash-Commands"
+        - "📂 CLAUDE.md 文件 / CLAUDE.md Files"
+        - "📱 替代客户端 / Alternative Clients"
+        - "🔌 MCP 服务器 / MCP Servers"
+        - "📦 开源项目 / Open Source Projects"
+        - "📂 案例研究 / Case Studies"
+        - "🌐 生态系统 / Ecosystem"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: subcategory
+    attributes:
+      label: 子分类 / Subcategory (可选 / Optional)
+      description: 如果适用，选择子分类 / Select subcategory if applicable
+      options:
+        - "通用 / General"
+        - "API 与文档 / API & Documentation"
+        - "SDK 库 / SDK Libraries"
+        - "教程与示例 / Tutorials & Examples"
+        - "最佳实践 / Best Practices"
+        - "IDE 集成 / IDE Integrations"
+        - "使用监控 / Usage Monitors"
+        - "编排器 / Orchestrators"
+        - "版本控制与 Git / Version Control & Git"
+        - "代码分析与测试 / Code Analysis & Testing"
+        - "上下文加载与预热 / Context Loading & Priming"
+        - "文档与变更日志 / Documentation & Changelogs"
+        - "持续集成 / 部署 / CI / Deployment"
+        - "项目与任务管理 / Project & Task Management"
+        - "特定语言 / Language-Specific"
+        - "特定领域 / Domain-Specific"
+        - "项目脚手架与 MCP / Project Scaffolding & MCP"
+        - "文件系统 / Filesystem"
+        - "云服务 / Cloud Services"
+        - "数据库 / Databases"
+        - "API 集成 / API Integrations"
+        - "模板 / Templates"
+        - "扩展 / Extensions"
+        - "Web 开发 / Web Development"
+        - "移动开发 / Mobile Development"
+        - "数据科学 / Data Science"
+        - "DevOps"
+        - "学习资源 / Learning Resources"
+        - "社区 / Community"
+        - "第三方工具 / Third-party Tools"
+        - "其他 / Miscellaneous"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 资源描述 / Resource Description
+      description: 简短描述这个资源的功能和用途 / Brief description of what this resource does
+      placeholder: |
+        中文描述（必填）/ Chinese description (required):
+        这是一个...
+
+        英文描述（可选）/ English description (optional):
+        This is a...
+    validations:
+      required: true
+
+  - type: input
+    id: author
+    attributes:
+      label: 作者 / Author (可选 / Optional)
+      description: 资源作者或组织名称 / Author or organization name
+      placeholder: "例如: @username 或 Organization Name"
+
+  - type: input
+    id: author_profile
+    attributes:
+      label: 作者主页 / Author Profile (可选 / Optional)
+      description: 作者的 GitHub、网站或社交媒体主页 / Author's GitHub, website, or social media profile
+      placeholder: "https://github.com/username"
+
+  - type: input
+    id: license
+    attributes:
+      label: 许可证 / License (可选 / Optional)
+      description: 资源的开源许可证（如适用）/ License of the resource (if applicable)
+      placeholder: "例如: MIT, Apache-2.0, GPL-3.0"
+
+  - type: input
+    id: secondary_link
+    attributes:
+      label: 备用链接 / Secondary Link (可选 / Optional)
+      description: 其他相关链接（文档、演示等）/ Additional related links (docs, demo, etc.)
+      placeholder: "https://example.com/docs"
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: 额外信息 / Additional Information (可选 / Optional)
+      description: 其他您认为重要的信息 / Any other information you think is important
+      placeholder: |
+        - 特殊说明 / Special notes
+        - 依赖关系 / Dependencies
+        - 已知问题 / Known issues
+        - ...
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 提交检查清单 / Submission Checklist
+      description: 请确认以下所有项目 / Please confirm all items below
+      options:
+        - label: 我已阅读并遵守[贡献指南](../CONTRIBUTING.md) / I have read and followed the Contributing Guidelines
+          required: true
+        - label: 资源链接有效且可访问 / Resource URL is valid and accessible
+          required: true
+        - label: 资源描述准确且完整 / Resource description is accurate and complete
+          required: true
+        - label: 我确认这不是重复提交 / I confirm this is not a duplicate submission
+          required: true
+        - label: 我理解提交的资源将经过审核 / I understand the submission will be reviewed
+          required: true

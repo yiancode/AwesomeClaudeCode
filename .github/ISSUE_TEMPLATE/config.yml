@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 讨论区 / Discussions
+    url: https://github.com/stinglong/AwesomeClaudeCode/discussions
+    about: 一般性讨论、问题和想法交流 / General discussions, questions, and idea exchanges
+  - name: 📖 贡献指南 / Contributing Guide
+    url: https://github.com/stinglong/AwesomeClaudeCode/blob/main/CONTRIBUTING.md
+    about: 查看详细的贡献指南 / View detailed contribution guidelines
+  - name: 🐛 报告问题 / Report Issue
+    url: https://github.com/stinglong/AwesomeClaudeCode/issues/new
+    about: 报告 Bug 或项目问题 / Report bugs or project issues

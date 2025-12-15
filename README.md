@@ -89,181 +89,181 @@
 ### 通用
 *General*
 
-- **[Claude Code 官方文档](https://docs.anthropic.com/en/docs/claude-code)** - 官方文档和 API 参考
-- **[Anthropic 博客](https://www.anthropic.com/news)** - 最新功能和更新
-- **[Claude Code GitHub Issues](https://github.com/anthropics/claude-code/issues)** - 问题反馈和功能请求
-- **[Discord 社区](https://discord.gg/anthropic)** - 官方 Discord 社区
-- **[Context7 文档资源](https://context7.com/?q=antropic)** - 最新的 Anthropic 文档资源汇总
-- **[技术支持](https://support.anthropic.com/)** - 官方技术支持
-- **[状态页面](https://status.anthropic.com/)** - 服务状态监控
-- **[安全漏洞报告](https://www.anthropic.com/security)** - 安全问题反馈
-- **[Anthropic Claude 英文文档](https://docs.anthropic.com/en/docs/)** - 最全面的英文官方文档
-- **[Context7 镜像](https://context7.com/websites/anthropic_en)** - (253K tokens, 959 snippets)
-- **[Anthropic Claude 中文文档](https://docs.anthropic.com/zh-CN/docs/)** - 官方中文文档
-- **[Context7 镜像](https://context7.com/websites/anthropic_zh-cn)** - (409.5K tokens, 1.3K snippets)
-- **[Anthropic Claude 俄文文档](https://docs.anthropic.com/ru/docs/)** - 官方俄文文档
-- **[Context7 镜像](https://context7.com/websites/anthropic-ru)** - (447.5K tokens, 1.4K snippets)
-- **[Anthropic API 首页](https://docs.anthropic.com/en/home)** - API 入门指南
-- **[Context7 镜像](https://context7.com/websites/docs_anthropic_com-en-home)** - (1.4K tokens, 7 snippets)
-- **[Anthropic API](https://www.anthropic.com/api/)** - 官方 API 文档
-- **[Context7 镜像](https://context7.com/websites/anthropic-api)** - (545 tokens, 3 snippets)
-- **[LLMs.txt 格式文档](https://docs.anthropic.com/llms.txt)** - 简化版文档
-- **[Context7 镜像](https://context7.com/docs.anthropic.com/llmstxt)** - (289.6K tokens, 1.2K snippets)
-- **[完整版 LLMs.txt](https://docs.anthropic.com/llms-full.txt)** - 详细版文档
-- **[Context7 镜像](https://context7.com/docs.anthropic.com-7a01857/llmstxt)** - (300.1K tokens, 1.3K snippets)
-- **[Python SDK](https://github.com/anthropics/anthropic-sdk-python)** - 官方 Python 客户端库
-- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-python)** - (16.4K tokens, 72 snippets)
-- **[TypeScript/JavaScript SDK](https://github.com/anthropics/anthropic-sdk-typescript)** - 官方 TypeScript 客户端库
-- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-typescript)** - (14.5K tokens, 123 snippets)
-- **[Go SDK](https://github.com/anthropics/anthropic-sdk-go)** - 官方 Go 客户端库
-- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-go)** - (12.1K tokens, 95 snippets)
-- **[Ruby SDK](https://github.com/anthropics/anthropic-sdk-ruby)** - 官方 Ruby 客户端库
-- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-ruby)**
-- **[Java SDK](https://github.com/anthropics/anthropic-sdk-java)** - 官方 Java 客户端库
-- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-java)**
-- **[TypeScript Tokenizer](https://github.com/anthropics/anthropic-tokenizer-typescript)** - 官方分词器
-- **[Context7 文档](https://context7.com/anthropics/anthropic-tokenizer-typescript)**
-- **[Anthropic 课程](https://github.com/anthropics/courses)** - 官方课程材料
-- **[Context7 文档](https://context7.com/anthropics/courses)** - (153K tokens, 773 snippets)
-- **[Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)** - 实用代码示例
-- **[Context7 文档](https://context7.com/anthropics/anthropic-cookbook)** - (173.4K tokens, 542 snippets)
-- **[Anthropic 快速开始](https://github.com/anthropics/anthropic-quickstarts)** - 快速入门项目
-- **[Context7 文档](https://context7.com/anthropics/anthropic-quickstarts)** - (11.7K tokens, 41 snippets)
+- **[Claude Code 官方文档](https://docs.anthropic.com/en/docs/claude-code)** by [Anthropic](https://www.anthropic.com) - 官方文档和 API 参考
+- **[Anthropic 博客](https://www.anthropic.com/news)** by [Anthropic](https://www.anthropic.com) - 最新功能和更新
+- **[Claude Code GitHub Issues](https://github.com/anthropics/claude-code/issues)** by [anthropics](https://github.com/anthropics) - 问题反馈和功能请求
+- **[Discord 社区](https://discord.gg/anthropic)** by [Anthropic](https://www.anthropic.com) - 官方 Discord 社区
+- **[Context7 文档资源](https://context7.com/?q=antropic)** by [Context7](https://context7.com) - 最新的 Anthropic 文档资源汇总
+- **[技术支持](https://support.anthropic.com/)** by [Anthropic](https://www.anthropic.com) - 官方技术支持
+- **[状态页面](https://status.anthropic.com/)** by [Anthropic](https://www.anthropic.com) - 服务状态监控
+- **[安全漏洞报告](https://www.anthropic.com/security)** by [Anthropic](https://www.anthropic.com) - 安全问题反馈
+- **[Anthropic Claude 英文文档](https://docs.anthropic.com/en/docs/)** by [Anthropic](https://www.anthropic.com) - 最全面的英文官方文档
+- **[Context7 镜像](https://context7.com/websites/anthropic_en)** by [Context7](https://context7.com) - (253K tokens, 959 snippets)
+- **[Anthropic Claude 中文文档](https://docs.anthropic.com/zh-CN/docs/)** by [Anthropic](https://www.anthropic.com) - 官方中文文档
+- **[Context7 镜像](https://context7.com/websites/anthropic_zh-cn)** by [Context7](https://context7.com) - (409.5K tokens, 1.3K snippets)
+- **[Anthropic Claude 俄文文档](https://docs.anthropic.com/ru/docs/)** by [Anthropic](https://www.anthropic.com) - 官方俄文文档
+- **[Context7 镜像](https://context7.com/websites/anthropic-ru)** by [Context7](https://context7.com) - (447.5K tokens, 1.4K snippets)
+- **[Anthropic API 首页](https://docs.anthropic.com/en/home)** by [Anthropic](https://www.anthropic.com) - API 入门指南
+- **[Context7 镜像](https://context7.com/websites/docs_anthropic_com-en-home)** by [Context7](https://context7.com) - (1.4K tokens, 7 snippets)
+- **[Anthropic API](https://www.anthropic.com/api/)** by [Anthropic](https://www.anthropic.com) - 官方 API 文档
+- **[Context7 镜像](https://context7.com/websites/anthropic-api)** by [Context7](https://context7.com) - (545 tokens, 3 snippets)
+- **[LLMs.txt 格式文档](https://docs.anthropic.com/llms.txt)** by [Anthropic](https://www.anthropic.com) - 简化版文档
+- **[Context7 镜像](https://context7.com/docs.anthropic.com/llmstxt)** by [Anthropic](https://www.anthropic.com) - (289.6K tokens, 1.2K snippets)
+- **[完整版 LLMs.txt](https://docs.anthropic.com/llms-full.txt)** by [Anthropic](https://www.anthropic.com) - 详细版文档
+- **[Context7 镜像](https://context7.com/docs.anthropic.com-7a01857/llmstxt)** by [Anthropic](https://www.anthropic.com) - (300.1K tokens, 1.3K snippets)
+- **[Python SDK](https://github.com/anthropics/anthropic-sdk-python)** by [anthropics](https://github.com/anthropics) - 官方 Python 客户端库
+- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-python)** by [Context7](https://context7.com) - (16.4K tokens, 72 snippets)
+- **[TypeScript/JavaScript SDK](https://github.com/anthropics/anthropic-sdk-typescript)** by [anthropics](https://github.com/anthropics) - 官方 TypeScript 客户端库
+- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-typescript)** by [Context7](https://context7.com) - (14.5K tokens, 123 snippets)
+- **[Go SDK](https://github.com/anthropics/anthropic-sdk-go)** by [anthropics](https://github.com/anthropics) - 官方 Go 客户端库
+- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-go)** by [Context7](https://context7.com) - (12.1K tokens, 95 snippets)
+- **[Ruby SDK](https://github.com/anthropics/anthropic-sdk-ruby)** by [anthropics](https://github.com/anthropics) - 官方 Ruby 客户端库
+- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-ruby)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
+- **[Java SDK](https://github.com/anthropics/anthropic-sdk-java)** by [anthropics](https://github.com/anthropics) - 官方 Java 客户端库
+- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-java)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
+- **[TypeScript Tokenizer](https://github.com/anthropics/anthropic-tokenizer-typescript)** by [anthropics](https://github.com/anthropics) - 官方分词器
+- **[Context7 文档](https://context7.com/anthropics/anthropic-tokenizer-typescript)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
+- **[Anthropic 课程](https://github.com/anthropics/courses)** by [anthropics](https://github.com/anthropics) - 官方课程材料
+- **[Context7 文档](https://context7.com/anthropics/courses)** by [Context7](https://context7.com) - (153K tokens, 773 snippets)
+- **[Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)** by [anthropics](https://github.com/anthropics) - 实用代码示例
+- **[Context7 文档](https://context7.com/anthropics/anthropic-cookbook)** by [Context7](https://context7.com) - (173.4K tokens, 542 snippets)
+- **[Anthropic 快速开始](https://github.com/anthropics/anthropic-quickstarts)** by [anthropics](https://github.com/anthropics) - 快速入门项目
+- **[Context7 文档](https://context7.com/anthropics/anthropic-quickstarts)** by [Context7](https://context7.com) - (11.7K tokens, 41 snippets)
 
 
 ### API 与文档
 *API & Documentation*
 
-- **[Claude Code 官方文档](https://docs.anthropic.com/en/docs/claude-code)** - 官方文档和 API 参考
-- **[Anthropic 博客](https://www.anthropic.com/news)** - 最新功能和更新
-- **[Claude Code GitHub Issues](https://github.com/anthropics/claude-code/issues)** - 问题反馈和功能请求
-- **[Discord 社区](https://discord.gg/anthropic)** - 官方 Discord 社区
-- **[Context7 文档资源](https://context7.com/?q=antropic)** - 最新的 Anthropic 文档资源汇总
-- **[技术支持](https://support.anthropic.com/)** - 官方技术支持
-- **[状态页面](https://status.anthropic.com/)** - 服务状态监控
-- **[安全漏洞报告](https://www.anthropic.com/security)** - 安全问题反馈
-- **[Anthropic Claude 英文文档](https://docs.anthropic.com/en/docs/)** - 最全面的英文官方文档
-- **[Context7 镜像](https://context7.com/websites/anthropic_en)** - (253K tokens, 959 snippets)
-- **[Anthropic Claude 中文文档](https://docs.anthropic.com/zh-CN/docs/)** - 官方中文文档
-- **[Context7 镜像](https://context7.com/websites/anthropic_zh-cn)** - (409.5K tokens, 1.3K snippets)
-- **[Anthropic Claude 俄文文档](https://docs.anthropic.com/ru/docs/)** - 官方俄文文档
-- **[Context7 镜像](https://context7.com/websites/anthropic-ru)** - (447.5K tokens, 1.4K snippets)
-- **[Anthropic API 首页](https://docs.anthropic.com/en/home)** - API 入门指南
-- **[Context7 镜像](https://context7.com/websites/docs_anthropic_com-en-home)** - (1.4K tokens, 7 snippets)
-- **[Anthropic API](https://www.anthropic.com/api/)** - 官方 API 文档
-- **[Context7 镜像](https://context7.com/websites/anthropic-api)** - (545 tokens, 3 snippets)
-- **[LLMs.txt 格式文档](https://docs.anthropic.com/llms.txt)** - 简化版文档
-- **[Context7 镜像](https://context7.com/docs.anthropic.com/llmstxt)** - (289.6K tokens, 1.2K snippets)
-- **[完整版 LLMs.txt](https://docs.anthropic.com/llms-full.txt)** - 详细版文档
-- **[Context7 镜像](https://context7.com/docs.anthropic.com-7a01857/llmstxt)** - (300.1K tokens, 1.3K snippets)
-- **[Python SDK](https://github.com/anthropics/anthropic-sdk-python)** - 官方 Python 客户端库
-- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-python)** - (16.4K tokens, 72 snippets)
-- **[TypeScript/JavaScript SDK](https://github.com/anthropics/anthropic-sdk-typescript)** - 官方 TypeScript 客户端库
-- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-typescript)** - (14.5K tokens, 123 snippets)
-- **[Go SDK](https://github.com/anthropics/anthropic-sdk-go)** - 官方 Go 客户端库
-- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-go)** - (12.1K tokens, 95 snippets)
-- **[Ruby SDK](https://github.com/anthropics/anthropic-sdk-ruby)** - 官方 Ruby 客户端库
-- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-ruby)**
-- **[Java SDK](https://github.com/anthropics/anthropic-sdk-java)** - 官方 Java 客户端库
-- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-java)**
-- **[TypeScript Tokenizer](https://github.com/anthropics/anthropic-tokenizer-typescript)** - 官方分词器
-- **[Context7 文档](https://context7.com/anthropics/anthropic-tokenizer-typescript)**
-- **[Anthropic 课程](https://github.com/anthropics/courses)** - 官方课程材料
-- **[Context7 文档](https://context7.com/anthropics/courses)** - (153K tokens, 773 snippets)
-- **[Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)** - 实用代码示例
-- **[Context7 文档](https://context7.com/anthropics/anthropic-cookbook)** - (173.4K tokens, 542 snippets)
-- **[Anthropic 快速开始](https://github.com/anthropics/anthropic-quickstarts)** - 快速入门项目
-- **[Context7 文档](https://context7.com/anthropics/anthropic-quickstarts)** - (11.7K tokens, 41 snippets)
+- **[Claude Code 官方文档](https://docs.anthropic.com/en/docs/claude-code)** by [Anthropic](https://www.anthropic.com) - 官方文档和 API 参考
+- **[Anthropic 博客](https://www.anthropic.com/news)** by [Anthropic](https://www.anthropic.com) - 最新功能和更新
+- **[Claude Code GitHub Issues](https://github.com/anthropics/claude-code/issues)** by [anthropics](https://github.com/anthropics) - 问题反馈和功能请求
+- **[Discord 社区](https://discord.gg/anthropic)** by [Anthropic](https://www.anthropic.com) - 官方 Discord 社区
+- **[Context7 文档资源](https://context7.com/?q=antropic)** by [Context7](https://context7.com) - 最新的 Anthropic 文档资源汇总
+- **[技术支持](https://support.anthropic.com/)** by [Anthropic](https://www.anthropic.com) - 官方技术支持
+- **[状态页面](https://status.anthropic.com/)** by [Anthropic](https://www.anthropic.com) - 服务状态监控
+- **[安全漏洞报告](https://www.anthropic.com/security)** by [Anthropic](https://www.anthropic.com) - 安全问题反馈
+- **[Anthropic Claude 英文文档](https://docs.anthropic.com/en/docs/)** by [Anthropic](https://www.anthropic.com) - 最全面的英文官方文档
+- **[Context7 镜像](https://context7.com/websites/anthropic_en)** by [Context7](https://context7.com) - (253K tokens, 959 snippets)
+- **[Anthropic Claude 中文文档](https://docs.anthropic.com/zh-CN/docs/)** by [Anthropic](https://www.anthropic.com) - 官方中文文档
+- **[Context7 镜像](https://context7.com/websites/anthropic_zh-cn)** by [Context7](https://context7.com) - (409.5K tokens, 1.3K snippets)
+- **[Anthropic Claude 俄文文档](https://docs.anthropic.com/ru/docs/)** by [Anthropic](https://www.anthropic.com) - 官方俄文文档
+- **[Context7 镜像](https://context7.com/websites/anthropic-ru)** by [Context7](https://context7.com) - (447.5K tokens, 1.4K snippets)
+- **[Anthropic API 首页](https://docs.anthropic.com/en/home)** by [Anthropic](https://www.anthropic.com) - API 入门指南
+- **[Context7 镜像](https://context7.com/websites/docs_anthropic_com-en-home)** by [Context7](https://context7.com) - (1.4K tokens, 7 snippets)
+- **[Anthropic API](https://www.anthropic.com/api/)** by [Anthropic](https://www.anthropic.com) - 官方 API 文档
+- **[Context7 镜像](https://context7.com/websites/anthropic-api)** by [Context7](https://context7.com) - (545 tokens, 3 snippets)
+- **[LLMs.txt 格式文档](https://docs.anthropic.com/llms.txt)** by [Anthropic](https://www.anthropic.com) - 简化版文档
+- **[Context7 镜像](https://context7.com/docs.anthropic.com/llmstxt)** by [Anthropic](https://www.anthropic.com) - (289.6K tokens, 1.2K snippets)
+- **[完整版 LLMs.txt](https://docs.anthropic.com/llms-full.txt)** by [Anthropic](https://www.anthropic.com) - 详细版文档
+- **[Context7 镜像](https://context7.com/docs.anthropic.com-7a01857/llmstxt)** by [Anthropic](https://www.anthropic.com) - (300.1K tokens, 1.3K snippets)
+- **[Python SDK](https://github.com/anthropics/anthropic-sdk-python)** by [anthropics](https://github.com/anthropics) - 官方 Python 客户端库
+- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-python)** by [Context7](https://context7.com) - (16.4K tokens, 72 snippets)
+- **[TypeScript/JavaScript SDK](https://github.com/anthropics/anthropic-sdk-typescript)** by [anthropics](https://github.com/anthropics) - 官方 TypeScript 客户端库
+- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-typescript)** by [Context7](https://context7.com) - (14.5K tokens, 123 snippets)
+- **[Go SDK](https://github.com/anthropics/anthropic-sdk-go)** by [anthropics](https://github.com/anthropics) - 官方 Go 客户端库
+- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-go)** by [Context7](https://context7.com) - (12.1K tokens, 95 snippets)
+- **[Ruby SDK](https://github.com/anthropics/anthropic-sdk-ruby)** by [anthropics](https://github.com/anthropics) - 官方 Ruby 客户端库
+- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-ruby)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
+- **[Java SDK](https://github.com/anthropics/anthropic-sdk-java)** by [anthropics](https://github.com/anthropics) - 官方 Java 客户端库
+- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-java)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
+- **[TypeScript Tokenizer](https://github.com/anthropics/anthropic-tokenizer-typescript)** by [anthropics](https://github.com/anthropics) - 官方分词器
+- **[Context7 文档](https://context7.com/anthropics/anthropic-tokenizer-typescript)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
+- **[Anthropic 课程](https://github.com/anthropics/courses)** by [anthropics](https://github.com/anthropics) - 官方课程材料
+- **[Context7 文档](https://context7.com/anthropics/courses)** by [Context7](https://context7.com) - (153K tokens, 773 snippets)
+- **[Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)** by [anthropics](https://github.com/anthropics) - 实用代码示例
+- **[Context7 文档](https://context7.com/anthropics/anthropic-cookbook)** by [Context7](https://context7.com) - (173.4K tokens, 542 snippets)
+- **[Anthropic 快速开始](https://github.com/anthropics/anthropic-quickstarts)** by [anthropics](https://github.com/anthropics) - 快速入门项目
+- **[Context7 文档](https://context7.com/anthropics/anthropic-quickstarts)** by [Context7](https://context7.com) - (11.7K tokens, 41 snippets)
 
 
 ### SDK 库
 *SDK Libraries*
 
-- **[Claude Code 官方文档](https://docs.anthropic.com/en/docs/claude-code)** - 官方文档和 API 参考
-- **[Anthropic 博客](https://www.anthropic.com/news)** - 最新功能和更新
-- **[Claude Code GitHub Issues](https://github.com/anthropics/claude-code/issues)** - 问题反馈和功能请求
-- **[Discord 社区](https://discord.gg/anthropic)** - 官方 Discord 社区
-- **[Context7 文档资源](https://context7.com/?q=antropic)** - 最新的 Anthropic 文档资源汇总
-- **[技术支持](https://support.anthropic.com/)** - 官方技术支持
-- **[状态页面](https://status.anthropic.com/)** - 服务状态监控
-- **[安全漏洞报告](https://www.anthropic.com/security)** - 安全问题反馈
-- **[Anthropic Claude 英文文档](https://docs.anthropic.com/en/docs/)** - 最全面的英文官方文档
-- **[Context7 镜像](https://context7.com/websites/anthropic_en)** - (253K tokens, 959 snippets)
-- **[Anthropic Claude 中文文档](https://docs.anthropic.com/zh-CN/docs/)** - 官方中文文档
-- **[Context7 镜像](https://context7.com/websites/anthropic_zh-cn)** - (409.5K tokens, 1.3K snippets)
-- **[Anthropic Claude 俄文文档](https://docs.anthropic.com/ru/docs/)** - 官方俄文文档
-- **[Context7 镜像](https://context7.com/websites/anthropic-ru)** - (447.5K tokens, 1.4K snippets)
-- **[Anthropic API 首页](https://docs.anthropic.com/en/home)** - API 入门指南
-- **[Context7 镜像](https://context7.com/websites/docs_anthropic_com-en-home)** - (1.4K tokens, 7 snippets)
-- **[Anthropic API](https://www.anthropic.com/api/)** - 官方 API 文档
-- **[Context7 镜像](https://context7.com/websites/anthropic-api)** - (545 tokens, 3 snippets)
-- **[LLMs.txt 格式文档](https://docs.anthropic.com/llms.txt)** - 简化版文档
-- **[Context7 镜像](https://context7.com/docs.anthropic.com/llmstxt)** - (289.6K tokens, 1.2K snippets)
-- **[完整版 LLMs.txt](https://docs.anthropic.com/llms-full.txt)** - 详细版文档
-- **[Context7 镜像](https://context7.com/docs.anthropic.com-7a01857/llmstxt)** - (300.1K tokens, 1.3K snippets)
-- **[Python SDK](https://github.com/anthropics/anthropic-sdk-python)** - 官方 Python 客户端库
-- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-python)** - (16.4K tokens, 72 snippets)
-- **[TypeScript/JavaScript SDK](https://github.com/anthropics/anthropic-sdk-typescript)** - 官方 TypeScript 客户端库
-- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-typescript)** - (14.5K tokens, 123 snippets)
-- **[Go SDK](https://github.com/anthropics/anthropic-sdk-go)** - 官方 Go 客户端库
-- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-go)** - (12.1K tokens, 95 snippets)
-- **[Ruby SDK](https://github.com/anthropics/anthropic-sdk-ruby)** - 官方 Ruby 客户端库
-- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-ruby)**
-- **[Java SDK](https://github.com/anthropics/anthropic-sdk-java)** - 官方 Java 客户端库
-- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-java)**
-- **[TypeScript Tokenizer](https://github.com/anthropics/anthropic-tokenizer-typescript)** - 官方分词器
-- **[Context7 文档](https://context7.com/anthropics/anthropic-tokenizer-typescript)**
-- **[Anthropic 课程](https://github.com/anthropics/courses)** - 官方课程材料
-- **[Context7 文档](https://context7.com/anthropics/courses)** - (153K tokens, 773 snippets)
-- **[Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)** - 实用代码示例
-- **[Context7 文档](https://context7.com/anthropics/anthropic-cookbook)** - (173.4K tokens, 542 snippets)
-- **[Anthropic 快速开始](https://github.com/anthropics/anthropic-quickstarts)** - 快速入门项目
-- **[Context7 文档](https://context7.com/anthropics/anthropic-quickstarts)** - (11.7K tokens, 41 snippets)
+- **[Claude Code 官方文档](https://docs.anthropic.com/en/docs/claude-code)** by [Anthropic](https://www.anthropic.com) - 官方文档和 API 参考
+- **[Anthropic 博客](https://www.anthropic.com/news)** by [Anthropic](https://www.anthropic.com) - 最新功能和更新
+- **[Claude Code GitHub Issues](https://github.com/anthropics/claude-code/issues)** by [anthropics](https://github.com/anthropics) - 问题反馈和功能请求
+- **[Discord 社区](https://discord.gg/anthropic)** by [Anthropic](https://www.anthropic.com) - 官方 Discord 社区
+- **[Context7 文档资源](https://context7.com/?q=antropic)** by [Context7](https://context7.com) - 最新的 Anthropic 文档资源汇总
+- **[技术支持](https://support.anthropic.com/)** by [Anthropic](https://www.anthropic.com) - 官方技术支持
+- **[状态页面](https://status.anthropic.com/)** by [Anthropic](https://www.anthropic.com) - 服务状态监控
+- **[安全漏洞报告](https://www.anthropic.com/security)** by [Anthropic](https://www.anthropic.com) - 安全问题反馈
+- **[Anthropic Claude 英文文档](https://docs.anthropic.com/en/docs/)** by [Anthropic](https://www.anthropic.com) - 最全面的英文官方文档
+- **[Context7 镜像](https://context7.com/websites/anthropic_en)** by [Context7](https://context7.com) - (253K tokens, 959 snippets)
+- **[Anthropic Claude 中文文档](https://docs.anthropic.com/zh-CN/docs/)** by [Anthropic](https://www.anthropic.com) - 官方中文文档
+- **[Context7 镜像](https://context7.com/websites/anthropic_zh-cn)** by [Context7](https://context7.com) - (409.5K tokens, 1.3K snippets)
+- **[Anthropic Claude 俄文文档](https://docs.anthropic.com/ru/docs/)** by [Anthropic](https://www.anthropic.com) - 官方俄文文档
+- **[Context7 镜像](https://context7.com/websites/anthropic-ru)** by [Context7](https://context7.com) - (447.5K tokens, 1.4K snippets)
+- **[Anthropic API 首页](https://docs.anthropic.com/en/home)** by [Anthropic](https://www.anthropic.com) - API 入门指南
+- **[Context7 镜像](https://context7.com/websites/docs_anthropic_com-en-home)** by [Context7](https://context7.com) - (1.4K tokens, 7 snippets)
+- **[Anthropic API](https://www.anthropic.com/api/)** by [Anthropic](https://www.anthropic.com) - 官方 API 文档
+- **[Context7 镜像](https://context7.com/websites/anthropic-api)** by [Context7](https://context7.com) - (545 tokens, 3 snippets)
+- **[LLMs.txt 格式文档](https://docs.anthropic.com/llms.txt)** by [Anthropic](https://www.anthropic.com) - 简化版文档
+- **[Context7 镜像](https://context7.com/docs.anthropic.com/llmstxt)** by [Anthropic](https://www.anthropic.com) - (289.6K tokens, 1.2K snippets)
+- **[完整版 LLMs.txt](https://docs.anthropic.com/llms-full.txt)** by [Anthropic](https://www.anthropic.com) - 详细版文档
+- **[Context7 镜像](https://context7.com/docs.anthropic.com-7a01857/llmstxt)** by [Anthropic](https://www.anthropic.com) - (300.1K tokens, 1.3K snippets)
+- **[Python SDK](https://github.com/anthropics/anthropic-sdk-python)** by [anthropics](https://github.com/anthropics) - 官方 Python 客户端库
+- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-python)** by [Context7](https://context7.com) - (16.4K tokens, 72 snippets)
+- **[TypeScript/JavaScript SDK](https://github.com/anthropics/anthropic-sdk-typescript)** by [anthropics](https://github.com/anthropics) - 官方 TypeScript 客户端库
+- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-typescript)** by [Context7](https://context7.com) - (14.5K tokens, 123 snippets)
+- **[Go SDK](https://github.com/anthropics/anthropic-sdk-go)** by [anthropics](https://github.com/anthropics) - 官方 Go 客户端库
+- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-go)** by [Context7](https://context7.com) - (12.1K tokens, 95 snippets)
+- **[Ruby SDK](https://github.com/anthropics/anthropic-sdk-ruby)** by [anthropics](https://github.com/anthropics) - 官方 Ruby 客户端库
+- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-ruby)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
+- **[Java SDK](https://github.com/anthropics/anthropic-sdk-java)** by [anthropics](https://github.com/anthropics) - 官方 Java 客户端库
+- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-java)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
+- **[TypeScript Tokenizer](https://github.com/anthropics/anthropic-tokenizer-typescript)** by [anthropics](https://github.com/anthropics) - 官方分词器
+- **[Context7 文档](https://context7.com/anthropics/anthropic-tokenizer-typescript)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
+- **[Anthropic 课程](https://github.com/anthropics/courses)** by [anthropics](https://github.com/anthropics) - 官方课程材料
+- **[Context7 文档](https://context7.com/anthropics/courses)** by [Context7](https://context7.com) - (153K tokens, 773 snippets)
+- **[Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)** by [anthropics](https://github.com/anthropics) - 实用代码示例
+- **[Context7 文档](https://context7.com/anthropics/anthropic-cookbook)** by [Context7](https://context7.com) - (173.4K tokens, 542 snippets)
+- **[Anthropic 快速开始](https://github.com/anthropics/anthropic-quickstarts)** by [anthropics](https://github.com/anthropics) - 快速入门项目
+- **[Context7 文档](https://context7.com/anthropics/anthropic-quickstarts)** by [Context7](https://context7.com) - (11.7K tokens, 41 snippets)
 
 
 ### 教程与示例
 *Tutorials & Examples*
 
-- **[Claude Code 官方文档](https://docs.anthropic.com/en/docs/claude-code)** - 官方文档和 API 参考
-- **[Anthropic 博客](https://www.anthropic.com/news)** - 最新功能和更新
-- **[Claude Code GitHub Issues](https://github.com/anthropics/claude-code/issues)** - 问题反馈和功能请求
-- **[Discord 社区](https://discord.gg/anthropic)** - 官方 Discord 社区
-- **[Context7 文档资源](https://context7.com/?q=antropic)** - 最新的 Anthropic 文档资源汇总
-- **[技术支持](https://support.anthropic.com/)** - 官方技术支持
-- **[状态页面](https://status.anthropic.com/)** - 服务状态监控
-- **[安全漏洞报告](https://www.anthropic.com/security)** - 安全问题反馈
-- **[Anthropic Claude 英文文档](https://docs.anthropic.com/en/docs/)** - 最全面的英文官方文档
-- **[Context7 镜像](https://context7.com/websites/anthropic_en)** - (253K tokens, 959 snippets)
-- **[Anthropic Claude 中文文档](https://docs.anthropic.com/zh-CN/docs/)** - 官方中文文档
-- **[Context7 镜像](https://context7.com/websites/anthropic_zh-cn)** - (409.5K tokens, 1.3K snippets)
-- **[Anthropic Claude 俄文文档](https://docs.anthropic.com/ru/docs/)** - 官方俄文文档
-- **[Context7 镜像](https://context7.com/websites/anthropic-ru)** - (447.5K tokens, 1.4K snippets)
-- **[Anthropic API 首页](https://docs.anthropic.com/en/home)** - API 入门指南
-- **[Context7 镜像](https://context7.com/websites/docs_anthropic_com-en-home)** - (1.4K tokens, 7 snippets)
-- **[Anthropic API](https://www.anthropic.com/api/)** - 官方 API 文档
-- **[Context7 镜像](https://context7.com/websites/anthropic-api)** - (545 tokens, 3 snippets)
-- **[LLMs.txt 格式文档](https://docs.anthropic.com/llms.txt)** - 简化版文档
-- **[Context7 镜像](https://context7.com/docs.anthropic.com/llmstxt)** - (289.6K tokens, 1.2K snippets)
-- **[完整版 LLMs.txt](https://docs.anthropic.com/llms-full.txt)** - 详细版文档
-- **[Context7 镜像](https://context7.com/docs.anthropic.com-7a01857/llmstxt)** - (300.1K tokens, 1.3K snippets)
-- **[Python SDK](https://github.com/anthropics/anthropic-sdk-python)** - 官方 Python 客户端库
-- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-python)** - (16.4K tokens, 72 snippets)
-- **[TypeScript/JavaScript SDK](https://github.com/anthropics/anthropic-sdk-typescript)** - 官方 TypeScript 客户端库
-- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-typescript)** - (14.5K tokens, 123 snippets)
-- **[Go SDK](https://github.com/anthropics/anthropic-sdk-go)** - 官方 Go 客户端库
-- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-go)** - (12.1K tokens, 95 snippets)
-- **[Ruby SDK](https://github.com/anthropics/anthropic-sdk-ruby)** - 官方 Ruby 客户端库
-- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-ruby)**
-- **[Java SDK](https://github.com/anthropics/anthropic-sdk-java)** - 官方 Java 客户端库
-- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-java)**
-- **[TypeScript Tokenizer](https://github.com/anthropics/anthropic-tokenizer-typescript)** - 官方分词器
-- **[Context7 文档](https://context7.com/anthropics/anthropic-tokenizer-typescript)**
-- **[Anthropic 课程](https://github.com/anthropics/courses)** - 官方课程材料
-- **[Context7 文档](https://context7.com/anthropics/courses)** - (153K tokens, 773 snippets)
-- **[Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)** - 实用代码示例
-- **[Context7 文档](https://context7.com/anthropics/anthropic-cookbook)** - (173.4K tokens, 542 snippets)
-- **[Anthropic 快速开始](https://github.com/anthropics/anthropic-quickstarts)** - 快速入门项目
-- **[Context7 文档](https://context7.com/anthropics/anthropic-quickstarts)** - (11.7K tokens, 41 snippets)
+- **[Claude Code 官方文档](https://docs.anthropic.com/en/docs/claude-code)** by [Anthropic](https://www.anthropic.com) - 官方文档和 API 参考
+- **[Anthropic 博客](https://www.anthropic.com/news)** by [Anthropic](https://www.anthropic.com) - 最新功能和更新
+- **[Claude Code GitHub Issues](https://github.com/anthropics/claude-code/issues)** by [anthropics](https://github.com/anthropics) - 问题反馈和功能请求
+- **[Discord 社区](https://discord.gg/anthropic)** by [Anthropic](https://www.anthropic.com) - 官方 Discord 社区
+- **[Context7 文档资源](https://context7.com/?q=antropic)** by [Context7](https://context7.com) - 最新的 Anthropic 文档资源汇总
+- **[技术支持](https://support.anthropic.com/)** by [Anthropic](https://www.anthropic.com) - 官方技术支持
+- **[状态页面](https://status.anthropic.com/)** by [Anthropic](https://www.anthropic.com) - 服务状态监控
+- **[安全漏洞报告](https://www.anthropic.com/security)** by [Anthropic](https://www.anthropic.com) - 安全问题反馈
+- **[Anthropic Claude 英文文档](https://docs.anthropic.com/en/docs/)** by [Anthropic](https://www.anthropic.com) - 最全面的英文官方文档
+- **[Context7 镜像](https://context7.com/websites/anthropic_en)** by [Context7](https://context7.com) - (253K tokens, 959 snippets)
+- **[Anthropic Claude 中文文档](https://docs.anthropic.com/zh-CN/docs/)** by [Anthropic](https://www.anthropic.com) - 官方中文文档
+- **[Context7 镜像](https://context7.com/websites/anthropic_zh-cn)** by [Context7](https://context7.com) - (409.5K tokens, 1.3K snippets)
+- **[Anthropic Claude 俄文文档](https://docs.anthropic.com/ru/docs/)** by [Anthropic](https://www.anthropic.com) - 官方俄文文档
+- **[Context7 镜像](https://context7.com/websites/anthropic-ru)** by [Context7](https://context7.com) - (447.5K tokens, 1.4K snippets)
+- **[Anthropic API 首页](https://docs.anthropic.com/en/home)** by [Anthropic](https://www.anthropic.com) - API 入门指南
+- **[Context7 镜像](https://context7.com/websites/docs_anthropic_com-en-home)** by [Context7](https://context7.com) - (1.4K tokens, 7 snippets)
+- **[Anthropic API](https://www.anthropic.com/api/)** by [Anthropic](https://www.anthropic.com) - 官方 API 文档
+- **[Context7 镜像](https://context7.com/websites/anthropic-api)** by [Context7](https://context7.com) - (545 tokens, 3 snippets)
+- **[LLMs.txt 格式文档](https://docs.anthropic.com/llms.txt)** by [Anthropic](https://www.anthropic.com) - 简化版文档
+- **[Context7 镜像](https://context7.com/docs.anthropic.com/llmstxt)** by [Anthropic](https://www.anthropic.com) - (289.6K tokens, 1.2K snippets)
+- **[完整版 LLMs.txt](https://docs.anthropic.com/llms-full.txt)** by [Anthropic](https://www.anthropic.com) - 详细版文档
+- **[Context7 镜像](https://context7.com/docs.anthropic.com-7a01857/llmstxt)** by [Anthropic](https://www.anthropic.com) - (300.1K tokens, 1.3K snippets)
+- **[Python SDK](https://github.com/anthropics/anthropic-sdk-python)** by [anthropics](https://github.com/anthropics) - 官方 Python 客户端库
+- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-python)** by [Context7](https://context7.com) - (16.4K tokens, 72 snippets)
+- **[TypeScript/JavaScript SDK](https://github.com/anthropics/anthropic-sdk-typescript)** by [anthropics](https://github.com/anthropics) - 官方 TypeScript 客户端库
+- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-typescript)** by [Context7](https://context7.com) - (14.5K tokens, 123 snippets)
+- **[Go SDK](https://github.com/anthropics/anthropic-sdk-go)** by [anthropics](https://github.com/anthropics) - 官方 Go 客户端库
+- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-go)** by [Context7](https://context7.com) - (12.1K tokens, 95 snippets)
+- **[Ruby SDK](https://github.com/anthropics/anthropic-sdk-ruby)** by [anthropics](https://github.com/anthropics) - 官方 Ruby 客户端库
+- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-ruby)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
+- **[Java SDK](https://github.com/anthropics/anthropic-sdk-java)** by [anthropics](https://github.com/anthropics) - 官方 Java 客户端库
+- **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-java)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
+- **[TypeScript Tokenizer](https://github.com/anthropics/anthropic-tokenizer-typescript)** by [anthropics](https://github.com/anthropics) - 官方分词器
+- **[Context7 文档](https://context7.com/anthropics/anthropic-tokenizer-typescript)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
+- **[Anthropic 课程](https://github.com/anthropics/courses)** by [anthropics](https://github.com/anthropics) - 官方课程材料
+- **[Context7 文档](https://context7.com/anthropics/courses)** by [Context7](https://context7.com) - (153K tokens, 773 snippets)
+- **[Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)** by [anthropics](https://github.com/anthropics) - 实用代码示例
+- **[Context7 文档](https://context7.com/anthropics/anthropic-cookbook)** by [Context7](https://context7.com) - (173.4K tokens, 542 snippets)
+- **[Anthropic 快速开始](https://github.com/anthropics/anthropic-quickstarts)** by [anthropics](https://github.com/anthropics) - 快速入门项目
+- **[Context7 文档](https://context7.com/anthropics/anthropic-quickstarts)** by [Context7](https://context7.com) - (11.7K tokens, 41 snippets)
 
 
 ## 🧠 工作流与知识指南
@@ -276,73 +276,73 @@
 ### 通用
 *General*
 
-- **[macOS 安装指南](docs/installation/macos.md)**
-- **[Windows 安装指南](docs/installation/windows.md)**
-- **[Linux 安装指南](docs/installation/linux.md)**
-- **[配置指南](docs/installation/configuration.md)**
-- **[环境变量设置](docs/installation/environment.md)**
-- **[故障排除](docs/installation/troubleshooting.md)**
-- **[你的第一个 Claude Code 会话](docs/getting-started/first-session.md)**
-- **[基本命令和操作](docs/getting-started/basic-commands.md)**
-- **[理解工作流程](docs/getting-started/workflow.md)**
-- **[文件操作基础](docs/getting-started/file-operations.md)**
-- **[代码生成与编辑](docs/getting-started/code-generation.md)**
-- **[使用 TODO 任务管理](docs/getting-started/todo-management.md)**
-- **[调试和错误处理](docs/getting-started/debugging.md)**
-- **[测试驱动开发](docs/getting-started/tdd.md)**
-- **[版本控制集成](docs/getting-started/git-integration.md)**
-- **[Agent 任务自动化](docs/advanced/agents.md)**
-- **[多文件编辑](docs/advanced/multi-file-editing.md)**
-- **[代码重构](docs/advanced/refactoring.md)**
-- **[自定义 Hooks](docs/advanced/hooks.md)**
-- **[MCP (Model Context Protocol) 集成](docs/advanced/mcp.md)**
-- **[性能优化技巧](docs/advanced/performance.md)**
-- **[上下文管理](docs/advanced/context-management.md)**
-- **[自定义工作流](docs/advanced/custom-workflows.md)**
-- **[批量操作](docs/advanced/batch-operations.md)**
-- **[扩展功能](docs/advanced/extensions.md)**
-- **[高效提示词模板](docs/case-studies/prompt-templates.md)**
-- **[任务分解策略](docs/case-studies/task-breakdown.md)**
-- **[上下文优化](docs/case-studies/context-optimization.md)**
-- **[团队协作最佳实践](docs/case-studies/team-collaboration.md)**
-- **[CI/CD 集成](docs/case-studies/cicd-integration.md)**
-- **[代码审查流程](docs/case-studies/code-review.md)**
+- **[macOS 安装指南](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/installation/macos.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[Windows 安装指南](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/installation/windows.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[Linux 安装指南](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/installation/linux.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[配置指南](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/installation/configuration.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[环境变量设置](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/installation/environment.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[故障排除](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/installation/troubleshooting.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[你的第一个 Claude Code 会话](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/getting-started/first-session.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[基本命令和操作](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/getting-started/basic-commands.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[理解工作流程](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/getting-started/workflow.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[文件操作基础](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/getting-started/file-operations.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[代码生成与编辑](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/getting-started/code-generation.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[使用 TODO 任务管理](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/getting-started/todo-management.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[调试和错误处理](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/getting-started/debugging.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[测试驱动开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/getting-started/tdd.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[版本控制集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/getting-started/git-integration.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[Agent 任务自动化](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/advanced/agents.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[多文件编辑](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/advanced/multi-file-editing.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[代码重构](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/advanced/refactoring.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[自定义 Hooks](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/advanced/hooks.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[MCP (Model Context Protocol) 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/advanced/mcp.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[性能优化技巧](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/advanced/performance.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[上下文管理](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/advanced/context-management.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[自定义工作流](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/advanced/custom-workflows.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[批量操作](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/advanced/batch-operations.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[扩展功能](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/advanced/extensions.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[高效提示词模板](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/case-studies/prompt-templates.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[任务分解策略](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/case-studies/task-breakdown.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[上下文优化](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/case-studies/context-optimization.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[团队协作最佳实践](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/case-studies/team-collaboration.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[CI/CD 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/case-studies/cicd-integration.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[代码审查流程](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/case-studies/code-review.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
 
 
 ### 最佳实践
 *Best Practices*
 
-- **[macOS 安装指南](docs/installation/macos.md)**
-- **[Windows 安装指南](docs/installation/windows.md)**
-- **[Linux 安装指南](docs/installation/linux.md)**
-- **[配置指南](docs/installation/configuration.md)**
-- **[环境变量设置](docs/installation/environment.md)**
-- **[故障排除](docs/installation/troubleshooting.md)**
-- **[你的第一个 Claude Code 会话](docs/getting-started/first-session.md)**
-- **[基本命令和操作](docs/getting-started/basic-commands.md)**
-- **[理解工作流程](docs/getting-started/workflow.md)**
-- **[文件操作基础](docs/getting-started/file-operations.md)**
-- **[代码生成与编辑](docs/getting-started/code-generation.md)**
-- **[使用 TODO 任务管理](docs/getting-started/todo-management.md)**
-- **[调试和错误处理](docs/getting-started/debugging.md)**
-- **[测试驱动开发](docs/getting-started/tdd.md)**
-- **[版本控制集成](docs/getting-started/git-integration.md)**
-- **[Agent 任务自动化](docs/advanced/agents.md)**
-- **[多文件编辑](docs/advanced/multi-file-editing.md)**
-- **[代码重构](docs/advanced/refactoring.md)**
-- **[自定义 Hooks](docs/advanced/hooks.md)**
-- **[MCP (Model Context Protocol) 集成](docs/advanced/mcp.md)**
-- **[性能优化技巧](docs/advanced/performance.md)**
-- **[上下文管理](docs/advanced/context-management.md)**
-- **[自定义工作流](docs/advanced/custom-workflows.md)**
-- **[批量操作](docs/advanced/batch-operations.md)**
-- **[扩展功能](docs/advanced/extensions.md)**
-- **[高效提示词模板](docs/case-studies/prompt-templates.md)**
-- **[任务分解策略](docs/case-studies/task-breakdown.md)**
-- **[上下文优化](docs/case-studies/context-optimization.md)**
-- **[团队协作最佳实践](docs/case-studies/team-collaboration.md)**
-- **[CI/CD 集成](docs/case-studies/cicd-integration.md)**
-- **[代码审查流程](docs/case-studies/code-review.md)**
+- **[macOS 安装指南](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/installation/macos.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[Windows 安装指南](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/installation/windows.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[Linux 安装指南](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/installation/linux.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[配置指南](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/installation/configuration.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[环境变量设置](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/installation/environment.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[故障排除](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/installation/troubleshooting.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[你的第一个 Claude Code 会话](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/getting-started/first-session.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[基本命令和操作](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/getting-started/basic-commands.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[理解工作流程](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/getting-started/workflow.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[文件操作基础](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/getting-started/file-operations.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[代码生成与编辑](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/getting-started/code-generation.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[使用 TODO 任务管理](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/getting-started/todo-management.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[调试和错误处理](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/getting-started/debugging.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[测试驱动开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/getting-started/tdd.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[版本控制集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/getting-started/git-integration.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[Agent 任务自动化](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/advanced/agents.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[多文件编辑](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/advanced/multi-file-editing.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[代码重构](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/advanced/refactoring.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[自定义 Hooks](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/advanced/hooks.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[MCP (Model Context Protocol) 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/advanced/mcp.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[性能优化技巧](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/advanced/performance.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[上下文管理](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/advanced/context-management.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[自定义工作流](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/advanced/custom-workflows.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[批量操作](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/advanced/batch-operations.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[扩展功能](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/advanced/extensions.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[高效提示词模板](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/case-studies/prompt-templates.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[任务分解策略](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/case-studies/task-breakdown.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[上下文优化](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/case-studies/context-optimization.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[团队协作最佳实践](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/case-studies/team-collaboration.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[CI/CD 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/case-studies/cicd-integration.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
+- **[代码审查流程](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/case-studies/code-review.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 工作流和知识指南
 
 
 ## 🧰 工具
@@ -355,61 +355,61 @@
 ### 通用
 *General*
 
-- **[VS Code 扩展](docs/third-party/vscode.md)**
-- **[IntelliJ IDEA 插件](docs/third-party/intellij.md)**
-- **[Vim/Neovim 集成](docs/third-party/vim.md)**
-- **[Emacs 集成](docs/third-party/emacs.md)**
-- **[Oh My Zsh 插件](docs/third-party/oh-my-zsh.md)**
-- **[Fish Shell 集成](docs/third-party/fish.md)**
-- **[PowerShell 模块](docs/third-party/powershell.md)**
-- **[GitHub Actions 集成](docs/third-party/github-actions.md)**
-- **[GitLab CI 集成](docs/third-party/gitlab-ci.md)**
-- **[Jenkins 插件](docs/third-party/jenkins.md)**
+- **[VS Code 扩展](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/vscode.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[IntelliJ IDEA 插件](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/intellij.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[Vim/Neovim 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/vim.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[Emacs 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/emacs.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[Oh My Zsh 插件](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/oh-my-zsh.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[Fish Shell 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/fish.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[PowerShell 模块](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/powershell.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[GitHub Actions 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/github-actions.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[GitLab CI 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/gitlab-ci.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[Jenkins 插件](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/jenkins.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
 
 
 ### IDE 集成
 *IDE Integrations*
 
-- **[VS Code 扩展](docs/third-party/vscode.md)**
-- **[IntelliJ IDEA 插件](docs/third-party/intellij.md)**
-- **[Vim/Neovim 集成](docs/third-party/vim.md)**
-- **[Emacs 集成](docs/third-party/emacs.md)**
-- **[Oh My Zsh 插件](docs/third-party/oh-my-zsh.md)**
-- **[Fish Shell 集成](docs/third-party/fish.md)**
-- **[PowerShell 模块](docs/third-party/powershell.md)**
-- **[GitHub Actions 集成](docs/third-party/github-actions.md)**
-- **[GitLab CI 集成](docs/third-party/gitlab-ci.md)**
-- **[Jenkins 插件](docs/third-party/jenkins.md)**
+- **[VS Code 扩展](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/vscode.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[IntelliJ IDEA 插件](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/intellij.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[Vim/Neovim 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/vim.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[Emacs 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/emacs.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[Oh My Zsh 插件](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/oh-my-zsh.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[Fish Shell 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/fish.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[PowerShell 模块](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/powershell.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[GitHub Actions 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/github-actions.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[GitLab CI 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/gitlab-ci.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[Jenkins 插件](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/jenkins.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
 
 
 ### 使用监控
 *Usage Monitors*
 
-- **[VS Code 扩展](docs/third-party/vscode.md)**
-- **[IntelliJ IDEA 插件](docs/third-party/intellij.md)**
-- **[Vim/Neovim 集成](docs/third-party/vim.md)**
-- **[Emacs 集成](docs/third-party/emacs.md)**
-- **[Oh My Zsh 插件](docs/third-party/oh-my-zsh.md)**
-- **[Fish Shell 集成](docs/third-party/fish.md)**
-- **[PowerShell 模块](docs/third-party/powershell.md)**
-- **[GitHub Actions 集成](docs/third-party/github-actions.md)**
-- **[GitLab CI 集成](docs/third-party/gitlab-ci.md)**
-- **[Jenkins 插件](docs/third-party/jenkins.md)**
+- **[VS Code 扩展](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/vscode.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[IntelliJ IDEA 插件](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/intellij.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[Vim/Neovim 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/vim.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[Emacs 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/emacs.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[Oh My Zsh 插件](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/oh-my-zsh.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[Fish Shell 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/fish.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[PowerShell 模块](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/powershell.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[GitHub Actions 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/github-actions.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[GitLab CI 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/gitlab-ci.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[Jenkins 插件](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/jenkins.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
 
 
 ### 编排器
 *Orchestrators*
 
-- **[VS Code 扩展](docs/third-party/vscode.md)**
-- **[IntelliJ IDEA 插件](docs/third-party/intellij.md)**
-- **[Vim/Neovim 集成](docs/third-party/vim.md)**
-- **[Emacs 集成](docs/third-party/emacs.md)**
-- **[Oh My Zsh 插件](docs/third-party/oh-my-zsh.md)**
-- **[Fish Shell 集成](docs/third-party/fish.md)**
-- **[PowerShell 模块](docs/third-party/powershell.md)**
-- **[GitHub Actions 集成](docs/third-party/github-actions.md)**
-- **[GitLab CI 集成](docs/third-party/gitlab-ci.md)**
-- **[Jenkins 插件](docs/third-party/jenkins.md)**
+- **[VS Code 扩展](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/vscode.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[IntelliJ IDEA 插件](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/intellij.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[Vim/Neovim 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/vim.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[Emacs 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/emacs.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[Oh My Zsh 插件](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/oh-my-zsh.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[Fish Shell 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/fish.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[PowerShell 模块](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/powershell.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[GitHub Actions 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/github-actions.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[GitLab CI 集成](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/gitlab-ci.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
+- **[Jenkins 插件](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/third-party/jenkins.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 开发工具和实用程序
 
 
 ## 🔌 MCP 服务器
@@ -422,81 +422,81 @@
 ### 通用
 *General*
 
-- **[Filesystem Server](docs/mcp/filesystem.md)** - 文件系统操作
-- **[GitHub Server](docs/mcp/github.md)** - GitHub 集成
-- **[Google Drive Server](docs/mcp/google-drive.md)** - Google Drive 集成
-- **[Slack Server](docs/mcp/slack.md)** - Slack 集成
-- **[Database Servers](docs/mcp/database.md)** - 各种数据库集成
-- **[Cloud Services](docs/mcp/cloud.md)** - AWS、Azure、GCP 集成
-- **[API Integrations](docs/mcp/api.md)** - 第三方 API 集成
-- **[Custom Servers](docs/mcp/custom.md)** - 创建自定义 MCP 服务器
-- **[MCP 协议规范](https://modelcontextprotocol.io/docs)**
-- **[创建你的第一个 MCP 服务器](docs/mcp/development.md)**
-- **[MCP 服务器最佳实践](docs/mcp/best-practices.md)**
+- **[Filesystem Server](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/filesystem.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 文件系统操作
+- **[GitHub Server](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/github.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - GitHub 集成
+- **[Google Drive Server](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/google-drive.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - Google Drive 集成
+- **[Slack Server](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/slack.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - Slack 集成
+- **[Database Servers](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/database.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 各种数据库集成
+- **[Cloud Services](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/cloud.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - AWS、Azure、GCP 集成
+- **[API Integrations](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/api.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 第三方 API 集成
+- **[Custom Servers](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/custom.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 创建自定义 MCP 服务器
+- **[MCP 协议规范](https://modelcontextprotocol.io/docs)** by [Anthropic](https://www.anthropic.com) - MCP 服务器实现
+- **[创建你的第一个 MCP 服务器](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/development.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - MCP 服务器实现
+- **[MCP 服务器最佳实践](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/best-practices.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - MCP 服务器实现
 
 
 ### 文件系统
 *Filesystem*
 
-- **[Filesystem Server](docs/mcp/filesystem.md)** - 文件系统操作
-- **[GitHub Server](docs/mcp/github.md)** - GitHub 集成
-- **[Google Drive Server](docs/mcp/google-drive.md)** - Google Drive 集成
-- **[Slack Server](docs/mcp/slack.md)** - Slack 集成
-- **[Database Servers](docs/mcp/database.md)** - 各种数据库集成
-- **[Cloud Services](docs/mcp/cloud.md)** - AWS、Azure、GCP 集成
-- **[API Integrations](docs/mcp/api.md)** - 第三方 API 集成
-- **[Custom Servers](docs/mcp/custom.md)** - 创建自定义 MCP 服务器
-- **[MCP 协议规范](https://modelcontextprotocol.io/docs)**
-- **[创建你的第一个 MCP 服务器](docs/mcp/development.md)**
-- **[MCP 服务器最佳实践](docs/mcp/best-practices.md)**
+- **[Filesystem Server](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/filesystem.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 文件系统操作
+- **[GitHub Server](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/github.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - GitHub 集成
+- **[Google Drive Server](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/google-drive.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - Google Drive 集成
+- **[Slack Server](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/slack.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - Slack 集成
+- **[Database Servers](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/database.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 各种数据库集成
+- **[Cloud Services](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/cloud.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - AWS、Azure、GCP 集成
+- **[API Integrations](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/api.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 第三方 API 集成
+- **[Custom Servers](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/custom.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 创建自定义 MCP 服务器
+- **[MCP 协议规范](https://modelcontextprotocol.io/docs)** by [Anthropic](https://www.anthropic.com) - MCP 服务器实现
+- **[创建你的第一个 MCP 服务器](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/development.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - MCP 服务器实现
+- **[MCP 服务器最佳实践](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/best-practices.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - MCP 服务器实现
 
 
 ### 云服务
 *Cloud Services*
 
-- **[Filesystem Server](docs/mcp/filesystem.md)** - 文件系统操作
-- **[GitHub Server](docs/mcp/github.md)** - GitHub 集成
-- **[Google Drive Server](docs/mcp/google-drive.md)** - Google Drive 集成
-- **[Slack Server](docs/mcp/slack.md)** - Slack 集成
-- **[Database Servers](docs/mcp/database.md)** - 各种数据库集成
-- **[Cloud Services](docs/mcp/cloud.md)** - AWS、Azure、GCP 集成
-- **[API Integrations](docs/mcp/api.md)** - 第三方 API 集成
-- **[Custom Servers](docs/mcp/custom.md)** - 创建自定义 MCP 服务器
-- **[MCP 协议规范](https://modelcontextprotocol.io/docs)**
-- **[创建你的第一个 MCP 服务器](docs/mcp/development.md)**
-- **[MCP 服务器最佳实践](docs/mcp/best-practices.md)**
+- **[Filesystem Server](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/filesystem.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 文件系统操作
+- **[GitHub Server](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/github.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - GitHub 集成
+- **[Google Drive Server](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/google-drive.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - Google Drive 集成
+- **[Slack Server](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/slack.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - Slack 集成
+- **[Database Servers](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/database.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 各种数据库集成
+- **[Cloud Services](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/cloud.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - AWS、Azure、GCP 集成
+- **[API Integrations](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/api.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 第三方 API 集成
+- **[Custom Servers](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/custom.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 创建自定义 MCP 服务器
+- **[MCP 协议规范](https://modelcontextprotocol.io/docs)** by [Anthropic](https://www.anthropic.com) - MCP 服务器实现
+- **[创建你的第一个 MCP 服务器](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/development.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - MCP 服务器实现
+- **[MCP 服务器最佳实践](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/best-practices.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - MCP 服务器实现
 
 
 ### 数据库
 *Databases*
 
-- **[Filesystem Server](docs/mcp/filesystem.md)** - 文件系统操作
-- **[GitHub Server](docs/mcp/github.md)** - GitHub 集成
-- **[Google Drive Server](docs/mcp/google-drive.md)** - Google Drive 集成
-- **[Slack Server](docs/mcp/slack.md)** - Slack 集成
-- **[Database Servers](docs/mcp/database.md)** - 各种数据库集成
-- **[Cloud Services](docs/mcp/cloud.md)** - AWS、Azure、GCP 集成
-- **[API Integrations](docs/mcp/api.md)** - 第三方 API 集成
-- **[Custom Servers](docs/mcp/custom.md)** - 创建自定义 MCP 服务器
-- **[MCP 协议规范](https://modelcontextprotocol.io/docs)**
-- **[创建你的第一个 MCP 服务器](docs/mcp/development.md)**
-- **[MCP 服务器最佳实践](docs/mcp/best-practices.md)**
+- **[Filesystem Server](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/filesystem.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 文件系统操作
+- **[GitHub Server](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/github.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - GitHub 集成
+- **[Google Drive Server](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/google-drive.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - Google Drive 集成
+- **[Slack Server](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/slack.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - Slack 集成
+- **[Database Servers](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/database.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 各种数据库集成
+- **[Cloud Services](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/cloud.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - AWS、Azure、GCP 集成
+- **[API Integrations](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/api.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 第三方 API 集成
+- **[Custom Servers](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/custom.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 创建自定义 MCP 服务器
+- **[MCP 协议规范](https://modelcontextprotocol.io/docs)** by [Anthropic](https://www.anthropic.com) - MCP 服务器实现
+- **[创建你的第一个 MCP 服务器](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/development.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - MCP 服务器实现
+- **[MCP 服务器最佳实践](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/best-practices.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - MCP 服务器实现
 
 
 ### API 集成
 *API Integrations*
 
-- **[Filesystem Server](docs/mcp/filesystem.md)** - 文件系统操作
-- **[GitHub Server](docs/mcp/github.md)** - GitHub 集成
-- **[Google Drive Server](docs/mcp/google-drive.md)** - Google Drive 集成
-- **[Slack Server](docs/mcp/slack.md)** - Slack 集成
-- **[Database Servers](docs/mcp/database.md)** - 各种数据库集成
-- **[Cloud Services](docs/mcp/cloud.md)** - AWS、Azure、GCP 集成
-- **[API Integrations](docs/mcp/api.md)** - 第三方 API 集成
-- **[Custom Servers](docs/mcp/custom.md)** - 创建自定义 MCP 服务器
-- **[MCP 协议规范](https://modelcontextprotocol.io/docs)**
-- **[创建你的第一个 MCP 服务器](docs/mcp/development.md)**
-- **[MCP 服务器最佳实践](docs/mcp/best-practices.md)**
+- **[Filesystem Server](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/filesystem.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 文件系统操作
+- **[GitHub Server](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/github.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - GitHub 集成
+- **[Google Drive Server](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/google-drive.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - Google Drive 集成
+- **[Slack Server](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/slack.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - Slack 集成
+- **[Database Servers](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/database.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 各种数据库集成
+- **[Cloud Services](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/cloud.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - AWS、Azure、GCP 集成
+- **[API Integrations](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/api.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 第三方 API 集成
+- **[Custom Servers](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/custom.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 创建自定义 MCP 服务器
+- **[MCP 协议规范](https://modelcontextprotocol.io/docs)** by [Anthropic](https://www.anthropic.com) - MCP 服务器实现
+- **[创建你的第一个 MCP 服务器](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/development.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - MCP 服务器实现
+- **[MCP 服务器最佳实践](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/mcp/best-practices.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - MCP 服务器实现
 
 
 ## 📦 开源项目
@@ -510,39 +510,39 @@
 *General*
 
 - **[Claude Code Go](https://github.com/lancekrogers/claude-code-go)** by [lancekrogers](https://github.com/lancekrogers) `MIT` - Go 语言的 Claude Code 实现
-- **[Context7 文档](https://context7.com/lancekrogers/claude-code-go)**
+- **[Context7 文档](https://context7.com/lancekrogers/claude-code-go)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
 - **[Claude Code 模板](https://github.com/davila7/claude-code-templates)** by [davila7](https://github.com/davila7) `MIT` - 项目模板集合
-- **[Context7 文档](https://context7.com/davila7/claude-code-templates)**
+- **[Context7 文档](https://context7.com/davila7/claude-code-templates)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
 - **[Claudette](https://github.com/answerdotai/claudette)** by [AnswerDotAI](https://github.com/AnswerDotAI) `Apache-2.0` - 轻量级 Claude API 客户端
-- **[Context7 文档](https://context7.com/answerdotai/claudette)**
+- **[Context7 文档](https://context7.com/answerdotai/claudette)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
 - **[MCP Think Tool](https://github.com/cgize/claude-mcp-think-tool)** by [cgize](https://github.com/cgize) `MIT` - Claude Desktop 思考工具
-- **[Context7 文档](https://context7.com/cgize/claude-mcp-think-tool)**
+- **[Context7 文档](https://context7.com/cgize/claude-mcp-think-tool)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
 
 
 ### 模板
 *Templates*
 
 - **[Claude Code Go](https://github.com/lancekrogers/claude-code-go)** by [lancekrogers](https://github.com/lancekrogers) `MIT` - Go 语言的 Claude Code 实现
-- **[Context7 文档](https://context7.com/lancekrogers/claude-code-go)**
+- **[Context7 文档](https://context7.com/lancekrogers/claude-code-go)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
 - **[Claude Code 模板](https://github.com/davila7/claude-code-templates)** by [davila7](https://github.com/davila7) `MIT` - 项目模板集合
-- **[Context7 文档](https://context7.com/davila7/claude-code-templates)**
+- **[Context7 文档](https://context7.com/davila7/claude-code-templates)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
 - **[Claudette](https://github.com/answerdotai/claudette)** by [AnswerDotAI](https://github.com/AnswerDotAI) `Apache-2.0` - 轻量级 Claude API 客户端
-- **[Context7 文档](https://context7.com/answerdotai/claudette)**
+- **[Context7 文档](https://context7.com/answerdotai/claudette)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
 - **[MCP Think Tool](https://github.com/cgize/claude-mcp-think-tool)** by [cgize](https://github.com/cgize) `MIT` - Claude Desktop 思考工具
-- **[Context7 文档](https://context7.com/cgize/claude-mcp-think-tool)**
+- **[Context7 文档](https://context7.com/cgize/claude-mcp-think-tool)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
 
 
 ### 扩展
 *Extensions*
 
 - **[Claude Code Go](https://github.com/lancekrogers/claude-code-go)** by [lancekrogers](https://github.com/lancekrogers) `MIT` - Go 语言的 Claude Code 实现
-- **[Context7 文档](https://context7.com/lancekrogers/claude-code-go)**
+- **[Context7 文档](https://context7.com/lancekrogers/claude-code-go)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
 - **[Claude Code 模板](https://github.com/davila7/claude-code-templates)** by [davila7](https://github.com/davila7) `MIT` - 项目模板集合
-- **[Context7 文档](https://context7.com/davila7/claude-code-templates)**
+- **[Context7 文档](https://context7.com/davila7/claude-code-templates)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
 - **[Claudette](https://github.com/answerdotai/claudette)** by [AnswerDotAI](https://github.com/AnswerDotAI) `Apache-2.0` - 轻量级 Claude API 客户端
-- **[Context7 文档](https://context7.com/answerdotai/claudette)**
+- **[Context7 文档](https://context7.com/answerdotai/claudette)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
 - **[MCP Think Tool](https://github.com/cgize/claude-mcp-think-tool)** by [cgize](https://github.com/cgize) `MIT` - Claude Desktop 思考工具
-- **[Context7 文档](https://context7.com/cgize/claude-mcp-think-tool)**
+- **[Context7 文档](https://context7.com/cgize/claude-mcp-think-tool)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
 
 
 ## 📂 案例研究
@@ -555,90 +555,90 @@
 ### 通用
 *General*
 
-- **[构建全栈 Web 应用](examples/web/fullstack-app/)**
-- **[React/Vue/Angular 项目开发](examples/web/frontend/)**
-- **[Node.js API 开发](examples/web/backend/)**
-- **[数据库设计与优化](examples/web/database/)**
-- **[React Native 应用开发](examples/mobile/react-native/)**
-- **[Flutter 应用开发](examples/mobile/flutter/)**
-- **[原生应用开发](examples/mobile/native/)**
-- **[数据分析与可视化](examples/data-science/analysis/)**
-- **[机器学习模型开发](examples/data-science/ml/)**
-- **[数据处理管道](examples/data-science/pipeline/)**
-- **[自动化部署脚本](examples/devops/deployment/)**
-- **[容器化应用](examples/devops/docker/)**
-- **[Kubernetes 配置](examples/devops/k8s/)**
+- **[构建全栈 Web 应用](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/web/fullstack-app/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[React/Vue/Angular 项目开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/web/frontend/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[Node.js API 开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/web/backend/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[数据库设计与优化](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/web/database/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[React Native 应用开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/mobile/react-native/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[Flutter 应用开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/mobile/flutter/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[原生应用开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/mobile/native/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[数据分析与可视化](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/data-science/analysis/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[机器学习模型开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/data-science/ml/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[数据处理管道](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/data-science/pipeline/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[自动化部署脚本](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/devops/deployment/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[容器化应用](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/devops/docker/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[Kubernetes 配置](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/devops/k8s/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
 
 
 ### Web 开发
 *Web Development*
 
-- **[构建全栈 Web 应用](examples/web/fullstack-app/)**
-- **[React/Vue/Angular 项目开发](examples/web/frontend/)**
-- **[Node.js API 开发](examples/web/backend/)**
-- **[数据库设计与优化](examples/web/database/)**
-- **[React Native 应用开发](examples/mobile/react-native/)**
-- **[Flutter 应用开发](examples/mobile/flutter/)**
-- **[原生应用开发](examples/mobile/native/)**
-- **[数据分析与可视化](examples/data-science/analysis/)**
-- **[机器学习模型开发](examples/data-science/ml/)**
-- **[数据处理管道](examples/data-science/pipeline/)**
-- **[自动化部署脚本](examples/devops/deployment/)**
-- **[容器化应用](examples/devops/docker/)**
-- **[Kubernetes 配置](examples/devops/k8s/)**
+- **[构建全栈 Web 应用](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/web/fullstack-app/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[React/Vue/Angular 项目开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/web/frontend/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[Node.js API 开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/web/backend/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[数据库设计与优化](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/web/database/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[React Native 应用开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/mobile/react-native/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[Flutter 应用开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/mobile/flutter/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[原生应用开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/mobile/native/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[数据分析与可视化](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/data-science/analysis/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[机器学习模型开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/data-science/ml/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[数据处理管道](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/data-science/pipeline/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[自动化部署脚本](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/devops/deployment/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[容器化应用](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/devops/docker/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[Kubernetes 配置](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/devops/k8s/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
 
 
 ### 移动开发
 *Mobile Development*
 
-- **[构建全栈 Web 应用](examples/web/fullstack-app/)**
-- **[React/Vue/Angular 项目开发](examples/web/frontend/)**
-- **[Node.js API 开发](examples/web/backend/)**
-- **[数据库设计与优化](examples/web/database/)**
-- **[React Native 应用开发](examples/mobile/react-native/)**
-- **[Flutter 应用开发](examples/mobile/flutter/)**
-- **[原生应用开发](examples/mobile/native/)**
-- **[数据分析与可视化](examples/data-science/analysis/)**
-- **[机器学习模型开发](examples/data-science/ml/)**
-- **[数据处理管道](examples/data-science/pipeline/)**
-- **[自动化部署脚本](examples/devops/deployment/)**
-- **[容器化应用](examples/devops/docker/)**
-- **[Kubernetes 配置](examples/devops/k8s/)**
+- **[构建全栈 Web 应用](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/web/fullstack-app/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[React/Vue/Angular 项目开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/web/frontend/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[Node.js API 开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/web/backend/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[数据库设计与优化](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/web/database/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[React Native 应用开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/mobile/react-native/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[Flutter 应用开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/mobile/flutter/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[原生应用开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/mobile/native/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[数据分析与可视化](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/data-science/analysis/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[机器学习模型开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/data-science/ml/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[数据处理管道](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/data-science/pipeline/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[自动化部署脚本](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/devops/deployment/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[容器化应用](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/devops/docker/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[Kubernetes 配置](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/devops/k8s/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
 
 
 ### 数据科学
 *Data Science*
 
-- **[构建全栈 Web 应用](examples/web/fullstack-app/)**
-- **[React/Vue/Angular 项目开发](examples/web/frontend/)**
-- **[Node.js API 开发](examples/web/backend/)**
-- **[数据库设计与优化](examples/web/database/)**
-- **[React Native 应用开发](examples/mobile/react-native/)**
-- **[Flutter 应用开发](examples/mobile/flutter/)**
-- **[原生应用开发](examples/mobile/native/)**
-- **[数据分析与可视化](examples/data-science/analysis/)**
-- **[机器学习模型开发](examples/data-science/ml/)**
-- **[数据处理管道](examples/data-science/pipeline/)**
-- **[自动化部署脚本](examples/devops/deployment/)**
-- **[容器化应用](examples/devops/docker/)**
-- **[Kubernetes 配置](examples/devops/k8s/)**
+- **[构建全栈 Web 应用](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/web/fullstack-app/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[React/Vue/Angular 项目开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/web/frontend/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[Node.js API 开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/web/backend/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[数据库设计与优化](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/web/database/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[React Native 应用开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/mobile/react-native/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[Flutter 应用开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/mobile/flutter/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[原生应用开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/mobile/native/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[数据分析与可视化](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/data-science/analysis/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[机器学习模型开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/data-science/ml/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[数据处理管道](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/data-science/pipeline/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[自动化部署脚本](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/devops/deployment/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[容器化应用](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/devops/docker/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[Kubernetes 配置](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/devops/k8s/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
 
 
 ### DevOps
 
-- **[构建全栈 Web 应用](examples/web/fullstack-app/)**
-- **[React/Vue/Angular 项目开发](examples/web/frontend/)**
-- **[Node.js API 开发](examples/web/backend/)**
-- **[数据库设计与优化](examples/web/database/)**
-- **[React Native 应用开发](examples/mobile/react-native/)**
-- **[Flutter 应用开发](examples/mobile/flutter/)**
-- **[原生应用开发](examples/mobile/native/)**
-- **[数据分析与可视化](examples/data-science/analysis/)**
-- **[机器学习模型开发](examples/data-science/ml/)**
-- **[数据处理管道](examples/data-science/pipeline/)**
-- **[自动化部署脚本](examples/devops/deployment/)**
-- **[容器化应用](examples/devops/docker/)**
-- **[Kubernetes 配置](examples/devops/k8s/)**
+- **[构建全栈 Web 应用](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/web/fullstack-app/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[React/Vue/Angular 项目开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/web/frontend/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[Node.js API 开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/web/backend/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[数据库设计与优化](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/web/database/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[React Native 应用开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/mobile/react-native/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[Flutter 应用开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/mobile/flutter/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[原生应用开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/mobile/native/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[数据分析与可视化](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/data-science/analysis/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[机器学习模型开发](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/data-science/ml/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[数据处理管道](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/data-science/pipeline/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[自动化部署脚本](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/devops/deployment/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[容器化应用](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/devops/docker/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
+- **[Kubernetes 配置](https://github.com/stinglong/AwesomeClaudeCode/blob/main/examples/devops/k8s/)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 案例研究和实际示例
 
 
 ## 🌐 生态系统
@@ -651,65 +651,65 @@
 ### 通用
 *General*
 
-- **[Claude Code 社区论坛](https://community.claude.ai)**
-- **[Reddit r/ClaudeCode](https://reddit.com/r/claudecode)**
-- **[Stack Overflow 标签](https://stackoverflow.com/questions/tagged/claude-code)**
-- **[YouTube 教程频道](docs/ecosystem/youtube-channels.md)**
-- **[在线课程](docs/ecosystem/courses.md)**
-- **[书籍推荐](docs/ecosystem/books.md)**
-- **[博客文章](docs/ecosystem/blogs.md)**
-- **[播客节目](docs/ecosystem/podcasts.md)**
-- **[项目模板集合](docs/ecosystem/templates.md)**
-- **[代码片段库](docs/ecosystem/snippets.md)**
-- **[配置文件示例](docs/ecosystem/configs.md)**
+- **[Claude Code 社区论坛](https://community.claude.ai)** by [Anthropic](https://www.anthropic.com) - Anthropic 官方文档和资源
+- **[Reddit r/ClaudeCode](https://reddit.com/r/claudecode)** by [Reddit Community](https://www.reddit.com) - 生态系统资源和集成
+- **[Stack Overflow 标签](https://stackoverflow.com/questions/tagged/claude-code)** by [Stack Overflow Community](https://stackoverflow.com) - 生态系统资源和集成
+- **[YouTube 教程频道](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/youtube-channels.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[在线课程](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/courses.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[书籍推荐](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/books.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[博客文章](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/blogs.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[播客节目](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/podcasts.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[项目模板集合](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/templates.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[代码片段库](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/snippets.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[配置文件示例](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/configs.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
 
 
 ### 学习资源
 *Learning Resources*
 
-- **[Claude Code 社区论坛](https://community.claude.ai)**
-- **[Reddit r/ClaudeCode](https://reddit.com/r/claudecode)**
-- **[Stack Overflow 标签](https://stackoverflow.com/questions/tagged/claude-code)**
-- **[YouTube 教程频道](docs/ecosystem/youtube-channels.md)**
-- **[在线课程](docs/ecosystem/courses.md)**
-- **[书籍推荐](docs/ecosystem/books.md)**
-- **[博客文章](docs/ecosystem/blogs.md)**
-- **[播客节目](docs/ecosystem/podcasts.md)**
-- **[项目模板集合](docs/ecosystem/templates.md)**
-- **[代码片段库](docs/ecosystem/snippets.md)**
-- **[配置文件示例](docs/ecosystem/configs.md)**
+- **[Claude Code 社区论坛](https://community.claude.ai)** by [Anthropic](https://www.anthropic.com) - Anthropic 官方文档和资源
+- **[Reddit r/ClaudeCode](https://reddit.com/r/claudecode)** by [Reddit Community](https://www.reddit.com) - 生态系统资源和集成
+- **[Stack Overflow 标签](https://stackoverflow.com/questions/tagged/claude-code)** by [Stack Overflow Community](https://stackoverflow.com) - 生态系统资源和集成
+- **[YouTube 教程频道](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/youtube-channels.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[在线课程](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/courses.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[书籍推荐](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/books.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[博客文章](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/blogs.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[播客节目](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/podcasts.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[项目模板集合](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/templates.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[代码片段库](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/snippets.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[配置文件示例](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/configs.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
 
 
 ### 社区
 *Community*
 
-- **[Claude Code 社区论坛](https://community.claude.ai)**
-- **[Reddit r/ClaudeCode](https://reddit.com/r/claudecode)**
-- **[Stack Overflow 标签](https://stackoverflow.com/questions/tagged/claude-code)**
-- **[YouTube 教程频道](docs/ecosystem/youtube-channels.md)**
-- **[在线课程](docs/ecosystem/courses.md)**
-- **[书籍推荐](docs/ecosystem/books.md)**
-- **[博客文章](docs/ecosystem/blogs.md)**
-- **[播客节目](docs/ecosystem/podcasts.md)**
-- **[项目模板集合](docs/ecosystem/templates.md)**
-- **[代码片段库](docs/ecosystem/snippets.md)**
-- **[配置文件示例](docs/ecosystem/configs.md)**
+- **[Claude Code 社区论坛](https://community.claude.ai)** by [Anthropic](https://www.anthropic.com) - Anthropic 官方文档和资源
+- **[Reddit r/ClaudeCode](https://reddit.com/r/claudecode)** by [Reddit Community](https://www.reddit.com) - 生态系统资源和集成
+- **[Stack Overflow 标签](https://stackoverflow.com/questions/tagged/claude-code)** by [Stack Overflow Community](https://stackoverflow.com) - 生态系统资源和集成
+- **[YouTube 教程频道](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/youtube-channels.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[在线课程](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/courses.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[书籍推荐](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/books.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[博客文章](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/blogs.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[播客节目](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/podcasts.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[项目模板集合](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/templates.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[代码片段库](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/snippets.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[配置文件示例](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/configs.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
 
 
 ### 第三方工具
 *Third-party Tools*
 
-- **[Claude Code 社区论坛](https://community.claude.ai)**
-- **[Reddit r/ClaudeCode](https://reddit.com/r/claudecode)**
-- **[Stack Overflow 标签](https://stackoverflow.com/questions/tagged/claude-code)**
-- **[YouTube 教程频道](docs/ecosystem/youtube-channels.md)**
-- **[在线课程](docs/ecosystem/courses.md)**
-- **[书籍推荐](docs/ecosystem/books.md)**
-- **[博客文章](docs/ecosystem/blogs.md)**
-- **[播客节目](docs/ecosystem/podcasts.md)**
-- **[项目模板集合](docs/ecosystem/templates.md)**
-- **[代码片段库](docs/ecosystem/snippets.md)**
-- **[配置文件示例](docs/ecosystem/configs.md)**
+- **[Claude Code 社区论坛](https://community.claude.ai)** by [Anthropic](https://www.anthropic.com) - Anthropic 官方文档和资源
+- **[Reddit r/ClaudeCode](https://reddit.com/r/claudecode)** by [Reddit Community](https://www.reddit.com) - 生态系统资源和集成
+- **[Stack Overflow 标签](https://stackoverflow.com/questions/tagged/claude-code)** by [Stack Overflow Community](https://stackoverflow.com) - 生态系统资源和集成
+- **[YouTube 教程频道](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/youtube-channels.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[在线课程](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/courses.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[书籍推荐](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/books.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[博客文章](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/blogs.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[播客节目](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/podcasts.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[项目模板集合](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/templates.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[代码片段库](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/snippets.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
+- **[配置文件示例](https://github.com/stinglong/AwesomeClaudeCode/blob/main/docs/ecosystem/configs.md)** by [AwesomeClaudeCode](https://github.com/stinglong/AwesomeClaudeCode) - 生态系统资源和集成
 
 
 ---

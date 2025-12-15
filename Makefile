@@ -1,4 +1,4 @@
-.PHONY: help generate validate sort migrate test clean install
+.PHONY: help generate validate sort migrate test test-verbose test-coverage test-all clean install
 
 help:  ## 显示帮助信息 / Show help message
 	@echo "AwesomeClaudeCode - Makefile 命令 / Commands"
@@ -34,7 +34,40 @@ sort:  ## 排序 CSV 文件 / Sort CSV file
 
 test:  ## 运行所有测试 / Run all tests
 	@echo "🧪 运行测试..."
-	./venv/bin/python3 -m pytest tests/ || echo "pytest 未安装或无测试文件"
+	@echo "📋 运行 CSV 验证测试..."
+	@python3 tests/test_csv_validation.py || exit 1
+	@echo ""
+	@echo "📋 运行 README 生成测试..."
+	@python3 tests/test_generate_readme.py || exit 1
+	@echo ""
+	@echo "📋 运行 SVG 生成测试..."
+	@python3 tests/test_svg_generation.py || exit 1
+	@echo ""
+	@echo "📋 运行本地化测试..."
+	@python3 tests/test_localization.py || exit 1
+	@echo ""
+	@echo "✅ 所有测试通过！"
+
+test-verbose:  ## 运行测试（详细输出）/ Run tests with verbose output
+	@echo "🧪 运行测试（详细模式）..."
+	python3 tests/test_csv_validation.py
+	python3 tests/test_generate_readme.py
+	python3 tests/test_svg_generation.py
+	python3 tests/test_localization.py
+
+test-pytest:  ## 使用 pytest 运行测试 / Run tests with pytest
+	@echo "🧪 使用 pytest 运行测试..."
+	python3 -m pytest tests/ -v
+
+test-coverage:  ## 运行测试并生成覆盖率报告 / Run tests with coverage
+	@echo "🧪 运行测试并生成覆盖率..."
+	python3 -m pytest tests/ --cov=scripts --cov-report=term-missing --cov-report=html
+	@echo "📊 覆盖率报告已生成到 htmlcov/ 目录"
+
+test-all:  ## 运行所有测试和检查 / Run all tests and checks
+	@$(MAKE) test
+	@echo ""
+	@$(MAKE) validate
 
 clean:  ## 清理生成的文件 / Clean generated files
 	@echo "🧹 清理..."

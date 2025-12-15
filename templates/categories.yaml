@@ -1,0 +1,296 @@
+# 双语分类定义 / Bilingual Category Definitions
+# AwesomeClaudeCode 的单一数据源 / Single Source of Truth for AwesomeClaudeCode
+#
+# 新增分类只需更新此文件，所有脚本和模板将自动使用这些定义
+# Adding a new category requires only updating this file.
+# All scripts and templates will automatically use these definitions.
+
+categories:
+  # 特殊区：官方资源（置顶）
+  - id: official-resources
+    name: "Official Documentation"
+    name_zh: "官方资源"
+    prefix: "off"
+    icon: "🏛️"
+    description: |
+      Official documentation and resources from Anthropic regarding Claude Code
+    description_zh: |
+      来自 Anthropic 的 Claude Code 官方文档和资源
+    order: 0
+    is_pinned: true
+    subcategories:
+      - id: general
+        name: "General"
+        name_zh: "通用"
+      - id: api-docs
+        name: "API & Documentation"
+        name_zh: "API 与文档"
+      - id: sdk-libraries
+        name: "SDK Libraries"
+        name_zh: "SDK 库"
+      - id: tutorials
+        name: "Tutorials & Examples"
+        name_zh: "教程与示例"
+
+  # 核心功能区
+  - id: skills
+    name: "Agent Skills"
+    name_zh: "代理技能"
+    prefix: "skill"
+    icon: "🤖"
+    description: |
+      Agent skills are model-controlled configurations (files, scripts, resources) that enable Claude Code to perform specialized tasks requiring specific knowledge or capabilities.
+    description_zh: |
+      代理技能是模型控制的配置（文件、脚本、资源），使 Claude Code 能够执行需要特定知识或能力的专业任务。
+    order: 1
+    subcategories:
+      - id: general
+        name: "General"
+        name_zh: "通用"
+
+  - id: workflows
+    name: "Workflows & Knowledge Guides"
+    name_zh: "工作流与知识指南"
+    prefix: "wf"
+    icon: "🧠"
+    description: |
+      A workflow is a tightly coupled set of Claude Code-native resources that facilitate specific projects
+    description_zh: |
+      工作流是一套紧密耦合的 Claude Code 原生资源，促进特定项目的实施
+    order: 2
+    subcategories:
+      - id: general
+        name: "General"
+        name_zh: "通用"
+      - id: best-practices
+        name: "Best Practices"
+        name_zh: "最佳实践"
+
+  - id: tooling
+    name: "Tooling"
+    name_zh: "工具"
+    prefix: "tool"
+    icon: "🧰"
+    description: |
+      Tooling denotes applications that are built on top of Claude Code and consist of more components than slash-commands and CLAUDE.md files
+    description_zh: |
+      工具是指建立在 Claude Code 之上的应用程序，包含比斜杠命令和 CLAUDE.md 文件更多的组件
+    order: 3
+    subcategories:
+      - id: general
+        name: "General"
+        name_zh: "通用"
+      - id: ide-integrations
+        name: "IDE Integrations"
+        name_zh: "IDE 集成"
+      - id: usage-monitors
+        name: "Usage Monitors"
+        name_zh: "使用监控"
+      - id: orchestrators
+        name: "Orchestrators"
+        name_zh: "编排器"
+
+  - id: statusline
+    name: "Status Lines"
+    name_zh: "状态栏"
+    prefix: "status"
+    icon: "📊"
+    description: |
+      Status lines - Configurations and customizations for Claude Code's status bar functionality
+    description_zh: |
+      状态栏 - Claude Code 状态栏功能的配置和自定义
+    order: 4
+    subcategories:
+      - id: general
+        name: "General"
+        name_zh: "通用"
+
+  - id: hooks
+    name: "Hooks"
+    name_zh: "钩子"
+    prefix: "hook"
+    icon: "🪝"
+    description: |
+      Hooks are a powerful API for Claude Code that allows users to activate commands and run scripts at different points in Claude's agentic lifecycle.
+    description_zh: |
+      钩子是 Claude Code 的强大 API，允许用户在 Claude 的代理生命周期的不同点激活命令和运行脚本。
+    order: 5
+    subcategories:
+      - id: general
+        name: "General"
+        name_zh: "通用"
+
+  - id: slash-commands
+    name: "Slash-Commands"
+    name_zh: "斜杠命令"
+    prefix: "cmd"
+    icon: "🔪"
+    description: |
+      Slash Commands are customized, carefully refined prompts that control Claude's behavior in order to perform a specific task
+    description_zh: |
+      斜杠命令是定制的、精心优化的提示词，用于控制 Claude 的行为以执行特定任务
+    order: 6
+    subcategories:
+      - id: general
+        name: "General"
+        name_zh: "通用"
+      - id: version-control-git
+        name: "Version Control & Git"
+        name_zh: "版本控制与 Git"
+      - id: code-analysis-testing
+        name: "Code Analysis & Testing"
+        name_zh: "代码分析与测试"
+      - id: context-loading-priming
+        name: "Context Loading & Priming"
+        name_zh: "上下文加载与预热"
+      - id: documentation-changelogs
+        name: "Documentation & Changelogs"
+        name_zh: "文档与变更日志"
+      - id: ci-deployment
+        name: "CI / Deployment"
+        name_zh: "持续集成 / 部署"
+      - id: project-task-management
+        name: "Project & Task Management"
+        name_zh: "项目与任务管理"
+      - id: miscellaneous
+        name: "Miscellaneous"
+        name_zh: "其他"
+
+  - id: claude-md-files
+    name: "CLAUDE.md Files"
+    name_zh: "CLAUDE.md 文件"
+    prefix: "claude"
+    icon: "📂"
+    description: |
+      CLAUDE.md files are files that contain important guidelines and context-specific information or instructions that help Claude Code to better understand your project and your coding standards
+    description_zh: |
+      CLAUDE.md 文件包含重要的指导方针和上下文特定的信息或指令，帮助 Claude Code 更好地理解您的项目和编码标准
+    order: 7
+    subcategories:
+      - id: general
+        name: "General"
+        name_zh: "通用"
+      - id: language-specific
+        name: "Language-Specific"
+        name_zh: "特定语言"
+      - id: domain-specific
+        name: "Domain-Specific"
+        name_zh: "特定领域"
+      - id: project-scaffolding-mcp
+        name: "Project Scaffolding & MCP"
+        name_zh: "项目脚手架与 MCP"
+
+  - id: alternative-clients
+    name: "Alternative Clients"
+    name_zh: "替代客户端"
+    prefix: "client"
+    icon: "📱"
+    description: |
+      Alternative Clients are alternative UIs and front-ends for interacting with Claude Code, either on mobile or on the desktop.
+    description_zh: |
+      替代客户端是用于与 Claude Code 交互的替代 UI 和前端，可在移动端或桌面端使用。
+    order: 8
+    subcategories:
+      - id: general
+        name: "General"
+        name_zh: "通用"
+
+  # 扩展资源区
+  - id: mcp-servers
+    name: "MCP Servers"
+    name_zh: "MCP 服务器"
+    prefix: "mcp"
+    icon: "🔌"
+    description: |
+      Model Context Protocol (MCP) servers extend Claude Code with external tools and services
+    description_zh: |
+      模型上下文协议 (MCP) 服务器通过外部工具和服务扩展 Claude Code
+    order: 9
+    subcategories:
+      - id: general
+        name: "General"
+        name_zh: "通用"
+      - id: filesystem
+        name: "Filesystem"
+        name_zh: "文件系统"
+      - id: cloud-services
+        name: "Cloud Services"
+        name_zh: "云服务"
+      - id: databases
+        name: "Databases"
+        name_zh: "数据库"
+      - id: api-integrations
+        name: "API Integrations"
+        name_zh: "API 集成"
+
+  - id: open-source-projects
+    name: "Open Source Projects"
+    name_zh: "开源项目"
+    prefix: "proj"
+    icon: "📦"
+    description: |
+      Projects built with or for Claude Code, including templates, extensions, and utilities
+    description_zh: |
+      使用 Claude Code 构建或为 Claude Code 构建的项目，包括模板、扩展和实用工具
+    order: 10
+    subcategories:
+      - id: general
+        name: "General"
+        name_zh: "通用"
+      - id: templates
+        name: "Templates"
+        name_zh: "模板"
+      - id: extensions
+        name: "Extensions"
+        name_zh: "扩展"
+
+  - id: case-studies
+    name: "Case Studies"
+    name_zh: "案例研究"
+    prefix: "case"
+    icon: "📂"
+    description: |
+      Real-world examples and case studies of Claude Code usage across different domains
+    description_zh: |
+      跨不同领域的 Claude Code 使用的真实案例和研究
+    order: 11
+    subcategories:
+      - id: general
+        name: "General"
+        name_zh: "通用"
+      - id: web-development
+        name: "Web Development"
+        name_zh: "Web 开发"
+      - id: mobile-development
+        name: "Mobile Development"
+        name_zh: "移动开发"
+      - id: data-science
+        name: "Data Science"
+        name_zh: "数据科学"
+      - id: devops
+        name: "DevOps"
+        name_zh: "DevOps"
+
+  - id: ecosystem
+    name: "Ecosystem"
+    name_zh: "生态系统"
+    prefix: "eco"
+    icon: "🌐"
+    description: |
+      Community resources, learning materials, and ecosystem tools
+    description_zh: |
+      社区资源、学习材料和生态系统工具
+    order: 12
+    subcategories:
+      - id: general
+        name: "General"
+        name_zh: "通用"
+      - id: learning-resources
+        name: "Learning Resources"
+        name_zh: "学习资源"
+      - id: community
+        name: "Community"
+        name_zh: "社区"
+      - id: third-party-tools
+        name: "Third-party Tools"
+        name_zh: "第三方工具"

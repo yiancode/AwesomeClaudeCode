@@ -6,7 +6,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Anthropic-blue)](https://claude.ai/code)
-[![GitHub](https://img.shields.io/github/stars/stinglong/AwesomeClaudeCode?style=social)](https://github.com/stinglong/AwesomeClaudeCode)
+[![GitHub](https://img.shields.io/github/stars/yiancode/AwesomeClaudeCode?style=social)](https://github.com/yiancode/AwesomeClaudeCode)
 
 <p align="center">
   <b>精心策划的 Claude Code 资源、工具和最佳实践列表</b><br>
@@ -59,8 +59,8 @@
 We welcome community contributions! Whether adding new resources, fixing errors, or improving documentation, please see:
 
 - 📚 [贡献指南 | Contributing Guide](CONTRIBUTING.md)
-- 💬 [提交资源 | Submit Resource](https://github.com/stinglong/AwesomeClaudeCode/issues/new?template=submit_resource.yml)
-- 🐛 [报告问题 | Report Issue](https://github.com/stinglong/AwesomeClaudeCode/issues)
+- 💬 [提交资源 | Submit Resource](https://github.com/yiancode/AwesomeClaudeCode/issues/new?template=submit_resource.yml)
+- 🐛 [报告问题 | Report Issue](https://github.com/yiancode/AwesomeClaudeCode/issues)
 
 ### 贡献者 | Contributors
 
@@ -68,8 +68,8 @@ We welcome community contributions! Whether adding new resources, fixing errors,
 
 Thanks to all contributors for your efforts!
 
-<a href="https://github.com/stinglong/AwesomeClaudeCode/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=stinglong/AwesomeClaudeCode" />
+<a href="https://github.com/yiancode/AwesomeClaudeCode/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=yiancode/AwesomeClaudeCode" />
 </a>
 
 ---
@@ -78,7 +78,7 @@ Thanks to all contributors for your efforts!
 
 - 📅 **创建时间 | Created**: 2025-12-15
 - 🔄 **最后更新 | Last Updated**: <!--UPDATE_DATE-->
-- 📝 **维护者 | Maintainer**: [@stinglong](https://github.com/stinglong)
+- 📝 **维护者 | Maintainer**: [@yiancode](https://github.com/yiancode)
 - 📜 **许可证 | License**: MIT License
 
 ---
@@ -100,11 +100,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## ⭐ Star History
 
-<a href="https://star-history.com/#stinglong/AwesomeClaudeCode&Date">
+<a href="https://star-history.com/#yiancode/AwesomeClaudeCode&Date">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=stinglong/AwesomeClaudeCode&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=stinglong/AwesomeClaudeCode&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=stinglong/AwesomeClaudeCode&type=Date" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=yiancode/AwesomeClaudeCode&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=yiancode/AwesomeClaudeCode&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=yiancode/AwesomeClaudeCode&type=Date" />
   </picture>
 </a>
 

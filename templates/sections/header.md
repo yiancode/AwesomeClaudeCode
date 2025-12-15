@@ -2,7 +2,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Anthropic-blue)](https://claude.ai/code)
-[![GitHub](https://img.shields.io/github/stars/stinglong/AwesomeClaudeCode?style=social)](https://github.com/stinglong/AwesomeClaudeCode)
+[![GitHub](https://img.shields.io/github/stars/yiancode/AwesomeClaudeCode?style=social)](https://github.com/yiancode/AwesomeClaudeCode)
 
 <p align="center">
   <b>精心策划的 Claude Code 资源、工具和最佳实践列表</b><br>

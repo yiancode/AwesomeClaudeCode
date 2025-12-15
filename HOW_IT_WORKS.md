@@ -519,7 +519,7 @@ on:
 1. **克隆仓库 | Clone Repository**
 
 ```bash
-git clone https://github.com/stinglong/AwesomeClaudeCode.git
+git clone https://github.com/yiancode/AwesomeClaudeCode.git
 cd AwesomeClaudeCode
 ```
 
@@ -846,7 +846,7 @@ categories:
 For technical questions:
 
 1. 查阅本文档
-2. 搜索现有 [Issues](https://github.com/stinglong/AwesomeClaudeCode/issues)
+2. 搜索现有 [Issues](https://github.com/yiancode/AwesomeClaudeCode/issues)
 3. 创建新 Issue 并标记 `question` 或 `enhancement`
 4. 联系维护者：yian20133213@gmail.com
 

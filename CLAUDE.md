@@ -4,78 +4,103 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is an "Awesome List" documentation project that curates Claude Code resources, best practices, tools, and projects. The content is primarily in Simplified Chinese and follows community-driven open source practices.
+AwesomeClaudeCode 是一个采用 **单一数据源（SSOT）** 架构的 Claude Code 资源汇聚项目。所有资源数据存储在 `THE_RESOURCES_TABLE.csv` 中，通过 Python 脚本自动生成 README.md。内容以简体中文为主，英文为辅。
 
-## Content Management Commands
+## Architecture
 
-```bash
-# Check documentation structure and organization
-find docs -name "*.md" | sort
-
-# Verify all markdown links are valid (if markdown-link-check is installed)
-find . -name "*.md" -not -path "./node_modules/*" -exec markdown-link-check {} \;
-
-# Check for broken internal links
-grep -r "\[.*\](" docs/ examples/ --include="*.md"
-
-# Format markdown files (if prettier is available)
-npx prettier --write "**/*.md"
-
-# Validate project structure matches README navigation
-diff <(grep -o "docs/[^)]*\.md" README.md | sort) <(find docs -name "*.md" | sort)
+```
+数据变更 → CSV 更新 → 脚本处理 → README 生成
 ```
 
-## Project Architecture
+**核心文件**:
+- `THE_RESOURCES_TABLE.csv` - 资源数据的唯一数据源（SSOT）
+- `templates/categories.yaml` - 分类定义的唯一数据源
+- `templates/resource-overrides.yaml` - 资源手动覆盖配置
+- `README.md` - 自动生成，**不要手动编辑**
 
-### Content Organization
-- `docs/` - Hierarchical documentation organized by topic areas:
-  - `installation/` - Setup guides for different platforms
-  - `getting-started/` - Beginner tutorials and first-time user guides  
-  - `advanced/` - Advanced features like MCP, agents, and complex workflows
-  - `case-studies/` - Real-world usage patterns and best practices
-  - `ecosystem/` - Community resources and third-party integrations
-  - `third-party/` - External tools and IDE integrations
-  - `open-source/` - Related open source projects and contributions
+**关键规则**: README.md 由脚本生成，任何内容变更必须通过修改 CSV 或模板文件实现。
 
-- `examples/` - Practical code examples and complete tutorials:
-  - Organized by technology stack (web, mobile, data-science, devops)
-  - Each example includes complete working code and detailed explanations
-  - Examples demonstrate real Claude Code usage patterns and workflows
+## Common Commands
 
-### Content Standards
-- All content uses Simplified Chinese with English for code examples and technical terms
-- Documentation follows a consistent structure with clear headings and navigation
-- Code examples include both the interaction with Claude Code and the resulting artifacts
-- Each major section includes practical examples and actionable guidance
+```bash
+# 设置开发环境
+make dev-setup
 
-### Community Integration
-- GitHub issue templates in `.github/ISSUE_TEMPLATE/` for bug reports and feature requests
-- Contribution guidelines in `CONTRIBUTING.md` specify content standards and review process
-- MIT license supports open collaboration and reuse
+# 生成 README.md（从 CSV 数据）
+make generate
 
-## Content Development Workflow
+# 验证 CSV 数据完整性
+make validate
 
-When adding new content:
+# 运行所有测试
+make test
 
-1. **Determine appropriate location** in the docs/ hierarchy based on user skill level and topic area
-2. **Follow existing content patterns** - examine similar documents for structure and style
-3. **Include practical examples** - every concept should have actionable Claude Code usage examples
-4. **Update navigation** - add new content to README.md table of contents and relevant cross-references
-5. **Verify internal links** - ensure all references to other documentation are correct
+# 自动填充 GitHub 元数据
+make auto-fill
 
-When creating examples:
+# 快速生成并验证
+make quick
 
-1. **Provide complete context** - include the full Claude Code conversation flow
-2. **Include working code** - all code examples should be functional and tested
-3. **Explain the process** - show both the user input and Claude's reasoning/approach
-4. **Link to related documentation** - connect examples to relevant guides in docs/
+# 查看所有可用命令
+make help
+```
 
-## Key Files and Their Purposes
+## Adding/Updating Resources
 
-- `README.md` - Main project entry point with comprehensive navigation to all resources
-- `CONTRIBUTING.md` - Community guidelines including content standards and review process  
-- `docs/installation/configuration.md` - Central configuration reference covering all Claude Code setup options
-- `docs/advanced/mcp.md` - Comprehensive guide to Model Context Protocol integration
-- `examples/web/simple-todo-app.md` - Complete tutorial showing Claude Code development workflow
+1. 编辑 `THE_RESOURCES_TABLE.csv` 添加或修改资源
+2. 确保填写所有必填字段（ID, DisplayName, DisplayName_ZH, Category, PrimaryLink, Author, AuthorProfile, Description, Description_ZH）
+3. 运行 `make validate` 验证数据
+4. 运行 `make generate` 重新生成 README.md
+5. 提交 CSV 和 README.md 的变更
 
-The project serves as both a learning resource for new Claude Code users and a comprehensive reference for advanced practitioners.
+## CSV Field Reference
+
+| 字段 | 必填 | 说明 |
+|-----|------|-----|
+| ID | ✅ | 格式: `{prefix}-{hash}`，前缀见 categories.yaml |
+| DisplayName | ✅ | 英文显示名 |
+| DisplayName_ZH | ✅ | 中文显示名 |
+| Category | ✅ | 主分类，必须匹配 categories.yaml 中的 id |
+| SubCategory | ❌ | 子分类 |
+| PrimaryLink | ✅ | 主链接 |
+| Author | ✅ | 作者名称 |
+| AuthorProfile | ✅ | 作者主页 |
+| Description | ✅ | 英文描述 |
+| Description_ZH | ✅ | 中文描述 |
+| License | 推荐 | 许可证（GitHub 仓库可自动获取）|
+| IsActive | ✅ | TRUE/FALSE |
+
+## Adding New Categories
+
+编辑 `templates/categories.yaml`，遵循现有格式：
+
+```yaml
+- id: new-category
+  name: "Category Name"
+  name_zh: "分类名称"
+  prefix: "new"
+  icon: "🆕"
+  order: 99
+```
+
+## Scripts Directory
+
+- `generate_readme.py` - 核心脚本，生成 README.md
+- `validate_csv.py` - CSV 数据验证
+- `auto_fill_github_metadata.py` - 自动获取 GitHub 元数据
+- `validate_links.py` - 链接有效性验证
+
+## Testing
+
+```bash
+# 运行所有测试
+make test
+
+# 使用 pytest 详细输出
+make test-pytest
+
+# 生成测试覆盖率报告
+make test-coverage
+```
+
+测试文件位于 `tests/` 目录，使用 pytest 框架。

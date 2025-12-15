@@ -296,8 +296,8 @@ ad0c35d - feat(stage-4): 完成模板系统适配
 
 ## 📞 联系方式 | Contact
 
-- **项目地址**: https://github.com/stinglong/AwesomeClaudeCode
-- **问题反馈**: https://github.com/stinglong/AwesomeClaudeCode/issues
+- **项目地址**: https://github.com/yiancode/AwesomeClaudeCode
+- **问题反馈**: https://github.com/yiancode/AwesomeClaudeCode/issues
 - **邮件**: yian20133213@gmail.com
 - **标签**: v2.0.0
 

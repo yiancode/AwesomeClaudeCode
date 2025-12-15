@@ -1,0 +1,10 @@
+# AwesomeClaudeCode 依赖 / Dependencies
+
+# 必需 / Required
+pyyaml>=6.0
+
+# 可选 / Optional (for GitHub metadata extraction)
+PyGithub>=2.1.1
+
+# 测试 / Testing (optional)
+# pytest>=7.0.0

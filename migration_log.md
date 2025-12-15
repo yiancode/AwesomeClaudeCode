@@ -435,6 +435,147 @@ desc = resource.get('Description_ZH') or resource.get('Description')
 
 ---
 
+## Stage 4: 模板系统适配 ✅
+
+**执行时间**: 2025-12-15
+**状态**: 已完成
+
+### 执行任务
+
+#### 4.1 创建自定义 README 模板 ✅
+**文件**: `templates/README.template.md`
+- **状态**: 成功
+- **特点**:
+  - ✅ 简化但专业的设计（不依赖复杂 SVG）
+  - ✅ 完整的双语支持（中英文并重）
+  - ✅ 清晰的结构和导航
+  - ✅ 包含快速开始、特色功能、贡献指南等模块
+  - ✅ 支持占位符: {{STATS}}, {{TOC}}, {{CONTENT}}
+  - ✅ 自动更新日期: <!--UPDATE_DATE-->
+  - ✅ Star History 图表集成
+  - ✅ 社区贡献者展示
+
+#### 4.2 创建模板片段系统 ✅
+**目录**: `templates/sections/`
+- **文件列表**:
+  - ✅ header.md - 页面头部
+  - ✅ footer.md - 页面底部
+  - ✅ quick-start.md - 快速开始指南
+- **用途**: 模块化管理模板的不同部分，便于维护
+
+#### 4.3 创建资源覆盖配置 ✅
+**文件**: `templates/resource-overrides.yaml`
+- **状态**: 成功
+- **功能**:
+  - ✅ 支持手动覆盖特定资源的字段
+  - ✅ 支持 skip_validation 跳过链接验证
+  - ✅ 支持特殊 License 覆盖
+  - ✅ 双语注释和使用示例
+  - ✅ 自动字段锁定机制
+
+**支持的覆盖字段**:
+- license: 覆盖检测到的许可证
+- active: 覆盖活跃状态
+- description / description_zh: 覆盖描述
+- last_checked / last_modified: 覆盖时间戳
+- skip_validation: 完全跳过验证（最高优先级）
+- reason: 说明覆盖原因（文档用）
+
+#### 4.4 更新生成脚本 ✅
+**文件**: `scripts/generate_readme.py`
+- **新增功能**:
+  - ✅ 加载 resource-overrides.yaml 配置
+  - ✅ 应用资源覆盖规则到 CSV 数据
+  - ✅ 替换日期占位符 <!--UPDATE_DATE-->
+  - ✅ 支持模板文件加载（优先使用自定义模板）
+  - ✅ 完整的错误处理和日志输出
+
+**代码改进**:
+```python
+# 新增函数
+def load_resource_overrides(overrides_file: Path) -> Dict
+def load_csv_resources(csv_file: Path, overrides: Optional[Dict]) -> List[Dict]
+
+# 更新生成函数
+def generate_readme(..., overrides_path: Optional[Path] = None)
+```
+
+#### 4.5 测试与验证 ✅
+**测试结果**:
+- ✅ 模板成功加载并渲染
+- ✅ 所有占位符正确替换
+- ✅ 日期自动更新: 2025-12-15
+- ✅ 双语内容正确显示
+- ✅ 资源覆盖机制工作正常
+- ✅ 124 个资源全部渲染
+- ✅ 13 个分类正确组织
+
+**生成输出验证**:
+```
+✅ 加载了 0 个资源覆盖规则
+✅ 加载了 13 个分类
+✅ 加载了 124 个资源
+✅ README.md 生成成功！
+📊 总计: 124 个资源，13 个分类
+```
+
+### 验收标准检查
+
+- ✅ README.template.md 创建成功
+- ✅ resource-overrides.yaml 配置文件创建
+- ✅ sections/ 目录和模板片段创建
+- ✅ generate_readme.py 支持新模板系统
+- ✅ 资源覆盖机制实现并测试通过
+- ✅ 日期占位符自动替换
+- ✅ README 生成正常，格式正确
+
+### 技术亮点
+
+1. **简化架构**:
+   - 去除复杂 SVG 生成（Stage 3 决策）
+   - 专注核心功能，保持可维护性
+   - 模板大小从 10KB+ 简化到更轻量的设计
+
+2. **双语支持优化**:
+   - 中英文完全并重
+   - 所有关键信息双语呈现
+   - 国际化友好设计
+
+3. **资源覆盖系统**:
+   - YAML 配置化管理
+   - 支持多种覆盖场景
+   - 自动字段锁定机制
+
+4. **模块化设计**:
+   - sections/ 片段化管理
+   - 便于维护和扩展
+   - 清晰的代码组织
+
+### 文件清单
+
+**新增文件**:
+- `templates/README.template.md` (主模板)
+- `templates/resource-overrides.yaml` (覆盖配置)
+- `templates/sections/header.md` (头部片段)
+- `templates/sections/footer.md` (底部片段)
+- `templates/sections/quick-start.md` (快速开始片段)
+
+**修改文件**:
+- `scripts/generate_readme.py` (增强模板和覆盖支持)
+- `README.md` (使用新模板生成)
+
+### 下一步
+
+**Stage 4 已完成**，准备进入：
+- **Stage 5**: GitHub Actions 配置 (2-3天)
+  - 自动生成 README 工作流
+  - 链接验证工作流
+  - 格式检查工作流
+- **Stage 6**: 视觉系统集成（可选，2-3天）
+- **Stage 7**: 测试与验证 (2天)
+
+---
+
 ## Stage 3: 核心脚本迁移与本地化 (待开始)
 
 ### 计划任务

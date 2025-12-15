@@ -1,0 +1,70 @@
+# Resource Overrides Configuration / 资源覆盖配置
+#
+# 此文件允许手动覆盖特定资源的字段
+# This file allows manual overrides of specific resource fields
+#
+# 重要说明 / IMPORTANT:
+# - 在此设置的任何字段将自动锁定，不会被验证脚本更新
+# - Any field you set here is AUTOMATICALLY LOCKED from validation updates
+# - 您不需要手动指定 *_locked 标志
+# - You do NOT need to manually specify *_locked flags
+#
+# 使用示例 / Example usage:
+# overrides:
+#   cmd-a3f2b9c4:  # 资源 ID / Resource ID
+#     license: "LicenseRef-MIT-Commons-Clause"  # 自动锁定 / Automatically locked
+#   cmd-xyz123:
+#     skip_validation: true  # 完全跳过验证 / Skip validation entirely
+
+overrides: {}
+  # 本地文档链接 - 跳过 URL 验证 / Local documentation - skip URL validation
+  # 以下资源指向本地 docs/ 目录，无需验证外部 URL
+  # The following resources point to local docs/ directory, no need to validate external URLs
+
+  # 示例：如果有本地文档需要跳过验证，取消注释以下行
+  # Example: If you have local docs to skip validation, uncomment below
+  # wf-xxxxxxxx:
+  #   skip_validation: true
+  #   reason: "Local documentation file"
+
+  # 特殊许可证覆盖 / Special license overrides
+  # 某些项目使用特殊许可证（如 Commons Clause），需要手动指定
+  # Some projects use special licenses (e.g. Commons Clause) that need manual specification
+
+  # 示例：特殊许可证
+  # Example: Special license
+  # proj-xxxxxxxx:
+  #   license: "LicenseRef-MIT-Commons-Clause"
+  #   reason: "Uses MIT with Commons Clause restriction"
+
+  # 暂时不可用的资源 / Temporarily unavailable resources
+  # 某些资源可能暂时无法访问，但我们想保留它们
+  # Some resources may be temporarily inaccessible but we want to keep them
+
+  # 示例：临时不可用
+  # Example: Temporarily unavailable
+  # tool-xxxxxxxx:
+  #   skip_validation: true
+  #   reason: "Temporarily down for maintenance"
+
+# 支持的覆盖字段 / Supported override fields:
+# - license: 覆盖检测到的许可证 / Override the detected license (automatically locked)
+# - active: 覆盖活跃状态 / Override the active status (automatically locked)
+# - description: 覆盖描述 / Override the description (automatically locked)
+# - description_zh: 覆盖中文描述 / Override Chinese description (automatically locked)
+# - last_checked: 覆盖最后检查时间戳 / Override last checked timestamp (automatically locked)
+# - last_modified: 覆盖最后修改时间戳 / Override last modified timestamp (automatically locked)
+# - skip_validation: 在验证期间完全跳过该资源 / Skip entire resource during validation (highest precedence)
+# - reason: 说明覆盖原因（仅用于文档） / Explanation for override (documentation only)
+#
+# 注意事项 / Notes:
+# - 使用资源 ID（例如 cmd-a3f2b9c4）而不是显示名称
+# - Use resource IDs (e.g., cmd-a3f2b9c4) not display names
+# - 您设置的任何字段都会自动锁定，不会被验证更新
+# - Any field you set is automatically locked from validation updates
+# - skip_validation: true 的资源将被验证脚本完全跳过
+# - Resources with skip_validation: true are completely skipped by validation scripts
+# - skip_validation 具有最高优先级 - 如果设置，不会进行任何字段验证
+# - skip_validation has highest precedence - if set, no field validation occurs
+# - 覆盖在生成期间优先于 CSV 数据
+# - Overrides take precedence over CSV data during generation

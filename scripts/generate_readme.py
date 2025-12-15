@@ -9,7 +9,7 @@ import hashlib
 from collections import Counter
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 import yaml
 
@@ -21,14 +21,36 @@ def load_categories(categories_file: Path) -> List[Dict]:
     return data['categories']
 
 
-def load_csv_resources(csv_file: Path) -> List[Dict]:
+def load_resource_overrides(overrides_file: Path) -> Dict:
+    """加载资源覆盖配置 / Load resource overrides configuration"""
+    if not overrides_file.exists():
+        return {}
+
+    with open(overrides_file, 'r', encoding='utf-8') as f:
+        data = yaml.safe_load(f)
+
+    return data.get('overrides', {}) if data else {}
+
+
+def load_csv_resources(csv_file: Path, overrides: Optional[Dict] = None) -> List[Dict]:
     """加载 CSV 资源 / Load CSV resources"""
     resources = []
+    overrides = overrides or {}
+
     with open(csv_file, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         for row in reader:
             # 只包含活跃资源 / Only include active resources
             if row.get('IsActive', '').upper() == 'TRUE':
+                # 应用资源覆盖 / Apply resource overrides
+                resource_id = row['ID']
+                if resource_id in overrides:
+                    override_data = overrides[resource_id]
+                    # 跳过验证标记，不影响生成 / Skip validation flag doesn't affect generation
+                    for key, value in override_data.items():
+                        if key != 'skip_validation' and key != 'reason':
+                            row[key] = value
+
                 resources.append(row)
     return resources
 
@@ -259,7 +281,8 @@ def generate_readme(
     csv_path: Path,
     categories_path: Path,
     template_path: Path,
-    output_path: Path
+    output_path: Path,
+    overrides_path: Optional[Path] = None
 ):
     """
     生成 README.md / Generate README.md
@@ -267,13 +290,20 @@ def generate_readme(
     print("🚀 开始生成 README...")
     print("🚀 Starting README generation...\n")
 
+    # 加载资源覆盖 / Load resource overrides
+    overrides = {}
+    if overrides_path and overrides_path.exists():
+        print("📖 加载资源覆盖配置...")
+        overrides = load_resource_overrides(overrides_path)
+        print(f"   ✅ 加载了 {len(overrides)} 个资源覆盖规则")
+
     # 加载数据 / Load data
     print("📖 加载分类定义...")
     categories = load_categories(categories_path)
     print(f"   ✅ 加载了 {len(categories)} 个分类")
 
     print("📖 加载资源数据...")
-    resources = load_csv_resources(csv_path)
+    resources = load_csv_resources(csv_path, overrides)
     print(f"   ✅ 加载了 {len(resources)} 个资源")
 
     # 修复重复 ID / Fix duplicate IDs
@@ -308,6 +338,10 @@ def generate_readme(
     readme = readme.replace('{{TOC}}', toc)
     readme = readme.replace('{{CONTENT}}', content)
 
+    # 替换日期占位符 / Replace date placeholders
+    current_date = datetime.now().strftime('%Y-%m-%d')
+    readme = readme.replace('<!--UPDATE_DATE-->', current_date)
+
     # 写入文件 / Write file
     print(f"\n💾 写入文件: {output_path}")
     with open(output_path, 'w', encoding='utf-8') as f:
@@ -325,6 +359,7 @@ def main():
     csv_path = project_root / 'THE_RESOURCES_TABLE.csv'
     categories_path = project_root / 'templates' / 'categories.yaml'
     template_path = project_root / 'templates' / 'README.template.md'
+    overrides_path = project_root / 'templates' / 'resource-overrides.yaml'
     output_path = project_root / 'README.md'
 
     # 检查文件是否存在 / Check if files exist
@@ -337,7 +372,7 @@ def main():
         return 1
 
     try:
-        generate_readme(csv_path, categories_path, template_path, output_path)
+        generate_readme(csv_path, categories_path, template_path, output_path, overrides_path)
         return 0
     except Exception as e:
         print(f"\n❌ 生成失败: {e}")

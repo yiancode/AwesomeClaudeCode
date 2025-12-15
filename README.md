@@ -61,37 +61,37 @@
 - **[技术支持](https://support.anthropic.com/)** - 官方技术支持
 - **[状态页面](https://status.anthropic.com/)** - 服务状态监控
 - **[安全漏洞报告](https://www.anthropic.com/security)** - 安全问题反馈
-- **[Anthropic Claude 英文文档](https://docs.anthropic.com/en/docs/)** - ** - 最全面的英文官方文档
+- **[Anthropic Claude 英文文档](https://docs.anthropic.com/en/docs/)** - 最全面的英文官方文档
 - **[Context7 镜像](https://context7.com/websites/anthropic_en)** - (253K tokens, 959 snippets)
-- **[Anthropic Claude 中文文档](https://docs.anthropic.com/zh-CN/docs/)** - ** - 官方中文文档
+- **[Anthropic Claude 中文文档](https://docs.anthropic.com/zh-CN/docs/)** - 官方中文文档
 - **[Context7 镜像](https://context7.com/websites/anthropic_zh-cn)** - (409.5K tokens, 1.3K snippets)
-- **[Anthropic Claude 俄文文档](https://docs.anthropic.com/ru/docs/)** - ** - 官方俄文文档
+- **[Anthropic Claude 俄文文档](https://docs.anthropic.com/ru/docs/)** - 官方俄文文档
 - **[Context7 镜像](https://context7.com/websites/anthropic-ru)** - (447.5K tokens, 1.4K snippets)
-- **[Anthropic API 首页](https://docs.anthropic.com/en/home)** - ** - API 入门指南
+- **[Anthropic API 首页](https://docs.anthropic.com/en/home)** - API 入门指南
 - **[Context7 镜像](https://context7.com/websites/docs_anthropic_com-en-home)** - (1.4K tokens, 7 snippets)
-- **[Anthropic API](https://www.anthropic.com/api/)** - ** - 官方 API 文档
+- **[Anthropic API](https://www.anthropic.com/api/)** - 官方 API 文档
 - **[Context7 镜像](https://context7.com/websites/anthropic-api)** - (545 tokens, 3 snippets)
-- **[LLMs.txt 格式文档](https://docs.anthropic.com/llms.txt)** - ** - 简化版文档
+- **[LLMs.txt 格式文档](https://docs.anthropic.com/llms.txt)** - 简化版文档
 - **[Context7 镜像](https://context7.com/docs.anthropic.com/llmstxt)** - (289.6K tokens, 1.2K snippets)
-- **[完整版 LLMs.txt](https://docs.anthropic.com/llms-full.txt)** - ** - 详细版文档
+- **[完整版 LLMs.txt](https://docs.anthropic.com/llms-full.txt)** - 详细版文档
 - **[Context7 镜像](https://context7.com/docs.anthropic.com-7a01857/llmstxt)** - (300.1K tokens, 1.3K snippets)
-- **[Python SDK](https://github.com/anthropics/anthropic-sdk-python)** - ** - 官方 Python 客户端库
+- **[Python SDK](https://github.com/anthropics/anthropic-sdk-python)** - 官方 Python 客户端库
 - **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-python)** - (16.4K tokens, 72 snippets)
-- **[TypeScript/JavaScript SDK](https://github.com/anthropics/anthropic-sdk-typescript)** - ** - 官方 TypeScript 客户端库
+- **[TypeScript/JavaScript SDK](https://github.com/anthropics/anthropic-sdk-typescript)** - 官方 TypeScript 客户端库
 - **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-typescript)** - (14.5K tokens, 123 snippets)
-- **[Go SDK](https://github.com/anthropics/anthropic-sdk-go)** - ** - 官方 Go 客户端库
+- **[Go SDK](https://github.com/anthropics/anthropic-sdk-go)** - 官方 Go 客户端库
 - **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-go)** - (12.1K tokens, 95 snippets)
-- **[Ruby SDK](https://github.com/anthropics/anthropic-sdk-ruby)** - ** - 官方 Ruby 客户端库
+- **[Ruby SDK](https://github.com/anthropics/anthropic-sdk-ruby)** - 官方 Ruby 客户端库
 - **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-ruby)**
-- **[Java SDK](https://github.com/anthropics/anthropic-sdk-java)** - ** - 官方 Java 客户端库
+- **[Java SDK](https://github.com/anthropics/anthropic-sdk-java)** - 官方 Java 客户端库
 - **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-java)**
-- **[TypeScript Tokenizer](https://github.com/anthropics/anthropic-tokenizer-typescript)** - ** - 官方分词器
+- **[TypeScript Tokenizer](https://github.com/anthropics/anthropic-tokenizer-typescript)** - 官方分词器
 - **[Context7 文档](https://context7.com/anthropics/anthropic-tokenizer-typescript)**
-- **[Anthropic 课程](https://github.com/anthropics/courses)** - ** - 官方课程材料
+- **[Anthropic 课程](https://github.com/anthropics/courses)** - 官方课程材料
 - **[Context7 文档](https://context7.com/anthropics/courses)** - (153K tokens, 773 snippets)
-- **[Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)** - ** - 实用代码示例
+- **[Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)** - 实用代码示例
 - **[Context7 文档](https://context7.com/anthropics/anthropic-cookbook)** - (173.4K tokens, 542 snippets)
-- **[Anthropic 快速开始](https://github.com/anthropics/anthropic-quickstarts)** - ** - 快速入门项目
+- **[Anthropic 快速开始](https://github.com/anthropics/anthropic-quickstarts)** - 快速入门项目
 - **[Context7 文档](https://context7.com/anthropics/anthropic-quickstarts)** - (11.7K tokens, 41 snippets)
 
 
@@ -106,37 +106,37 @@
 - **[技术支持](https://support.anthropic.com/)** - 官方技术支持
 - **[状态页面](https://status.anthropic.com/)** - 服务状态监控
 - **[安全漏洞报告](https://www.anthropic.com/security)** - 安全问题反馈
-- **[Anthropic Claude 英文文档](https://docs.anthropic.com/en/docs/)** - ** - 最全面的英文官方文档
+- **[Anthropic Claude 英文文档](https://docs.anthropic.com/en/docs/)** - 最全面的英文官方文档
 - **[Context7 镜像](https://context7.com/websites/anthropic_en)** - (253K tokens, 959 snippets)
-- **[Anthropic Claude 中文文档](https://docs.anthropic.com/zh-CN/docs/)** - ** - 官方中文文档
+- **[Anthropic Claude 中文文档](https://docs.anthropic.com/zh-CN/docs/)** - 官方中文文档
 - **[Context7 镜像](https://context7.com/websites/anthropic_zh-cn)** - (409.5K tokens, 1.3K snippets)
-- **[Anthropic Claude 俄文文档](https://docs.anthropic.com/ru/docs/)** - ** - 官方俄文文档
+- **[Anthropic Claude 俄文文档](https://docs.anthropic.com/ru/docs/)** - 官方俄文文档
 - **[Context7 镜像](https://context7.com/websites/anthropic-ru)** - (447.5K tokens, 1.4K snippets)
-- **[Anthropic API 首页](https://docs.anthropic.com/en/home)** - ** - API 入门指南
+- **[Anthropic API 首页](https://docs.anthropic.com/en/home)** - API 入门指南
 - **[Context7 镜像](https://context7.com/websites/docs_anthropic_com-en-home)** - (1.4K tokens, 7 snippets)
-- **[Anthropic API](https://www.anthropic.com/api/)** - ** - 官方 API 文档
+- **[Anthropic API](https://www.anthropic.com/api/)** - 官方 API 文档
 - **[Context7 镜像](https://context7.com/websites/anthropic-api)** - (545 tokens, 3 snippets)
-- **[LLMs.txt 格式文档](https://docs.anthropic.com/llms.txt)** - ** - 简化版文档
+- **[LLMs.txt 格式文档](https://docs.anthropic.com/llms.txt)** - 简化版文档
 - **[Context7 镜像](https://context7.com/docs.anthropic.com/llmstxt)** - (289.6K tokens, 1.2K snippets)
-- **[完整版 LLMs.txt](https://docs.anthropic.com/llms-full.txt)** - ** - 详细版文档
+- **[完整版 LLMs.txt](https://docs.anthropic.com/llms-full.txt)** - 详细版文档
 - **[Context7 镜像](https://context7.com/docs.anthropic.com-7a01857/llmstxt)** - (300.1K tokens, 1.3K snippets)
-- **[Python SDK](https://github.com/anthropics/anthropic-sdk-python)** - ** - 官方 Python 客户端库
+- **[Python SDK](https://github.com/anthropics/anthropic-sdk-python)** - 官方 Python 客户端库
 - **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-python)** - (16.4K tokens, 72 snippets)
-- **[TypeScript/JavaScript SDK](https://github.com/anthropics/anthropic-sdk-typescript)** - ** - 官方 TypeScript 客户端库
+- **[TypeScript/JavaScript SDK](https://github.com/anthropics/anthropic-sdk-typescript)** - 官方 TypeScript 客户端库
 - **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-typescript)** - (14.5K tokens, 123 snippets)
-- **[Go SDK](https://github.com/anthropics/anthropic-sdk-go)** - ** - 官方 Go 客户端库
+- **[Go SDK](https://github.com/anthropics/anthropic-sdk-go)** - 官方 Go 客户端库
 - **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-go)** - (12.1K tokens, 95 snippets)
-- **[Ruby SDK](https://github.com/anthropics/anthropic-sdk-ruby)** - ** - 官方 Ruby 客户端库
+- **[Ruby SDK](https://github.com/anthropics/anthropic-sdk-ruby)** - 官方 Ruby 客户端库
 - **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-ruby)**
-- **[Java SDK](https://github.com/anthropics/anthropic-sdk-java)** - ** - 官方 Java 客户端库
+- **[Java SDK](https://github.com/anthropics/anthropic-sdk-java)** - 官方 Java 客户端库
 - **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-java)**
-- **[TypeScript Tokenizer](https://github.com/anthropics/anthropic-tokenizer-typescript)** - ** - 官方分词器
+- **[TypeScript Tokenizer](https://github.com/anthropics/anthropic-tokenizer-typescript)** - 官方分词器
 - **[Context7 文档](https://context7.com/anthropics/anthropic-tokenizer-typescript)**
-- **[Anthropic 课程](https://github.com/anthropics/courses)** - ** - 官方课程材料
+- **[Anthropic 课程](https://github.com/anthropics/courses)** - 官方课程材料
 - **[Context7 文档](https://context7.com/anthropics/courses)** - (153K tokens, 773 snippets)
-- **[Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)** - ** - 实用代码示例
+- **[Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)** - 实用代码示例
 - **[Context7 文档](https://context7.com/anthropics/anthropic-cookbook)** - (173.4K tokens, 542 snippets)
-- **[Anthropic 快速开始](https://github.com/anthropics/anthropic-quickstarts)** - ** - 快速入门项目
+- **[Anthropic 快速开始](https://github.com/anthropics/anthropic-quickstarts)** - 快速入门项目
 - **[Context7 文档](https://context7.com/anthropics/anthropic-quickstarts)** - (11.7K tokens, 41 snippets)
 
 
@@ -151,37 +151,37 @@
 - **[技术支持](https://support.anthropic.com/)** - 官方技术支持
 - **[状态页面](https://status.anthropic.com/)** - 服务状态监控
 - **[安全漏洞报告](https://www.anthropic.com/security)** - 安全问题反馈
-- **[Anthropic Claude 英文文档](https://docs.anthropic.com/en/docs/)** - ** - 最全面的英文官方文档
+- **[Anthropic Claude 英文文档](https://docs.anthropic.com/en/docs/)** - 最全面的英文官方文档
 - **[Context7 镜像](https://context7.com/websites/anthropic_en)** - (253K tokens, 959 snippets)
-- **[Anthropic Claude 中文文档](https://docs.anthropic.com/zh-CN/docs/)** - ** - 官方中文文档
+- **[Anthropic Claude 中文文档](https://docs.anthropic.com/zh-CN/docs/)** - 官方中文文档
 - **[Context7 镜像](https://context7.com/websites/anthropic_zh-cn)** - (409.5K tokens, 1.3K snippets)
-- **[Anthropic Claude 俄文文档](https://docs.anthropic.com/ru/docs/)** - ** - 官方俄文文档
+- **[Anthropic Claude 俄文文档](https://docs.anthropic.com/ru/docs/)** - 官方俄文文档
 - **[Context7 镜像](https://context7.com/websites/anthropic-ru)** - (447.5K tokens, 1.4K snippets)
-- **[Anthropic API 首页](https://docs.anthropic.com/en/home)** - ** - API 入门指南
+- **[Anthropic API 首页](https://docs.anthropic.com/en/home)** - API 入门指南
 - **[Context7 镜像](https://context7.com/websites/docs_anthropic_com-en-home)** - (1.4K tokens, 7 snippets)
-- **[Anthropic API](https://www.anthropic.com/api/)** - ** - 官方 API 文档
+- **[Anthropic API](https://www.anthropic.com/api/)** - 官方 API 文档
 - **[Context7 镜像](https://context7.com/websites/anthropic-api)** - (545 tokens, 3 snippets)
-- **[LLMs.txt 格式文档](https://docs.anthropic.com/llms.txt)** - ** - 简化版文档
+- **[LLMs.txt 格式文档](https://docs.anthropic.com/llms.txt)** - 简化版文档
 - **[Context7 镜像](https://context7.com/docs.anthropic.com/llmstxt)** - (289.6K tokens, 1.2K snippets)
-- **[完整版 LLMs.txt](https://docs.anthropic.com/llms-full.txt)** - ** - 详细版文档
+- **[完整版 LLMs.txt](https://docs.anthropic.com/llms-full.txt)** - 详细版文档
 - **[Context7 镜像](https://context7.com/docs.anthropic.com-7a01857/llmstxt)** - (300.1K tokens, 1.3K snippets)
-- **[Python SDK](https://github.com/anthropics/anthropic-sdk-python)** - ** - 官方 Python 客户端库
+- **[Python SDK](https://github.com/anthropics/anthropic-sdk-python)** - 官方 Python 客户端库
 - **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-python)** - (16.4K tokens, 72 snippets)
-- **[TypeScript/JavaScript SDK](https://github.com/anthropics/anthropic-sdk-typescript)** - ** - 官方 TypeScript 客户端库
+- **[TypeScript/JavaScript SDK](https://github.com/anthropics/anthropic-sdk-typescript)** - 官方 TypeScript 客户端库
 - **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-typescript)** - (14.5K tokens, 123 snippets)
-- **[Go SDK](https://github.com/anthropics/anthropic-sdk-go)** - ** - 官方 Go 客户端库
+- **[Go SDK](https://github.com/anthropics/anthropic-sdk-go)** - 官方 Go 客户端库
 - **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-go)** - (12.1K tokens, 95 snippets)
-- **[Ruby SDK](https://github.com/anthropics/anthropic-sdk-ruby)** - ** - 官方 Ruby 客户端库
+- **[Ruby SDK](https://github.com/anthropics/anthropic-sdk-ruby)** - 官方 Ruby 客户端库
 - **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-ruby)**
-- **[Java SDK](https://github.com/anthropics/anthropic-sdk-java)** - ** - 官方 Java 客户端库
+- **[Java SDK](https://github.com/anthropics/anthropic-sdk-java)** - 官方 Java 客户端库
 - **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-java)**
-- **[TypeScript Tokenizer](https://github.com/anthropics/anthropic-tokenizer-typescript)** - ** - 官方分词器
+- **[TypeScript Tokenizer](https://github.com/anthropics/anthropic-tokenizer-typescript)** - 官方分词器
 - **[Context7 文档](https://context7.com/anthropics/anthropic-tokenizer-typescript)**
-- **[Anthropic 课程](https://github.com/anthropics/courses)** - ** - 官方课程材料
+- **[Anthropic 课程](https://github.com/anthropics/courses)** - 官方课程材料
 - **[Context7 文档](https://context7.com/anthropics/courses)** - (153K tokens, 773 snippets)
-- **[Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)** - ** - 实用代码示例
+- **[Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)** - 实用代码示例
 - **[Context7 文档](https://context7.com/anthropics/anthropic-cookbook)** - (173.4K tokens, 542 snippets)
-- **[Anthropic 快速开始](https://github.com/anthropics/anthropic-quickstarts)** - ** - 快速入门项目
+- **[Anthropic 快速开始](https://github.com/anthropics/anthropic-quickstarts)** - 快速入门项目
 - **[Context7 文档](https://context7.com/anthropics/anthropic-quickstarts)** - (11.7K tokens, 41 snippets)
 
 
@@ -196,37 +196,37 @@
 - **[技术支持](https://support.anthropic.com/)** - 官方技术支持
 - **[状态页面](https://status.anthropic.com/)** - 服务状态监控
 - **[安全漏洞报告](https://www.anthropic.com/security)** - 安全问题反馈
-- **[Anthropic Claude 英文文档](https://docs.anthropic.com/en/docs/)** - ** - 最全面的英文官方文档
+- **[Anthropic Claude 英文文档](https://docs.anthropic.com/en/docs/)** - 最全面的英文官方文档
 - **[Context7 镜像](https://context7.com/websites/anthropic_en)** - (253K tokens, 959 snippets)
-- **[Anthropic Claude 中文文档](https://docs.anthropic.com/zh-CN/docs/)** - ** - 官方中文文档
+- **[Anthropic Claude 中文文档](https://docs.anthropic.com/zh-CN/docs/)** - 官方中文文档
 - **[Context7 镜像](https://context7.com/websites/anthropic_zh-cn)** - (409.5K tokens, 1.3K snippets)
-- **[Anthropic Claude 俄文文档](https://docs.anthropic.com/ru/docs/)** - ** - 官方俄文文档
+- **[Anthropic Claude 俄文文档](https://docs.anthropic.com/ru/docs/)** - 官方俄文文档
 - **[Context7 镜像](https://context7.com/websites/anthropic-ru)** - (447.5K tokens, 1.4K snippets)
-- **[Anthropic API 首页](https://docs.anthropic.com/en/home)** - ** - API 入门指南
+- **[Anthropic API 首页](https://docs.anthropic.com/en/home)** - API 入门指南
 - **[Context7 镜像](https://context7.com/websites/docs_anthropic_com-en-home)** - (1.4K tokens, 7 snippets)
-- **[Anthropic API](https://www.anthropic.com/api/)** - ** - 官方 API 文档
+- **[Anthropic API](https://www.anthropic.com/api/)** - 官方 API 文档
 - **[Context7 镜像](https://context7.com/websites/anthropic-api)** - (545 tokens, 3 snippets)
-- **[LLMs.txt 格式文档](https://docs.anthropic.com/llms.txt)** - ** - 简化版文档
+- **[LLMs.txt 格式文档](https://docs.anthropic.com/llms.txt)** - 简化版文档
 - **[Context7 镜像](https://context7.com/docs.anthropic.com/llmstxt)** - (289.6K tokens, 1.2K snippets)
-- **[完整版 LLMs.txt](https://docs.anthropic.com/llms-full.txt)** - ** - 详细版文档
+- **[完整版 LLMs.txt](https://docs.anthropic.com/llms-full.txt)** - 详细版文档
 - **[Context7 镜像](https://context7.com/docs.anthropic.com-7a01857/llmstxt)** - (300.1K tokens, 1.3K snippets)
-- **[Python SDK](https://github.com/anthropics/anthropic-sdk-python)** - ** - 官方 Python 客户端库
+- **[Python SDK](https://github.com/anthropics/anthropic-sdk-python)** - 官方 Python 客户端库
 - **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-python)** - (16.4K tokens, 72 snippets)
-- **[TypeScript/JavaScript SDK](https://github.com/anthropics/anthropic-sdk-typescript)** - ** - 官方 TypeScript 客户端库
+- **[TypeScript/JavaScript SDK](https://github.com/anthropics/anthropic-sdk-typescript)** - 官方 TypeScript 客户端库
 - **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-typescript)** - (14.5K tokens, 123 snippets)
-- **[Go SDK](https://github.com/anthropics/anthropic-sdk-go)** - ** - 官方 Go 客户端库
+- **[Go SDK](https://github.com/anthropics/anthropic-sdk-go)** - 官方 Go 客户端库
 - **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-go)** - (12.1K tokens, 95 snippets)
-- **[Ruby SDK](https://github.com/anthropics/anthropic-sdk-ruby)** - ** - 官方 Ruby 客户端库
+- **[Ruby SDK](https://github.com/anthropics/anthropic-sdk-ruby)** - 官方 Ruby 客户端库
 - **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-ruby)**
-- **[Java SDK](https://github.com/anthropics/anthropic-sdk-java)** - ** - 官方 Java 客户端库
+- **[Java SDK](https://github.com/anthropics/anthropic-sdk-java)** - 官方 Java 客户端库
 - **[Context7 文档](https://context7.com/anthropics/anthropic-sdk-java)**
-- **[TypeScript Tokenizer](https://github.com/anthropics/anthropic-tokenizer-typescript)** - ** - 官方分词器
+- **[TypeScript Tokenizer](https://github.com/anthropics/anthropic-tokenizer-typescript)** - 官方分词器
 - **[Context7 文档](https://context7.com/anthropics/anthropic-tokenizer-typescript)**
-- **[Anthropic 课程](https://github.com/anthropics/courses)** - ** - 官方课程材料
+- **[Anthropic 课程](https://github.com/anthropics/courses)** - 官方课程材料
 - **[Context7 文档](https://context7.com/anthropics/courses)** - (153K tokens, 773 snippets)
-- **[Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)** - ** - 实用代码示例
+- **[Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)** - 实用代码示例
 - **[Context7 文档](https://context7.com/anthropics/anthropic-cookbook)** - (173.4K tokens, 542 snippets)
-- **[Anthropic 快速开始](https://github.com/anthropics/anthropic-quickstarts)** - ** - 快速入门项目
+- **[Anthropic 快速开始](https://github.com/anthropics/anthropic-quickstarts)** - 快速入门项目
 - **[Context7 文档](https://context7.com/anthropics/anthropic-quickstarts)** - (11.7K tokens, 41 snippets)
 
 
@@ -473,39 +473,39 @@
 ### 通用
 *General*
 
-- **[Claude Code Go](https://github.com/lancekrogers/claude-code-go)** - ** - Go 语言的 Claude Code 实现
+- **[Claude Code Go](https://github.com/lancekrogers/claude-code-go)** by [lancekrogers](https://github.com/lancekrogers) `MIT` - Go 语言的 Claude Code 实现
 - **[Context7 文档](https://context7.com/lancekrogers/claude-code-go)**
-- **[Claude Code 模板](https://github.com/davila7/claude-code-templates)** - ** - 项目模板集合
+- **[Claude Code 模板](https://github.com/davila7/claude-code-templates)** by [davila7](https://github.com/davila7) `MIT` - 项目模板集合
 - **[Context7 文档](https://context7.com/davila7/claude-code-templates)**
-- **[Claudette](https://github.com/answerdotai/claudette)** - ** - 轻量级 Claude API 客户端
+- **[Claudette](https://github.com/answerdotai/claudette)** by [AnswerDotAI](https://github.com/AnswerDotAI) `Apache-2.0` - 轻量级 Claude API 客户端
 - **[Context7 文档](https://context7.com/answerdotai/claudette)**
-- **[MCP Think Tool](https://github.com/cgize/claude-mcp-think-tool)** - ** - Claude Desktop 思考工具
+- **[MCP Think Tool](https://github.com/cgize/claude-mcp-think-tool)** by [cgize](https://github.com/cgize) `MIT` - Claude Desktop 思考工具
 - **[Context7 文档](https://context7.com/cgize/claude-mcp-think-tool)**
 
 
 ### 模板
 *Templates*
 
-- **[Claude Code Go](https://github.com/lancekrogers/claude-code-go)** - ** - Go 语言的 Claude Code 实现
+- **[Claude Code Go](https://github.com/lancekrogers/claude-code-go)** by [lancekrogers](https://github.com/lancekrogers) `MIT` - Go 语言的 Claude Code 实现
 - **[Context7 文档](https://context7.com/lancekrogers/claude-code-go)**
-- **[Claude Code 模板](https://github.com/davila7/claude-code-templates)** - ** - 项目模板集合
+- **[Claude Code 模板](https://github.com/davila7/claude-code-templates)** by [davila7](https://github.com/davila7) `MIT` - 项目模板集合
 - **[Context7 文档](https://context7.com/davila7/claude-code-templates)**
-- **[Claudette](https://github.com/answerdotai/claudette)** - ** - 轻量级 Claude API 客户端
+- **[Claudette](https://github.com/answerdotai/claudette)** by [AnswerDotAI](https://github.com/AnswerDotAI) `Apache-2.0` - 轻量级 Claude API 客户端
 - **[Context7 文档](https://context7.com/answerdotai/claudette)**
-- **[MCP Think Tool](https://github.com/cgize/claude-mcp-think-tool)** - ** - Claude Desktop 思考工具
+- **[MCP Think Tool](https://github.com/cgize/claude-mcp-think-tool)** by [cgize](https://github.com/cgize) `MIT` - Claude Desktop 思考工具
 - **[Context7 文档](https://context7.com/cgize/claude-mcp-think-tool)**
 
 
 ### 扩展
 *Extensions*
 
-- **[Claude Code Go](https://github.com/lancekrogers/claude-code-go)** - ** - Go 语言的 Claude Code 实现
+- **[Claude Code Go](https://github.com/lancekrogers/claude-code-go)** by [lancekrogers](https://github.com/lancekrogers) `MIT` - Go 语言的 Claude Code 实现
 - **[Context7 文档](https://context7.com/lancekrogers/claude-code-go)**
-- **[Claude Code 模板](https://github.com/davila7/claude-code-templates)** - ** - 项目模板集合
+- **[Claude Code 模板](https://github.com/davila7/claude-code-templates)** by [davila7](https://github.com/davila7) `MIT` - 项目模板集合
 - **[Context7 文档](https://context7.com/davila7/claude-code-templates)**
-- **[Claudette](https://github.com/answerdotai/claudette)** - ** - 轻量级 Claude API 客户端
+- **[Claudette](https://github.com/answerdotai/claudette)** by [AnswerDotAI](https://github.com/AnswerDotAI) `Apache-2.0` - 轻量级 Claude API 客户端
 - **[Context7 文档](https://context7.com/answerdotai/claudette)**
-- **[MCP Think Tool](https://github.com/cgize/claude-mcp-think-tool)** - ** - Claude Desktop 思考工具
+- **[MCP Think Tool](https://github.com/cgize/claude-mcp-think-tool)** by [cgize](https://github.com/cgize) `MIT` - Claude Desktop 思考工具
 - **[Context7 文档](https://context7.com/cgize/claude-mcp-think-tool)**
 
 

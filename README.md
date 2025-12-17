@@ -42,17 +42,17 @@
 
 ## 📊 统计 | Statistics
 
-- **总资源数 | Total Resources**: 124
+- **总资源数 | Total Resources**: 147
 - **官方资源 | Official**: 40
-- **社区资源 | Community**: 84
+- **社区资源 | Community**: 107
 
 **分类分布 | Category Distribution**:
 
 - 官方资源: 40
+- MCP 服务器: 32
 - 工作流与知识指南: 31
 - 案例研究: 13
-- MCP 服务器: 11
-- 生态系统: 11
+- 生态系统: 13
 - 工具: 10
 - 开源项目: 8
 
@@ -70,10 +70,10 @@
 - 🔪 [斜杠命令](#slash-commands) (0)
 - 📂 [CLAUDE.md 文件](#claude-md-files) (0)
 - 📱 [替代客户端](#alternative-clients) (0)
-- 🔌 [MCP 服务器](#mcp-servers) (11)
+- 🔌 [MCP 服务器](#mcp-servers) (32)
 - 📦 [开源项目](#open-source-projects) (8)
 - 📂 [案例研究](#case-studies) (13)
-- 🌐 [生态系统](#ecosystem) (11)
+- 🌐 [生态系统](#ecosystem) (13)
 
 
 ---
@@ -433,6 +433,27 @@
 - **[MCP 协议规范](https://modelcontextprotocol.io/docs)** by [Anthropic](https://www.anthropic.com) - MCP 服务器实现
 - **[创建你的第一个 MCP 服务器](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/development.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - MCP 服务器实现
 - **[MCP 服务器最佳实践](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/best-practices.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - MCP 服务器实现
+- **[Donating the Model Context Protocol and establishing the Agentic AI Foundation](https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation)** by [meetpateltech](https://news.ycombinator.com/user?id=meetpateltech) - Donating the Model Context Protocol and establishing the Agentic AI Foundation
+- **[Show HN: I taught Claude Code to draw diagrams – the XML pitfalls were brutal](https:)** by ekusiadadus - Article URL: https://github.com/ekusiadadus/draw-mcp Comments URL: https://news.ycombinator.com/item?id=46298650 Points: 1 # Comments: 3
+- **[roychri/mcp-server-asana](https://github.com/roychri/mcp-server-asana)** - 📇 ☁️ This Model Context Protocol server implementation of Asana allows you to talk to Asana API from MCP Client such as Anthropic's Claude Desktop Application, and many more.
+- **[Gaffx/volatility-mcp](https://github.com/Gaffx/volatility-mcp)** - MCP server for Volatility 3.x, allowing you to perform memory forensics analysis with AI assistant. Experience memory forensics without barriers as plugins like pslist and netscan become accessible...
+- **[traceloop/opentelemetry-mcp-server](https://github.com/traceloop/opentelemetry-mcp-server.git)** - 🐍🏠 - An MCP server for connecting to any OpenTelemetry backend (Datadog, Grafana, Dynatrace, Traceloop, etc.).
+- **[ToolHive](https://github.com/stacklok/toolhive)** - Find the right MCP server for your task and deploy with one click.
+- **[nwiizo/tfmcp](https://github.com/nwiizo/tfmcp)** - 🦀 🏠 - A Terraform MCP server allowing AI assistants to manage and operate Terraform environments, enabling reading configurations, analyzing plans, applying configurations, and managing Terraform s...
+- **[AbdelStark/bitcoin-mcp](https://github.com/AbdelStark/bitcoin-mcp)** - ₿ A Model Context Protocol (MCP) server that enables AI models to interact with Bitcoin, allowing them to generate keys, validate addresses, decode transactions, query the blockchain, and more.
+- **[andybrandt/mcp-simple-openai-assistant](https://github.com/andybrandt/mcp-simple-openai-assistant)** - 🐍 ☁️  MCP to talk to OpenAI assistants (Claude can use any GPT model as his assitant)
+- **[wanaku-ai/wanaku](https://github.com/wanaku-ai/wanaku)** - ☁️ 🏠 The Wanaku MCP Router is a SSE-based MCP server that provides an extensible routing engine that allows integrating your enterprise systems with AI agents.
+- **[QGIS MCP](https://github.com/jjsantos01/qgis_mcp)** - connects QGIS Desktop to Claude AI through the MCP. This integration enables prompt-assisted project creation, layer loading, code execution, and more.
+- **[kelvin6365/plane-mcp-server](https://github.com/kelvin6365/plane-mcp-server)** - 🏎️ 🏠 This MCP Server will help you to manage projects and issues through [Plane's](https://plane.so) API
+- **[tan-yong-sheng/ai-vision-mcp](https://github.com/tan-yong-sheng/ai-vision-mcp)** - 📇 🏠 🍎 🪟 🐧 - Multimodal AI vision MCP server for image, video, and object detection analysis. Enables UI/UX evaluation, visual regression testing, and interface understanding using Google Gemini and...
+- **[pwh-pwh/cal-mcp](https://github.com/pwh-pwh/cal-mcp)** - An MCP server for Mathematical expression calculation
+- **[ws-mcp](https://github.com/nick1udwig/ws-mcp)** - Wrap MCP servers with a WebSocket (for use with [kitbitz](https://github.com/nick1udwig/kibitz))
+- **[mindsdb/mindsdb](https://github.com/mindsdb/mindsdb)** - Connect and unify data across various platforms and databases with [MindsDB as a single MCP server](https://docs.mindsdb.com/mcp/overview).
+- **[particlefuture/MCPDiscovery](https://github.com/particlefuture/MCPDiscovery)** - MCP of MCPs. A central hub for MCP servers. Helps you discover available MCP servers and learn how to install and use them.
+- **[thinkchainai/mcpbundles](https://github.com/thinkchainai/mcpbundles)** - MCP Bundles: Create custom bundles of tools and connect providers with OAuth or API keys. Use one MCP server across thousands of integrations, with programmatic tool calling and MCP UI for managing...
+- **[microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp)** - Official Microsoft Playwright MCP server, enabling LLMs to interact with web pages through structured accessibility snapshots
+- **[sim-xia/blind-auditor](https://github.com/Sim-xia/Blind-Auditor)** - 🐍 🏠 🍎 🪟 🐧 A zero-cost MCP server that forces AI to self-correct generation messages using prompt injection, independent self-audition and context isolation.
+- **[sonirico/mcp-shell](https://github.com/sonirico/mcp-shell)** - 🏎️ 🏠 🍎 🪟 🐧 Give hands to AI. MCP server to run shell commands securely, auditably, and on demand on isolated environments like docker.
 
 
 ### 文件系统
@@ -449,6 +470,27 @@
 - **[MCP 协议规范](https://modelcontextprotocol.io/docs)** by [Anthropic](https://www.anthropic.com) - MCP 服务器实现
 - **[创建你的第一个 MCP 服务器](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/development.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - MCP 服务器实现
 - **[MCP 服务器最佳实践](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/best-practices.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - MCP 服务器实现
+- **[Donating the Model Context Protocol and establishing the Agentic AI Foundation](https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation)** by [meetpateltech](https://news.ycombinator.com/user?id=meetpateltech) - Donating the Model Context Protocol and establishing the Agentic AI Foundation
+- **[Show HN: I taught Claude Code to draw diagrams – the XML pitfalls were brutal](https:)** by ekusiadadus - Article URL: https://github.com/ekusiadadus/draw-mcp Comments URL: https://news.ycombinator.com/item?id=46298650 Points: 1 # Comments: 3
+- **[roychri/mcp-server-asana](https://github.com/roychri/mcp-server-asana)** - 📇 ☁️ This Model Context Protocol server implementation of Asana allows you to talk to Asana API from MCP Client such as Anthropic's Claude Desktop Application, and many more.
+- **[Gaffx/volatility-mcp](https://github.com/Gaffx/volatility-mcp)** - MCP server for Volatility 3.x, allowing you to perform memory forensics analysis with AI assistant. Experience memory forensics without barriers as plugins like pslist and netscan become accessible...
+- **[traceloop/opentelemetry-mcp-server](https://github.com/traceloop/opentelemetry-mcp-server.git)** - 🐍🏠 - An MCP server for connecting to any OpenTelemetry backend (Datadog, Grafana, Dynatrace, Traceloop, etc.).
+- **[ToolHive](https://github.com/stacklok/toolhive)** - Find the right MCP server for your task and deploy with one click.
+- **[nwiizo/tfmcp](https://github.com/nwiizo/tfmcp)** - 🦀 🏠 - A Terraform MCP server allowing AI assistants to manage and operate Terraform environments, enabling reading configurations, analyzing plans, applying configurations, and managing Terraform s...
+- **[AbdelStark/bitcoin-mcp](https://github.com/AbdelStark/bitcoin-mcp)** - ₿ A Model Context Protocol (MCP) server that enables AI models to interact with Bitcoin, allowing them to generate keys, validate addresses, decode transactions, query the blockchain, and more.
+- **[andybrandt/mcp-simple-openai-assistant](https://github.com/andybrandt/mcp-simple-openai-assistant)** - 🐍 ☁️  MCP to talk to OpenAI assistants (Claude can use any GPT model as his assitant)
+- **[wanaku-ai/wanaku](https://github.com/wanaku-ai/wanaku)** - ☁️ 🏠 The Wanaku MCP Router is a SSE-based MCP server that provides an extensible routing engine that allows integrating your enterprise systems with AI agents.
+- **[QGIS MCP](https://github.com/jjsantos01/qgis_mcp)** - connects QGIS Desktop to Claude AI through the MCP. This integration enables prompt-assisted project creation, layer loading, code execution, and more.
+- **[kelvin6365/plane-mcp-server](https://github.com/kelvin6365/plane-mcp-server)** - 🏎️ 🏠 This MCP Server will help you to manage projects and issues through [Plane's](https://plane.so) API
+- **[tan-yong-sheng/ai-vision-mcp](https://github.com/tan-yong-sheng/ai-vision-mcp)** - 📇 🏠 🍎 🪟 🐧 - Multimodal AI vision MCP server for image, video, and object detection analysis. Enables UI/UX evaluation, visual regression testing, and interface understanding using Google Gemini and...
+- **[pwh-pwh/cal-mcp](https://github.com/pwh-pwh/cal-mcp)** - An MCP server for Mathematical expression calculation
+- **[ws-mcp](https://github.com/nick1udwig/ws-mcp)** - Wrap MCP servers with a WebSocket (for use with [kitbitz](https://github.com/nick1udwig/kibitz))
+- **[mindsdb/mindsdb](https://github.com/mindsdb/mindsdb)** - Connect and unify data across various platforms and databases with [MindsDB as a single MCP server](https://docs.mindsdb.com/mcp/overview).
+- **[particlefuture/MCPDiscovery](https://github.com/particlefuture/MCPDiscovery)** - MCP of MCPs. A central hub for MCP servers. Helps you discover available MCP servers and learn how to install and use them.
+- **[thinkchainai/mcpbundles](https://github.com/thinkchainai/mcpbundles)** - MCP Bundles: Create custom bundles of tools and connect providers with OAuth or API keys. Use one MCP server across thousands of integrations, with programmatic tool calling and MCP UI for managing...
+- **[microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp)** - Official Microsoft Playwright MCP server, enabling LLMs to interact with web pages through structured accessibility snapshots
+- **[sim-xia/blind-auditor](https://github.com/Sim-xia/Blind-Auditor)** - 🐍 🏠 🍎 🪟 🐧 A zero-cost MCP server that forces AI to self-correct generation messages using prompt injection, independent self-audition and context isolation.
+- **[sonirico/mcp-shell](https://github.com/sonirico/mcp-shell)** - 🏎️ 🏠 🍎 🪟 🐧 Give hands to AI. MCP server to run shell commands securely, auditably, and on demand on isolated environments like docker.
 
 
 ### 云服务
@@ -465,6 +507,27 @@
 - **[MCP 协议规范](https://modelcontextprotocol.io/docs)** by [Anthropic](https://www.anthropic.com) - MCP 服务器实现
 - **[创建你的第一个 MCP 服务器](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/development.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - MCP 服务器实现
 - **[MCP 服务器最佳实践](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/best-practices.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - MCP 服务器实现
+- **[Donating the Model Context Protocol and establishing the Agentic AI Foundation](https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation)** by [meetpateltech](https://news.ycombinator.com/user?id=meetpateltech) - Donating the Model Context Protocol and establishing the Agentic AI Foundation
+- **[Show HN: I taught Claude Code to draw diagrams – the XML pitfalls were brutal](https:)** by ekusiadadus - Article URL: https://github.com/ekusiadadus/draw-mcp Comments URL: https://news.ycombinator.com/item?id=46298650 Points: 1 # Comments: 3
+- **[roychri/mcp-server-asana](https://github.com/roychri/mcp-server-asana)** - 📇 ☁️ This Model Context Protocol server implementation of Asana allows you to talk to Asana API from MCP Client such as Anthropic's Claude Desktop Application, and many more.
+- **[Gaffx/volatility-mcp](https://github.com/Gaffx/volatility-mcp)** - MCP server for Volatility 3.x, allowing you to perform memory forensics analysis with AI assistant. Experience memory forensics without barriers as plugins like pslist and netscan become accessible...
+- **[traceloop/opentelemetry-mcp-server](https://github.com/traceloop/opentelemetry-mcp-server.git)** - 🐍🏠 - An MCP server for connecting to any OpenTelemetry backend (Datadog, Grafana, Dynatrace, Traceloop, etc.).
+- **[ToolHive](https://github.com/stacklok/toolhive)** - Find the right MCP server for your task and deploy with one click.
+- **[nwiizo/tfmcp](https://github.com/nwiizo/tfmcp)** - 🦀 🏠 - A Terraform MCP server allowing AI assistants to manage and operate Terraform environments, enabling reading configurations, analyzing plans, applying configurations, and managing Terraform s...
+- **[AbdelStark/bitcoin-mcp](https://github.com/AbdelStark/bitcoin-mcp)** - ₿ A Model Context Protocol (MCP) server that enables AI models to interact with Bitcoin, allowing them to generate keys, validate addresses, decode transactions, query the blockchain, and more.
+- **[andybrandt/mcp-simple-openai-assistant](https://github.com/andybrandt/mcp-simple-openai-assistant)** - 🐍 ☁️  MCP to talk to OpenAI assistants (Claude can use any GPT model as his assitant)
+- **[wanaku-ai/wanaku](https://github.com/wanaku-ai/wanaku)** - ☁️ 🏠 The Wanaku MCP Router is a SSE-based MCP server that provides an extensible routing engine that allows integrating your enterprise systems with AI agents.
+- **[QGIS MCP](https://github.com/jjsantos01/qgis_mcp)** - connects QGIS Desktop to Claude AI through the MCP. This integration enables prompt-assisted project creation, layer loading, code execution, and more.
+- **[kelvin6365/plane-mcp-server](https://github.com/kelvin6365/plane-mcp-server)** - 🏎️ 🏠 This MCP Server will help you to manage projects and issues through [Plane's](https://plane.so) API
+- **[tan-yong-sheng/ai-vision-mcp](https://github.com/tan-yong-sheng/ai-vision-mcp)** - 📇 🏠 🍎 🪟 🐧 - Multimodal AI vision MCP server for image, video, and object detection analysis. Enables UI/UX evaluation, visual regression testing, and interface understanding using Google Gemini and...
+- **[pwh-pwh/cal-mcp](https://github.com/pwh-pwh/cal-mcp)** - An MCP server for Mathematical expression calculation
+- **[ws-mcp](https://github.com/nick1udwig/ws-mcp)** - Wrap MCP servers with a WebSocket (for use with [kitbitz](https://github.com/nick1udwig/kibitz))
+- **[mindsdb/mindsdb](https://github.com/mindsdb/mindsdb)** - Connect and unify data across various platforms and databases with [MindsDB as a single MCP server](https://docs.mindsdb.com/mcp/overview).
+- **[particlefuture/MCPDiscovery](https://github.com/particlefuture/MCPDiscovery)** - MCP of MCPs. A central hub for MCP servers. Helps you discover available MCP servers and learn how to install and use them.
+- **[thinkchainai/mcpbundles](https://github.com/thinkchainai/mcpbundles)** - MCP Bundles: Create custom bundles of tools and connect providers with OAuth or API keys. Use one MCP server across thousands of integrations, with programmatic tool calling and MCP UI for managing...
+- **[microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp)** - Official Microsoft Playwright MCP server, enabling LLMs to interact with web pages through structured accessibility snapshots
+- **[sim-xia/blind-auditor](https://github.com/Sim-xia/Blind-Auditor)** - 🐍 🏠 🍎 🪟 🐧 A zero-cost MCP server that forces AI to self-correct generation messages using prompt injection, independent self-audition and context isolation.
+- **[sonirico/mcp-shell](https://github.com/sonirico/mcp-shell)** - 🏎️ 🏠 🍎 🪟 🐧 Give hands to AI. MCP server to run shell commands securely, auditably, and on demand on isolated environments like docker.
 
 
 ### 数据库
@@ -481,6 +544,27 @@
 - **[MCP 协议规范](https://modelcontextprotocol.io/docs)** by [Anthropic](https://www.anthropic.com) - MCP 服务器实现
 - **[创建你的第一个 MCP 服务器](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/development.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - MCP 服务器实现
 - **[MCP 服务器最佳实践](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/best-practices.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - MCP 服务器实现
+- **[Donating the Model Context Protocol and establishing the Agentic AI Foundation](https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation)** by [meetpateltech](https://news.ycombinator.com/user?id=meetpateltech) - Donating the Model Context Protocol and establishing the Agentic AI Foundation
+- **[Show HN: I taught Claude Code to draw diagrams – the XML pitfalls were brutal](https:)** by ekusiadadus - Article URL: https://github.com/ekusiadadus/draw-mcp Comments URL: https://news.ycombinator.com/item?id=46298650 Points: 1 # Comments: 3
+- **[roychri/mcp-server-asana](https://github.com/roychri/mcp-server-asana)** - 📇 ☁️ This Model Context Protocol server implementation of Asana allows you to talk to Asana API from MCP Client such as Anthropic's Claude Desktop Application, and many more.
+- **[Gaffx/volatility-mcp](https://github.com/Gaffx/volatility-mcp)** - MCP server for Volatility 3.x, allowing you to perform memory forensics analysis with AI assistant. Experience memory forensics without barriers as plugins like pslist and netscan become accessible...
+- **[traceloop/opentelemetry-mcp-server](https://github.com/traceloop/opentelemetry-mcp-server.git)** - 🐍🏠 - An MCP server for connecting to any OpenTelemetry backend (Datadog, Grafana, Dynatrace, Traceloop, etc.).
+- **[ToolHive](https://github.com/stacklok/toolhive)** - Find the right MCP server for your task and deploy with one click.
+- **[nwiizo/tfmcp](https://github.com/nwiizo/tfmcp)** - 🦀 🏠 - A Terraform MCP server allowing AI assistants to manage and operate Terraform environments, enabling reading configurations, analyzing plans, applying configurations, and managing Terraform s...
+- **[AbdelStark/bitcoin-mcp](https://github.com/AbdelStark/bitcoin-mcp)** - ₿ A Model Context Protocol (MCP) server that enables AI models to interact with Bitcoin, allowing them to generate keys, validate addresses, decode transactions, query the blockchain, and more.
+- **[andybrandt/mcp-simple-openai-assistant](https://github.com/andybrandt/mcp-simple-openai-assistant)** - 🐍 ☁️  MCP to talk to OpenAI assistants (Claude can use any GPT model as his assitant)
+- **[wanaku-ai/wanaku](https://github.com/wanaku-ai/wanaku)** - ☁️ 🏠 The Wanaku MCP Router is a SSE-based MCP server that provides an extensible routing engine that allows integrating your enterprise systems with AI agents.
+- **[QGIS MCP](https://github.com/jjsantos01/qgis_mcp)** - connects QGIS Desktop to Claude AI through the MCP. This integration enables prompt-assisted project creation, layer loading, code execution, and more.
+- **[kelvin6365/plane-mcp-server](https://github.com/kelvin6365/plane-mcp-server)** - 🏎️ 🏠 This MCP Server will help you to manage projects and issues through [Plane's](https://plane.so) API
+- **[tan-yong-sheng/ai-vision-mcp](https://github.com/tan-yong-sheng/ai-vision-mcp)** - 📇 🏠 🍎 🪟 🐧 - Multimodal AI vision MCP server for image, video, and object detection analysis. Enables UI/UX evaluation, visual regression testing, and interface understanding using Google Gemini and...
+- **[pwh-pwh/cal-mcp](https://github.com/pwh-pwh/cal-mcp)** - An MCP server for Mathematical expression calculation
+- **[ws-mcp](https://github.com/nick1udwig/ws-mcp)** - Wrap MCP servers with a WebSocket (for use with [kitbitz](https://github.com/nick1udwig/kibitz))
+- **[mindsdb/mindsdb](https://github.com/mindsdb/mindsdb)** - Connect and unify data across various platforms and databases with [MindsDB as a single MCP server](https://docs.mindsdb.com/mcp/overview).
+- **[particlefuture/MCPDiscovery](https://github.com/particlefuture/MCPDiscovery)** - MCP of MCPs. A central hub for MCP servers. Helps you discover available MCP servers and learn how to install and use them.
+- **[thinkchainai/mcpbundles](https://github.com/thinkchainai/mcpbundles)** - MCP Bundles: Create custom bundles of tools and connect providers with OAuth or API keys. Use one MCP server across thousands of integrations, with programmatic tool calling and MCP UI for managing...
+- **[microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp)** - Official Microsoft Playwright MCP server, enabling LLMs to interact with web pages through structured accessibility snapshots
+- **[sim-xia/blind-auditor](https://github.com/Sim-xia/Blind-Auditor)** - 🐍 🏠 🍎 🪟 🐧 A zero-cost MCP server that forces AI to self-correct generation messages using prompt injection, independent self-audition and context isolation.
+- **[sonirico/mcp-shell](https://github.com/sonirico/mcp-shell)** - 🏎️ 🏠 🍎 🪟 🐧 Give hands to AI. MCP server to run shell commands securely, auditably, and on demand on isolated environments like docker.
 
 
 ### API 集成
@@ -497,6 +581,27 @@
 - **[MCP 协议规范](https://modelcontextprotocol.io/docs)** by [Anthropic](https://www.anthropic.com) - MCP 服务器实现
 - **[创建你的第一个 MCP 服务器](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/development.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - MCP 服务器实现
 - **[MCP 服务器最佳实践](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/best-practices.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - MCP 服务器实现
+- **[Donating the Model Context Protocol and establishing the Agentic AI Foundation](https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation)** by [meetpateltech](https://news.ycombinator.com/user?id=meetpateltech) - Donating the Model Context Protocol and establishing the Agentic AI Foundation
+- **[Show HN: I taught Claude Code to draw diagrams – the XML pitfalls were brutal](https:)** by ekusiadadus - Article URL: https://github.com/ekusiadadus/draw-mcp Comments URL: https://news.ycombinator.com/item?id=46298650 Points: 1 # Comments: 3
+- **[roychri/mcp-server-asana](https://github.com/roychri/mcp-server-asana)** - 📇 ☁️ This Model Context Protocol server implementation of Asana allows you to talk to Asana API from MCP Client such as Anthropic's Claude Desktop Application, and many more.
+- **[Gaffx/volatility-mcp](https://github.com/Gaffx/volatility-mcp)** - MCP server for Volatility 3.x, allowing you to perform memory forensics analysis with AI assistant. Experience memory forensics without barriers as plugins like pslist and netscan become accessible...
+- **[traceloop/opentelemetry-mcp-server](https://github.com/traceloop/opentelemetry-mcp-server.git)** - 🐍🏠 - An MCP server for connecting to any OpenTelemetry backend (Datadog, Grafana, Dynatrace, Traceloop, etc.).
+- **[ToolHive](https://github.com/stacklok/toolhive)** - Find the right MCP server for your task and deploy with one click.
+- **[nwiizo/tfmcp](https://github.com/nwiizo/tfmcp)** - 🦀 🏠 - A Terraform MCP server allowing AI assistants to manage and operate Terraform environments, enabling reading configurations, analyzing plans, applying configurations, and managing Terraform s...
+- **[AbdelStark/bitcoin-mcp](https://github.com/AbdelStark/bitcoin-mcp)** - ₿ A Model Context Protocol (MCP) server that enables AI models to interact with Bitcoin, allowing them to generate keys, validate addresses, decode transactions, query the blockchain, and more.
+- **[andybrandt/mcp-simple-openai-assistant](https://github.com/andybrandt/mcp-simple-openai-assistant)** - 🐍 ☁️  MCP to talk to OpenAI assistants (Claude can use any GPT model as his assitant)
+- **[wanaku-ai/wanaku](https://github.com/wanaku-ai/wanaku)** - ☁️ 🏠 The Wanaku MCP Router is a SSE-based MCP server that provides an extensible routing engine that allows integrating your enterprise systems with AI agents.
+- **[QGIS MCP](https://github.com/jjsantos01/qgis_mcp)** - connects QGIS Desktop to Claude AI through the MCP. This integration enables prompt-assisted project creation, layer loading, code execution, and more.
+- **[kelvin6365/plane-mcp-server](https://github.com/kelvin6365/plane-mcp-server)** - 🏎️ 🏠 This MCP Server will help you to manage projects and issues through [Plane's](https://plane.so) API
+- **[tan-yong-sheng/ai-vision-mcp](https://github.com/tan-yong-sheng/ai-vision-mcp)** - 📇 🏠 🍎 🪟 🐧 - Multimodal AI vision MCP server for image, video, and object detection analysis. Enables UI/UX evaluation, visual regression testing, and interface understanding using Google Gemini and...
+- **[pwh-pwh/cal-mcp](https://github.com/pwh-pwh/cal-mcp)** - An MCP server for Mathematical expression calculation
+- **[ws-mcp](https://github.com/nick1udwig/ws-mcp)** - Wrap MCP servers with a WebSocket (for use with [kitbitz](https://github.com/nick1udwig/kibitz))
+- **[mindsdb/mindsdb](https://github.com/mindsdb/mindsdb)** - Connect and unify data across various platforms and databases with [MindsDB as a single MCP server](https://docs.mindsdb.com/mcp/overview).
+- **[particlefuture/MCPDiscovery](https://github.com/particlefuture/MCPDiscovery)** - MCP of MCPs. A central hub for MCP servers. Helps you discover available MCP servers and learn how to install and use them.
+- **[thinkchainai/mcpbundles](https://github.com/thinkchainai/mcpbundles)** - MCP Bundles: Create custom bundles of tools and connect providers with OAuth or API keys. Use one MCP server across thousands of integrations, with programmatic tool calling and MCP UI for managing...
+- **[microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp)** - Official Microsoft Playwright MCP server, enabling LLMs to interact with web pages through structured accessibility snapshots
+- **[sim-xia/blind-auditor](https://github.com/Sim-xia/Blind-Auditor)** - 🐍 🏠 🍎 🪟 🐧 A zero-cost MCP server that forces AI to self-correct generation messages using prompt injection, independent self-audition and context isolation.
+- **[sonirico/mcp-shell](https://github.com/sonirico/mcp-shell)** - 🏎️ 🏠 🍎 🪟 🐧 Give hands to AI. MCP server to run shell commands securely, auditably, and on demand on isolated environments like docker.
 
 
 ## 📦 开源项目
@@ -662,6 +767,8 @@
 - **[项目模板集合](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/templates.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 生态系统资源和集成
 - **[代码片段库](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/snippets.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 生态系统资源和集成
 - **[配置文件示例](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/configs.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 生态系统资源和集成
+- **[Claude Opus 4.5](https://www.anthropic.com/news/claude-opus-4-5)** by [adocomplete](https://news.ycombinator.com/user?id=adocomplete) - <a href="https:&#x2F;&#x2F;platform.claude.com&#x2F;docs&#x2F;en&#x2F;about-claude&#x2F;models&#x2F;whats-new-claude-4-5" rel="nofollow">https:&#x2F;&#x2F;platform.claude.com&#x2F;docs&#x2F;en&#x2F...
+- **[Claude 3](https://claude.ai/)** - Talk to Claude, an AI assistant from Anthropic.
 
 
 ### 学习资源
@@ -678,6 +785,8 @@
 - **[项目模板集合](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/templates.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 生态系统资源和集成
 - **[代码片段库](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/snippets.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 生态系统资源和集成
 - **[配置文件示例](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/configs.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 生态系统资源和集成
+- **[Claude Opus 4.5](https://www.anthropic.com/news/claude-opus-4-5)** by [adocomplete](https://news.ycombinator.com/user?id=adocomplete) - <a href="https:&#x2F;&#x2F;platform.claude.com&#x2F;docs&#x2F;en&#x2F;about-claude&#x2F;models&#x2F;whats-new-claude-4-5" rel="nofollow">https:&#x2F;&#x2F;platform.claude.com&#x2F;docs&#x2F;en&#x2F...
+- **[Claude 3](https://claude.ai/)** - Talk to Claude, an AI assistant from Anthropic.
 
 
 ### 社区
@@ -694,6 +803,8 @@
 - **[项目模板集合](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/templates.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 生态系统资源和集成
 - **[代码片段库](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/snippets.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 生态系统资源和集成
 - **[配置文件示例](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/configs.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 生态系统资源和集成
+- **[Claude Opus 4.5](https://www.anthropic.com/news/claude-opus-4-5)** by [adocomplete](https://news.ycombinator.com/user?id=adocomplete) - <a href="https:&#x2F;&#x2F;platform.claude.com&#x2F;docs&#x2F;en&#x2F;about-claude&#x2F;models&#x2F;whats-new-claude-4-5" rel="nofollow">https:&#x2F;&#x2F;platform.claude.com&#x2F;docs&#x2F;en&#x2F...
+- **[Claude 3](https://claude.ai/)** - Talk to Claude, an AI assistant from Anthropic.
 
 
 ### 第三方工具
@@ -710,6 +821,8 @@
 - **[项目模板集合](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/templates.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 生态系统资源和集成
 - **[代码片段库](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/snippets.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 生态系统资源和集成
 - **[配置文件示例](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/configs.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 生态系统资源和集成
+- **[Claude Opus 4.5](https://www.anthropic.com/news/claude-opus-4-5)** by [adocomplete](https://news.ycombinator.com/user?id=adocomplete) - <a href="https:&#x2F;&#x2F;platform.claude.com&#x2F;docs&#x2F;en&#x2F;about-claude&#x2F;models&#x2F;whats-new-claude-4-5" rel="nofollow">https:&#x2F;&#x2F;platform.claude.com&#x2F;docs&#x2F;en&#x2F...
+- **[Claude 3](https://claude.ai/)** - Talk to Claude, an AI assistant from Anthropic.
 
 
 ---
@@ -739,7 +852,7 @@ Thanks to all contributors for your efforts!
 ## 📊 项目统计 | Project Statistics
 
 - 📅 **创建时间 | Created**: 2025-12-15
-- 🔄 **最后更新 | Last Updated**: 2025-12-15
+- 🔄 **最后更新 | Last Updated**: 2025-12-17
 - 📝 **维护者 | Maintainer**: [@yiancode](https://github.com/yiancode)
 - 📜 **许可证 | License**: MIT License
 

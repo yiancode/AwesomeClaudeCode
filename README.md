@@ -141,37 +141,37 @@
 ### 通用
 *General*
 
-- **[macOS 安装指南](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/installation/macos.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[Windows 安装指南](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/installation/windows.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[Linux 安装指南](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/installation/linux.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[配置指南](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/installation/configuration.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[环境变量设置](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/installation/environment.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[故障排除](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/installation/troubleshooting.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[你的第一个 Claude Code 会话](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/getting-started/first-session.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[基本命令和操作](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/getting-started/basic-commands.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[理解工作流程](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/getting-started/workflow.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[文件操作基础](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/getting-started/file-operations.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[代码生成与编辑](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/getting-started/code-generation.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[使用 TODO 任务管理](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/getting-started/todo-management.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[调试和错误处理](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/getting-started/debugging.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[测试驱动开发](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/getting-started/tdd.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[版本控制集成](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/getting-started/git-integration.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[Agent 任务自动化](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/advanced/agents.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[多文件编辑](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/advanced/multi-file-editing.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[代码重构](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/advanced/refactoring.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[自定义 Hooks](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/advanced/hooks.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[MCP (Model Context Protocol) 集成](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/advanced/mcp.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[性能优化技巧](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/advanced/performance.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[上下文管理](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/advanced/context-management.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[自定义工作流](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/advanced/custom-workflows.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[批量操作](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/advanced/batch-operations.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[扩展功能](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/advanced/extensions.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[高效提示词模板](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/case-studies/prompt-templates.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[任务分解策略](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/case-studies/task-breakdown.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[上下文优化](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/case-studies/context-optimization.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[团队协作最佳实践](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/case-studies/team-collaboration.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[CI/CD 集成](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/case-studies/cicd-integration.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
-- **[代码审查流程](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/case-studies/code-review.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 工作流和知识指南
+- **[macOS 安装指南](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/installation/macos.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[Windows 安装指南](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/installation/windows.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[Linux 安装指南](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/installation/linux.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[配置指南](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/installation/configuration.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[环境变量设置](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/installation/environment.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[故障排除](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/installation/troubleshooting.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[你的第一个 Claude Code 会话](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/getting-started/first-session.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[基本命令和操作](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/getting-started/basic-commands.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[理解工作流程](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/getting-started/workflow.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[文件操作基础](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/getting-started/file-operations.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[代码生成与编辑](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/getting-started/code-generation.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[使用 TODO 任务管理](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/getting-started/todo-management.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[调试和错误处理](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/getting-started/debugging.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[测试驱动开发](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/getting-started/tdd.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[版本控制集成](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/getting-started/git-integration.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[Agent 任务自动化](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/advanced/agents.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[多文件编辑](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/advanced/multi-file-editing.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[代码重构](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/advanced/refactoring.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[自定义 Hooks](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/advanced/hooks.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[MCP (Model Context Protocol) 集成](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/advanced/mcp.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[性能优化技巧](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/advanced/performance.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[上下文管理](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/advanced/context-management.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[自定义工作流](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/advanced/custom-workflows.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[批量操作](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/advanced/batch-operations.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[扩展功能](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/advanced/extensions.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[高效提示词模板](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/case-studies/prompt-templates.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[任务分解策略](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/case-studies/task-breakdown.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[上下文优化](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/case-studies/context-optimization.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[团队协作最佳实践](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/case-studies/team-collaboration.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[CI/CD 集成](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/case-studies/cicd-integration.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
+- **[代码审查流程](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/case-studies/code-review.md)** by [yiancode](https://github.com/yiancode) - 工作流和知识指南
 
 
 ## 🧰 工具
@@ -184,16 +184,16 @@
 ### 通用
 *General*
 
-- **[VS Code 扩展](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/third-party/vscode.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 开发工具和实用程序
-- **[IntelliJ IDEA 插件](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/third-party/intellij.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 开发工具和实用程序
-- **[Vim/Neovim 集成](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/third-party/vim.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 开发工具和实用程序
-- **[Emacs 集成](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/third-party/emacs.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 开发工具和实用程序
-- **[Oh My Zsh 插件](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/third-party/oh-my-zsh.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 开发工具和实用程序
-- **[Fish Shell 集成](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/third-party/fish.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 开发工具和实用程序
-- **[PowerShell 模块](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/third-party/powershell.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 开发工具和实用程序
-- **[GitHub Actions 集成](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/third-party/github-actions.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 开发工具和实用程序
-- **[GitLab CI 集成](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/third-party/gitlab-ci.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 开发工具和实用程序
-- **[Jenkins 插件](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/third-party/jenkins.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 开发工具和实用程序
+- **[VS Code 扩展](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/third-party/vscode.md)** by [yiancode](https://github.com/yiancode) - 开发工具和实用程序
+- **[IntelliJ IDEA 插件](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/third-party/intellij.md)** by [yiancode](https://github.com/yiancode) - 开发工具和实用程序
+- **[Vim/Neovim 集成](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/third-party/vim.md)** by [yiancode](https://github.com/yiancode) - 开发工具和实用程序
+- **[Emacs 集成](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/third-party/emacs.md)** by [yiancode](https://github.com/yiancode) - 开发工具和实用程序
+- **[Oh My Zsh 插件](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/third-party/oh-my-zsh.md)** by [yiancode](https://github.com/yiancode) - 开发工具和实用程序
+- **[Fish Shell 集成](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/third-party/fish.md)** by [yiancode](https://github.com/yiancode) - 开发工具和实用程序
+- **[PowerShell 模块](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/third-party/powershell.md)** by [yiancode](https://github.com/yiancode) - 开发工具和实用程序
+- **[GitHub Actions 集成](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/third-party/github-actions.md)** by [yiancode](https://github.com/yiancode) - 开发工具和实用程序
+- **[GitLab CI 集成](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/third-party/gitlab-ci.md)** by [yiancode](https://github.com/yiancode) - 开发工具和实用程序
+- **[Jenkins 插件](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/third-party/jenkins.md)** by [yiancode](https://github.com/yiancode) - 开发工具和实用程序
 
 
 ## 🔌 MCP 服务器
@@ -206,17 +206,17 @@
 ### 通用
 *General*
 
-- **[Filesystem Server](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/filesystem.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 文件系统操作
-- **[GitHub Server](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/github.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - GitHub 集成
-- **[Google Drive Server](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/google-drive.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - Google Drive 集成
-- **[Slack Server](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/slack.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - Slack 集成
-- **[Database Servers](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/database.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 各种数据库集成
-- **[Cloud Services](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/cloud.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - AWS、Azure、GCP 集成
-- **[API Integrations](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/api.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 第三方 API 集成
-- **[Custom Servers](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/custom.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 创建自定义 MCP 服务器
+- **[Filesystem Server](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/filesystem.md)** by [yiancode](https://github.com/yiancode) - 文件系统操作
+- **[GitHub Server](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/github.md)** by [yiancode](https://github.com/yiancode) - GitHub 集成
+- **[Google Drive Server](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/google-drive.md)** by [yiancode](https://github.com/yiancode) - Google Drive 集成
+- **[Slack Server](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/slack.md)** by [yiancode](https://github.com/yiancode) - Slack 集成
+- **[Database Servers](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/database.md)** by [yiancode](https://github.com/yiancode) - 各种数据库集成
+- **[Cloud Services](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/cloud.md)** by [yiancode](https://github.com/yiancode) - AWS、Azure、GCP 集成
+- **[API Integrations](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/api.md)** by [yiancode](https://github.com/yiancode) - 第三方 API 集成
+- **[Custom Servers](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/custom.md)** by [yiancode](https://github.com/yiancode) - 创建自定义 MCP 服务器
 - **[MCP 协议规范](https://modelcontextprotocol.io/docs)** by [Anthropic](https://www.anthropic.com) - MCP 服务器实现
-- **[创建你的第一个 MCP 服务器](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/development.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - MCP 服务器实现
-- **[MCP 服务器最佳实践](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/best-practices.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - MCP 服务器实现
+- **[创建你的第一个 MCP 服务器](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/development.md)** by [yiancode](https://github.com/yiancode) - MCP 服务器实现
+- **[MCP 服务器最佳实践](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/mcp/best-practices.md)** by [yiancode](https://github.com/yiancode) - MCP 服务器实现
 - **[Donating the Model Context Protocol and establishing the Agentic AI Foundation](https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation)** by [meetpateltech](https://news.ycombinator.com/user?id=meetpateltech) - Donating the Model Context Protocol and establishing the Agentic AI Foundation
 - **[Show HN: I taught Claude Code to draw diagrams – the XML pitfalls were brutal](https:)** by ekusiadadus - Article URL: https://github.com/ekusiadadus/draw-mcp Comments URL: https://news.ycombinator.com/item?id=46298650 Points: 1 # Comments: 3
 - **[roychri/mcp-server-asana](https://github.com/roychri/mcp-server-asana)** - 📇 ☁️ This Model Context Protocol server implementation of Asana allows you to talk to Asana API from MCP Client such as Anthropic's Claude Desktop Application, and many more.
@@ -270,19 +270,19 @@
 ### 通用
 *General*
 
-- **[构建全栈 Web 应用](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/web/fullstack-app/)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 案例研究和实际示例
-- **[React/Vue/Angular 项目开发](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/web/frontend/)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 案例研究和实际示例
-- **[Node.js API 开发](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/web/backend/)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 案例研究和实际示例
-- **[数据库设计与优化](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/web/database/)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 案例研究和实际示例
-- **[React Native 应用开发](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/mobile/react-native/)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 案例研究和实际示例
-- **[Flutter 应用开发](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/mobile/flutter/)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 案例研究和实际示例
-- **[原生应用开发](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/mobile/native/)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 案例研究和实际示例
-- **[数据分析与可视化](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/data-science/analysis/)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 案例研究和实际示例
-- **[机器学习模型开发](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/data-science/ml/)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 案例研究和实际示例
-- **[数据处理管道](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/data-science/pipeline/)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 案例研究和实际示例
-- **[自动化部署脚本](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/devops/deployment/)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 案例研究和实际示例
-- **[容器化应用](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/devops/docker/)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 案例研究和实际示例
-- **[Kubernetes 配置](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/devops/k8s/)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 案例研究和实际示例
+- **[构建全栈 Web 应用](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/web/fullstack-app/)** by [yiancode](https://github.com/yiancode) - 案例研究和实际示例
+- **[React/Vue/Angular 项目开发](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/web/frontend/)** by [yiancode](https://github.com/yiancode) - 案例研究和实际示例
+- **[Node.js API 开发](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/web/backend/)** by [yiancode](https://github.com/yiancode) - 案例研究和实际示例
+- **[数据库设计与优化](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/web/database/)** by [yiancode](https://github.com/yiancode) - 案例研究和实际示例
+- **[React Native 应用开发](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/mobile/react-native/)** by [yiancode](https://github.com/yiancode) - 案例研究和实际示例
+- **[Flutter 应用开发](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/mobile/flutter/)** by [yiancode](https://github.com/yiancode) - 案例研究和实际示例
+- **[原生应用开发](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/mobile/native/)** by [yiancode](https://github.com/yiancode) - 案例研究和实际示例
+- **[数据分析与可视化](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/data-science/analysis/)** by [yiancode](https://github.com/yiancode) - 案例研究和实际示例
+- **[机器学习模型开发](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/data-science/ml/)** by [yiancode](https://github.com/yiancode) - 案例研究和实际示例
+- **[数据处理管道](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/data-science/pipeline/)** by [yiancode](https://github.com/yiancode) - 案例研究和实际示例
+- **[自动化部署脚本](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/devops/deployment/)** by [yiancode](https://github.com/yiancode) - 案例研究和实际示例
+- **[容器化应用](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/devops/docker/)** by [yiancode](https://github.com/yiancode) - 案例研究和实际示例
+- **[Kubernetes 配置](https://github.com/yiancode/AwesomeClaudeCode/blob/main/examples/devops/k8s/)** by [yiancode](https://github.com/yiancode) - 案例研究和实际示例
 
 
 ## 🌐 生态系统
@@ -298,14 +298,14 @@
 - **[Claude Code 社区论坛](https://community.claude.ai)** by [Anthropic](https://www.anthropic.com) - Anthropic 官方文档和资源
 - **[Reddit r/ClaudeCode](https://reddit.com/r/claudecode)** by [Reddit Community](https://www.reddit.com) - 生态系统资源和集成
 - **[Stack Overflow 标签](https://stackoverflow.com/questions/tagged/claude-code)** by [Stack Overflow Community](https://stackoverflow.com) - 生态系统资源和集成
-- **[YouTube 教程频道](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/youtube-channels.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 生态系统资源和集成
-- **[在线课程](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/courses.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 生态系统资源和集成
-- **[书籍推荐](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/books.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 生态系统资源和集成
-- **[博客文章](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/blogs.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 生态系统资源和集成
-- **[播客节目](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/podcasts.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 生态系统资源和集成
-- **[项目模板集合](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/templates.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 生态系统资源和集成
-- **[代码片段库](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/snippets.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 生态系统资源和集成
-- **[配置文件示例](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/configs.md)** by [AwesomeClaudeCode](https://github.com/yiancode/AwesomeClaudeCode) - 生态系统资源和集成
+- **[YouTube 教程频道](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/youtube-channels.md)** by [yiancode](https://github.com/yiancode) - 生态系统资源和集成
+- **[在线课程](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/courses.md)** by [yiancode](https://github.com/yiancode) - 生态系统资源和集成
+- **[书籍推荐](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/books.md)** by [yiancode](https://github.com/yiancode) - 生态系统资源和集成
+- **[博客文章](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/blogs.md)** by [yiancode](https://github.com/yiancode) - 生态系统资源和集成
+- **[播客节目](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/podcasts.md)** by [yiancode](https://github.com/yiancode) - 生态系统资源和集成
+- **[项目模板集合](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/templates.md)** by [yiancode](https://github.com/yiancode) - 生态系统资源和集成
+- **[代码片段库](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/snippets.md)** by [yiancode](https://github.com/yiancode) - 生态系统资源和集成
+- **[配置文件示例](https://github.com/yiancode/AwesomeClaudeCode/blob/main/docs/ecosystem/configs.md)** by [yiancode](https://github.com/yiancode) - 生态系统资源和集成
 - **[Claude Opus 4.5](https://www.anthropic.com/news/claude-opus-4-5)** by [adocomplete](https://news.ycombinator.com/user?id=adocomplete) - <a href="https:&#x2F;&#x2F;platform.claude.com&#x2F;docs&#x2F;en&#x2F;about-claude&#x2F;models&#x2F;whats-new-claude-4-5" rel="nofollow">https:&#x2F;&#x2F;platform.claude.com&#x2F;docs&#x2F;en&#x2F...
 - **[Claude 3](https://claude.ai/)** - Talk to Claude, an AI assistant from Anthropic.
 

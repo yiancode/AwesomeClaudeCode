@@ -1,0 +1,5 @@
+{
+  "_comment": "已拒绝的资源 - 用于去重检测 / Rejected resources - used for deduplication",
+  "_schema_version": "1.0",
+  "resources": []
+}

@@ -1,0 +1,198 @@
+name: Process Resource Issue
+
+on:
+  issues:
+    types: [opened, edited]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: 'Issue number to process'
+        required: true
+        type: number
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    # Only run for issues with resource-submission label
+    if: |
+      github.event_name == 'workflow_dispatch' ||
+      contains(github.event.issue.labels.*.name, 'resource-submission')
+
+    permissions:
+      issues: write
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Get Issue info
+        id: issue_info
+        uses: actions/github-script@v7
+        with:
+          script: |
+            let issueNumber, issueBody;
+
+            if (context.eventName === 'workflow_dispatch') {
+              issueNumber = context.payload.inputs.issue_number;
+              const issue = await github.rest.issues.get({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber
+              });
+              issueBody = issue.data.body;
+            } else {
+              issueNumber = context.issue.number;
+              issueBody = context.payload.issue.body;
+            }
+
+            core.setOutput('issue_number', issueNumber);
+            core.setOutput('issue_body', issueBody);
+            return { number: issueNumber, body: issueBody };
+
+      - name: Process Issue
+        id: process
+        run: |
+          python scripts/process_issue.py \
+            --issue-number "${{ steps.issue_info.outputs.issue_number }}"
+        env:
+          ISSUE_BODY: ${{ steps.issue_info.outputs.issue_body }}
+          LANG: zh_CN.UTF-8
+          LC_ALL: zh_CN.UTF-8
+        continue-on-error: true
+
+      - name: Check for changes
+        id: verify_diff
+        run: |
+          git diff --quiet candidates/ || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit changes
+        if: steps.verify_diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add candidates/
+          git commit -m "feat: 添加候选资源 from Issue #${{ steps.issue_info.outputs.issue_number }} [skip ci]"
+          git push
+
+      - name: Comment on success
+        if: steps.process.outcome == 'success' && steps.verify_diff.outputs.changed == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issueNumber = ${{ steps.issue_info.outputs.issue_number }};
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              body: `## ✅ 资源已加入候选队列
+
+感谢您的提交！您提交的资源已被成功解析并加入候选队列。
+
+### 后续步骤
+1. 🔍 维护者将审核您的资源
+2. ✅ 审核通过后，资源将被添加到主列表
+3. 📢 您会收到审核结果的通知
+
+---
+🤖 此消息由自动化流程生成`
+            });
+
+            // Add label
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              labels: ['pending-review']
+            });
+
+            // Remove needs-review label if exists
+            try {
+              await github.rest.issues.removeLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                name: 'needs-review'
+              });
+            } catch (e) {
+              // Label might not exist
+            }
+
+      - name: Comment on duplicate
+        if: contains(steps.process.outputs.*, 'duplicate')
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issueNumber = ${{ steps.issue_info.outputs.issue_number }};
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              body: `## ⚠️ 发现重复资源
+
+您提交的资源链接已存在于我们的列表中。
+
+如果您认为这是一个误判，请：
+1. 检查资源 URL 是否正确
+2. 确认该资源确实与现有资源不同
+3. 在评论中说明情况
+
+---
+🤖 此消息由自动化流程生成`
+            });
+
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              labels: ['duplicate']
+            });
+
+      - name: Comment on failure
+        if: steps.process.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issueNumber = ${{ steps.issue_info.outputs.issue_number }};
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              body: `## ❌ 处理失败
+
+自动处理您的资源提交时遇到问题。这可能是由于：
+- 资源链接无法访问
+- 必填字段缺失
+- 表单格式问题
+
+请检查您的提交内容，确保所有必填字段都已正确填写，然后编辑 Issue 重新触发处理。
+
+如果问题持续存在，请联系维护者。
+
+---
+🤖 此消息由自动化流程生成`
+            });
+
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              labels: ['processing-failed']
+            });

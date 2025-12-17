@@ -1,0 +1,191 @@
+# 多源爬虫配置 / Multi-source Crawler Configuration
+# 配置各数据源的爬取参数
+# Configure crawl parameters for each data source
+
+# Reddit 爬虫配置 / Reddit Crawler Configuration
+reddit:
+  # 是否启用 / Enable
+  enabled: true
+
+  # 目标 subreddits
+  subreddits:
+    - ClaudeAI
+    - LocalLLaMA
+    - MachineLearning
+    - programming
+    - webdev
+    - learnprogramming
+
+  # 搜索关键词 / Search keywords
+  keywords:
+    - "claude code"
+    - "claude-code"
+    - "mcp server"
+    - "model context protocol"
+    - "anthropic claude"
+    - "claude cli"
+
+  # 最小 upvote 数 / Minimum upvotes
+  min_score: 10
+
+  # 最大帖子年龄（天）/ Maximum post age in days
+  max_age_days: 30
+
+  # 每个 subreddit 获取的帖子数 / Posts per subreddit
+  posts_per_subreddit: 25
+
+  # 搜索排序 / Search sort
+  sort: "relevance"  # relevance, hot, top, new
+
+  # 时间范围 / Time filter
+  time_filter: "month"  # hour, day, week, month, year, all
+
+# Awesome Lists 爬虫配置 / Awesome Lists Crawler Configuration
+awesome_lists:
+  # 是否启用 / Enable
+  enabled: true
+
+  # 目标 Awesome 列表 / Target awesome lists
+  lists:
+    - name: "Awesome MCP Servers"
+      url: "https://github.com/punkpeye/awesome-mcp-servers"
+      keywords: []  # 空表示获取所有
+
+    - name: "Awesome Claude"
+      url: "https://github.com/anthropics/anthropic-cookbook"
+      keywords: ["claude"]
+
+    - name: "Awesome LLM"
+      url: "https://github.com/Hannibal046/Awesome-LLM"
+      keywords: ["claude", "anthropic"]
+
+    - name: "Awesome AI Tools"
+      url: "https://github.com/mahseema/awesome-ai-tools"
+      keywords: ["claude", "anthropic", "mcp"]
+
+  # 是否深度解析链接 / Deep parse links
+  deep_parse: true
+
+  # 最大链接解析数 / Maximum links to parse
+  max_links_per_list: 100
+
+# RSS 爬虫配置 / RSS Crawler Configuration
+rss:
+  # 是否启用 / Enable
+  enabled: true
+
+  # RSS 订阅源 / RSS feeds
+  feeds:
+    - name: "Anthropic Blog"
+      url: "https://www.anthropic.com/feed.xml"
+      keywords: ["claude code", "mcp", "tool use"]
+
+    - name: "Hacker News Claude"
+      url: "https://hnrss.org/newest?q=claude+code"
+      keywords: []
+
+    - name: "Hacker News MCP"
+      url: "https://hnrss.org/newest?q=model+context+protocol"
+      keywords: []
+
+    - name: "Hacker News Anthropic"
+      url: "https://hnrss.org/newest?q=anthropic"
+      keywords: ["claude", "mcp", "tool"]
+
+    - name: "Reddit ClaudeAI"
+      url: "https://www.reddit.com/r/ClaudeAI/.rss"
+      keywords: ["claude code", "mcp", "tool", "cli"]
+
+  # 每个 feed 获取的条目数 / Entries per feed
+  entries_per_feed: 30
+
+  # 最大条目年龄（天）/ Maximum entry age in days
+  max_age_days: 14
+
+# Hacker News 爬虫配置 / Hacker News Crawler Configuration
+hackernews:
+  # 是否启用 / Enable
+  enabled: true
+
+  # 搜索关键词 / Search keywords
+  keywords:
+    - "claude code"
+    - "anthropic claude"
+    - "mcp server"
+    - "model context protocol"
+    - "claude cli"
+
+  # 搜索类型 / Search type
+  search_type: "story"  # story, comment, all
+
+  # 最小分数 / Minimum score
+  min_score: 5
+
+  # 每个关键词的结果数 / Results per keyword
+  results_per_keyword: 20
+
+  # 最大年龄（天）/ Maximum age in days
+  max_age_days: 30
+
+  # 排序 / Sort by
+  sort_by: "popularity"  # popularity, date
+
+# 速率限制配置 / Rate Limit Configuration
+rate_limits:
+  # 全局最小请求间隔（秒）/ Global minimum request interval (seconds)
+  global_min_interval: 1.0
+
+  # 各数据源特定限制 / Source-specific limits
+  reddit:
+    min_interval: 2.0
+    max_requests_per_minute: 30
+
+  github:
+    min_interval: 1.0
+    max_requests_per_minute: 60
+
+  hackernews:
+    min_interval: 1.0
+    max_requests_per_minute: 60
+
+  rss:
+    min_interval: 0.5
+    max_requests_per_minute: 120
+
+# 通用过滤规则 / Common Filter Rules
+filters:
+  # 排除的域名 / Excluded domains
+  excluded_domains:
+    - twitter.com
+    - x.com
+    - facebook.com
+    - linkedin.com
+    - youtube.com
+    - youtu.be
+    - instagram.com
+    - tiktok.com
+    - pinterest.com
+
+  # 必须包含的关键词（至少一个）/ Required keywords (at least one)
+  required_keywords:
+    - claude
+    - anthropic
+    - mcp
+    - model context protocol
+
+  # 最小相关性评分 / Minimum relevance score
+  min_relevance_score: 30
+
+# 输出配置 / Output Configuration
+output:
+  # 每次爬取的最大资源数 / Maximum resources per crawl
+  max_resources_per_crawl: 20
+
+  # 是否自动创建 Issue / Auto-create Issue
+  auto_create_issue: true
+
+  # Issue 标签 / Issue labels
+  issue_labels:
+    - auto-discovered
+    - multi-source
+    - needs-review

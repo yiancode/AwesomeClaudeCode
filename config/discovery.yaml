@@ -1,0 +1,163 @@
+# GitHub 资源发现配置 / GitHub Resource Discovery Configuration
+# 用于自动发现与 Claude Code 相关的项目
+# Used to automatically discover Claude Code related projects
+
+github:
+  # GitHub Topics 搜索 / GitHub Topics to search
+  topics:
+    - claude-code
+    - anthropic-claude
+    - mcp-server
+    - model-context-protocol
+    - claude-sdk
+    - anthropic-sdk
+    - claude-ai
+    - claude-assistant
+
+  # 关键词搜索查询 / Keyword search queries
+  search_queries:
+    - "claude code extension"
+    - "claude code plugin"
+    - "anthropic mcp server"
+    - "model context protocol"
+    - "claude code workflow"
+    - "claude code hook"
+    - "claude code slash command"
+    - "CLAUDE.md"
+    - "claude-code cli"
+
+  # 最小 Star 数量（过滤低质量项目）/ Minimum stars (filter low-quality projects)
+  min_stars: 3
+
+  # 最小项目年龄（天，避免过新的项目）/ Minimum age in days (avoid too new projects)
+  min_age_days: 7
+
+  # 最大项目年龄（天，避免过旧的项目）/ Maximum age in days (avoid too old projects)
+  max_age_days: 365
+
+  # 每次搜索返回的最大结果数 / Max results per search
+  max_results_per_query: 50
+
+  # 排除的仓库（已在资源列表中或不相关）/ Excluded repos (already in list or irrelevant)
+  excluded_repos:
+    # 官方仓库 / Official repos
+    - anthropics/claude-code
+    - anthropics/anthropic-sdk-python
+    - anthropics/anthropic-sdk-typescript
+    - anthropics/courses
+    - anthropics/anthropic-cookbook
+    # 本项目 / This project
+    - yiancode/AwesomeClaudeCode
+
+  # 排除的用户/组织（垃圾或不相关）/ Excluded users/orgs (spam or irrelevant)
+  excluded_owners: []
+
+  # 必须包含的文件（用于验证相关性）/ Required files (for relevance validation)
+  relevance_indicators:
+    # 高相关性指标 / High relevance indicators
+    high:
+      - CLAUDE.md
+      - claude.md
+      - .claude/
+      - mcp.json
+    # 中等相关性指标 / Medium relevance indicators
+    medium:
+      - anthropic
+      - claude
+      - mcp
+
+# 关联发现配置 / Related discovery configuration
+related_discovery:
+  # 是否启用从现有资源发现关联项目 / Enable discovery from existing resources
+  enabled: true
+
+  # 检查的关联类型 / Types of relations to check
+  check_types:
+    - dependencies      # 依赖的项目 / Dependencies
+    - dependents        # 被依赖的项目 / Dependents
+    - forks             # Fork 项目 / Forks
+    - similar           # 相似项目 / Similar projects
+
+  # Fork 项目的最小 Star 数（Fork 通常需要更多 Star 才值得收录）
+  # Minimum stars for forks (forks usually need more stars to be worth including)
+  fork_min_stars: 10
+
+# 趋势分析配置 / Trend analysis configuration
+trends:
+  # 是否启用趋势分析 / Enable trend analysis
+  enabled: true
+
+  # 分析周期（天）/ Analysis period in days
+  analysis_period_days: 30
+
+  # 快速增长阈值（Star 增长百分比）/ Fast growth threshold (Star growth percentage)
+  fast_growth_threshold_percent: 50
+
+  # 最小 Star 基数（避免小项目的百分比失真）
+  # Minimum star base (avoid percentage distortion for small projects)
+  min_star_base: 10
+
+# 去重配置 / Deduplication configuration
+deduplication:
+  # URL 规范化规则 / URL normalization rules
+  normalize_url: true
+  strip_trailing_slash: true
+  lowercase_url: true
+
+  # 相似度阈值（名称相似度，0-1）/ Similarity threshold (name similarity, 0-1)
+  name_similarity_threshold: 0.8
+
+# 分类推断规则 / Category inference rules
+category_inference:
+  # 基于 Topics 的分类映射 / Category mapping based on topics
+  topic_mapping:
+    mcp-server: mcp-servers
+    model-context-protocol: mcp-servers
+    claude-extension: tooling
+    claude-plugin: tooling
+    claude-workflow: workflows
+    claude-hook: hooks
+    slash-command: slash-commands
+
+  # 基于文件的分类映射 / Category mapping based on files
+  file_mapping:
+    "mcp.json": mcp-servers
+    "CLAUDE.md": claude-md-files
+    ".claude/commands/": slash-commands
+    ".claude/hooks/": hooks
+
+  # 默认分类 / Default category
+  default_category: ecosystem
+
+# 通知配置 / Notification configuration
+notifications:
+  # 发现新资源时创建 Issue / Create Issue when new resource is discovered
+  create_issue: true
+
+  # Issue 模板 / Issue template
+  issue_template: |
+    ## 🔍 自动发现的新资源 / Auto-discovered New Resource
+
+    **仓库 / Repository**: {repo_url}
+    **描述 / Description**: {description}
+    **Stars**: {stars} ⭐
+    **语言 / Language**: {language}
+    **Topics**: {topics}
+
+    ### 推断信息 / Inferred Information
+    - **建议分类 / Suggested Category**: {category}
+    - **相关性评分 / Relevance Score**: {relevance_score}/100
+
+    ### 审核清单 / Review Checklist
+    - [ ] 确认与 Claude Code 相关 / Confirm Claude Code relevance
+    - [ ] 检查资源质量 / Check resource quality
+    - [ ] 验证分类正确 / Verify category
+
+    ---
+    🤖 由 GitHub 资源发现工作流自动生成 / Auto-generated by GitHub Resource Discovery Workflow
+
+  # Issue 标签 / Issue labels
+  issue_labels:
+    - auto-discovered
+    - needs-review
+    - resource-submission

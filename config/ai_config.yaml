@@ -1,0 +1,200 @@
+# AI 增强配置 / AI Enhancement Configuration
+# 配置 AI 辅助的资源分类、描述生成和相关性评估
+# Configure AI-assisted resource classification, description generation, and relevance assessment
+
+# AI 提供商配置 / AI Provider Configuration
+provider:
+  # 默认提供商 / Default provider
+  default: anthropic
+
+  # Anthropic Claude 配置
+  anthropic:
+    # 模型名称 / Model name
+    model: claude-3-haiku-20240307
+    # 最大 token 数 / Maximum tokens
+    max_tokens: 1024
+    # 温度 / Temperature
+    temperature: 0.3
+
+  # OpenAI 配置（备用）/ OpenAI Configuration (backup)
+  openai:
+    model: gpt-3.5-turbo
+    max_tokens: 1024
+    temperature: 0.3
+
+# 分类增强配置 / Classification Enhancement Configuration
+classification:
+  # 是否启用 AI 分类 / Enable AI classification
+  enabled: true
+
+  # 置信度阈值（低于此值需要人工审核）/ Confidence threshold (below this requires manual review)
+  confidence_threshold: 0.7
+
+  # 分类提示模板 / Classification prompt template
+  prompt_template: |
+    你是一个 Claude Code 资源分类专家。请根据以下信息为资源选择最合适的分类。
+
+    资源信息：
+    - 名称：{name}
+    - URL：{url}
+    - 描述：{description}
+    - 编程语言：{language}
+    - Topics：{topics}
+
+    可用分类：
+    {categories}
+
+    请返回 JSON 格式：
+    {
+      "category": "分类ID",
+      "subcategory": "子分类ID",
+      "confidence": 0.0-1.0,
+      "reason": "选择原因"
+    }
+
+# 描述生成配置 / Description Generation Configuration
+description:
+  # 是否启用 AI 描述生成 / Enable AI description generation
+  enabled: true
+
+  # 描述最大长度 / Maximum description length
+  max_length: 200
+
+  # 描述提示模板 / Description prompt template
+  prompt_template: |
+    为以下 Claude Code 相关资源生成简洁的中英文描述。
+
+    资源信息：
+    - 名称：{name}
+    - URL：{url}
+    - 原始描述：{original_description}
+    - README 摘要：{readme_summary}
+
+    要求：
+    1. 描述应简洁明了，不超过 {max_length} 字符
+    2. 突出资源的主要功能和用途
+    3. 使用专业但易懂的语言
+
+    请返回 JSON 格式：
+    {
+      "description_en": "英文描述",
+      "description_zh": "中文描述"
+    }
+
+# 相关性评估配置 / Relevance Assessment Configuration
+relevance:
+  # 是否启用 AI 相关性评估 / Enable AI relevance assessment
+  enabled: true
+
+  # 最小相关性分数（低于此值不收录）/ Minimum relevance score (below this will not be included)
+  min_score: 40
+
+  # 相关性提示模板 / Relevance prompt template
+  prompt_template: |
+    评估以下资源与 Claude Code 生态系统的相关性。
+
+    资源信息：
+    - 名称：{name}
+    - URL：{url}
+    - 描述：{description}
+    - 类型：{resource_type}
+
+    Claude Code 相关性判断标准：
+    1. 直接相关：专门为 Claude Code 设计的工具、扩展、教程
+    2. 间接相关：可与 Claude Code 配合使用的通用工具
+    3. 生态相关：Anthropic/Claude 生态系统的其他资源
+    4. 不相关：与 Claude Code 无关的资源
+
+    请返回 JSON 格式：
+    {
+      "relevance_score": 0-100,
+      "relevance_level": "direct|indirect|ecosystem|unrelated",
+      "reason": "判断原因",
+      "suggested_tags": ["标签1", "标签2"]
+    }
+
+# 标签建议配置 / Tag Suggestion Configuration
+tags:
+  # 是否启用 AI 标签建议 / Enable AI tag suggestion
+  enabled: true
+
+  # 最大标签数 / Maximum number of tags
+  max_tags: 5
+
+  # 预定义标签池 / Predefined tag pool
+  predefined_tags:
+    - claude-code
+    - mcp-server
+    - workflow
+    - hook
+    - slash-command
+    - statusline
+    - cli-tool
+    - vscode-extension
+    - neovim-plugin
+    - automation
+    - ai-coding
+    - prompt-engineering
+    - documentation
+    - tutorial
+    - template
+    - open-source
+
+# 重复检测配置 / Duplicate Detection Configuration
+deduplication:
+  # 是否启用 AI 重复检测 / Enable AI duplicate detection
+  enabled: true
+
+  # URL 规范化 / URL normalization
+  normalize_url: true
+  strip_www: true
+  strip_trailing_slash: true
+  lowercase: true
+
+  # 名称相似度阈值 / Name similarity threshold
+  name_similarity_threshold: 0.85
+
+  # 描述相似度阈值 / Description similarity threshold
+  description_similarity_threshold: 0.80
+
+  # 使用 AI 进行语义相似度检测 / Use AI for semantic similarity detection
+  use_semantic_similarity: true
+
+  # 语义相似度阈值 / Semantic similarity threshold
+  semantic_similarity_threshold: 0.90
+
+# 批处理配置 / Batch Processing Configuration
+batch:
+  # 每批处理的资源数 / Resources per batch
+  batch_size: 10
+
+  # 请求间隔（秒）/ Request interval (seconds)
+  request_interval: 1.0
+
+  # 最大重试次数 / Maximum retries
+  max_retries: 3
+
+  # 重试延迟（秒）/ Retry delay (seconds)
+  retry_delay: 5.0
+
+# 缓存配置 / Cache Configuration
+cache:
+  # 是否启用缓存 / Enable cache
+  enabled: true
+
+  # 缓存文件 / Cache file
+  cache_file: candidates/ai_cache.json
+
+  # 缓存过期时间（天）/ Cache expiration (days)
+  expiration_days: 7
+
+# 输出配置 / Output Configuration
+output:
+  # 增强结果保存位置 / Enhanced results save location
+  enhanced_file: candidates/enhanced_resources.json
+
+  # 是否保存原始 AI 响应 / Save raw AI responses
+  save_raw_responses: false
+
+  # 是否生成增强报告 / Generate enhancement report
+  generate_report: true

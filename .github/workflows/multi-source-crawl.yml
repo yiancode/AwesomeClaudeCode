@@ -1,0 +1,209 @@
+name: Multi-source Resource Crawl
+
+on:
+  schedule:
+    # 每周三和周六 UTC 3:00 运行
+    - cron: '0 3 * * 3,6'
+  workflow_dispatch:
+    inputs:
+      sources:
+        description: 'Data sources to crawl'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - reddit
+          - awesome
+          - rss
+          - hackernews
+      limit:
+        description: 'Maximum resources per source'
+        required: false
+        default: '10'
+        type: string
+      dry_run:
+        description: 'Dry run (do not modify files)'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install feedparser  # RSS 解析可选依赖
+
+      - name: Run multi-source crawl
+        id: crawl
+        run: |
+          SOURCES="${{ github.event.inputs.sources || 'all' }}"
+          LIMIT="${{ github.event.inputs.limit || '10' }}"
+          DRY_RUN="${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}"
+
+          python scripts/multi_source_crawl.py \
+            --sources $SOURCES \
+            --limit $LIMIT \
+            $DRY_RUN
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          LANG: zh_CN.UTF-8
+          LC_ALL: zh_CN.UTF-8
+
+      - name: Check for changes
+        id: verify_diff
+        run: |
+          git diff --quiet candidates/ || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit changes
+        if: steps.verify_diff.outputs.changed == 'true' && github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add candidates/
+          git commit -m "feat: 多源资源爬取发现新资源 [skip ci]"
+          git push
+
+      - name: Create summary Issue
+        if: steps.verify_diff.outputs.changed == 'true' && github.event.inputs.dry_run != 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const date = new Date().toISOString().split('T')[0];
+            const sources = '${{ github.event.inputs.sources || 'all' }}';
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `🕸️ 多源爬取发现新资源 - ${date}`,
+              body: `## 📦 多源资源爬取结果
+
+本次从以下数据源发现了新的候选资源：
+
+**数据源**: ${sources}
+
+### 数据源说明
+- **Reddit**: 从 ClaudeAI、LocalLLaMA 等 subreddit 搜索
+- **Awesome Lists**: 从 awesome-mcp-servers 等列表提取
+- **RSS**: 从 Anthropic Blog、HN RSS 等订阅源获取
+- **Hacker News**: 通过 Algolia API 搜索
+
+### 后续步骤
+1. 查看 \`candidates/pending_resources.json\`
+2. 运行 \`python scripts/create_resource_pr.py --list\` 查看待审核
+3. 审核通过后运行 \`python scripts/create_resource_pr.py --all\` 创建 PR
+
+---
+🤖 由多源爬取工作流自动生成`,
+              labels: ['auto-discovered', 'multi-source', 'needs-review']
+            });
+
+  # 单独运行各爬虫的作业（用于调试）
+  crawl-reddit:
+    runs-on: ubuntu-latest
+    if: |
+      github.event_name == 'workflow_dispatch' &&
+      github.event.inputs.sources == 'reddit'
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Crawl Reddit
+        run: |
+          python scripts/multi_source_crawl.py \
+            --sources reddit \
+            --limit ${{ github.event.inputs.limit || '10' }} \
+            ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
+        env:
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+
+      - name: Commit changes
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add candidates/
+          git diff --staged --quiet || git commit -m "feat: Reddit 爬取发现新资源 [skip ci]"
+          git push || true
+
+  crawl-hackernews:
+    runs-on: ubuntu-latest
+    if: |
+      github.event_name == 'workflow_dispatch' &&
+      github.event.inputs.sources == 'hackernews'
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Crawl Hacker News
+        run: |
+          python scripts/multi_source_crawl.py \
+            --sources hackernews \
+            --limit ${{ github.event.inputs.limit || '10' }} \
+            ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
+
+      - name: Commit changes
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add candidates/
+          git diff --staged --quiet || git commit -m "feat: Hacker News 爬取发现新资源 [skip ci]"
+          git push || true

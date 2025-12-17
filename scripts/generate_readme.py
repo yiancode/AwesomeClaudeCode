@@ -483,10 +483,11 @@ def render_category(category: Dict, resources: List[Dict]) -> str:
             subcat_name_zh = subcat.get('name_zh', subcat_name)
 
             # 过滤该子分类的资源 / Filter resources for this subcategory
+            # 修复：只匹配精确的子分类，不再将 general 添加到所有子分类
+            # Fix: Only match exact subcategory, don't add general to all subcategories
             subcat_resources = [
                 r for r in category_resources
-                if r.get('SubCategory', '').strip() == 'general' or
-                   r.get('SubCategory', '').strip() == subcat['id']
+                if r.get('SubCategory', '').strip() == subcat['id']
             ]
 
             if subcat_resources:

@@ -26,6 +26,8 @@ select = ["F", "E", "W"]
 # Ignore specific rules
 ignore = [
     "F401",  # Unused imports - not critical for functionality
+    "F841",  # Unused local variables - may be for future use
+    "E501",  # Line too long - handled by formatter
     "W291",  # Trailing whitespace - cosmetic
     "W293",  # Blank line contains whitespace - cosmetic
 ]

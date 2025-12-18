@@ -89,21 +89,25 @@ jobs:
           script: |
             const date = new Date().toISOString().split('T')[0];
 
+            const issueBody = [
+              '## 📦 新发现的候选资源',
+              '',
+              '本次通过 **GitHub Topics** 搜索发现了新的候选资源。',
+              '',
+              '### 后续步骤',
+              '1. 查看 `candidates/pending_resources.json` 中的新资源',
+              '2. 使用 `python scripts/create_resource_pr.py --list` 查看待审核列表',
+              '3. 审核通过后运行 `python scripts/create_resource_pr.py --all` 创建 PR',
+              '',
+              '---',
+              '🤖 由 GitHub 资源发现工作流自动生成'
+            ].join('\n');
+
             await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
               title: `🔍 自动发现的新资源 - ${date}`,
-              body: `## 📦 新发现的候选资源
-
-本次通过 **GitHub Topics** 搜索发现了新的候选资源。
-
-### 后续步骤
-1. 查看 \`candidates/pending_resources.json\` 中的新资源
-2. 使用 \`python scripts/create_resource_pr.py --list\` 查看待审核列表
-3. 审核通过后运行 \`python scripts/create_resource_pr.py --all\` 创建 PR
-
----
-🤖 由 GitHub 资源发现工作流自动生成`,
+              body: issueBody,
               labels: ['auto-discovered', 'needs-review']
             });
 
@@ -292,29 +296,33 @@ jobs:
               trendsReport = '*趋势报告生成失败*';
             }
 
+            const issueBody = [
+              '## 🔍 每周自动发现摘要',
+              '',
+              '本周通过自动化流程发现了新的候选资源。',
+              '',
+              '### 发现来源',
+              '- GitHub Topics 搜索',
+              '- 关联项目分析',
+              '- 趋势分析',
+              '',
+              '### 趋势报告',
+              '',
+              trendsReport.substring(0, 60000),
+              '',
+              '### 后续步骤',
+              '1. 查看 `candidates/pending_resources.json`',
+              '2. 审核新发现的资源',
+              '3. 批准优质资源',
+              '',
+              '---',
+              '🤖 每周自动生成'
+            ].join('\n');
+
             await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
               title: `📊 每周资源发现报告 - ${date}`,
-              body: `## 🔍 每周自动发现摘要
-
-本周通过自动化流程发现了新的候选资源。
-
-### 发现来源
-- GitHub Topics 搜索
-- 关联项目分析
-- 趋势分析
-
-### 趋势报告
-
-${trendsReport.substring(0, 60000)}
-
-### 后续步骤
-1. 查看 \`candidates/pending_resources.json\`
-2. 审核新发现的资源
-3. 批准优质资源
-
----
-🤖 每周自动生成`,
+              body: issueBody,
               labels: ['auto-discovered', 'weekly-report', 'needs-review']
             });

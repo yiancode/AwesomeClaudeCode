@@ -67,7 +67,29 @@ jobs:
             const report = fs.readFileSync('validation_report.txt', 'utf8');
 
             const title = `🔗 链接验证失败 / Link Validation Failed - ${new Date().toISOString().split('T')[0]}`;
-            const body = `## 链接验证报告 / Link Validation Report\n\n⚠️ 检测到失败的链接。请查看详细报告并更新或移除失败的资源。\n\n<details>\n<summary>📋 完整报告 / Full Report</summary>\n\n\`\`\`\n${report}\n\`\`\`\n\n</details>\n\n### 处理步骤 / Action Items\n\n1. 检查失败的 URL 是否真的无法访问\n2. 如果资源已永久下线，从 CSV 中移除\n3. 如果是暂时性错误，可以在 \`templates/resource-overrides.yaml\` 中添加 \`skip_validation: true\`\n4. 更新后运行 \`make generate\` 重新生成 README`;
+
+            const bodyParts = [
+              '## 链接验证报告 / Link Validation Report',
+              '',
+              '⚠️ 检测到失败的链接。请查看详细报告并更新或移除失败的资源。',
+              '',
+              '<details>',
+              '<summary>📋 完整报告 / Full Report</summary>',
+              '',
+              '```',
+              report,
+              '```',
+              '',
+              '</details>',
+              '',
+              '### 处理步骤 / Action Items',
+              '',
+              '1. 检查失败的 URL 是否真的无法访问',
+              '2. 如果资源已永久下线，从 CSV 中移除',
+              '3. 如果是暂时性错误，可以在 `templates/resource-overrides.yaml` 中添加 `skip_validation: true`',
+              '4. 更新后运行 `make generate` 重新生成 README'
+            ];
+            const body = bodyParts.join('\n');
 
             // 查找是否已有未关闭的验证失败 Issue
             const issues = await github.rest.issues.listForRepo({
@@ -88,11 +110,12 @@ jobs:
               });
             } else {
               // 更新现有 Issue
+              const commentBody = `## 🔄 最新验证报告 / Latest Report - ${new Date().toISOString().split('T')[0]}\n\n${body}`;
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: issues.data[0].number,
-                body: `## 🔄 最新验证报告 / Latest Report - ${new Date().toISOString().split('T')[0]}\n\n${body}`
+                body: commentBody
               });
             }
 
@@ -108,9 +131,22 @@ jobs:
             let emoji = hasFailures ? '⚠️' : '✅';
             let status = hasFailures ? '发现失败的链接' : '所有链接验证通过';
 
+            const commentBody = [
+              `${emoji} **链接验证结果**: ${status}`,
+              '',
+              '<details>',
+              '<summary>查看详细报告</summary>',
+              '',
+              '```',
+              report.slice(0, 5000),
+              '```',
+              '',
+              '</details>'
+            ].join('\n');
+
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `${emoji} **链接验证结果**: ${status}\n\n<details>\n<summary>查看详细报告</summary>\n\n\`\`\`\n${report.slice(0, 5000)}\n\`\`\`\n\n</details>`
+              body: commentBody
             });

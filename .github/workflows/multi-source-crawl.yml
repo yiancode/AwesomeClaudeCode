@@ -94,29 +94,33 @@ jobs:
             const date = new Date().toISOString().split('T')[0];
             const sources = '${{ github.event.inputs.sources || 'all' }}';
 
+            const issueBody = [
+              '## 📦 多源资源爬取结果',
+              '',
+              '本次从以下数据源发现了新的候选资源：',
+              '',
+              `**数据源**: ${sources}`,
+              '',
+              '### 数据源说明',
+              '- **Reddit**: 从 ClaudeAI、LocalLLaMA 等 subreddit 搜索',
+              '- **Awesome Lists**: 从 awesome-mcp-servers 等列表提取',
+              '- **RSS**: 从 Anthropic Blog、HN RSS 等订阅源获取',
+              '- **Hacker News**: 通过 Algolia API 搜索',
+              '',
+              '### 后续步骤',
+              '1. 查看 `candidates/pending_resources.json`',
+              '2. 运行 `python scripts/create_resource_pr.py --list` 查看待审核',
+              '3. 审核通过后运行 `python scripts/create_resource_pr.py --all` 创建 PR',
+              '',
+              '---',
+              '🤖 由多源爬取工作流自动生成'
+            ].join('\n');
+
             await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
               title: `🕸️ 多源爬取发现新资源 - ${date}`,
-              body: `## 📦 多源资源爬取结果
-
-本次从以下数据源发现了新的候选资源：
-
-**数据源**: ${sources}
-
-### 数据源说明
-- **Reddit**: 从 ClaudeAI、LocalLLaMA 等 subreddit 搜索
-- **Awesome Lists**: 从 awesome-mcp-servers 等列表提取
-- **RSS**: 从 Anthropic Blog、HN RSS 等订阅源获取
-- **Hacker News**: 通过 Algolia API 搜索
-
-### 后续步骤
-1. 查看 \`candidates/pending_resources.json\`
-2. 运行 \`python scripts/create_resource_pr.py --list\` 查看待审核
-3. 审核通过后运行 \`python scripts/create_resource_pr.py --all\` 创建 PR
-
----
-🤖 由多源爬取工作流自动生成`,
+              body: issueBody,
               labels: ['auto-discovered', 'multi-source', 'needs-review']
             });
 

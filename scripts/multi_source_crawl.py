@@ -154,7 +154,7 @@ def main():
     print("-" * 35)
     print(f"{'总计':<15} {total_discovered:<10} {total_added:<10}")
 
-    print(f"\n✅ 完成！")
+    print("\n✅ 完成！")
 
     # 输出供 GitHub Actions 使用
     print(f"::set-output name=total_discovered::{total_discovered}")

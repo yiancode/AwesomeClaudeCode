@@ -186,13 +186,13 @@ def create_branch_and_pr(resources: List[dict], csv_file: Path) -> tuple:
         return False, f"git commit 失败: {output}"
 
     # 推送分支
-    print(f"\n🚀 推送分支到远程...")
+    print("\n🚀 推送分支到远程...")
     success, output = run_git_command(['git', 'push', '-u', 'origin', branch_name])
     if not success:
         return False, f"git push 失败: {output}"
 
     # 创建 PR（使用 gh CLI）
-    print(f"\n📬 创建 Pull Request...")
+    print("\n📬 创建 Pull Request...")
 
     pr_title = f"✨ 添加 {resource_count} 个新资源"
     pr_body = """## 📦 新资源提交

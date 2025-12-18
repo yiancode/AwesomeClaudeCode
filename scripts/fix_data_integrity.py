@@ -234,7 +234,7 @@ def fix_data_integrity(csv_path, output_path=None, dry_run=False):
         fixed_rows.append(row)
 
     # 显示统计
-    print(f"\n修复统计 | Fix Statistics:")
+    print("\n修复统计 | Fix Statistics:")
     print(f"  - 修复重复ID: {stats['fixed_duplicate_ids']}")
     print(f"  - 添加描述: {stats['added_descriptions']}")
     print(f"  - 添加作者: {stats['added_authors']}")
@@ -250,10 +250,10 @@ def fix_data_integrity(csv_path, output_path=None, dry_run=False):
 
         print(f"\n✓ 已保存到: {output_path}")
     else:
-        print(f"\n⚠ 预览模式，未保存更改（使用 --dry-run=false 保存）")
+        print("\n⚠ 预览模式，未保存更改（使用 --dry-run=false 保存）")
 
     # 验证结果
-    print(f"\n验证结果 | Validation:")
+    print("\n验证结果 | Validation:")
     final_ids = [r['ID'] for r in fixed_rows]
     final_duplicates = {id: count for id, count in Counter(final_ids).items() if count > 1}
 

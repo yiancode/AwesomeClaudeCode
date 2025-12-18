@@ -600,7 +600,7 @@ def main():
                     updated_pending.append(res)
 
             save_pending_resources(updated_pending)
-            print(f"\n💾 已保存增强结果")
+            print("\n💾 已保存增强结果")
 
         return 0
 

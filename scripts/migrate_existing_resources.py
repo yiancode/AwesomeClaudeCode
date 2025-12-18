@@ -316,12 +316,12 @@ def main():
     generate_migration_report(resources, report_file)
 
     print("\n✨ 迁移完成！/ Migration complete!")
-    print(f"\n下一步：")
+    print("\n下一步：")
     print("Next steps:")
     print(f"1. 检查 {output_csv}")
     print(f"2. 阅读 {report_file}")
     print("3. 手动补充元数据")
-    print(f"4. 运行 'make generate' 生成 README")
+    print("4. 运行 'make generate' 生成 README")
 
 
 if __name__ == '__main__':

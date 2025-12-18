@@ -133,16 +133,16 @@ def print_validation_report(errors: List[str], stats: Dict):
     print("="*70)
 
     # 统计信息 / Statistics
-    print(f"\n📊 统计信息 / Statistics:")
+    print("\n📊 统计信息 / Statistics:")
     print(f"  总资源数 / Total Resources: {stats['total']}")
     print(f"  官方资源 / Official Resources: {stats['official']}")
     print(f"  社区资源 / Community Resources: {stats['community']}")
 
-    print(f"\n📂 分类统计 / Category Statistics:")
+    print("\n📂 分类统计 / Category Statistics:")
     for category, count in sorted(stats['categories'].items()):
         print(f"  - {category}: {count}")
 
-    print(f"\n⚠️  需要补充的字段 / Fields Requiring Completion:")
+    print("\n⚠️  需要补充的字段 / Fields Requiring Completion:")
     print(f"  - 缺少 Author / Missing Author: {stats['missing_author']}")
     print(f"  - 缺少 License / Missing License: {stats['missing_license']}")
     print(f"  - 缺少 Description_ZH / Missing Description_ZH: {stats['missing_description_zh']}")
@@ -155,7 +155,7 @@ def print_validation_report(errors: List[str], stats: Dict):
         if len(errors) > 20:
             print(f"  ... 还有 {len(errors) - 20} 个错误 / ... and {len(errors) - 20} more errors")
     else:
-        print(f"\n✅ 所有验证通过！/ All validations passed!")
+        print("\n✅ 所有验证通过！/ All validations passed!")
 
     print("\n" + "="*70)
 

@@ -509,7 +509,7 @@ def main():
         print("\n🔬 分析资源依赖...")
         results = analyzer.analyze_all_resources()
 
-        print(f"\n📊 分析完成")
+        print("\n📊 分析完成")
         print(f"   分析了 {len(results)} 个仓库")
         print(f"   发现 {len(analyzer.dependency_counts)} 个相关依赖")
 

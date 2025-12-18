@@ -528,7 +528,7 @@ def main():
     active_count = sum(1 for r in analysis_results if r.get('status') == 'active')
     archived_count = sum(1 for r in analysis_results if r.get('status') == 'archived')
 
-    print(f"\n✅ 分析完成！")
+    print("\n✅ 分析完成！")
     print(f"   活跃: {active_count}, 已归档: {archived_count}")
 
     # 输出供 GitHub Actions 使用

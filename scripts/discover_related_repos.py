@@ -523,7 +523,7 @@ def main():
         return 0
 
     # 创建候选资源
-    print(f"\n📦 创建候选资源...")
+    print("\n📦 创建候选资源...")
     added_count = 0
 
     for repo, source_resource, relation_type, score in unique_candidates:

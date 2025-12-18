@@ -158,13 +158,13 @@ def update_csv_with_github_data(csv_path: Path, github_token: Optional[str] = No
             print("  ⏱️  等待 1 秒（避免速率限制）...")
             time.sleep(1)
 
-    print(f"\n📊 统计 / Statistics:")
+    print("\n📊 统计 / Statistics:")
     print(f"  ✅ 更新 / Updated: {updated_count}")
     print(f"  ⏭️  跳过 / Skipped: {skipped_count}")
     print(f"  ❌ 错误 / Errors: {error_count}")
 
     if dry_run:
-        print(f"\n⚠️ DRY RUN 模式：不写入文件")
+        print("\n⚠️ DRY RUN 模式：不写入文件")
         print("⚠️ DRY RUN mode: Not writing to file")
         return
 

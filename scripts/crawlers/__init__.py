@@ -12,9 +12,9 @@ from .rss_crawler import RSSCrawler
 from .hackernews_crawler import HackerNewsCrawler
 
 __all__ = [
-    'BaseCrawler',
-    'RedditCrawler',
-    'AwesomeListCrawler',
-    'RSSCrawler',
-    'HackerNewsCrawler',
+    "BaseCrawler",
+    "RedditCrawler",
+    "AwesomeListCrawler",
+    "RSSCrawler",
+    "HackerNewsCrawler",
 ]

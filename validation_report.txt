@@ -1,0 +1,82 @@
+Starting validation of 147 resources...
+Loaded 5 resource overrides
+✓ Claude Code 官方文档
+✓ Anthropic 博客
+Skipping Claude Code GitHub Issues - validation disabled by override
+✓ Discord 社区
+✓ Context7 文档资源
+✓ 技术支持
+✓ 状态页面
+✓ Anthropic Claude 英文文档
+✓ Context7 镜像
+✓ Anthropic Claude 中文文档
+✓ Context7 镜像
+✓ Anthropic Claude 俄文文档
+✓ Context7 镜像
+✓ Anthropic API 首页
+✓ Context7 镜像
+✓ Anthropic API
+✓ Context7 镜像
+Skipping LLMs.txt 格式文档 - validation disabled by override
+✓ Context7 镜像
+Skipping 完整版 LLMs.txt - validation disabled by override
+✓ Context7 镜像
+✓ Python SDK
+✓ Context7 文档
+✓ TypeScript/JavaScript SDK
+✓ Context7 文档
+✓ Go SDK
+✓ Context7 文档
+✓ Ruby SDK
+✓ Context7 文档
+✓ Java SDK
+✓ Context7 文档
+✓ TypeScript Tokenizer
+✓ Context7 文档
+✓ Anthropic 课程
+✓ Context7 文档
+✓ Anthropic Cookbook
+✓ Context7 文档
+✓ Anthropic 快速开始
+✓ Context7 文档
+Skipping Reddit r/ClaudeCode - validation disabled by override
+✓ Stack Overflow 标签
+✓ MCP 协议规范
+✓ Claude Code Go
+✓ Context7 文档
+✓ Claude Code 模板
+✓ Context7 文档
+✓ Claudette
+✓ Context7 文档
+✓ MCP Think Tool
+✓ Context7 文档
+✓ Donating the Model Context Protocol and establishing the Agentic AI Foundation
+✓ Claude Opus 4.5
+✓ Show HN: I taught Claude Code to draw diagrams – the XML pitfalls were brutal
+✓ roychri/mcp-server-asana
+✓ Gaffx/volatility-mcp
+✓ ToolHive
+✓ nwiizo/tfmcp
+✓ AbdelStark/bitcoin-mcp
+✓ andybrandt/mcp-simple-openai-assistant
+✓ wanaku-ai/wanaku
+✓ QGIS MCP
+✓ kelvin6365/plane-mcp-server
+✓ tan-yong-sheng/ai-vision-mcp
+✓ pwh-pwh/cal-mcp
+✓ ws-mcp
+Skipping Claude 3 - validation disabled by override
+✓ mindsdb/mindsdb
+✓ thinkchainai/mcpbundles
+✓ microsoft/playwright-mcp
+Error fetching last modified date for Sim-xia/Blind-Auditor: 'NoneType' object has no attribute 'get'
+✓ sim-xia/blind-auditor
+✓ sonirico/mcp-shell
+
+Validation complete!
+Total resources: 147
+Processed: 66
+GitHub links: 31
+GitHub API calls: 31
+Total broken links: 0
+Newly broken links: 0

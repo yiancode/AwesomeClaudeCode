@@ -93,7 +93,7 @@ def test_csv_structure():
         failures.append(f"❌ 发现额外字段: {extra_fields}")
 
     # 验证字段顺序正确（前19个字段）
-    expected_order = ALL_FIELDS[:len(fieldnames)]
+    expected_order = ALL_FIELDS[: len(fieldnames)]
     if list(fieldnames) != expected_order:
         failures.append("❌ 字段顺序不正确")
         failures.append(f"   期望: {expected_order}")
@@ -112,9 +112,7 @@ def test_required_fields_present():
         for field in REQUIRED_FIELDS:
             if not row.get(field) or row[field].strip() == "":
                 resource_id = row.get("ID", "unknown")
-                failures.append(
-                    f"❌ 第 {i} 行资源 {resource_id}: 缺少必填字段 '{field}'"
-                )
+                failures.append(f"❌ 第 {i} 行资源 {resource_id}: 缺少必填字段 '{field}'")
 
     return failures
 
@@ -153,26 +151,20 @@ def test_id_format():
         parts = resource_id.split("-")
 
         if len(parts) != 2:
-            failures.append(
-                f"❌ 第 {i} 行: ID '{resource_id}' 格式不正确（应为 prefix-hash8）"
-            )
+            failures.append(f"❌ 第 {i} 行: ID '{resource_id}' 格式不正确（应为 prefix-hash8）")
             continue
 
         prefix, hash_part = parts
 
         # Hash 部分应该是 8 个字符
         if len(hash_part) != 8:
-            failures.append(
-                f"❌ 第 {i} 行: ID '{resource_id}' hash 部分长度不是 8 字符"
-            )
+            failures.append(f"❌ 第 {i} 行: ID '{resource_id}' hash 部分长度不是 8 字符")
 
         # Hash 应该是十六进制
         try:
             int(hash_part, 16)
         except ValueError:
-            failures.append(
-                f"❌ 第 {i} 行: ID '{resource_id}' hash 部分不是有效的十六进制"
-            )
+            failures.append(f"❌ 第 {i} 行: ID '{resource_id}' hash 部分不是有效的十六进制")
 
     return failures
 
@@ -189,9 +181,7 @@ def test_chinese_encoding():
     found_chinese = any(keyword in content for keyword in chinese_keywords)
 
     if not found_chinese:
-        failures.append(
-            f"❌ CSV 文件中未找到中文内容（期望包含: {chinese_keywords}）"
-        )
+        failures.append(f"❌ CSV 文件中未找到中文内容（期望包含: {chinese_keywords}）")
 
     # 验证 UTF-8 编码正确（通过成功读取验证）
     try:
@@ -218,8 +208,7 @@ def test_boolean_fields():
             if value not in valid_values:
                 resource_id = row.get("ID", "unknown")
                 failures.append(
-                    f"❌ 第 {i} 行资源 {resource_id}: 字段 '{field}' "
-                    f"值 '{value}' 无效（应为 TRUE/FALSE/空）"
+                    f"❌ 第 {i} 行资源 {resource_id}: 字段 '{field}' 值 '{value}' 无效（应为 TRUE/FALSE/空）"
                 )
 
     return failures
@@ -237,9 +226,7 @@ def test_url_format():
 
         # PrimaryLink 是必填的
         if not primary_link:
-            failures.append(
-                f"❌ 第 {i} 行资源 {resource_id}: PrimaryLink 为空"
-            )
+            failures.append(f"❌ 第 {i} 行资源 {resource_id}: PrimaryLink 为空")
             continue
 
         # 基本 URL 格式检查（应该以 http:// 或 https:// 开头）
@@ -282,9 +269,7 @@ def test_category_values():
         category = row.get("Category", "")
 
         if category and category not in valid_categories:
-            failures.append(
-                f"❌ 第 {i} 行资源 {resource_id}: 分类 '{category}' 无效"
-            )
+            failures.append(f"❌ 第 {i} 行资源 {resource_id}: 分类 '{category}' 无效")
 
     return failures
 

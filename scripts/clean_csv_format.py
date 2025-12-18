@@ -14,10 +14,10 @@ def clean_description(text: str) -> str:
         return text
 
     # 移除开头的 "** - " / Remove leading "** - "
-    text = re.sub(r'^\*\* - ', '', text.strip())
+    text = re.sub(r"^\*\* - ", "", text.strip())
 
     # 移除其他常见格式标记 / Remove other common format markers
-    text = re.sub(r'^\*\*([^*]+)\*\*', r'\1', text)  # **text** -> text
+    text = re.sub(r"^\*\*([^*]+)\*\*", r"\1", text)  # **text** -> text
 
     return text.strip()
 
@@ -29,7 +29,7 @@ def clean_csv(csv_path: Path) -> tuple[int, int]:
     total_changes = 0
 
     # 读取 CSV / Read CSV
-    with open(csv_path, 'r', encoding='utf-8') as f:
+    with open(csv_path, "r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         fieldnames = reader.fieldnames
 
@@ -37,11 +37,11 @@ def clean_csv(csv_path: Path) -> tuple[int, int]:
             changed = False
 
             # 清理 Description 字段 / Clean Description field
-            if row.get('Description'):
-                original = row['Description']
+            if row.get("Description"):
+                original = row["Description"]
                 cleaned = clean_description(original)
                 if cleaned != original:
-                    row['Description'] = cleaned
+                    row["Description"] = cleaned
                     changed = True
                     total_changes += 1
                     print(f"  清理 Description: {row['ID']}")
@@ -49,11 +49,11 @@ def clean_csv(csv_path: Path) -> tuple[int, int]:
                     print(f"    清理: {cleaned[:60]}...")
 
             # 清理 Description_ZH 字段 / Clean Description_ZH field
-            if row.get('Description_ZH'):
-                original = row['Description_ZH']
+            if row.get("Description_ZH"):
+                original = row["Description_ZH"]
                 cleaned = clean_description(original)
                 if cleaned != original:
-                    row['Description_ZH'] = cleaned
+                    row["Description_ZH"] = cleaned
                     changed = True
                     total_changes += 1
                     print(f"  清理 Description_ZH: {row['ID']}")
@@ -66,7 +66,7 @@ def clean_csv(csv_path: Path) -> tuple[int, int]:
             resources.append(row)
 
     # 写回 CSV / Write back to CSV
-    with open(csv_path, 'w', encoding='utf-8', newline='') as f:
+    with open(csv_path, "w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(resources)
@@ -77,7 +77,7 @@ def clean_csv(csv_path: Path) -> tuple[int, int]:
 def main():
     """主函数 / Main function"""
     project_root = Path(__file__).parent.parent
-    csv_path = project_root / 'THE_RESOURCES_TABLE.csv'
+    csv_path = project_root / "THE_RESOURCES_TABLE.csv"
 
     if not csv_path.exists():
         print(f"❌ 错误：CSV 文件不存在: {csv_path}")
@@ -94,5 +94,5 @@ def main():
     return 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     exit(main())

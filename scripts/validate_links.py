@@ -158,9 +158,7 @@ def parse_github_url(url) -> tuple[str, bool, str | None, str | None]:
 
         # URL-encode the branch name to handle slashes
         encoded_branch = quote(branch, safe="")
-        api_url = (
-            f"https://api.github.com/repos/{owner}/{repo}/contents/{path}?ref={encoded_branch}"
-        )
+        api_url = f"https://api.github.com/repos/{owner}/{repo}/contents/{path}?ref={encoded_branch}"
         return api_url, True, owner, repo
 
     # Check if it's a repository root URL
@@ -260,9 +258,7 @@ def validate_url(url, max_retries=5):
                 if is_github and response.status_code == 200:
                     # Extract owner/repo/path from original URL
                     # Try to match file URL first
-                    file_match = re.match(
-                        r"https://github\.com/([^/]+)/([^/]+)/blob/[^/]+/(.+)", url
-                    )
+                    file_match = re.match(r"https://github\.com/([^/]+)/([^/]+)/blob/[^/]+/(.+)", url)
                     if file_match:
                         owner, repo, path = file_match.groups()
                         license_info = get_github_license(owner, repo)
@@ -469,9 +465,7 @@ def main():
     parser = argparse.ArgumentParser(description="Validate links in THE_RESOURCES_TABLE.csv")
     parser.add_argument("--max-links", type=int, help="Maximum number of links to validate")
     parser.add_argument("--github-action", action="store_true", help="Run in GitHub Action mode")
-    parser.add_argument(
-        "--ignore-overrides", action="store_true", help="Ignore override configuration"
-    )
+    parser.add_argument("--ignore-overrides", action="store_true", help="Ignore override configuration")
     args = parser.parse_args()
 
     csv_file = INPUT_FILE

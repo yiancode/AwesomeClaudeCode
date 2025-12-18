@@ -33,18 +33,18 @@ PROJECT_ROOT = Path(__file__).parent.parent
 def load_categories() -> dict:
     """加载分类定义 / Load category definitions"""
     categories_file = PROJECT_ROOT / "templates" / "categories.yaml"
-    with open(categories_file, 'r', encoding='utf-8') as f:
+    with open(categories_file, "r", encoding="utf-8") as f:
         data = yaml.safe_load(f)
-    return {cat['id']: cat['prefix'] for cat in data['categories']}
+    return {cat["id"]: cat["prefix"] for cat in data["categories"]}
 
 
 def load_existing_resources() -> List[dict]:
     """加载现有资源 / Load existing resources"""
     resources = []
-    csv_file = PROJECT_ROOT / 'THE_RESOURCES_TABLE.csv'
+    csv_file = PROJECT_ROOT / "THE_RESOURCES_TABLE.csv"
 
     if csv_file.exists():
-        with open(csv_file, 'r', encoding='utf-8') as f:
+        with open(csv_file, "r", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             for row in reader:
                 resources.append(row)
@@ -57,22 +57,22 @@ def load_existing_urls() -> Set[str]:
     urls = set()
 
     # 从 CSV 加载
-    csv_file = PROJECT_ROOT / 'THE_RESOURCES_TABLE.csv'
+    csv_file = PROJECT_ROOT / "THE_RESOURCES_TABLE.csv"
     if csv_file.exists():
-        with open(csv_file, 'r', encoding='utf-8') as f:
+        with open(csv_file, "r", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             for row in reader:
-                url = row.get('PrimaryLink', '').strip().rstrip('/').lower()
+                url = row.get("PrimaryLink", "").strip().rstrip("/").lower()
                 if url:
                     urls.add(url)
 
     # 从 pending 加载
-    pending_file = PROJECT_ROOT / 'candidates' / 'pending_resources.json'
+    pending_file = PROJECT_ROOT / "candidates" / "pending_resources.json"
     if pending_file.exists():
-        with open(pending_file, 'r', encoding='utf-8') as f:
+        with open(pending_file, "r", encoding="utf-8") as f:
             data = json.load(f)
-            for res in data.get('resources', []):
-                url = res.get('PrimaryLink', '').strip().rstrip('/').lower()
+            for res in data.get("resources", []):
+                url = res.get("PrimaryLink", "").strip().rstrip("/").lower()
                 if url:
                     urls.add(url)
 
@@ -81,15 +81,15 @@ def load_existing_urls() -> Set[str]:
 
 def extract_github_info(url: str) -> Optional[Tuple[str, str]]:
     """从 URL 提取 GitHub owner/repo / Extract GitHub owner/repo from URL"""
-    if 'github.com' not in url:
+    if "github.com" not in url:
         return None
 
-    parts = url.rstrip('/').split('/')
+    parts = url.rstrip("/").split("/")
     try:
-        github_index = next(i for i, p in enumerate(parts) if 'github.com' in p)
+        github_index = next(i for i, p in enumerate(parts) if "github.com" in p)
         if len(parts) > github_index + 2:
             owner = parts[github_index + 1]
-            repo = parts[github_index + 2].replace('.git', '')
+            repo = parts[github_index + 2].replace(".git", "")
             return (owner, repo)
     except (StopIteration, IndexError):
         pass
@@ -102,21 +102,21 @@ class DependencyAnalyzer:
 
     # 相关的包名模式
     RELEVANT_PATTERNS = [
-        r'anthropic',
-        r'claude',
-        r'mcp[-_]?',
-        r'model[-_]?context[-_]?protocol',
-        r'llm[-_]?',
-        r'ai[-_]?assistant',
+        r"anthropic",
+        r"claude",
+        r"mcp[-_]?",
+        r"model[-_]?context[-_]?protocol",
+        r"llm[-_]?",
+        r"ai[-_]?assistant",
     ]
 
     def __init__(self):
-        self.github_token = os.environ.get('GITHUB_TOKEN')
+        self.github_token = os.environ.get("GITHUB_TOKEN")
         self.session = requests.Session()
-        self.session.headers['User-Agent'] = 'AwesomeClaudeCode-Bot/1.0'
+        self.session.headers["User-Agent"] = "AwesomeClaudeCode-Bot/1.0"
 
         if self.github_token:
-            self.session.headers['Authorization'] = f'Bearer {self.github_token}'
+            self.session.headers["Authorization"] = f"Bearer {self.github_token}"
 
         self.categories_prefix = load_categories()
         self.existing_urls = load_existing_urls()
@@ -162,7 +162,7 @@ class DependencyAnalyzer:
             data = json.loads(content)
 
             # 合并所有依赖
-            for key in ['dependencies', 'devDependencies', 'peerDependencies']:
+            for key in ["dependencies", "devDependencies", "peerDependencies"]:
                 deps = data.get(key, {})
                 dependencies.extend(deps.keys())
 
@@ -175,15 +175,15 @@ class DependencyAnalyzer:
         """解析 requirements.txt 依赖 / Parse requirements.txt dependencies"""
         dependencies = []
 
-        for line in content.split('\n'):
+        for line in content.split("\n"):
             line = line.strip()
 
             # 跳过注释和空行
-            if not line or line.startswith('#'):
+            if not line or line.startswith("#"):
                 continue
 
             # 移除版本约束
-            package = re.split(r'[<>=!~\[]', line)[0].strip()
+            package = re.split(r"[<>=!~\[]", line)[0].strip()
             if package:
                 dependencies.append(package)
 
@@ -195,14 +195,14 @@ class DependencyAnalyzer:
 
         # 简单的 TOML 解析
         # 查找 dependencies 部分
-        dep_match = re.search(r'dependencies\s*=\s*\[(.*?)\]', content, re.DOTALL)
+        dep_match = re.search(r"dependencies\s*=\s*\[(.*?)\]", content, re.DOTALL)
         if dep_match:
             deps_str = dep_match.group(1)
             # 提取包名
             packages = re.findall(r'"([^"]+)"', deps_str)
             for pkg in packages:
                 # 移除版本约束
-                package = re.split(r'[<>=!~\[]', pkg)[0].strip()
+                package = re.split(r"[<>=!~\[]", pkg)[0].strip()
                 if package:
                     dependencies.append(package)
 
@@ -214,17 +214,17 @@ class DependencyAnalyzer:
 
         # 查找 [dependencies] 部分
         in_deps = False
-        for line in content.split('\n'):
+        for line in content.split("\n"):
             line = line.strip()
 
-            if line.startswith('[dependencies]'):
+            if line.startswith("[dependencies]"):
                 in_deps = True
                 continue
-            elif line.startswith('[') and in_deps:
+            elif line.startswith("[") and in_deps:
                 in_deps = False
 
-            if in_deps and '=' in line:
-                package = line.split('=')[0].strip()
+            if in_deps and "=" in line:
+                package = line.split("=")[0].strip()
                 if package:
                     dependencies.append(package)
 
@@ -255,10 +255,10 @@ class DependencyAnalyzer:
 
         # 尝试各种依赖文件
         dep_files = [
-            ('package.json', self._parse_package_json),
-            ('requirements.txt', self._parse_requirements_txt),
-            ('pyproject.toml', self._parse_pyproject_toml),
-            ('Cargo.toml', self._parse_cargo_toml),
+            ("package.json", self._parse_package_json),
+            ("requirements.txt", self._parse_requirements_txt),
+            ("pyproject.toml", self._parse_pyproject_toml),
+            ("Cargo.toml", self._parse_cargo_toml),
         ]
 
         for filename, parser in dep_files:
@@ -286,14 +286,14 @@ class DependencyAnalyzer:
         print(f"   分析 {len(resources)} 个资源...")
 
         for i, res in enumerate(resources):
-            url = res.get('PrimaryLink', '')
+            url = res.get("PrimaryLink", "")
             github_info = extract_github_info(url)
 
             if not github_info:
                 continue
 
             owner, repo = github_info
-            print(f"   [{i+1}/{len(resources)}] {owner}/{repo}...", end=' ')
+            print(f"   [{i + 1}/{len(resources)}] {owner}/{repo}...", end=" ")
 
             deps = self.analyze_repository(owner, repo)
 
@@ -315,8 +315,7 @@ class DependencyAnalyzer:
         Returns:
             依赖及其出现次数列表 / List of dependencies and their counts
         """
-        return [(dep, count) for dep, count in self.dependency_counts.most_common()
-                if count >= min_count]
+        return [(dep, count) for dep, count in self.dependency_counts.most_common() if count >= min_count]
 
     def discover_related_packages(self) -> List[dict]:
         """
@@ -361,19 +360,19 @@ class DependencyAnalyzer:
             response = self.session.get(npm_url, timeout=10)
             if response.status_code == 200:
                 data = response.json()
-                repo = data.get('repository', {})
+                repo = data.get("repository", {})
                 if isinstance(repo, dict):
-                    url = repo.get('url', '')
+                    url = repo.get("url", "")
                 elif isinstance(repo, str):
                     url = repo
                 else:
-                    url = ''
+                    url = ""
 
-                if 'github.com' in url:
+                if "github.com" in url:
                     # 清理 URL
-                    url = re.sub(r'^git\+', '', url)
-                    url = re.sub(r'\.git$', '', url)
-                    url = re.sub(r'^git://', 'https://', url)
+                    url = re.sub(r"^git\+", "", url)
+                    url = re.sub(r"\.git$", "", url)
+                    url = re.sub(r"^git://", "https://", url)
                     return url
         except Exception:
             pass
@@ -384,18 +383,18 @@ class DependencyAnalyzer:
             response = self.session.get(pypi_url, timeout=10)
             if response.status_code == 200:
                 data = response.json()
-                info = data.get('info', {})
-                project_urls = info.get('project_urls', {}) or {}
+                info = data.get("info", {})
+                project_urls = info.get("project_urls", {}) or {}
 
                 # 检查各种可能的 URL
-                for key in ['Repository', 'Source', 'Homepage', 'GitHub']:
-                    url = project_urls.get(key, '')
-                    if 'github.com' in url:
+                for key in ["Repository", "Source", "Homepage", "GitHub"]:
+                    url = project_urls.get(key, "")
+                    if "github.com" in url:
                         return url
 
                 # 检查 home_page
-                home_page = info.get('home_page', '')
-                if 'github.com' in home_page:
+                home_page = info.get("home_page", "")
+                if "github.com" in home_page:
                     return home_page
         except Exception:
             pass
@@ -415,17 +414,17 @@ class DependencyAnalyzer:
             候选资源或 None / Candidate resource or None
         """
         # 生成资源 ID
-        category_id = 'ecosystem'  # 依赖通常归类为生态系统
-        prefix = self.categories_prefix.get(category_id, 'eco')
+        category_id = "ecosystem"  # 依赖通常归类为生态系统
+        prefix = self.categories_prefix.get(category_id, "eco")
         url_hash = hashlib.md5(url.encode()).hexdigest()[:8]
         resource_id = f"{prefix}-{url_hash}"
 
-        today = datetime.now().strftime('%Y/%m/%d')
+        today = datetime.now().strftime("%Y/%m/%d")
 
         # 获取仓库信息
         github_info = extract_github_info(url)
-        author = ''
-        author_url = ''
+        author = ""
+        author_url = ""
 
         if github_info:
             owner, repo = github_info
@@ -433,59 +432,55 @@ class DependencyAnalyzer:
             author_url = f"https://github.com/{owner}"
 
         return {
-            'ID': resource_id,
-            'DisplayName': package,
-            'DisplayName_ZH': package,
-            'Category': category_id,
-            'SubCategory': 'general',
-            'PrimaryLink': url,
-            'SecondaryLink': '',
-            'Author': author,
-            'AuthorProfile': author_url,
-            'IsActive': 'TRUE',
-            'DateAdded': today,
-            'LastModified': today,
-            'LastChecked': today,
-            'License': '',
-            'Description': f"A dependency commonly used in Claude Code ecosystem (used by {usage_count} resources)",
-            'Description_ZH': f"Claude Code 生态系统中常用的依赖包（被 {usage_count} 个资源使用）",
-            'Tags_ZH': '',
-            'IsPinned': 'FALSE',
-            'Section': 'community',
+            "ID": resource_id,
+            "DisplayName": package,
+            "DisplayName_ZH": package,
+            "Category": category_id,
+            "SubCategory": "general",
+            "PrimaryLink": url,
+            "SecondaryLink": "",
+            "Author": author,
+            "AuthorProfile": author_url,
+            "IsActive": "TRUE",
+            "DateAdded": today,
+            "LastModified": today,
+            "LastChecked": today,
+            "License": "",
+            "Description": f"A dependency commonly used in Claude Code ecosystem (used by {usage_count} resources)",
+            "Description_ZH": f"Claude Code 生态系统中常用的依赖包（被 {usage_count} 个资源使用）",
+            "Tags_ZH": "",
+            "IsPinned": "FALSE",
+            "Section": "community",
             # 元数据
-            '_source': 'dependency-analysis',
-            '_discovered_at': datetime.now().isoformat(),
-            '_status': 'pending',
-            '_usage_count': usage_count,
-            '_used_by': self.dependency_sources.get(package, [])[:5],
+            "_source": "dependency-analysis",
+            "_discovered_at": datetime.now().isoformat(),
+            "_status": "pending",
+            "_usage_count": usage_count,
+            "_used_by": self.dependency_sources.get(package, [])[:5],
         }
 
 
 def add_to_pending(resources: List[dict]) -> int:
     """添加资源到待审核队列 / Add resources to pending queue"""
-    pending_file = PROJECT_ROOT / 'candidates' / 'pending_resources.json'
+    pending_file = PROJECT_ROOT / "candidates" / "pending_resources.json"
 
     if pending_file.exists():
-        with open(pending_file, 'r', encoding='utf-8') as f:
+        with open(pending_file, "r", encoding="utf-8") as f:
             data = json.load(f)
     else:
-        data = {
-            "_comment": "候选资源队列 - 待审核的资源",
-            "_schema_version": "1.0",
-            "resources": []
-        }
+        data = {"_comment": "候选资源队列 - 待审核的资源", "_schema_version": "1.0", "resources": []}
 
-    existing_urls = {r.get('PrimaryLink', '').lower() for r in data['resources']}
+    existing_urls = {r.get("PrimaryLink", "").lower() for r in data["resources"]}
     added_count = 0
 
     for res in resources:
-        url = res.get('PrimaryLink', '').lower()
+        url = res.get("PrimaryLink", "").lower()
         if url and url not in existing_urls:
-            data['resources'].append(res)
+            data["resources"].append(res)
             existing_urls.add(url)
             added_count += 1
 
-    with open(pending_file, 'w', encoding='utf-8') as f:
+    with open(pending_file, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
     return added_count
@@ -493,11 +488,11 @@ def add_to_pending(resources: List[dict]) -> int:
 
 def main():
     """主函数 / Main function"""
-    parser = argparse.ArgumentParser(description='Dependency Analysis')
-    parser.add_argument('--analyze', action='store_true', help='Analyze dependencies')
-    parser.add_argument('--discover', action='store_true', help='Discover related packages')
-    parser.add_argument('--dry-run', action='store_true', help='Do not modify files')
-    parser.add_argument('--min-count', type=int, default=2, help='Minimum usage count')
+    parser = argparse.ArgumentParser(description="Dependency Analysis")
+    parser.add_argument("--analyze", action="store_true", help="Analyze dependencies")
+    parser.add_argument("--discover", action="store_true", help="Discover related packages")
+    parser.add_argument("--dry-run", action="store_true", help="Do not modify files")
+    parser.add_argument("--min-count", type=int, default=2, help="Minimum usage count")
     args = parser.parse_args()
 
     print("📦 依赖分析 / Dependency Analysis")
@@ -548,5 +543,5 @@ def main():
     return 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sys.exit(main())

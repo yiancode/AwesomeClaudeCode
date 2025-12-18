@@ -38,9 +38,9 @@ class BaseCrawler(ABC):
         self.config = config
         self.rate_limit_config = rate_limit_config or {}
         self.session = requests.Session()
-        self.session.headers.update({
-            'User-Agent': 'AwesomeClaudeCode-Bot/1.0 (+https://github.com/yiancode/AwesomeClaudeCode)'
-        })
+        self.session.headers.update(
+            {"User-Agent": "AwesomeClaudeCode-Bot/1.0 (+https://github.com/yiancode/AwesomeClaudeCode)"}
+        )
 
         # 加载分类配置
         self._categories_prefix = self._load_categories()
@@ -76,41 +76,41 @@ class BaseCrawler(ABC):
     def _load_categories(self) -> dict:
         """加载分类定义 / Load category definitions"""
         categories_file = self.PROJECT_ROOT / "templates" / "categories.yaml"
-        with open(categories_file, 'r', encoding='utf-8') as f:
+        with open(categories_file, "r", encoding="utf-8") as f:
             data = yaml.safe_load(f)
-        return {cat['id']: cat['prefix'] for cat in data['categories']}
+        return {cat["id"]: cat["prefix"] for cat in data["categories"]}
 
     def _load_existing_urls(self) -> Set[str]:
         """加载所有已存在的资源 URL / Load all existing resource URLs"""
         urls = set()
 
         # 从 CSV 加载
-        csv_file = self.PROJECT_ROOT / 'THE_RESOURCES_TABLE.csv'
+        csv_file = self.PROJECT_ROOT / "THE_RESOURCES_TABLE.csv"
         if csv_file.exists():
-            with open(csv_file, 'r', encoding='utf-8') as f:
+            with open(csv_file, "r", encoding="utf-8") as f:
                 reader = csv.DictReader(f)
                 for row in reader:
-                    url = self._normalize_url(row.get('PrimaryLink', ''))
+                    url = self._normalize_url(row.get("PrimaryLink", ""))
                     if url:
                         urls.add(url)
 
         # 从 pending 加载
-        pending_file = self.PROJECT_ROOT / 'candidates' / 'pending_resources.json'
+        pending_file = self.PROJECT_ROOT / "candidates" / "pending_resources.json"
         if pending_file.exists():
-            with open(pending_file, 'r', encoding='utf-8') as f:
+            with open(pending_file, "r", encoding="utf-8") as f:
                 data = json.load(f)
-                for res in data.get('resources', []):
-                    url = self._normalize_url(res.get('PrimaryLink', ''))
+                for res in data.get("resources", []):
+                    url = self._normalize_url(res.get("PrimaryLink", ""))
                     if url:
                         urls.add(url)
 
         # 从 rejected 加载
-        rejected_file = self.PROJECT_ROOT / 'candidates' / 'rejected_resources.json'
+        rejected_file = self.PROJECT_ROOT / "candidates" / "rejected_resources.json"
         if rejected_file.exists():
-            with open(rejected_file, 'r', encoding='utf-8') as f:
+            with open(rejected_file, "r", encoding="utf-8") as f:
                 data = json.load(f)
-                for res in data.get('resources', []):
-                    url = self._normalize_url(res.get('PrimaryLink', ''))
+                for res in data.get("resources", []):
+                    url = self._normalize_url(res.get("PrimaryLink", ""))
                     if url:
                         urls.add(url)
 
@@ -119,8 +119,8 @@ class BaseCrawler(ABC):
     def _normalize_url(self, url: str) -> str:
         """规范化 URL / Normalize URL"""
         if not url:
-            return ''
-        return url.strip().rstrip('/').lower()
+            return ""
+        return url.strip().rstrip("/").lower()
 
     def _is_duplicate(self, url: str) -> bool:
         """检查 URL 是否已存在 / Check if URL already exists"""
@@ -129,7 +129,7 @@ class BaseCrawler(ABC):
 
     def _rate_limit(self):
         """执行速率限制 / Apply rate limiting"""
-        min_interval = self.rate_limit_config.get('min_request_interval', 1.0)
+        min_interval = self.rate_limit_config.get("min_request_interval", 1.0)
         elapsed = time.time() - self._last_request_time
 
         if elapsed < min_interval:
@@ -137,19 +137,14 @@ class BaseCrawler(ABC):
 
         self._last_request_time = time.time()
 
-    def _make_request(
-        self,
-        url: str,
-        method: str = 'GET',
-        **kwargs
-    ) -> Optional[requests.Response]:
+    def _make_request(self, url: str, method: str = "GET", **kwargs) -> Optional[requests.Response]:
         """
         发起 HTTP 请求（带速率限制）
         Make HTTP request (with rate limiting)
         """
         self._rate_limit()
 
-        timeout = kwargs.pop('timeout', 30)
+        timeout = kwargs.pop("timeout", 30)
 
         try:
             response = self.session.request(method, url, timeout=timeout, **kwargs)
@@ -165,13 +160,13 @@ class BaseCrawler(ABC):
         Extract GitHub URL from text
         """
         # 匹配 GitHub 仓库 URL
-        pattern = r'https?://github\.com/[\w\-]+/[\w\-\.]+'
+        pattern = r"https?://github\.com/[\w\-]+/[\w\-\.]+"
         match = re.search(pattern, text)
         if match:
             url = match.group(0)
             # 清理 URL（移除 .git 等后缀）
-            url = re.sub(r'\.git$', '', url)
-            url = re.sub(r'[/\?#].*$', '', url)
+            url = re.sub(r"\.git$", "", url)
+            url = re.sub(r"[/\?#].*$", "", url)
             return url
         return None
 
@@ -180,7 +175,7 @@ class BaseCrawler(ABC):
         从文本中提取所有 URL
         Extract all URLs from text
         """
-        pattern = r'https?://[^\s<>\"\'\)\]]+[^\s<>\"\'\)\]\.,;:!?]'
+        pattern = r"https?://[^\s<>\"\'\)\]]+[^\s<>\"\'\)\]\.,;:!?]"
         urls = re.findall(pattern, text)
         return list(set(urls))
 
@@ -191,10 +186,21 @@ class BaseCrawler(ABC):
         """
         # 排除常见的非资源链接
         excluded_domains = [
-            'twitter.com', 'x.com', 'facebook.com', 'linkedin.com',
-            'youtube.com', 'youtu.be', 'reddit.com', 'imgur.com',
-            'medium.com', 'dev.to', 'news.ycombinator.com',
-            'google.com', 'bing.com', 'amazon.com', 'ebay.com',
+            "twitter.com",
+            "x.com",
+            "facebook.com",
+            "linkedin.com",
+            "youtube.com",
+            "youtu.be",
+            "reddit.com",
+            "imgur.com",
+            "medium.com",
+            "dev.to",
+            "news.ycombinator.com",
+            "google.com",
+            "bing.com",
+            "amazon.com",
+            "ebay.com",
         ]
 
         parsed = urlparse(url)
@@ -205,13 +211,19 @@ class BaseCrawler(ABC):
                 return False
 
         # 优先 GitHub 链接
-        if 'github.com' in domain:
+        if "github.com" in domain:
             return True
 
         # 其他技术相关域名
         relevant_domains = [
-            'gitlab.com', 'bitbucket.org', 'npmjs.com', 'pypi.org',
-            'crates.io', 'pkg.go.dev', 'anthropic.com', 'claude.ai',
+            "gitlab.com",
+            "bitbucket.org",
+            "npmjs.com",
+            "pypi.org",
+            "crates.io",
+            "pkg.go.dev",
+            "anthropic.com",
+            "claude.ai",
         ]
 
         for relevant in relevant_domains:
@@ -222,7 +234,7 @@ class BaseCrawler(ABC):
 
     def _generate_resource_id(self, category_id: str, url: str) -> str:
         """生成资源 ID / Generate resource ID"""
-        prefix = self._categories_prefix.get(category_id, 'res')
+        prefix = self._categories_prefix.get(category_id, "res")
         url_hash = hashlib.md5(url.encode()).hexdigest()[:8]
         return f"{prefix}-{url_hash}"
 
@@ -241,33 +253,33 @@ class BaseCrawler(ABC):
         combined = f"{title} {description}".lower()
 
         # 基于关键词推断分类
-        if 'mcp' in combined or 'model context protocol' in combined:
-            return 'mcp-servers'
-        if 'hook' in combined:
-            return 'hooks'
-        if 'slash' in combined or 'command' in combined:
-            return 'slash-commands'
-        if 'workflow' in combined or 'guide' in combined:
-            return 'workflows'
-        if 'tool' in combined or 'extension' in combined or 'plugin' in combined:
-            return 'tooling'
-        if 'skill' in combined:
-            return 'skills'
-        if 'status' in combined or 'statusline' in combined:
-            return 'statusline'
-        if 'claude.md' in combined:
-            return 'claude-md-files'
-        if 'client' in combined or 'terminal' in combined or 'cli' in combined:
-            return 'alternative-clients'
+        if "mcp" in combined or "model context protocol" in combined:
+            return "mcp-servers"
+        if "hook" in combined:
+            return "hooks"
+        if "slash" in combined or "command" in combined:
+            return "slash-commands"
+        if "workflow" in combined or "guide" in combined:
+            return "workflows"
+        if "tool" in combined or "extension" in combined or "plugin" in combined:
+            return "tooling"
+        if "skill" in combined:
+            return "skills"
+        if "status" in combined or "statusline" in combined:
+            return "statusline"
+        if "claude.md" in combined:
+            return "claude-md-files"
+        if "client" in combined or "terminal" in combined or "cli" in combined:
+            return "alternative-clients"
 
-        return 'ecosystem'
+        return "ecosystem"
 
     def _calculate_relevance_score(
         self,
         title: str,
         description: str,
         url: str,
-        score: int = 0  # 来源平台的分数（如 Reddit upvotes）
+        score: int = 0,  # 来源平台的分数（如 Reddit upvotes）
     ) -> int:
         """
         计算相关性评分 / Calculate relevance score
@@ -279,19 +291,19 @@ class BaseCrawler(ABC):
         combined = f"{title} {description}".lower()
 
         # 高相关性关键词
-        high_keywords = ['claude code', 'claude-code', 'anthropic', 'mcp server', 'model context protocol']
+        high_keywords = ["claude code", "claude-code", "anthropic", "mcp server", "model context protocol"]
         for keyword in high_keywords:
             if keyword in combined:
                 relevance += 25
 
         # 中等相关性关键词
-        medium_keywords = ['claude', 'mcp', 'llm tool', 'ai assistant', 'ai coding']
+        medium_keywords = ["claude", "mcp", "llm tool", "ai assistant", "ai coding"]
         for keyword in medium_keywords:
             if keyword in combined:
                 relevance += 15
 
         # GitHub 链接加分
-        if 'github.com' in url:
+        if "github.com" in url:
             relevance += 10
 
         # 基于来源平台分数加分
@@ -311,10 +323,10 @@ class BaseCrawler(ABC):
         url: str,
         title: str,
         description: str,
-        author: str = '',
-        author_url: str = '',
+        author: str = "",
+        author_url: str = "",
         source_score: int = 0,
-        extra_metadata: Optional[dict] = None
+        extra_metadata: Optional[dict] = None,
     ) -> dict:
         """
         创建候选资源 / Create candidate resource
@@ -335,45 +347,45 @@ class BaseCrawler(ABC):
         resource_id = self._generate_resource_id(category_id, url)
         relevance_score = self._calculate_relevance_score(title, description, url, source_score)
 
-        today = datetime.now().strftime('%Y/%m/%d')
+        today = datetime.now().strftime("%Y/%m/%d")
 
         # 截断过长的描述
         if len(description) > 200:
-            description = description[:197] + '...'
+            description = description[:197] + "..."
 
         resource = {
-            'ID': resource_id,
-            'DisplayName': title,
-            'DisplayName_ZH': title,  # 需要人工翻译
-            'Category': category_id,
-            'SubCategory': 'general',
-            'PrimaryLink': url,
-            'SecondaryLink': '',
-            'Author': author,
-            'AuthorProfile': author_url,
-            'IsActive': 'TRUE',
-            'DateAdded': today,
-            'LastModified': today,
-            'LastChecked': today,
-            'License': '',
-            'Description': description,
-            'Description_ZH': '',  # 需要人工翻译
-            'Tags_ZH': '',
-            'IsPinned': 'FALSE',
-            'Section': 'community',
+            "ID": resource_id,
+            "DisplayName": title,
+            "DisplayName_ZH": title,  # 需要人工翻译
+            "Category": category_id,
+            "SubCategory": "general",
+            "PrimaryLink": url,
+            "SecondaryLink": "",
+            "Author": author,
+            "AuthorProfile": author_url,
+            "IsActive": "TRUE",
+            "DateAdded": today,
+            "LastModified": today,
+            "LastChecked": today,
+            "License": "",
+            "Description": description,
+            "Description_ZH": "",  # 需要人工翻译
+            "Tags_ZH": "",
+            "IsPinned": "FALSE",
+            "Section": "community",
             # 元数据
-            '_source': self.source_type,
-            '_source_crawler': self.name,
-            '_discovered_at': datetime.now().isoformat(),
-            '_status': 'pending',
-            '_relevance_score': relevance_score,
-            '_source_score': source_score,
+            "_source": self.source_type,
+            "_source_crawler": self.name,
+            "_discovered_at": datetime.now().isoformat(),
+            "_status": "pending",
+            "_relevance_score": relevance_score,
+            "_source_score": source_score,
         }
 
         # 添加额外元数据
         if extra_metadata:
             for key, value in extra_metadata.items():
-                resource[f'_{key}'] = value
+                resource[f"_{key}"] = value
 
         return resource
 
@@ -387,28 +399,24 @@ class BaseCrawler(ABC):
         Returns:
             添加的资源数量 / Number of resources added
         """
-        pending_file = self.PROJECT_ROOT / 'candidates' / 'pending_resources.json'
+        pending_file = self.PROJECT_ROOT / "candidates" / "pending_resources.json"
 
         if pending_file.exists():
-            with open(pending_file, 'r', encoding='utf-8') as f:
+            with open(pending_file, "r", encoding="utf-8") as f:
                 data = json.load(f)
         else:
-            data = {
-                "_comment": "候选资源队列 - 待审核的资源",
-                "_schema_version": "1.0",
-                "resources": []
-            }
+            data = {"_comment": "候选资源队列 - 待审核的资源", "_schema_version": "1.0", "resources": []}
 
         added_count = 0
         for resource in resources:
             # 再次检查重复
-            url = self._normalize_url(resource.get('PrimaryLink', ''))
+            url = self._normalize_url(resource.get("PrimaryLink", ""))
             if url and url not in self._existing_urls:
-                data['resources'].append(resource)
+                data["resources"].append(resource)
                 self._existing_urls.add(url)
                 added_count += 1
 
-        with open(pending_file, 'w', encoding='utf-8') as f:
+        with open(pending_file, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
 
         return added_count
@@ -435,15 +443,12 @@ class BaseCrawler(ABC):
         # 过滤重复
         unique_resources = []
         for res in resources:
-            url = res.get('PrimaryLink', '')
+            url = res.get("PrimaryLink", "")
             if not self._is_duplicate(url):
                 unique_resources.append(res)
 
         # 按相关性排序
-        unique_resources.sort(
-            key=lambda x: x.get('_relevance_score', 0),
-            reverse=True
-        )
+        unique_resources.sort(key=lambda x: x.get("_relevance_score", 0), reverse=True)
 
         # 限制数量
         unique_resources = unique_resources[:limit]

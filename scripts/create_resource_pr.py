@@ -26,11 +26,25 @@ PROJECT_ROOT = Path(__file__).parent.parent
 
 # CSV 字段顺序（必须与现有 CSV 匹配）
 CSV_FIELDS = [
-    'ID', 'DisplayName', 'DisplayName_ZH', 'Category', 'SubCategory',
-    'PrimaryLink', 'SecondaryLink', 'Author', 'AuthorProfile',
-    'IsActive', 'DateAdded', 'LastModified', 'LastChecked',
-    'License', 'Description', 'Description_ZH', 'Tags_ZH',
-    'IsPinned', 'Section'
+    "ID",
+    "DisplayName",
+    "DisplayName_ZH",
+    "Category",
+    "SubCategory",
+    "PrimaryLink",
+    "SecondaryLink",
+    "Author",
+    "AuthorProfile",
+    "IsActive",
+    "DateAdded",
+    "LastModified",
+    "LastChecked",
+    "License",
+    "Description",
+    "Description_ZH",
+    "Tags_ZH",
+    "IsPinned",
+    "Section",
 ]
 
 
@@ -39,9 +53,9 @@ def load_pending_resources(pending_file: Path) -> List[dict]:
     if not pending_file.exists():
         return []
 
-    with open(pending_file, 'r', encoding='utf-8') as f:
+    with open(pending_file, "r", encoding="utf-8") as f:
         data = json.load(f)
-        return data.get('resources', [])
+        return data.get("resources", [])
 
 
 def save_pending_resources(resources: List[dict], pending_file: Path):
@@ -49,9 +63,9 @@ def save_pending_resources(resources: List[dict], pending_file: Path):
     data = {
         "_comment": "候选资源队列 - 待审核的资源 / Candidate resource queue - resources pending review",
         "_schema_version": "1.0",
-        "resources": resources
+        "resources": resources,
     }
-    with open(pending_file, 'w', encoding='utf-8') as f:
+    with open(pending_file, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
@@ -60,9 +74,9 @@ def load_rejected_resources(rejected_file: Path) -> List[dict]:
     if not rejected_file.exists():
         return []
 
-    with open(rejected_file, 'r', encoding='utf-8') as f:
+    with open(rejected_file, "r", encoding="utf-8") as f:
         data = json.load(f)
-        return data.get('resources', [])
+        return data.get("resources", [])
 
 
 def save_rejected_resources(resources: List[dict], rejected_file: Path):
@@ -70,9 +84,9 @@ def save_rejected_resources(resources: List[dict], rejected_file: Path):
     data = {
         "_comment": "已拒绝的资源 - 用于去重检测 / Rejected resources - used for deduplication",
         "_schema_version": "1.0",
-        "resources": resources
+        "resources": resources,
     }
-    with open(rejected_file, 'w', encoding='utf-8') as f:
+    with open(rejected_file, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
@@ -83,7 +97,7 @@ def clean_resource_for_csv(resource: dict) -> dict:
     """
     csv_resource = {}
     for field in CSV_FIELDS:
-        csv_resource[field] = resource.get(field, '')
+        csv_resource[field] = resource.get(field, "")
     return csv_resource
 
 
@@ -97,7 +111,7 @@ def append_resource_to_csv(resource: dict, csv_file: Path):
     # 读取现有数据以检查是否需要添加表头
     file_exists = csv_file.exists() and csv_file.stat().st_size > 0
 
-    with open(csv_file, 'a', newline='', encoding='utf-8') as f:
+    with open(csv_file, "a", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=CSV_FIELDS)
 
         if not file_exists:
@@ -112,13 +126,7 @@ def run_git_command(cmd: List[str], cwd: Optional[Path] = None) -> tuple:
     Execute Git command
     """
     try:
-        result = subprocess.run(
-            cmd,
-            cwd=cwd or PROJECT_ROOT,
-            capture_output=True,
-            text=True,
-            check=True
-        )
+        result = subprocess.run(cmd, cwd=cwd or PROJECT_ROOT, capture_output=True, text=True, check=True)
         return True, result.stdout.strip()
     except subprocess.CalledProcessError as e:
         return False, e.stderr.strip()
@@ -135,27 +143,27 @@ def create_branch_and_pr(resources: List[dict], csv_file: Path) -> tuple:
         return False, "没有待处理的资源 / No resources to process"
 
     # 生成分支名
-    timestamp = datetime.now().strftime('%Y%m%d-%H%M%S')
+    timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
     resource_count = len(resources)
     branch_name = f"auto/add-resources-{timestamp}"
 
     print(f"📌 创建分支: {branch_name}")
 
     # 确保在最新的 main 分支上
-    success, output = run_git_command(['git', 'fetch', 'origin', 'main'])
+    success, output = run_git_command(["git", "fetch", "origin", "main"])
     if not success:
         print(f"   ⚠️ fetch 警告: {output}")
 
-    success, output = run_git_command(['git', 'checkout', 'main'])
+    success, output = run_git_command(["git", "checkout", "main"])
     if not success:
         return False, f"切换到 main 分支失败: {output}"
 
-    success, output = run_git_command(['git', 'pull', 'origin', 'main'])
+    success, output = run_git_command(["git", "pull", "origin", "main"])
     if not success:
         print(f"   ⚠️ pull 警告: {output}")
 
     # 创建新分支
-    success, output = run_git_command(['git', 'checkout', '-b', branch_name])
+    success, output = run_git_command(["git", "checkout", "-b", branch_name])
     if not success:
         return False, f"创建分支失败: {output}"
 
@@ -166,28 +174,28 @@ def create_branch_and_pr(resources: List[dict], csv_file: Path) -> tuple:
         print(f"   ✅ {resource['DisplayName']}")
 
     # 提交更改
-    success, output = run_git_command(['git', 'add', str(csv_file)])
+    success, output = run_git_command(["git", "add", str(csv_file)])
     if not success:
         return False, f"git add 失败: {output}"
 
     # 构建提交消息
-    resource_names = ', '.join([r['DisplayName'] for r in resources[:3]])
+    resource_names = ", ".join([r["DisplayName"] for r in resources[:3]])
     if resource_count > 3:
         resource_names += f" 等 {resource_count} 个资源"
 
     commit_msg = f"feat: 添加新资源 - {resource_names}\n\n"
     commit_msg += "自动从 Issue 提交中添加的资源:\n"
     for r in resources:
-        issue_num = r.get('_source_issue', 'N/A')
+        issue_num = r.get("_source_issue", "N/A")
         commit_msg += f"- {r['DisplayName']} (#{issue_num})\n"
 
-    success, output = run_git_command(['git', 'commit', '-m', commit_msg])
+    success, output = run_git_command(["git", "commit", "-m", commit_msg])
     if not success:
         return False, f"git commit 失败: {output}"
 
     # 推送分支
     print("\n🚀 推送分支到远程...")
-    success, output = run_git_command(['git', 'push', '-u', 'origin', branch_name])
+    success, output = run_git_command(["git", "push", "-u", "origin", branch_name])
     if not success:
         return False, f"git push 失败: {output}"
 
@@ -203,8 +211,8 @@ def create_branch_and_pr(resources: List[dict], csv_file: Path) -> tuple:
 |------|------|-----------|
 """
     for r in resources:
-        issue_num = r.get('_source_issue', 'N/A')
-        issue_link = f"#{issue_num}" if issue_num != 'N/A' else 'N/A'
+        issue_num = r.get("_source_issue", "N/A")
+        issue_link = f"#{issue_num}" if issue_num != "N/A" else "N/A"
         pr_body += f"| {r['DisplayName']} | {r['Category']} | {issue_link} |\n"
 
     pr_body += """
@@ -220,14 +228,23 @@ def create_branch_and_pr(resources: List[dict], csv_file: Path) -> tuple:
 """
 
     # 使用 gh CLI 创建 PR
-    success, output = run_git_command([
-        'gh', 'pr', 'create',
-        '--title', pr_title,
-        '--body', pr_body,
-        '--base', 'main',
-        '--head', branch_name,
-        '--label', 'resource-submission,automated'
-    ])
+    success, output = run_git_command(
+        [
+            "gh",
+            "pr",
+            "create",
+            "--title",
+            pr_title,
+            "--body",
+            pr_body,
+            "--base",
+            "main",
+            "--head",
+            branch_name,
+            "--label",
+            "resource-submission,automated",
+        ]
+    )
 
     if not success:
         # 可能是没有 gh CLI，输出手动创建说明
@@ -250,7 +267,7 @@ def approve_resource(resource_id: str, pending_file: Path, csv_file: Path) -> tu
     target = None
     remaining = []
     for r in resources:
-        if r['ID'] == resource_id:
+        if r["ID"] == resource_id:
             target = r
         else:
             remaining.append(r)
@@ -279,7 +296,7 @@ def reject_resource(resource_id: str, reason: str, pending_file: Path, rejected_
     target = None
     remaining = []
     for r in resources:
-        if r['ID'] == resource_id:
+        if r["ID"] == resource_id:
             target = r
         else:
             remaining.append(r)
@@ -288,9 +305,9 @@ def reject_resource(resource_id: str, reason: str, pending_file: Path, rejected_
         return False, f"未找到资源: {resource_id}"
 
     # 添加拒绝原因和时间
-    target['_rejected_at'] = datetime.now().isoformat()
-    target['_reject_reason'] = reason
-    target['_status'] = 'rejected'
+    target["_rejected_at"] = datetime.now().isoformat()
+    target["_reject_reason"] = reason
+    target["_status"] = "rejected"
 
     # 添加到已拒绝列表
     rejected.append(target)
@@ -315,25 +332,25 @@ def list_pending(pending_file: Path):
     print("-" * 80)
 
     for r in resources:
-        issue_num = r.get('_source_issue', 'N/A')
+        issue_num = r.get("_source_issue", "N/A")
         print(f"{r['ID']:<20} {r['DisplayName']:<30} {r['Category']:<20} #{issue_num:<10}")
 
 
 def main():
     """主函数 / Main function"""
-    parser = argparse.ArgumentParser(description='Create PR from pending resources')
-    parser.add_argument('--all', action='store_true', help='Process all pending resources')
-    parser.add_argument('--resource-id', type=str, help='Process specific resource')
-    parser.add_argument('--approve', type=str, help='Approve resource by ID')
-    parser.add_argument('--reject', type=str, help='Reject resource by ID')
-    parser.add_argument('--reason', type=str, default='', help='Rejection reason')
-    parser.add_argument('--list', action='store_true', help='List pending resources')
-    parser.add_argument('--dry-run', action='store_true', help='Do not create PR')
+    parser = argparse.ArgumentParser(description="Create PR from pending resources")
+    parser.add_argument("--all", action="store_true", help="Process all pending resources")
+    parser.add_argument("--resource-id", type=str, help="Process specific resource")
+    parser.add_argument("--approve", type=str, help="Approve resource by ID")
+    parser.add_argument("--reject", type=str, help="Reject resource by ID")
+    parser.add_argument("--reason", type=str, default="", help="Rejection reason")
+    parser.add_argument("--list", action="store_true", help="List pending resources")
+    parser.add_argument("--dry-run", action="store_true", help="Do not create PR")
     args = parser.parse_args()
 
-    pending_file = PROJECT_ROOT / 'candidates' / 'pending_resources.json'
-    rejected_file = PROJECT_ROOT / 'candidates' / 'rejected_resources.json'
-    csv_file = PROJECT_ROOT / 'THE_RESOURCES_TABLE.csv'
+    pending_file = PROJECT_ROOT / "candidates" / "pending_resources.json"
+    rejected_file = PROJECT_ROOT / "candidates" / "rejected_resources.json"
+    csv_file = PROJECT_ROOT / "THE_RESOURCES_TABLE.csv"
 
     # 列出待审核资源
     if args.list:
@@ -360,7 +377,7 @@ def main():
 
     if args.resource_id:
         # 只处理指定的资源
-        resources = [r for r in resources if r['ID'] == args.resource_id]
+        resources = [r for r in resources if r["ID"] == args.resource_id]
 
     if not resources:
         print("📭 没有待处理的资源")
@@ -379,8 +396,8 @@ def main():
     if success:
         # 从待审核列表移除已处理的资源
         remaining = load_pending_resources(pending_file)
-        processed_ids = {r['ID'] for r in resources}
-        remaining = [r for r in remaining if r['ID'] not in processed_ids]
+        processed_ids = {r["ID"] for r in resources}
+        remaining = [r for r in remaining if r["ID"] not in processed_ids]
         save_pending_resources(remaining, pending_file)
 
         print(f"\n✅ 完成: {msg}")
@@ -390,5 +407,5 @@ def main():
         return 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sys.exit(main())

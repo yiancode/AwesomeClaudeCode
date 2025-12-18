@@ -34,18 +34,18 @@ class RedditCrawler(BaseCrawler):
         super().__init__(config, rate_limit_config)
 
         # Reddit 特定配置
-        self.reddit_config = config.get('reddit', {})
-        self.subreddits = self.reddit_config.get('subreddits', ['ClaudeAI'])
-        self.keywords = self.reddit_config.get('keywords', ['claude code'])
-        self.min_score = self.reddit_config.get('min_score', 10)
-        self.max_age_days = self.reddit_config.get('max_age_days', 30)
-        self.posts_per_subreddit = self.reddit_config.get('posts_per_subreddit', 25)
-        self.sort = self.reddit_config.get('sort', 'relevance')
-        self.time_filter = self.reddit_config.get('time_filter', 'month')
+        self.reddit_config = config.get("reddit", {})
+        self.subreddits = self.reddit_config.get("subreddits", ["ClaudeAI"])
+        self.keywords = self.reddit_config.get("keywords", ["claude code"])
+        self.min_score = self.reddit_config.get("min_score", 10)
+        self.max_age_days = self.reddit_config.get("max_age_days", 30)
+        self.posts_per_subreddit = self.reddit_config.get("posts_per_subreddit", 25)
+        self.sort = self.reddit_config.get("sort", "relevance")
+        self.time_filter = self.reddit_config.get("time_filter", "month")
 
         # 检查是否有 Reddit API 凭证
-        self.client_id = os.environ.get('REDDIT_CLIENT_ID')
-        self.client_secret = os.environ.get('REDDIT_CLIENT_SECRET')
+        self.client_id = os.environ.get("REDDIT_CLIENT_ID")
+        self.client_secret = os.environ.get("REDDIT_CLIENT_SECRET")
         self.use_api = bool(self.client_id and self.client_secret)
 
         if self.use_api:
@@ -55,24 +55,17 @@ class RedditCrawler(BaseCrawler):
         """设置 Reddit OAuth / Setup Reddit OAuth"""
         try:
             auth = (self.client_id, self.client_secret)
-            data = {
-                'grant_type': 'client_credentials',
-                'device_id': 'DO_NOT_TRACK_THIS_DEVICE'
-            }
-            headers = {'User-Agent': self.session.headers['User-Agent']}
+            data = {"grant_type": "client_credentials", "device_id": "DO_NOT_TRACK_THIS_DEVICE"}
+            headers = {"User-Agent": self.session.headers["User-Agent"]}
 
             response = self.session.post(
-                'https://www.reddit.com/api/v1/access_token',
-                auth=auth,
-                data=data,
-                headers=headers,
-                timeout=30
+                "https://www.reddit.com/api/v1/access_token", auth=auth, data=data, headers=headers, timeout=30
             )
 
             if response.status_code == 200:
                 token_data = response.json()
-                access_token = token_data.get('access_token')
-                self.session.headers['Authorization'] = f'Bearer {access_token}'
+                access_token = token_data.get("access_token")
+                self.session.headers["Authorization"] = f"Bearer {access_token}"
                 print("   ✅ Reddit OAuth 认证成功")
             else:
                 print("   ⚠️ Reddit OAuth 失败，使用公开端点")
@@ -101,11 +94,11 @@ class RedditCrawler(BaseCrawler):
             url = f"https://www.reddit.com/r/{subreddit}/search.json"
 
         params = {
-            'q': query,
-            'sort': self.sort,
-            't': self.time_filter,
-            'limit': self.posts_per_subreddit,
-            'restrict_sr': 'true',
+            "q": query,
+            "sort": self.sort,
+            "t": self.time_filter,
+            "limit": self.posts_per_subreddit,
+            "restrict_sr": "true",
         }
 
         response = self._make_request(url, params=params)
@@ -115,10 +108,10 @@ class RedditCrawler(BaseCrawler):
 
         try:
             data = response.json()
-            children = data.get('data', {}).get('children', [])
+            children = data.get("data", {}).get("children", [])
 
             for child in children:
-                post_data = child.get('data', {})
+                post_data = child.get("data", {})
                 posts.append(post_data)
 
         except Exception as e:
@@ -144,7 +137,7 @@ class RedditCrawler(BaseCrawler):
             url = f"https://www.reddit.com/r/{subreddit}/hot.json"
 
         params = {
-            'limit': self.posts_per_subreddit,
+            "limit": self.posts_per_subreddit,
         }
 
         response = self._make_request(url, params=params)
@@ -154,10 +147,10 @@ class RedditCrawler(BaseCrawler):
 
         try:
             data = response.json()
-            children = data.get('data', {}).get('children', [])
+            children = data.get("data", {}).get("children", [])
 
             for child in children:
-                post_data = child.get('data', {})
+                post_data = child.get("data", {})
                 posts.append(post_data)
 
         except Exception as e:
@@ -176,12 +169,12 @@ class RedditCrawler(BaseCrawler):
             是否通过过滤 / Whether passed filter
         """
         # 检查分数
-        score = post.get('score', 0)
+        score = post.get("score", 0)
         if score < self.min_score:
             return False
 
         # 检查年龄
-        created_utc = post.get('created_utc', 0)
+        created_utc = post.get("created_utc", 0)
         if created_utc:
             post_date = datetime.fromtimestamp(created_utc)
             max_age = datetime.now() - timedelta(days=self.max_age_days)
@@ -189,7 +182,7 @@ class RedditCrawler(BaseCrawler):
                 return False
 
         # 排除自我推广/广告类
-        if post.get('is_sel', False) and not post.get('selftext'):
+        if post.get("is_sel", False) and not post.get("selftext"):
             return False
 
         return True
@@ -204,12 +197,12 @@ class RedditCrawler(BaseCrawler):
         Returns:
             候选资源或 None / Candidate resource or None
         """
-        title = post.get('title', '')
-        selftext = post.get('selftext', '')
-        url = post.get('url', '')
-        score = post.get('score', 0)
-        author = post.get('author', '')
-        permalink = post.get('permalink', '')
+        title = post.get("title", "")
+        selftext = post.get("selftext", "")
+        url = post.get("url", "")
+        score = post.get("score", 0)
+        author = post.get("author", "")
+        permalink = post.get("permalink", "")
 
         # 优先提取 GitHub 链接
         github_url = self._extract_github_url(f"{title} {selftext} {url}")
@@ -223,13 +216,13 @@ class RedditCrawler(BaseCrawler):
                 title=title,
                 description=description,
                 author=author,
-                author_url=f"https://reddit.com/u/{author}" if author else '',
+                author_url=f"https://reddit.com/u/{author}" if author else "",
                 source_score=score,
                 extra_metadata={
-                    'reddit_permalink': f"https://reddit.com{permalink}",
-                    'reddit_score': score,
-                    'subreddit': post.get('subreddit', ''),
-                }
+                    "reddit_permalink": f"https://reddit.com{permalink}",
+                    "reddit_score": score,
+                    "subreddit": post.get("subreddit", ""),
+                },
             )
 
         # 如果帖子 URL 本身是相关链接
@@ -241,13 +234,13 @@ class RedditCrawler(BaseCrawler):
                 title=title,
                 description=description,
                 author=author,
-                author_url=f"https://reddit.com/u/{author}" if author else '',
+                author_url=f"https://reddit.com/u/{author}" if author else "",
                 source_score=score,
                 extra_metadata={
-                    'reddit_permalink': f"https://reddit.com{permalink}",
-                    'reddit_score': score,
-                    'subreddit': post.get('subreddit', ''),
-                }
+                    "reddit_permalink": f"https://reddit.com{permalink}",
+                    "reddit_score": score,
+                    "subreddit": post.get("subreddit", ""),
+                },
             )
 
         return None
@@ -277,7 +270,7 @@ class RedditCrawler(BaseCrawler):
 
                     resource = self._extract_resource_from_post(post)
                     if resource:
-                        url = resource.get('PrimaryLink', '')
+                        url = resource.get("PrimaryLink", "")
                         if url not in seen_urls:
                             seen_urls.add(url)
                             resources.append(resource)
@@ -289,8 +282,8 @@ class RedditCrawler(BaseCrawler):
                     continue
 
                 # 检查标题/内容是否包含关键词
-                title = post.get('title', '').lower()
-                selftext = post.get('selftext', '').lower()
+                title = post.get("title", "").lower()
+                selftext = post.get("selftext", "").lower()
                 combined = f"{title} {selftext}"
 
                 has_keyword = any(kw.lower() in combined for kw in self.keywords)
@@ -299,7 +292,7 @@ class RedditCrawler(BaseCrawler):
 
                 resource = self._extract_resource_from_post(post)
                 if resource:
-                    url = resource.get('PrimaryLink', '')
+                    url = resource.get("PrimaryLink", "")
                     if url not in seen_urls:
                         seen_urls.add(url)
                         resources.append(resource)

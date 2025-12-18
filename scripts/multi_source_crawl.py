@@ -31,26 +31,21 @@ from scripts.crawlers import (
 def load_config() -> dict:
     """加载爬虫配置 / Load crawler configuration"""
     config_file = PROJECT_ROOT / "config" / "crawlers.yaml"
-    with open(config_file, 'r', encoding='utf-8') as f:
+    with open(config_file, "r", encoding="utf-8") as f:
         return yaml.safe_load(f)
 
 
 def get_available_crawlers() -> dict:
     """获取可用的爬虫 / Get available crawlers"""
     return {
-        'reddit': RedditCrawler,
-        'awesome': AwesomeListCrawler,
-        'rss': RSSCrawler,
-        'hackernews': HackerNewsCrawler,
+        "reddit": RedditCrawler,
+        "awesome": AwesomeListCrawler,
+        "rss": RSSCrawler,
+        "hackernews": HackerNewsCrawler,
     }
 
 
-def run_crawler(
-    crawler_class,
-    config: dict,
-    dry_run: bool = False,
-    limit: int = 10
-) -> tuple:
+def run_crawler(crawler_class, config: dict, dry_run: bool = False, limit: int = 10) -> tuple:
     """
     运行单个爬虫 / Run single crawler
 
@@ -63,12 +58,12 @@ def run_crawler(
     Returns:
         (发现数量, 添加数量) / (discovered count, added count)
     """
-    rate_limits = config.get('rate_limits', {})
+    rate_limits = config.get("rate_limits", {})
     crawler = crawler_class(config, rate_limits)
 
     # 检查是否启用
     source_config = config.get(crawler.source_type, {})
-    if not source_config.get('enabled', True):
+    if not source_config.get("enabled", True):
         print(f"   ⏭️ {crawler.name} 已禁用，跳过")
         return 0, 0
 
@@ -77,11 +72,15 @@ def run_crawler(
 
 def main():
     """主函数 / Main function"""
-    parser = argparse.ArgumentParser(description='Multi-source resource crawl')
-    parser.add_argument('--dry-run', action='store_true', help='Do not modify files')
-    parser.add_argument('--sources', type=str, default='all',
-                        help='Comma-separated list of sources (reddit,awesome,rss,hackernews) or "all"')
-    parser.add_argument('--limit', type=int, default=10, help='Maximum resources per source')
+    parser = argparse.ArgumentParser(description="Multi-source resource crawl")
+    parser.add_argument("--dry-run", action="store_true", help="Do not modify files")
+    parser.add_argument(
+        "--sources",
+        type=str,
+        default="all",
+        help='Comma-separated list of sources (reddit,awesome,rss,hackernews) or "all"',
+    )
+    parser.add_argument("--limit", type=int, default=10, help="Maximum resources per source")
     args = parser.parse_args()
 
     print("🕸️  多源资源爬取 / Multi-source Resource Crawl")
@@ -94,10 +93,10 @@ def main():
     # 获取要运行的爬虫
     available_crawlers = get_available_crawlers()
 
-    if args.sources == 'all':
+    if args.sources == "all":
         sources_to_run = list(available_crawlers.keys())
     else:
-        sources_to_run = [s.strip().lower() for s in args.sources.split(',')]
+        sources_to_run = [s.strip().lower() for s in args.sources.split(",")]
         # 验证来源
         for source in sources_to_run:
             if source not in available_crawlers:
@@ -119,20 +118,15 @@ def main():
         crawler_class = available_crawlers[source]
 
         try:
-            discovered, added = run_crawler(
-                crawler_class,
-                config,
-                dry_run=args.dry_run,
-                limit=args.limit
-            )
+            discovered, added = run_crawler(crawler_class, config, dry_run=args.dry_run, limit=args.limit)
 
-            results[source] = {'discovered': discovered, 'added': added}
+            results[source] = {"discovered": discovered, "added": added}
             total_discovered += discovered
             total_added += added
 
         except Exception as e:
             print(f"   ❌ {source} 爬取失败: {e}")
-            results[source] = {'discovered': 0, 'added': 0, 'error': str(e)}
+            results[source] = {"discovered": 0, "added": 0, "error": str(e)}
 
     # 输出摘要
     print("\n" + "=" * 50)
@@ -142,9 +136,9 @@ def main():
     print(f"\n{'来源':<15} {'发现':<10} {'添加':<10}")
     print("-" * 35)
     for source, result in results.items():
-        discovered = result.get('discovered', 0)
-        added = result.get('added', 0)
-        error = result.get('error')
+        discovered = result.get("discovered", 0)
+        added = result.get("added", 0)
+        error = result.get("error")
 
         if error:
             print(f"{source:<15} {'错误':<10} {error}")
@@ -163,5 +157,5 @@ def main():
     return 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sys.exit(main())

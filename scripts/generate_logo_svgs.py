@@ -39,7 +39,7 @@ def generate_logo_svg(theme: str = "light") -> str:
         accent_color = "#B47FFF"  # 浅紫 Light purple
         glow_opacity = "0.4"
 
-    svg_content = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" preserveAspectRatio="xMidYMid meet">
+    svg_content = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" preserveAspectRatio="xMidYMid meet">
   <defs>
     <!-- 渐变定义 Gradient definitions -->
     <linearGradient id="titleGrad-{theme}" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -124,7 +124,7 @@ def generate_logo_svg(theme: str = "light") -> str:
     <animate attributeName="r" values="4;5;4" dur="3s" begin="1.5s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.5;0.8;0.5" dur="3s" begin="1.5s" repeatCount="indefinite"/>
   </circle>
-</svg>'''
+</svg>"""
 
     return svg_content
 

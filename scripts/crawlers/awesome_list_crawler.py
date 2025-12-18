@@ -29,15 +29,15 @@ class AwesomeListCrawler(BaseCrawler):
         super().__init__(config, rate_limit_config)
 
         # Awesome List 特定配置
-        self.awesome_config = config.get('awesome_lists', {})
-        self.lists = self.awesome_config.get('lists', [])
-        self.deep_parse = self.awesome_config.get('deep_parse', True)
-        self.max_links_per_list = self.awesome_config.get('max_links_per_list', 100)
+        self.awesome_config = config.get("awesome_lists", {})
+        self.lists = self.awesome_config.get("lists", [])
+        self.deep_parse = self.awesome_config.get("deep_parse", True)
+        self.max_links_per_list = self.awesome_config.get("max_links_per_list", 100)
 
         # GitHub token
-        self.github_token = os.environ.get('GITHUB_TOKEN')
+        self.github_token = os.environ.get("GITHUB_TOKEN")
         if self.github_token:
-            self.session.headers['Authorization'] = f'Bearer {self.github_token}'
+            self.session.headers["Authorization"] = f"Bearer {self.github_token}"
 
     def _extract_github_repo(self, url: str) -> Optional[Tuple[str, str]]:
         """
@@ -45,15 +45,15 @@ class AwesomeListCrawler(BaseCrawler):
 
         Returns: (owner, repo) or None
         """
-        if 'github.com' not in url:
+        if "github.com" not in url:
             return None
 
-        parts = url.rstrip('/').split('/')
+        parts = url.rstrip("/").split("/")
         try:
-            github_index = next(i for i, p in enumerate(parts) if 'github.com' in p)
+            github_index = next(i for i, p in enumerate(parts) if "github.com" in p)
             if len(parts) > github_index + 2:
                 owner = parts[github_index + 1]
-                repo = parts[github_index + 2].replace('.git', '')
+                repo = parts[github_index + 2].replace(".git", "")
                 return (owner, repo)
         except (StopIteration, IndexError):
             pass
@@ -72,7 +72,7 @@ class AwesomeListCrawler(BaseCrawler):
             README 内容 / README content
         """
         # 尝试不同的 README 文件名
-        readme_names = ['README.md', 'readme.md', 'Readme.md', 'README', 'readme']
+        readme_names = ["README.md", "readme.md", "Readme.md", "README", "readme"]
 
         for readme_name in readme_names:
             url = f"https://raw.githubusercontent.com/{owner}/{repo}/main/{readme_name}"
@@ -104,22 +104,22 @@ class AwesomeListCrawler(BaseCrawler):
 
         # 匹配 Markdown 链接: [title](url) - description
         # 或者: - [title](url) - description
-        pattern = r'[-*]?\s*\[([^\]]+)\]\(([^)]+)\)(?:\s*[-–—]\s*(.+?))?(?=\n|$)'
+        pattern = r"[-*]?\s*\[([^\]]+)\]\(([^)]+)\)(?:\s*[-–—]\s*(.+?))?(?=\n|$)"
         matches = re.findall(pattern, content, re.MULTILINE)
 
         for match in matches:
             title = match[0].strip()
             url = match[1].strip()
-            description = match[2].strip() if len(match) > 2 else ''
+            description = match[2].strip() if len(match) > 2 else ""
 
             # 过滤无效链接
-            if not url or url.startswith('#') or url.startswith('mailto:'):
+            if not url or url.startswith("#") or url.startswith("mailto:"):
                 continue
 
             # 规范化 URL
-            if url.startswith('//'):
-                url = 'https:' + url
-            elif not url.startswith('http'):
+            if url.startswith("//"):
+                url = "https:" + url
+            elif not url.startswith("http"):
                 continue
 
             links.append((title, url, description))
@@ -169,9 +169,9 @@ class AwesomeListCrawler(BaseCrawler):
         """
         url = f"https://api.github.com/repos/{owner}/{repo}"
 
-        headers = {'Accept': 'application/vnd.github+json'}
+        headers = {"Accept": "application/vnd.github+json"}
         if self.github_token:
-            headers['Authorization'] = f'Bearer {self.github_token}'
+            headers["Authorization"] = f"Bearer {self.github_token}"
 
         response = self._make_request(url, headers=headers)
 
@@ -180,13 +180,7 @@ class AwesomeListCrawler(BaseCrawler):
 
         return None
 
-    def _create_resource_from_link(
-        self,
-        title: str,
-        url: str,
-        description: str,
-        source_list: str
-    ) -> Optional[dict]:
+    def _create_resource_from_link(self, title: str, url: str, description: str, source_list: str) -> Optional[dict]:
         """
         从链接创建资源 / Create resource from link
 
@@ -209,26 +203,26 @@ class AwesomeListCrawler(BaseCrawler):
 
             if repo_info:
                 # 使用仓库描述补充信息
-                if not description and repo_info.get('description'):
-                    description = repo_info['description']
+                if not description and repo_info.get("description"):
+                    description = repo_info["description"]
 
-                stars = repo_info.get('stargazers_count', 0)
+                stars = repo_info.get("stargazers_count", 0)
 
                 # 检查是否已归档
-                if repo_info.get('archived', False):
+                if repo_info.get("archived", False):
                     return None
 
         return self.create_candidate_resource(
             url=url,
             title=title,
             description=description or title,
-            author='',  # Awesome list 通常不提供作者信息
-            author_url='',
+            author="",  # Awesome list 通常不提供作者信息
+            author_url="",
             source_score=stars,  # 使用 star 数作为分数
             extra_metadata={
-                'source_list': source_list,
-                'github_stars': stars,
-            }
+                "source_list": source_list,
+                "github_stars": stars,
+            },
         )
 
     def _crawl_awesome_list(self, list_config: dict) -> List[dict]:
@@ -242,9 +236,9 @@ class AwesomeListCrawler(BaseCrawler):
             发现的资源列表 / List of discovered resources
         """
         resources = []
-        list_name = list_config.get('name', 'Unknown')
-        list_url = list_config.get('url', '')
-        keywords = list_config.get('keywords', [])
+        list_name = list_config.get("name", "Unknown")
+        list_url = list_config.get("url", "")
+        keywords = list_config.get("keywords", [])
 
         print(f"      爬取 {list_name}...")
 
@@ -300,7 +294,7 @@ class AwesomeListCrawler(BaseCrawler):
             list_resources = self._crawl_awesome_list(list_config)
 
             for res in list_resources:
-                url = res.get('PrimaryLink', '')
+                url = res.get("PrimaryLink", "")
                 if url not in seen_urls:
                     seen_urls.add(url)
                     resources.append(res)

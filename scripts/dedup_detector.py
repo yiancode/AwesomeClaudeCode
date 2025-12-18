@@ -33,7 +33,7 @@ def load_config() -> dict:
     """加载 AI 配置 / Load AI configuration"""
     config_file = PROJECT_ROOT / "config" / "ai_config.yaml"
     if config_file.exists():
-        with open(config_file, 'r', encoding='utf-8') as f:
+        with open(config_file, "r", encoding="utf-8") as f:
             return yaml.safe_load(f)
     return {}
 
@@ -50,34 +50,34 @@ def normalize_url(url: str, config: dict = None) -> str:
         规范化后的 URL / Normalized URL
     """
     if not url:
-        return ''
+        return ""
 
     config = config or {}
-    dedup_config = config.get('deduplication', {})
+    dedup_config = config.get("deduplication", {})
 
     # 基本清理
     url = url.strip()
 
     # 移除协议
-    url = re.sub(r'^https?://', '', url)
+    url = re.sub(r"^https?://", "", url)
 
     # 移除 www
-    if dedup_config.get('strip_www', True):
-        url = re.sub(r'^www\.', '', url)
+    if dedup_config.get("strip_www", True):
+        url = re.sub(r"^www\.", "", url)
 
     # 移除末尾斜杠
-    if dedup_config.get('strip_trailing_slash', True):
-        url = url.rstrip('/')
+    if dedup_config.get("strip_trailing_slash", True):
+        url = url.rstrip("/")
 
     # 转小写
-    if dedup_config.get('lowercase', True):
+    if dedup_config.get("lowercase", True):
         url = url.lower()
 
     # 移除查询参数和锚点
-    url = re.sub(r'[?#].*$', '', url)
+    url = re.sub(r"[?#].*$", "", url)
 
     # 移除 .git 后缀
-    url = re.sub(r'\.git$', '', url)
+    url = re.sub(r"\.git$", "", url)
 
     return url
 
@@ -90,11 +90,11 @@ def extract_github_repo(url: str) -> Optional[Tuple[str, str]]:
     """
     normalized = normalize_url(url)
 
-    if 'github.com' not in normalized:
+    if "github.com" not in normalized:
         return None
 
     # 匹配 github.com/owner/repo
-    match = re.search(r'github\.com/([^/]+)/([^/]+)', normalized)
+    match = re.search(r"github\.com/([^/]+)/([^/]+)", normalized)
     if match:
         return (match.group(1).lower(), match.group(2).lower())
 
@@ -116,8 +116,8 @@ def jaccard_similarity(str1: str, str2: str) -> float:
         return 0.0
 
     # 分词
-    words1 = set(re.findall(r'\w+', str1.lower()))
-    words2 = set(re.findall(r'\w+', str2.lower()))
+    words1 = set(re.findall(r"\w+", str1.lower()))
+    words2 = set(re.findall(r"\w+", str2.lower()))
 
     if not words1 or not words2:
         return 0.0
@@ -200,12 +200,12 @@ def load_existing_resources() -> List[dict]:
     resources = []
 
     # 从 CSV 加载
-    csv_file = PROJECT_ROOT / 'THE_RESOURCES_TABLE.csv'
+    csv_file = PROJECT_ROOT / "THE_RESOURCES_TABLE.csv"
     if csv_file.exists():
-        with open(csv_file, 'r', encoding='utf-8') as f:
+        with open(csv_file, "r", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             for row in reader:
-                row['_source'] = 'csv'
+                row["_source"] = "csv"
                 resources.append(row)
 
     return resources
@@ -213,26 +213,26 @@ def load_existing_resources() -> List[dict]:
 
 def load_pending_resources() -> List[dict]:
     """加载待审核资源 / Load pending resources"""
-    pending_file = PROJECT_ROOT / 'candidates' / 'pending_resources.json'
+    pending_file = PROJECT_ROOT / "candidates" / "pending_resources.json"
     if pending_file.exists():
-        with open(pending_file, 'r', encoding='utf-8') as f:
+        with open(pending_file, "r", encoding="utf-8") as f:
             data = json.load(f)
-            resources = data.get('resources', [])
+            resources = data.get("resources", [])
             for r in resources:
-                r['_source'] = 'pending'
+                r["_source"] = "pending"
             return resources
     return []
 
 
 def load_rejected_resources() -> List[dict]:
     """加载已拒绝资源 / Load rejected resources"""
-    rejected_file = PROJECT_ROOT / 'candidates' / 'rejected_resources.json'
+    rejected_file = PROJECT_ROOT / "candidates" / "rejected_resources.json"
     if rejected_file.exists():
-        with open(rejected_file, 'r', encoding='utf-8') as f:
+        with open(rejected_file, "r", encoding="utf-8") as f:
             data = json.load(f)
-            resources = data.get('resources', [])
+            resources = data.get("resources", [])
             for r in resources:
-                r['_source'] = 'rejected'
+                r["_source"] = "rejected"
             return resources
     return []
 
@@ -248,11 +248,11 @@ class DuplicateDetector:
             config: 配置 / Configuration
         """
         self.config = config or load_config()
-        self.dedup_config = self.config.get('deduplication', {})
+        self.dedup_config = self.config.get("deduplication", {})
 
         # 相似度阈值
-        self.name_threshold = self.dedup_config.get('name_similarity_threshold', 0.85)
-        self.desc_threshold = self.dedup_config.get('description_similarity_threshold', 0.80)
+        self.name_threshold = self.dedup_config.get("name_similarity_threshold", 0.85)
+        self.desc_threshold = self.dedup_config.get("description_similarity_threshold", 0.80)
 
         # 加载资源
         self.existing_resources = load_existing_resources()
@@ -270,7 +270,7 @@ class DuplicateDetector:
         all_resources = self.existing_resources + self.rejected_resources
 
         for res in all_resources:
-            url = res.get('PrimaryLink', '')
+            url = res.get("PrimaryLink", "")
 
             # URL 索引
             normalized = normalize_url(url, self.config)
@@ -283,7 +283,7 @@ class DuplicateDetector:
                 self.github_index[github_repo] = res
 
             # 名称索引（用于加速相似度搜索）
-            name = res.get('DisplayName', '')
+            name = res.get("DisplayName", "")
             if name:
                 words = name.lower().split()
                 if words:
@@ -346,11 +346,10 @@ class DuplicateDetector:
         if len(candidates) < 10:
             all_resources = self.existing_resources + self.rejected_resources
         else:
-            all_resources = [r for r in (self.existing_resources + self.rejected_resources)
-                           if id(r) in candidates]
+            all_resources = [r for r in (self.existing_resources + self.rejected_resources) if id(r) in candidates]
 
         for res in all_resources:
-            res_name = res.get('DisplayName', '')
+            res_name = res.get("DisplayName", "")
             similarity = name_similarity(name, res_name)
 
             if similarity >= self.name_threshold:
@@ -379,7 +378,7 @@ class DuplicateDetector:
         all_resources = self.existing_resources + self.rejected_resources
 
         for res in all_resources:
-            res_desc = res.get('Description', '') or res.get('Description_ZH', '')
+            res_desc = res.get("Description", "") or res.get("Description_ZH", "")
             if not res_desc:
                 continue
 
@@ -402,79 +401,79 @@ class DuplicateDetector:
         Returns:
             检查结果 / Check result
         """
-        url = resource.get('PrimaryLink', '')
-        name = resource.get('DisplayName', '')
-        description = resource.get('Description', '') or resource.get('Description_ZH', '')
+        url = resource.get("PrimaryLink", "")
+        name = resource.get("DisplayName", "")
+        description = resource.get("Description", "") or resource.get("Description_ZH", "")
 
         result = {
-            'resource_id': resource.get('ID', ''),
-            'resource_name': name,
-            'resource_url': url,
-            'is_duplicate': False,
-            'duplicate_type': None,
-            'matched_resource': None,
-            'similarity_score': 0,
-            'checks': {}
+            "resource_id": resource.get("ID", ""),
+            "resource_name": name,
+            "resource_url": url,
+            "is_duplicate": False,
+            "duplicate_type": None,
+            "matched_resource": None,
+            "similarity_score": 0,
+            "checks": {},
         }
 
         # 1. URL 精确匹配
         url_match = self.check_url_duplicate(url)
-        result['checks']['url'] = {
-            'passed': url_match is None,
-            'matched': url_match.get('DisplayName') if url_match else None
+        result["checks"]["url"] = {
+            "passed": url_match is None,
+            "matched": url_match.get("DisplayName") if url_match else None,
         }
 
         if url_match:
-            result['is_duplicate'] = True
-            result['duplicate_type'] = 'url_exact'
-            result['matched_resource'] = url_match
-            result['similarity_score'] = 1.0
+            result["is_duplicate"] = True
+            result["duplicate_type"] = "url_exact"
+            result["matched_resource"] = url_match
+            result["similarity_score"] = 1.0
             return result
 
         # 2. GitHub 仓库匹配
         github_match = self.check_github_duplicate(url)
-        result['checks']['github'] = {
-            'passed': github_match is None,
-            'matched': github_match.get('DisplayName') if github_match else None
+        result["checks"]["github"] = {
+            "passed": github_match is None,
+            "matched": github_match.get("DisplayName") if github_match else None,
         }
 
         if github_match:
-            result['is_duplicate'] = True
-            result['duplicate_type'] = 'github_repo'
-            result['matched_resource'] = github_match
-            result['similarity_score'] = 1.0
+            result["is_duplicate"] = True
+            result["duplicate_type"] = "github_repo"
+            result["matched_resource"] = github_match
+            result["similarity_score"] = 1.0
             return result
 
         # 3. 名称相似度
         name_similar = self.check_name_similarity(name)
-        result['checks']['name'] = {
-            'passed': len(name_similar) == 0,
-            'similar': [(r.get('DisplayName'), s) for r, s in name_similar[:3]]
+        result["checks"]["name"] = {
+            "passed": len(name_similar) == 0,
+            "similar": [(r.get("DisplayName"), s) for r, s in name_similar[:3]],
         }
 
         if name_similar:
             best_match, best_score = name_similar[0]
             if best_score >= 0.95:  # 非常相似
-                result['is_duplicate'] = True
-                result['duplicate_type'] = 'name_similar'
-                result['matched_resource'] = best_match
-                result['similarity_score'] = best_score
+                result["is_duplicate"] = True
+                result["duplicate_type"] = "name_similar"
+                result["matched_resource"] = best_match
+                result["similarity_score"] = best_score
                 return result
 
         # 4. 描述相似度
         desc_similar = self.check_description_similarity(description)
-        result['checks']['description'] = {
-            'passed': len(desc_similar) == 0,
-            'similar': [(r.get('DisplayName'), s) for r, s in desc_similar[:3]]
+        result["checks"]["description"] = {
+            "passed": len(desc_similar) == 0,
+            "similar": [(r.get("DisplayName"), s) for r, s in desc_similar[:3]],
         }
 
         if desc_similar:
             best_match, best_score = desc_similar[0]
             if best_score >= 0.95:  # 非常相似
-                result['is_duplicate'] = True
-                result['duplicate_type'] = 'description_similar'
-                result['matched_resource'] = best_match
-                result['similarity_score'] = best_score
+                result["is_duplicate"] = True
+                result["duplicate_type"] = "description_similar"
+                result["matched_resource"] = best_match
+                result["similarity_score"] = best_score
                 return result
 
         return result
@@ -510,62 +509,57 @@ def generate_report(results: List[dict]) -> str:
         "# 重复检测报告 / Duplicate Detection Report",
         f"\n生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
         f"\n检查资源数: {len(results)}",
-        "\n---\n"
+        "\n---\n",
     ]
 
     # 统计
-    duplicates = [r for r in results if r['is_duplicate']]
-    passed = [r for r in results if not r['is_duplicate']]
+    duplicates = [r for r in results if r["is_duplicate"]]
+    passed = [r for r in results if not r["is_duplicate"]]
 
-    lines.extend([
-        "## 统计摘要 / Summary",
-        f"- 检查总数: {len(results)}",
-        f"- 发现重复: {len(duplicates)}",
-        f"- 通过检查: {len(passed)}",
-        "\n---\n"
-    ])
+    lines.extend(
+        [
+            "## 统计摘要 / Summary",
+            f"- 检查总数: {len(results)}",
+            f"- 发现重复: {len(duplicates)}",
+            f"- 通过检查: {len(passed)}",
+            "\n---\n",
+        ]
+    )
 
     # 重复列表
     if duplicates:
-        lines.extend([
-            "## ⚠️ 发现的重复 / Duplicates Found",
-            ""
-        ])
+        lines.extend(["## ⚠️ 发现的重复 / Duplicates Found", ""])
 
         lines.append("| 资源 | 重复类型 | 匹配资源 | 相似度 |")
         lines.append("|------|---------|---------|--------|")
 
         for r in duplicates:
-            matched = r.get('matched_resource', {})
-            matched_name = matched.get('DisplayName', 'Unknown') if matched else 'Unknown'
+            matched = r.get("matched_resource", {})
+            matched_name = matched.get("DisplayName", "Unknown") if matched else "Unknown"
             lines.append(
-                f"| {r['resource_name']} | {r['duplicate_type']} | "
-                f"{matched_name} | {r['similarity_score']:.2f} |"
+                f"| {r['resource_name']} | {r['duplicate_type']} | {matched_name} | {r['similarity_score']:.2f} |"
             )
 
         lines.append("\n---\n")
 
     # 通过列表
     if passed:
-        lines.extend([
-            "## ✅ 通过检查 / Passed",
-            ""
-        ])
+        lines.extend(["## ✅ 通过检查 / Passed", ""])
 
         for r in passed:
             lines.append(f"- {r['resource_name']}")
 
-    return '\n'.join(lines)
+    return "\n".join(lines)
 
 
 def main():
     """主函数 / Main function"""
-    parser = argparse.ArgumentParser(description='Duplicate detection')
-    parser.add_argument('--check-pending', action='store_true', help='Check pending resources')
-    parser.add_argument('--report', action='store_true', help='Generate report')
-    parser.add_argument('--output', type=str, help='Output file for report')
-    parser.add_argument('--url', type=str, help='Check specific URL')
-    parser.add_argument('--name', type=str, help='Check specific name')
+    parser = argparse.ArgumentParser(description="Duplicate detection")
+    parser.add_argument("--check-pending", action="store_true", help="Check pending resources")
+    parser.add_argument("--report", action="store_true", help="Generate report")
+    parser.add_argument("--output", type=str, help="Output file for report")
+    parser.add_argument("--url", type=str, help="Check specific URL")
+    parser.add_argument("--name", type=str, help="Check specific name")
     args = parser.parse_args()
 
     print("🔍 重复检测 / Duplicate Detection")
@@ -611,14 +605,14 @@ def main():
         print("\n📋 检查待审核资源...")
         results = detector.check_all_pending()
 
-        duplicates = [r for r in results if r['is_duplicate']]
+        duplicates = [r for r in results if r["is_duplicate"]]
         print(f"\n   检查完成: {len(results)} 个资源")
         print(f"   发现重复: {len(duplicates)} 个")
 
         if duplicates:
             print("\n   重复列表:")
             for r in duplicates:
-                matched = r.get('matched_resource', {})
+                matched = r.get("matched_resource", {})
                 print(f"   - {r['resource_name']} ({r['duplicate_type']})")
                 print(f"     匹配: {matched.get('DisplayName', 'Unknown')}")
 
@@ -628,7 +622,7 @@ def main():
 
             if args.output:
                 output_file = Path(args.output)
-                with open(output_file, 'w', encoding='utf-8') as f:
+                with open(output_file, "w", encoding="utf-8") as f:
                     f.write(report)
                 print(f"\n   📄 报告已保存: {output_file}")
             else:
@@ -641,5 +635,5 @@ def main():
     return 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sys.exit(main())

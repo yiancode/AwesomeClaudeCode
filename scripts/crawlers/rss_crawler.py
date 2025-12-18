@@ -13,6 +13,7 @@ from email.utils import parsedate_to_datetime
 
 try:
     import feedparser
+
     HAS_FEEDPARSER = True
 except ImportError:
     HAS_FEEDPARSER = False
@@ -35,10 +36,10 @@ class RSSCrawler(BaseCrawler):
         super().__init__(config, rate_limit_config)
 
         # RSS 特定配置
-        self.rss_config = config.get('rss', {})
-        self.feeds = self.rss_config.get('feeds', [])
-        self.entries_per_feed = self.rss_config.get('entries_per_feed', 30)
-        self.max_age_days = self.rss_config.get('max_age_days', 14)
+        self.rss_config = config.get("rss", {})
+        self.feeds = self.rss_config.get("feeds", [])
+        self.entries_per_feed = self.rss_config.get("entries_per_feed", 30)
+        self.max_age_days = self.rss_config.get("max_age_days", 14)
 
         if not HAS_FEEDPARSER:
             print("   ⚠️ feedparser 未安装，RSS 爬虫功能受限")
@@ -65,14 +66,16 @@ class RSSCrawler(BaseCrawler):
         try:
             feed = feedparser.parse(feed_url)
 
-            for entry in feed.entries[:self.entries_per_feed]:
-                entries.append({
-                    'title': entry.get('title', ''),
-                    'link': entry.get('link', ''),
-                    'description': entry.get('summary', entry.get('description', '')),
-                    'published': entry.get('published', ''),
-                    'author': entry.get('author', ''),
-                })
+            for entry in feed.entries[: self.entries_per_feed]:
+                entries.append(
+                    {
+                        "title": entry.get("title", ""),
+                        "link": entry.get("link", ""),
+                        "description": entry.get("summary", entry.get("description", "")),
+                        "published": entry.get("published", ""),
+                        "author": entry.get("author", ""),
+                    }
+                )
 
         except Exception as e:
             print(f"      ⚠️ 解析 feed 失败: {e}")
@@ -91,20 +94,23 @@ class RSSCrawler(BaseCrawler):
 
         # 简单的 XML 解析（不依赖外部库）
         # 匹配 <item> 或 <entry> 标签
-        item_pattern = r'<(?:item|entry)>(.*?)</(?:item|entry)>'
+        item_pattern = r"<(?:item|entry)>(.*?)</(?:item|entry)>"
         items = re.findall(item_pattern, content, re.DOTALL)
 
-        for item in items[:self.entries_per_feed]:
-            title = self._extract_xml_value(item, 'title')
-            link = self._extract_xml_value(item, 'link')
-            description = self._extract_xml_value(item, 'description') or \
-                          self._extract_xml_value(item, 'summary') or \
-                          self._extract_xml_value(item, 'content')
-            published = self._extract_xml_value(item, 'pubDate') or \
-                        self._extract_xml_value(item, 'published') or \
-                        self._extract_xml_value(item, 'updated')
-            author = self._extract_xml_value(item, 'author') or \
-                     self._extract_xml_value(item, 'dc:creator')
+        for item in items[: self.entries_per_feed]:
+            title = self._extract_xml_value(item, "title")
+            link = self._extract_xml_value(item, "link")
+            description = (
+                self._extract_xml_value(item, "description")
+                or self._extract_xml_value(item, "summary")
+                or self._extract_xml_value(item, "content")
+            )
+            published = (
+                self._extract_xml_value(item, "pubDate")
+                or self._extract_xml_value(item, "published")
+                or self._extract_xml_value(item, "updated")
+            )
+            author = self._extract_xml_value(item, "author") or self._extract_xml_value(item, "dc:creator")
 
             # 处理 Atom 格式的 link
             if not link:
@@ -113,40 +119,42 @@ class RSSCrawler(BaseCrawler):
                     link = link_match.group(1)
 
             if title and link:
-                entries.append({
-                    'title': self._clean_html(title),
-                    'link': link,
-                    'description': self._clean_html(description),
-                    'published': published,
-                    'author': self._clean_html(author),
-                })
+                entries.append(
+                    {
+                        "title": self._clean_html(title),
+                        "link": link,
+                        "description": self._clean_html(description),
+                        "published": published,
+                        "author": self._clean_html(author),
+                    }
+                )
 
         return entries
 
     def _extract_xml_value(self, xml: str, tag: str) -> str:
         """从 XML 中提取标签值 / Extract tag value from XML"""
         # 处理 CDATA
-        pattern = rf'<{tag}[^>]*>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</{tag}>'
+        pattern = rf"<{tag}[^>]*>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</{tag}>"
         match = re.search(pattern, xml, re.DOTALL | re.IGNORECASE)
         if match:
             return match.group(1).strip()
-        return ''
+        return ""
 
     def _clean_html(self, text: str) -> str:
         """清理 HTML 标签 / Clean HTML tags"""
         if not text:
-            return ''
+            return ""
         # 移除 HTML 标签
-        clean = re.sub(r'<[^>]+>', '', text)
+        clean = re.sub(r"<[^>]+>", "", text)
         # 解码 HTML 实体
-        clean = clean.replace('&amp;', '&')
-        clean = clean.replace('&lt;', '<')
-        clean = clean.replace('&gt;', '>')
-        clean = clean.replace('&quot;', '"')
-        clean = clean.replace('&#39;', "'")
-        clean = clean.replace('&nbsp;', ' ')
+        clean = clean.replace("&amp;", "&")
+        clean = clean.replace("&lt;", "<")
+        clean = clean.replace("&gt;", ">")
+        clean = clean.replace("&quot;", '"')
+        clean = clean.replace("&#39;", "'")
+        clean = clean.replace("&nbsp;", " ")
         # 清理多余空白
-        clean = re.sub(r'\s+', ' ', clean).strip()
+        clean = re.sub(r"\s+", " ", clean).strip()
         return clean
 
     def _parse_date(self, date_str: str) -> Optional[datetime]:
@@ -162,7 +170,7 @@ class RSSCrawler(BaseCrawler):
 
         try:
             # 尝试 ISO 格式
-            return datetime.fromisoformat(date_str.replace('Z', '+00:00'))
+            return datetime.fromisoformat(date_str.replace("Z", "+00:00"))
         except Exception:
             pass
 
@@ -179,9 +187,9 @@ class RSSCrawler(BaseCrawler):
         Returns:
             是否通过过滤 / Whether passed filter
         """
-        title = entry.get('title', '')
-        description = entry.get('description', '')
-        link = entry.get('link', '')
+        title = entry.get("title", "")
+        description = entry.get("description", "")
+        link = entry.get("link", "")
 
         # 检查是否已存在
         github_url = self._extract_github_url(f"{title} {description} {link}")
@@ -191,7 +199,7 @@ class RSSCrawler(BaseCrawler):
             return False
 
         # 检查年龄
-        published = entry.get('published', '')
+        published = entry.get("published", "")
         if published:
             pub_date = self._parse_date(published)
             if pub_date:
@@ -213,11 +221,7 @@ class RSSCrawler(BaseCrawler):
 
         return True
 
-    def _create_resource_from_entry(
-        self,
-        entry: dict,
-        feed_name: str
-    ) -> Optional[dict]:
+    def _create_resource_from_entry(self, entry: dict, feed_name: str) -> Optional[dict]:
         """
         从条目创建资源 / Create resource from entry
 
@@ -228,10 +232,10 @@ class RSSCrawler(BaseCrawler):
         Returns:
             候选资源或 None / Candidate resource or None
         """
-        title = entry.get('title', '')
-        description = entry.get('description', '')
-        link = entry.get('link', '')
-        author = entry.get('author', '')
+        title = entry.get("title", "")
+        description = entry.get("description", "")
+        link = entry.get("link", "")
+        author = entry.get("author", "")
 
         # 优先提取 GitHub 链接
         github_url = self._extract_github_url(f"{title} {description} {link}")
@@ -248,13 +252,13 @@ class RSSCrawler(BaseCrawler):
             title=title,
             description=description or title,
             author=author,
-            author_url='',
+            author_url="",
             source_score=0,
             extra_metadata={
-                'rss_feed': feed_name,
-                'original_link': link,
-                'published': entry.get('published', ''),
-            }
+                "rss_feed": feed_name,
+                "original_link": link,
+                "published": entry.get("published", ""),
+            },
         )
 
     def _crawl_feed(self, feed_config: dict) -> List[dict]:
@@ -268,9 +272,9 @@ class RSSCrawler(BaseCrawler):
             发现的资源列表 / List of discovered resources
         """
         resources = []
-        feed_name = feed_config.get('name', 'Unknown')
-        feed_url = feed_config.get('url', '')
-        keywords = feed_config.get('keywords', [])
+        feed_name = feed_config.get("name", "Unknown")
+        feed_url = feed_config.get("url", "")
+        keywords = feed_config.get("keywords", [])
 
         print(f"      爬取 {feed_name}...")
 
@@ -305,7 +309,7 @@ class RSSCrawler(BaseCrawler):
             feed_resources = self._crawl_feed(feed_config)
 
             for res in feed_resources:
-                url = res.get('PrimaryLink', '')
+                url = res.get("PrimaryLink", "")
                 if url not in seen_urls:
                     seen_urls.add(url)
                     resources.append(res)

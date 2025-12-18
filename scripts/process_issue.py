@@ -89,11 +89,11 @@ def load_categories() -> dict:
     Load category definitions to get prefix mapping
     """
     categories_file = PROJECT_ROOT / "templates" / "categories.yaml"
-    with open(categories_file, 'r', encoding='utf-8') as f:
+    with open(categories_file, "r", encoding="utf-8") as f:
         data = yaml.safe_load(f)
 
     # 创建 category_id -> prefix 映射
-    return {cat['id']: cat['prefix'] for cat in data['categories']}
+    return {cat["id"]: cat["prefix"] for cat in data["categories"]}
 
 
 def generate_resource_id(category_id: str, url: str, categories_prefix: dict) -> str:
@@ -101,7 +101,7 @@ def generate_resource_id(category_id: str, url: str, categories_prefix: dict) ->
     生成资源 ID / Generate resource ID
     格式: {prefix}-{hash8}
     """
-    prefix = categories_prefix.get(category_id, 'res')
+    prefix = categories_prefix.get(category_id, "res")
     # 使用 URL 生成 hash
     url_hash = hashlib.md5(url.encode()).hexdigest()[:8]
     return f"{prefix}-{url_hash}"
@@ -122,7 +122,7 @@ def parse_issue_body(body: str) -> dict:
 
     # 使用正则匹配 ### 标题 和其后的内容
     # Match ### headers and their content
-    pattern = r'###\s*(.+?)\s*\n(.*?)(?=###|\Z)'
+    pattern = r"###\s*(.+?)\s*\n(.*?)(?=###|\Z)"
     matches = re.findall(pattern, body, re.DOTALL)
 
     for label, value in matches:
@@ -131,8 +131,8 @@ def parse_issue_body(body: str) -> dict:
         value = value.strip()
 
         # 移除 "无响应" / "_No response_" 占位符
-        if value.lower() in ['_no response_', '无响应', '']:
-            value = ''
+        if value.lower() in ["_no response_", "无响应", ""]:
+            value = ""
 
         result[label] = value
 
@@ -147,11 +147,11 @@ def extract_descriptions(description_text: str) -> tuple:
     Returns: (description_zh, description_en)
     """
     if not description_text:
-        return '', ''
+        return "", ""
 
-    lines = description_text.strip().split('\n')
-    desc_zh = ''
-    desc_en = ''
+    lines = description_text.strip().split("\n")
+    desc_zh = ""
+    desc_en = ""
 
     current_lang = None
     current_text = []
@@ -160,27 +160,27 @@ def extract_descriptions(description_text: str) -> tuple:
         line_lower = line.lower().strip()
 
         # 检测语言标记
-        if '中文描述' in line or 'chinese description' in line_lower:
-            if current_lang == 'en' and current_text:
-                desc_en = ' '.join(current_text).strip()
-            current_lang = 'zh'
+        if "中文描述" in line or "chinese description" in line_lower:
+            if current_lang == "en" and current_text:
+                desc_en = " ".join(current_text).strip()
+            current_lang = "zh"
             current_text = []
-        elif '英文描述' in line or 'english description' in line_lower:
-            if current_lang == 'zh' and current_text:
-                desc_zh = ' '.join(current_text).strip()
-            current_lang = 'en'
+        elif "英文描述" in line or "english description" in line_lower:
+            if current_lang == "zh" and current_text:
+                desc_zh = " ".join(current_text).strip()
+            current_lang = "en"
             current_text = []
         elif line.strip():
             current_text.append(line.strip())
 
     # 处理最后一段
-    if current_lang == 'zh' and current_text:
-        desc_zh = ' '.join(current_text).strip()
-    elif current_lang == 'en' and current_text:
-        desc_en = ' '.join(current_text).strip()
+    if current_lang == "zh" and current_text:
+        desc_zh = " ".join(current_text).strip()
+    elif current_lang == "en" and current_text:
+        desc_en = " ".join(current_text).strip()
     elif current_text and not desc_zh:
         # 如果没有明确标记，假设是中文
-        desc_zh = ' '.join(current_text).strip()
+        desc_zh = " ".join(current_text).strip()
 
     return desc_zh, desc_en
 
@@ -200,9 +200,7 @@ def validate_url(url: str, timeout: int = 10) -> tuple:
         if not parsed.scheme or not parsed.netloc:
             return False, 0, "URL 格式无效 / Invalid URL format"
 
-        headers = {
-            'User-Agent': 'AwesomeClaudeCode-Bot/1.0 (+https://github.com/yiancode/AwesomeClaudeCode)'
-        }
+        headers = {"User-Agent": "AwesomeClaudeCode-Bot/1.0 (+https://github.com/yiancode/AwesomeClaudeCode)"}
 
         response = requests.head(url, timeout=timeout, headers=headers, allow_redirects=True)
 
@@ -227,33 +225,34 @@ def check_duplicate(url: str, pending_file: Path, rejected_file: Path) -> tuple:
     Returns: (is_duplicate, location)
     """
     # 规范化 URL
-    normalized_url = url.rstrip('/').lower()
+    normalized_url = url.rstrip("/").lower()
 
     # 检查待审核列表
     if pending_file.exists():
-        with open(pending_file, 'r', encoding='utf-8') as f:
+        with open(pending_file, "r", encoding="utf-8") as f:
             data = json.load(f)
-            for res in data.get('resources', []):
-                if res.get('PrimaryLink', '').rstrip('/').lower() == normalized_url:
-                    return True, 'pending'
+            for res in data.get("resources", []):
+                if res.get("PrimaryLink", "").rstrip("/").lower() == normalized_url:
+                    return True, "pending"
 
     # 检查已拒绝列表
     if rejected_file.exists():
-        with open(rejected_file, 'r', encoding='utf-8') as f:
+        with open(rejected_file, "r", encoding="utf-8") as f:
             data = json.load(f)
-            for res in data.get('resources', []):
-                if res.get('PrimaryLink', '').rstrip('/').lower() == normalized_url:
-                    return True, 'rejected'
+            for res in data.get("resources", []):
+                if res.get("PrimaryLink", "").rstrip("/").lower() == normalized_url:
+                    return True, "rejected"
 
     # 检查主 CSV
-    csv_file = PROJECT_ROOT / 'THE_RESOURCES_TABLE.csv'
+    csv_file = PROJECT_ROOT / "THE_RESOURCES_TABLE.csv"
     if csv_file.exists():
         import csv
-        with open(csv_file, 'r', encoding='utf-8') as f:
+
+        with open(csv_file, "r", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             for row in reader:
-                if row.get('PrimaryLink', '').rstrip('/').lower() == normalized_url:
-                    return True, 'csv'
+                if row.get("PrimaryLink", "").rstrip("/").lower() == normalized_url:
+                    return True, "csv"
 
     return False, None
 
@@ -263,18 +262,18 @@ def extract_github_info(url: str) -> dict:
     从 GitHub URL 提取作者信息
     Extract author info from GitHub URL
     """
-    result = {'author': '', 'author_profile': ''}
+    result = {"author": "", "author_profile": ""}
 
     parsed = urlparse(url)
-    if 'github.com' not in parsed.netloc:
+    if "github.com" not in parsed.netloc:
         return result
 
     # 提取 owner/repo
-    path_parts = [p for p in parsed.path.split('/') if p]
+    path_parts = [p for p in parsed.path.split("/") if p]
     if len(path_parts) >= 1:
         owner = path_parts[0]
-        result['author'] = owner
-        result['author_profile'] = f"https://github.com/{owner}"
+        result["author"] = owner
+        result["author_profile"] = f"https://github.com/{owner}"
 
     return result
 
@@ -285,45 +284,59 @@ def create_candidate_resource(parsed_data: dict, issue_number: int, categories_p
     Create candidate resource from parsed Issue data
     """
     # 提取字段（使用多种可能的标签名）
-    name = (parsed_data.get('资源名称 / Resource Name') or
-            parsed_data.get('资源名称') or
-            parsed_data.get('Resource Name', '')).strip()
+    name = (
+        parsed_data.get("资源名称 / Resource Name")
+        or parsed_data.get("资源名称")
+        or parsed_data.get("Resource Name", "")
+    ).strip()
 
-    url = (parsed_data.get('资源链接 / Resource URL') or
-           parsed_data.get('资源链接') or
-           parsed_data.get('Resource URL', '')).strip()
+    url = (
+        parsed_data.get("资源链接 / Resource URL") or parsed_data.get("资源链接") or parsed_data.get("Resource URL", "")
+    ).strip()
 
-    category_raw = (parsed_data.get('主分类 / Primary Category') or
-                    parsed_data.get('主分类') or
-                    parsed_data.get('Primary Category', '')).strip()
+    category_raw = (
+        parsed_data.get("主分类 / Primary Category")
+        or parsed_data.get("主分类")
+        or parsed_data.get("Primary Category", "")
+    ).strip()
 
-    subcategory_raw = (parsed_data.get('子分类 / Subcategory (可选 / Optional)') or
-                       parsed_data.get('子分类') or
-                       parsed_data.get('Subcategory', '')).strip()
+    subcategory_raw = (
+        parsed_data.get("子分类 / Subcategory (可选 / Optional)")
+        or parsed_data.get("子分类")
+        or parsed_data.get("Subcategory", "")
+    ).strip()
 
-    description_raw = (parsed_data.get('资源描述 / Resource Description') or
-                       parsed_data.get('资源描述') or
-                       parsed_data.get('Resource Description', '')).strip()
+    description_raw = (
+        parsed_data.get("资源描述 / Resource Description")
+        or parsed_data.get("资源描述")
+        or parsed_data.get("Resource Description", "")
+    ).strip()
 
-    author = (parsed_data.get('作者 / Author (可选 / Optional)') or
-              parsed_data.get('作者') or
-              parsed_data.get('Author', '')).strip()
+    author = (
+        parsed_data.get("作者 / Author (可选 / Optional)") or parsed_data.get("作者") or parsed_data.get("Author", "")
+    ).strip()
 
-    author_profile = (parsed_data.get('作者主页 / Author Profile (可选 / Optional)') or
-                      parsed_data.get('作者主页') or
-                      parsed_data.get('Author Profile', '')).strip()
+    author_profile = (
+        parsed_data.get("作者主页 / Author Profile (可选 / Optional)")
+        or parsed_data.get("作者主页")
+        or parsed_data.get("Author Profile", "")
+    ).strip()
 
-    license_info = (parsed_data.get('许可证 / License (可选 / Optional)') or
-                    parsed_data.get('许可证') or
-                    parsed_data.get('License', '')).strip()
+    license_info = (
+        parsed_data.get("许可证 / License (可选 / Optional)")
+        or parsed_data.get("许可证")
+        or parsed_data.get("License", "")
+    ).strip()
 
-    secondary_link = (parsed_data.get('备用链接 / Secondary Link (可选 / Optional)') or
-                      parsed_data.get('备用链接') or
-                      parsed_data.get('Secondary Link', '')).strip()
+    secondary_link = (
+        parsed_data.get("备用链接 / Secondary Link (可选 / Optional)")
+        or parsed_data.get("备用链接")
+        or parsed_data.get("Secondary Link", "")
+    ).strip()
 
     # 映射分类
-    category_id = CATEGORY_MAPPING.get(category_raw, 'ecosystem')
-    subcategory_id = SUBCATEGORY_MAPPING.get(subcategory_raw, 'general')
+    category_id = CATEGORY_MAPPING.get(category_raw, "ecosystem")
+    subcategory_id = SUBCATEGORY_MAPPING.get(subcategory_raw, "general")
 
     # 分离中英文描述
     desc_zh, desc_en = extract_descriptions(description_raw)
@@ -331,43 +344,43 @@ def create_candidate_resource(parsed_data: dict, issue_number: int, categories_p
         desc_en = desc_zh  # 如果没有英文，使用中文
 
     # 如果没有提供作者信息，尝试从 GitHub URL 提取
-    if not author and 'github.com' in url:
+    if not author and "github.com" in url:
         github_info = extract_github_info(url)
-        author = github_info['author']
+        author = github_info["author"]
         if not author_profile:
-            author_profile = github_info['author_profile']
+            author_profile = github_info["author_profile"]
 
     # 生成资源 ID
     resource_id = generate_resource_id(category_id, url, categories_prefix)
 
     # 当前日期
-    today = datetime.now().strftime('%Y/%m/%d')
+    today = datetime.now().strftime("%Y/%m/%d")
 
     # 构建资源对象
     resource = {
-        'ID': resource_id,
-        'DisplayName': name,
-        'DisplayName_ZH': name,  # Issue 提交通常是中文名
-        'Category': category_id,
-        'SubCategory': subcategory_id,
-        'PrimaryLink': url,
-        'SecondaryLink': secondary_link,
-        'Author': author,
-        'AuthorProfile': author_profile,
-        'IsActive': 'TRUE',
-        'DateAdded': today,
-        'LastModified': today,
-        'LastChecked': today,
-        'License': license_info,
-        'Description': desc_en,
-        'Description_ZH': desc_zh,
-        'Tags_ZH': '',
-        'IsPinned': 'FALSE',
-        'Section': 'community',
+        "ID": resource_id,
+        "DisplayName": name,
+        "DisplayName_ZH": name,  # Issue 提交通常是中文名
+        "Category": category_id,
+        "SubCategory": subcategory_id,
+        "PrimaryLink": url,
+        "SecondaryLink": secondary_link,
+        "Author": author,
+        "AuthorProfile": author_profile,
+        "IsActive": "TRUE",
+        "DateAdded": today,
+        "LastModified": today,
+        "LastChecked": today,
+        "License": license_info,
+        "Description": desc_en,
+        "Description_ZH": desc_zh,
+        "Tags_ZH": "",
+        "IsPinned": "FALSE",
+        "Section": "community",
         # 元数据（不会写入 CSV）
-        '_source_issue': issue_number,
-        '_submitted_at': datetime.now().isoformat(),
-        '_status': 'pending',
+        "_source_issue": issue_number,
+        "_submitted_at": datetime.now().isoformat(),
+        "_status": "pending",
     }
 
     return resource
@@ -380,20 +393,20 @@ def add_to_pending(resource: dict, pending_file: Path) -> bool:
     """
     # 加载现有数据
     if pending_file.exists():
-        with open(pending_file, 'r', encoding='utf-8') as f:
+        with open(pending_file, "r", encoding="utf-8") as f:
             data = json.load(f)
     else:
         data = {
             "_comment": "候选资源队列 - 待审核的资源 / Candidate resource queue - resources pending review",
             "_schema_version": "1.0",
-            "resources": []
+            "resources": [],
         }
 
     # 添加新资源
-    data['resources'].append(resource)
+    data["resources"].append(resource)
 
     # 保存
-    with open(pending_file, 'w', encoding='utf-8') as f:
+    with open(pending_file, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
     return True
@@ -401,15 +414,15 @@ def add_to_pending(resource: dict, pending_file: Path) -> bool:
 
 def main():
     """主函数 / Main function"""
-    parser = argparse.ArgumentParser(description='Process GitHub Issue for resource submission')
-    parser.add_argument('--issue-number', type=int, help='Issue number')
-    parser.add_argument('--issue-body', type=str, help='Issue body content')
-    parser.add_argument('--dry-run', action='store_true', help='Do not modify files')
+    parser = argparse.ArgumentParser(description="Process GitHub Issue for resource submission")
+    parser.add_argument("--issue-number", type=int, help="Issue number")
+    parser.add_argument("--issue-body", type=str, help="Issue body content")
+    parser.add_argument("--dry-run", action="store_true", help="Do not modify files")
     args = parser.parse_args()
 
     # 从参数或环境变量获取
-    issue_number = args.issue_number or int(os.environ.get('ISSUE_NUMBER', 0))
-    issue_body = args.issue_body or os.environ.get('ISSUE_BODY', '')
+    issue_number = args.issue_number or int(os.environ.get("ISSUE_NUMBER", 0))
+    issue_body = args.issue_body or os.environ.get("ISSUE_BODY", "")
 
     if not issue_number or not issue_body:
         print("❌ 错误：需要提供 issue-number 和 issue-body")
@@ -434,9 +447,7 @@ def main():
     print(f"   找到 {len(parsed)} 个字段")
 
     # 提取 URL 进行验证
-    url = (parsed.get('资源链接 / Resource URL') or
-           parsed.get('资源链接') or
-           parsed.get('Resource URL', '')).strip()
+    url = (parsed.get("资源链接 / Resource URL") or parsed.get("资源链接") or parsed.get("Resource URL", "")).strip()
 
     if not url:
         print("❌ 未找到资源链接")
@@ -446,8 +457,8 @@ def main():
     print(f"\n🔗 验证 URL: {url}")
 
     # 检查重复
-    pending_file = PROJECT_ROOT / 'candidates' / 'pending_resources.json'
-    rejected_file = PROJECT_ROOT / 'candidates' / 'rejected_resources.json'
+    pending_file = PROJECT_ROOT / "candidates" / "pending_resources.json"
+    rejected_file = PROJECT_ROOT / "candidates" / "rejected_resources.json"
 
     is_dup, dup_location = check_duplicate(url, pending_file, rejected_file)
     if is_dup:
@@ -499,5 +510,5 @@ def main():
     return 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sys.exit(main())

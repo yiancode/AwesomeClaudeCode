@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AwesomeClaudeCode - GitHub Actions 工作流可视化</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #718096;
+            margin-bottom: 40px;
+        }
+        .workflow-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .workflow-card {
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 25px;
+            transition: all 0.3s;
+        }
+        .workflow-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .workflow-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .workflow-icon {
+            font-size: 36px;
+            margin-right: 15px;
+        }
+        .workflow-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #2d3748;
+        }
+        .workflow-subtitle {
+            font-size: 12px;
+            color: #718096;
+            margin-top: 4px;
+        }
+        .trigger-section {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        .trigger-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .trigger-item {
+            display: flex;
+            align-items: center;
+            padding: 8px 0;
+            font-size: 14px;
+            color: #2d3748;
+        }
+        .trigger-icon {
+            margin-right: 8px;
+        }
+        .step-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .step-item {
+            padding: 10px;
+            margin-bottom: 8px;
+            background: #edf2f7;
+            border-radius: 4px;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+        }
+        .step-number {
+            background: #667eea;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .timeline {
+            background: #f7fafc;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+        .timeline-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .timeline-item {
+            display: flex;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 40px;
+            top: 45px;
+            bottom: -30px;
+            width: 2px;
+            background: #cbd5e0;
+        }
+        .timeline-item:last-child::before {
+            display: none;
+        }
+        .timeline-time {
+            width: 80px;
+            font-weight: 600;
+            color: #667eea;
+            flex-shrink: 0;
+        }
+        .timeline-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #667eea;
+            flex-shrink: 0;
+            margin: 0 10px;
+            position: relative;
+            z-index: 1;
+        }
+        .timeline-content {
+            flex: 1;
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .timeline-title-text {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 5px;
+        }
+        .timeline-desc {
+            font-size: 13px;
+            color: #718096;
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-right: 6px;
+            margin-top: 5px;
+        }
+        .badge-success { background: #c6f6d5; color: #22543d; }
+        .badge-warning { background: #feebc8; color: #7c2d12; }
+        .badge-info { background: #bee3f8; color: #2c5282; }
+        .badge-schedule { background: #e9d8fd; color: #44337a; }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .stat-card {
+            text-align: center;
+            padding: 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 8px;
+        }
+        .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .stat-label {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 GitHub Actions 工作流可视化</h1>
+        <p class="subtitle">AwesomeClaudeCode 项目自动化流程详解</p>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">3</div>
+                <div class="stat-label">主要工作流</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">124</div>
+                <div class="stat-label">资源验证</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">7天</div>
+                <div class="stat-label">定期检查周期</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">自动化覆盖</div>
+            </div>
+        </div>
+
+        <div class="workflow-grid">
+            <!-- Workflow 1: Validate Links -->
+            <div class="workflow-card">
+                <div class="workflow-header">
+                    <div class="workflow-icon">🔗</div>
+                    <div>
+                        <div class="workflow-title">Validate Links</div>
+                        <div class="workflow-subtitle">链接验证工作流</div>
+                    </div>
+                </div>
+
+                <div class="trigger-section">
+                    <div class="trigger-title">触发条件</div>
+                    <div class="trigger-item">
+                        <span class="trigger-icon">⏰</span>
+                        每周一 UTC 0:00
+                    </div>
+                    <div class="trigger-item">
+                        <span class="trigger-icon">📝</span>
+                        修改 CSV 文件 (PR)
+                    </div>
+                    <div class="trigger-item">
+                        <span class="trigger-icon">👆</span>
+                        手动触发
+                    </div>
+                </div>
+
+                <ul class="step-list">
+                    <li class="step-item">
+                        <span class="step-number">1</span>
+                        检出代码
+                    </li>
+                    <li class="step-item">
+                        <span class="step-number">2</span>
+                        安装 Python 3.11
+                    </li>
+                    <li class="step-item">
+                        <span class="step-number">3</span>
+                        验证所有链接
+                    </li>
+                    <li class="step-item">
+                        <span class="step-number">4</span>
+                        生成验证报告
+                    </li>
+                    <li class="step-item">
+                        <span class="step-number">5</span>
+                        创建/更新 Issue
+                    </li>
+                </ul>
+
+                <div style="margin-top: 15px;">
+                    <span class="badge badge-schedule">定期执行</span>
+                    <span class="badge badge-warning">失败通知</span>
+                </div>
+            </div>
+
+            <!-- Workflow 2: Generate README -->
+            <div class="workflow-card">
+                <div class="workflow-header">
+                    <div class="workflow-icon">📄</div>
+                    <div>
+                        <div class="workflow-title">Generate README</div>
+                        <div class="workflow-subtitle">自动生成文档</div>
+                    </div>
+                </div>
+
+                <div class="trigger-section">
+                    <div class="trigger-title">触发条件</div>
+                    <div class="trigger-item">
+                        <span class="trigger-icon">📝</span>
+                        修改 CSV/模板 (PR)
+                    </div>
+                    <div class="trigger-item">
+                        <span class="trigger-icon">🔧</span>
+                        修改生成脚本 (PR)
+                    </div>
+                    <div class="trigger-item">
+                        <span class="trigger-icon">👆</span>
+                        手动触发
+                    </div>
+                </div>
+
+                <ul class="step-list">
+                    <li class="step-item">
+                        <span class="step-number">1</span>
+                        检出 PR 分支
+                    </li>
+                    <li class="step-item">
+                        <span class="step-number">2</span>
+                        运行生成脚本
+                    </li>
+                    <li class="step-item">
+                        <span class="step-number">3</span>
+                        检测文件变更
+                    </li>
+                    <li class="step-item">
+                        <span class="step-number">4</span>
+                        自动提交 README
+                    </li>
+                    <li class="step-item">
+                        <span class="step-number">5</span>
+                        PR 评论通知
+                    </li>
+                </ul>
+
+                <div style="margin-top: 15px;">
+                    <span class="badge badge-success">自动修复</span>
+                    <span class="badge badge-info">PR 反馈</span>
+                </div>
+            </div>
+
+            <!-- Workflow 3: Format Check -->
+            <div class="workflow-card">
+                <div class="workflow-header">
+                    <div class="workflow-icon">✨</div>
+                    <div>
+                        <div class="workflow-title">Format Check</div>
+                        <div class="workflow-subtitle">代码格式检查</div>
+                    </div>
+                </div>
+
+                <div class="trigger-section">
+                    <div class="trigger-title">触发条件</div>
+                    <div class="trigger-item">
+                        <span class="trigger-icon">📝</span>
+                        修改 .py 文件 (PR)
+                    </div>
+                    <div class="trigger-item">
+                        <span class="trigger-icon">🚀</span>
+                        Push 到 main
+                    </div>
+                    <div class="trigger-item">
+                        <span class="trigger-icon">👆</span>
+                        手动触发
+                    </div>
+                </div>
+
+                <ul class="step-list">
+                    <li class="step-item">
+                        <span class="step-number">1</span>
+                        检出代码
+                    </li>
+                    <li class="step-item">
+                        <span class="step-number">2</span>
+                        安装 ruff
+                    </li>
+                    <li class="step-item">
+                        <span class="step-number">3</span>
+                        运行格式检查
+                    </li>
+                    <li class="step-item">
+                        <span class="step-number">4</span>
+                        运行 Lint 检查
+                    </li>
+                    <li class="step-item">
+                        <span class="step-number">5</span>
+                        报告检查结果
+                    </li>
+                </ul>
+
+                <div style="margin-top: 15px;">
+                    <span class="badge badge-warning">质量门禁</span>
+                    <span class="badge badge-info">修复建议</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline Section -->
+        <div class="timeline">
+            <div class="timeline-title">📅 典型执行时间线</div>
+
+            <div class="timeline-item">
+                <div class="timeline-time">T+0s</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-title-text">开发者提交代码</div>
+                    <div class="timeline-desc">修改 THE_RESOURCES_TABLE.csv，添加新资源</div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-time">T+3s</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-title-text">创建 Pull Request</div>
+                    <div class="timeline-desc">触发所有相关工作流</div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-time">T+4s</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-title-text">⚡ 并行执行工作流</div>
+                    <div class="timeline-desc">
+                        Generate README • Validate Links • Format Check 同时启动
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-time">T+10s</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-title-text">✅ Format Check 完成</div>
+                    <div class="timeline-desc">代码格式检查通过</div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-time">T+15s</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-title-text">✅ Generate README 完成</div>
+                    <div class="timeline-desc">自动生成并提交新的 README.md，在 PR 添加评论</div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-time">T+45s</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-title-text">✅ Validate Links 完成</div>
+                    <div class="timeline-desc">验证 124 个资源链接，上传验证报告</div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-time">T+60s</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-title-text">开发者查看结果</div>
+                    <div class="timeline-desc">查看 PR 评论和工作流状态，准备合并</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weekly Schedule -->
+        <div class="timeline" style="margin-top: 40px;">
+            <div class="timeline-title">📆 每周定期任务</div>
+
+            <div class="timeline-item">
+                <div class="timeline-time">周一 8:00</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-title-text">🔗 定期链接验证</div>
+                    <div class="timeline-desc">
+                        自动验证所有资源链接，检测死链和重定向问题
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-time">每日</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-title-text">🤖 Dependabot 检查</div>
+                    <div class="timeline-desc">
+                        检查依赖更新，自动创建更新 PR
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-time">实时</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-title-text">⚡ PR 触发工作流</div>
+                    <div class="timeline-desc">
+                        每次代码变更时自动执行质量检查
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px; padding-top: 30px; border-top: 2px solid #e2e8f0; color: #718096; font-size: 14px;">
+            <p>📖 查看详细文档：<code>docs/workflows-diagram.md</code></p>
+            <p>💡 使用 <code>make help</code> 查看所有可用命令</p>
+        </div>
+    </div>
+</body>
+</html>

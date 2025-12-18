@@ -35,13 +35,13 @@ class HackerNewsCrawler(BaseCrawler):
         super().__init__(config, rate_limit_config)
 
         # HN 特定配置
-        self.hn_config = config.get('hackernews', {})
-        self.keywords = self.hn_config.get('keywords', ['claude code'])
-        self.search_type = self.hn_config.get('search_type', 'story')  # story, comment, all
-        self.min_score = self.hn_config.get('min_score', 5)
-        self.results_per_keyword = self.hn_config.get('results_per_keyword', 20)
-        self.max_age_days = self.hn_config.get('max_age_days', 30)
-        self.sort_by = self.hn_config.get('sort_by', 'popularity')  # popularity, date
+        self.hn_config = config.get("hackernews", {})
+        self.keywords = self.hn_config.get("keywords", ["claude code"])
+        self.search_type = self.hn_config.get("search_type", "story")  # story, comment, all
+        self.min_score = self.hn_config.get("min_score", 5)
+        self.results_per_keyword = self.hn_config.get("results_per_keyword", 20)
+        self.max_age_days = self.hn_config.get("max_age_days", 30)
+        self.sort_by = self.hn_config.get("sort_by", "popularity")  # popularity, date
 
     def _search(self, query: str) -> List[dict]:
         """
@@ -56,28 +56,28 @@ class HackerNewsCrawler(BaseCrawler):
         results = []
 
         # 选择 API 端点
-        if self.sort_by == 'date':
+        if self.sort_by == "date":
             api_url = self.SEARCH_BY_DATE_API
         else:
             api_url = self.SEARCH_API
 
         # 构建请求参数
         params = {
-            'query': query,
-            'hitsPerPage': self.results_per_keyword,
+            "query": query,
+            "hitsPerPage": self.results_per_keyword,
         }
 
         # 设置搜索类型
-        if self.search_type == 'story':
-            params['tags'] = 'story'
-        elif self.search_type == 'comment':
-            params['tags'] = 'comment'
+        if self.search_type == "story":
+            params["tags"] = "story"
+        elif self.search_type == "comment":
+            params["tags"] = "comment"
         # 'all' 不需要 tags 参数
 
         # 设置时间范围
         if self.max_age_days:
             timestamp = int((datetime.now(timezone.utc) - timedelta(days=self.max_age_days)).timestamp())
-            params['numericFilters'] = f'created_at_i>{timestamp}'
+            params["numericFilters"] = f"created_at_i>{timestamp}"
 
         response = self._make_request(api_url, params=params)
 
@@ -86,7 +86,7 @@ class HackerNewsCrawler(BaseCrawler):
 
         try:
             data = response.json()
-            hits = data.get('hits', [])
+            hits = data.get("hits", [])
 
             for hit in hits:
                 results.append(hit)
@@ -107,13 +107,13 @@ class HackerNewsCrawler(BaseCrawler):
             是否通过过滤 / Whether passed filter
         """
         # 检查分数
-        points = hit.get('points', 0) or 0
+        points = hit.get("points", 0) or 0
         if points < self.min_score:
             return False
 
         # 检查是否有 URL
-        url = hit.get('url', '')
-        story_url = hit.get('story_url', '')
+        url = hit.get("url", "")
+        story_url = hit.get("story_url", "")
         target_url = url or story_url
 
         if not target_url:
@@ -138,13 +138,13 @@ class HackerNewsCrawler(BaseCrawler):
         Returns:
             候选资源或 None / Candidate resource or None
         """
-        title = hit.get('title', '') or hit.get('story_title', '')
-        url = hit.get('url', '') or hit.get('story_url', '')
-        author = hit.get('author', '')
-        points = hit.get('points', 0) or 0
-        num_comments = hit.get('num_comments', 0) or 0
-        object_id = hit.get('objectID', '')
-        created_at = hit.get('created_at', '')
+        title = hit.get("title", "") or hit.get("story_title", "")
+        url = hit.get("url", "") or hit.get("story_url", "")
+        author = hit.get("author", "")
+        points = hit.get("points", 0) or 0
+        num_comments = hit.get("num_comments", 0) or 0
+        object_id = hit.get("objectID", "")
+        created_at = hit.get("created_at", "")
 
         # 优先提取 GitHub 链接
         github_url = self._extract_github_url(url)
@@ -155,25 +155,25 @@ class HackerNewsCrawler(BaseCrawler):
 
         # 构建描述
         description = title
-        if hit.get('story_text'):
+        if hit.get("story_text"):
             # 如果是评论，使用评论文本
-            description = hit['story_text'][:500]
+            description = hit["story_text"][:500]
 
         return self.create_candidate_resource(
             url=target_url,
             title=title,
             description=description,
             author=author,
-            author_url=f"https://news.ycombinator.com/user?id={author}" if author else '',
+            author_url=f"https://news.ycombinator.com/user?id={author}" if author else "",
             source_score=points,
             extra_metadata={
-                'hn_id': object_id,
-                'hn_url': f"https://news.ycombinator.com/item?id={object_id}",
-                'hn_points': points,
-                'hn_comments': num_comments,
-                'original_url': url,
-                'created_at': created_at,
-            }
+                "hn_id": object_id,
+                "hn_url": f"https://news.ycombinator.com/item?id={object_id}",
+                "hn_points": points,
+                "hn_comments": num_comments,
+                "original_url": url,
+                "created_at": created_at,
+            },
         )
 
     def crawl(self) -> List[dict]:
@@ -189,7 +189,7 @@ class HackerNewsCrawler(BaseCrawler):
         print(f"   📋 搜索 {len(self.keywords)} 个关键词...")
 
         for keyword in self.keywords:
-            print(f"      搜索 \"{keyword}\"...")
+            print(f'      搜索 "{keyword}"...')
 
             hits = self._search(keyword)
             print(f"         找到 {len(hits)} 个结果")
@@ -200,7 +200,7 @@ class HackerNewsCrawler(BaseCrawler):
 
                 resource = self._create_resource_from_hit(hit)
                 if resource:
-                    url = resource.get('PrimaryLink', '')
+                    url = resource.get("PrimaryLink", "")
                     if url not in seen_urls:
                         seen_urls.add(url)
                         resources.append(resource)

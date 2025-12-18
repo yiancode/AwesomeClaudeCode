@@ -20,6 +20,11 @@ validate:  ## 验证 CSV 数据 / Validate CSV data
 	@echo "🔍 验证 CSV 数据..."
 	./venv/bin/python3 scripts/validate_csv.py
 
+format:  ## 格式化 Python 代码 / Format Python code
+	@echo "🎨 格式化代码..."
+	ruff format .
+	@echo "✅ 代码格式化完成"
+
 migrate:  ## 从 README 迁移资源到 CSV / Migrate resources from README to CSV
 	@echo "🔄 迁移资源到 CSV..."
 	./venv/bin/python3 scripts/migrate_existing_resources.py

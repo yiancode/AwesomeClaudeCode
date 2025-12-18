@@ -14,6 +14,7 @@ from urllib.parse import urlparse
 
 try:
     from github import Github, GithubException
+
     GITHUB_AVAILABLE = True
 except ImportError:
     GITHUB_AVAILABLE = False
@@ -28,17 +29,17 @@ def parse_github_url(url: str) -> Optional[Tuple[str, str]]:
 
     Returns: (owner, repo) or None
     """
-    if not url or 'github.com' not in url:
+    if not url or "github.com" not in url:
         return None
 
     # 匹配 github.com/owner/repo 格式
     # Match github.com/owner/repo format
-    pattern = r'github\.com/([^/]+)/([^/]+)'
+    pattern = r"github\.com/([^/]+)/([^/]+)"
     match = re.search(pattern, url)
 
     if match:
         owner = match.group(1)
-        repo = match.group(2).rstrip('.git')  # 移除 .git 后缀
+        repo = match.group(2).rstrip(".git")  # 移除 .git 后缀
         return (owner, repo)
 
     return None
@@ -50,7 +51,7 @@ def fetch_github_metadata(owner: str, repo: str, github_token: Optional[str] = N
     Fetch repository metadata from GitHub API
     """
     if not GITHUB_AVAILABLE:
-        return {'error': 'PyGithub not available'}
+        return {"error": "PyGithub not available"}
 
     try:
         # 使用 token（如果提供）以避免速率限制
@@ -67,21 +68,21 @@ def fetch_github_metadata(owner: str, repo: str, github_token: Optional[str] = N
         # 提取元数据
         # Extract metadata
         metadata = {
-            'author': owner,
-            'author_profile': f"https://github.com/{owner}",
-            'license': repository.license.spdx_id if repository.license else '',
-            'description': repository.description or '',
-            'stars': repository.stargazers_count,
-            'language': repository.language or '',
-            'updated_at': repository.updated_at.strftime('%Y-%m-%d') if repository.updated_at else ''
+            "author": owner,
+            "author_profile": f"https://github.com/{owner}",
+            "license": repository.license.spdx_id if repository.license else "",
+            "description": repository.description or "",
+            "stars": repository.stargazers_count,
+            "language": repository.language or "",
+            "updated_at": repository.updated_at.strftime("%Y-%m-%d") if repository.updated_at else "",
         }
 
         return metadata
 
     except GithubException as e:
-        return {'error': f'GitHub API Error: {e.status} - {e.data.get("message", "Unknown error")}'}
+        return {"error": f"GitHub API Error: {e.status} - {e.data.get('message', 'Unknown error')}"}
     except Exception as e:
-        return {'error': str(e)}
+        return {"error": str(e)}
 
 
 def update_csv_with_github_data(csv_path: Path, github_token: Optional[str] = None, dry_run: bool = False):
@@ -91,7 +92,7 @@ def update_csv_with_github_data(csv_path: Path, github_token: Optional[str] = No
     """
     # 读取 CSV
     # Read CSV
-    with open(csv_path, 'r', encoding='utf-8') as f:
+    with open(csv_path, "r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         resources = list(reader)
         fieldnames = reader.fieldnames
@@ -104,9 +105,9 @@ def update_csv_with_github_data(csv_path: Path, github_token: Optional[str] = No
     print(f"🔍 Processing {len(resources)} resources...\n")
 
     for idx, resource in enumerate(resources, start=1):
-        url = resource.get('PrimaryLink', '')
-        current_author = resource.get('Author', '').strip()
-        current_license = resource.get('License', '').strip()
+        url = resource.get("PrimaryLink", "")
+        current_author = resource.get("Author", "").strip()
+        current_license = resource.get("License", "").strip()
 
         # 如果已有 Author 和 License，跳过
         # Skip if Author and License already exist
@@ -130,7 +131,7 @@ def update_csv_with_github_data(csv_path: Path, github_token: Optional[str] = No
         # Fetch metadata
         metadata = fetch_github_metadata(owner, repo, github_token)
 
-        if 'error' in metadata:
+        if "error" in metadata:
             print(f"  ❌ {metadata['error']}")
             error_count += 1
             continue
@@ -138,16 +139,16 @@ def update_csv_with_github_data(csv_path: Path, github_token: Optional[str] = No
         # 更新字段
         # Update fields
         if not current_author:
-            resource['Author'] = metadata['author']
-            resource['AuthorProfile'] = metadata['author_profile']
+            resource["Author"] = metadata["author"]
+            resource["AuthorProfile"] = metadata["author_profile"]
 
-        if not current_license and metadata['license']:
-            resource['License'] = metadata['license']
+        if not current_license and metadata["license"]:
+            resource["License"] = metadata["license"]
 
         # 如果描述为空，可以考虑使用 GitHub 的描述（可选）
         # Optionally use GitHub description if empty (optional)
-        if not resource.get('Description', '').strip() and metadata['description']:
-            resource['Description_ZH'] = metadata['description']
+        if not resource.get("Description", "").strip() and metadata["description"]:
+            resource["Description_ZH"] = metadata["description"]
 
         print(f"  ✅ Author: {metadata['author']}, License: {metadata['license'] or 'N/A'}")
         updated_count += 1
@@ -170,7 +171,7 @@ def update_csv_with_github_data(csv_path: Path, github_token: Optional[str] = No
 
     # 写回 CSV
     # Write back to CSV
-    with open(csv_path, 'w', encoding='utf-8', newline='') as f:
+    with open(csv_path, "w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(resources)
@@ -182,11 +183,11 @@ def update_csv_with_github_data(csv_path: Path, github_token: Optional[str] = No
 def main():
     """主函数 / Main function"""
     project_root = Path(__file__).parent.parent
-    csv_path = project_root / 'THE_RESOURCES_TABLE.csv'
+    csv_path = project_root / "THE_RESOURCES_TABLE.csv"
 
     # 从环境变量获取 GitHub token（可选）
     # Get GitHub token from environment (optional)
-    github_token = os.getenv('GITHUB_TOKEN')
+    github_token = os.getenv("GITHUB_TOKEN")
 
     if not github_token:
         print("💡 提示: 设置 GITHUB_TOKEN 环境变量可提高 API 速率限制")
@@ -213,5 +214,5 @@ def main():
     print("   Run validation script: python3 scripts/validate_csv.py")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

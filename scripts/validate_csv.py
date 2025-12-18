@@ -15,7 +15,7 @@ from typing import List, Dict
 def load_csv(csv_file: Path) -> List[Dict]:
     """加载 CSV 文件 / Load CSV file"""
     resources = []
-    with open(csv_file, 'r', encoding='utf-8') as f:
+    with open(csv_file, "r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         resources = list(reader)
     return resources
@@ -27,14 +27,11 @@ def validate_required_fields(resources: List[Dict]) -> List[str]:
     Returns list of validation errors
     """
     errors = []
-    required_fields = [
-        'ID', 'DisplayName', 'DisplayName_ZH', 'Category',
-        'PrimaryLink', 'IsActive', 'IsPinned'
-    ]
+    required_fields = ["ID", "DisplayName", "DisplayName_ZH", "Category", "PrimaryLink", "IsActive", "IsPinned"]
 
     for idx, resource in enumerate(resources, start=2):  # CSV row starts at 2 (1 is header)
         for field in required_fields:
-            if not resource.get(field, '').strip():
+            if not resource.get(field, "").strip():
                 errors.append(f"行 {idx}: 缺少必填字段 '{field}' / Row {idx}: Missing required field '{field}'")
 
     return errors
@@ -46,11 +43,12 @@ def validate_id_format(resources: List[Dict]) -> List[str]:
     ID should be: prefix-hash8
     """
     errors = []
-    id_pattern = r'^[a-z]+-[a-f0-9]{8}$'
+    id_pattern = r"^[a-z]+-[a-f0-9]{8}$"
 
     import re
+
     for idx, resource in enumerate(resources, start=2):
-        resource_id = resource.get('ID', '')
+        resource_id = resource.get("ID", "")
         if not resource_id:
             continue
 
@@ -69,7 +67,7 @@ def check_duplicate_ids(resources: List[Dict]) -> List[str]:
     检查重复 ID / Check duplicate IDs
     """
     errors = []
-    id_counter = Counter(r.get('ID', '') for r in resources if r.get('ID'))
+    id_counter = Counter(r.get("ID", "") for r in resources if r.get("ID"))
 
     for resource_id, count in id_counter.items():
         if count > 1:
@@ -87,21 +85,20 @@ def validate_urls(resources: List[Dict]) -> List[str]:
     """
     errors = []
     import re
-    url_pattern = r'^https?://'
+
+    url_pattern = r"^https?://"
 
     for idx, resource in enumerate(resources, start=2):
-        primary_link = resource.get('PrimaryLink', '').strip()
+        primary_link = resource.get("PrimaryLink", "").strip()
         if primary_link and not re.match(url_pattern, primary_link):
             errors.append(
-                f"行 {idx}: 主链接格式错误 '{primary_link}' / "
-                f"Row {idx}: Invalid primary link '{primary_link}'"
+                f"行 {idx}: 主链接格式错误 '{primary_link}' / Row {idx}: Invalid primary link '{primary_link}'"
             )
 
-        secondary_link = resource.get('SecondaryLink', '').strip()
+        secondary_link = resource.get("SecondaryLink", "").strip()
         if secondary_link and not re.match(url_pattern, secondary_link):
             errors.append(
-                f"行 {idx}: 次要链接格式错误 '{secondary_link}' / "
-                f"Row {idx}: Invalid secondary link '{secondary_link}'"
+                f"行 {idx}: 次要链接格式错误 '{secondary_link}' / Row {idx}: Invalid secondary link '{secondary_link}'"
             )
 
     return errors
@@ -112,13 +109,13 @@ def generate_statistics(resources: List[Dict]) -> Dict:
     生成统计信息 / Generate statistics
     """
     stats = {
-        'total': len(resources),
-        'official': sum(1 for r in resources if r.get('IsPinned') == 'TRUE'),
-        'community': sum(1 for r in resources if r.get('IsPinned') != 'TRUE'),
-        'categories': Counter(r.get('Category', '') for r in resources),
-        'missing_author': sum(1 for r in resources if not r.get('Author', '').strip()),
-        'missing_license': sum(1 for r in resources if not r.get('License', '').strip()),
-        'missing_description_zh': sum(1 for r in resources if not r.get('Description_ZH', '').strip()),
+        "total": len(resources),
+        "official": sum(1 for r in resources if r.get("IsPinned") == "TRUE"),
+        "community": sum(1 for r in resources if r.get("IsPinned") != "TRUE"),
+        "categories": Counter(r.get("Category", "") for r in resources),
+        "missing_author": sum(1 for r in resources if not r.get("Author", "").strip()),
+        "missing_license": sum(1 for r in resources if not r.get("License", "").strip()),
+        "missing_description_zh": sum(1 for r in resources if not r.get("Description_ZH", "").strip()),
     }
 
     return stats
@@ -128,9 +125,9 @@ def print_validation_report(errors: List[str], stats: Dict):
     """
     打印验证报告 / Print validation report
     """
-    print("\n" + "="*70)
+    print("\n" + "=" * 70)
     print("📋 CSV 数据验证报告 / CSV Data Validation Report")
-    print("="*70)
+    print("=" * 70)
 
     # 统计信息 / Statistics
     print("\n📊 统计信息 / Statistics:")
@@ -139,7 +136,7 @@ def print_validation_report(errors: List[str], stats: Dict):
     print(f"  社区资源 / Community Resources: {stats['community']}")
 
     print("\n📂 分类统计 / Category Statistics:")
-    for category, count in sorted(stats['categories'].items()):
+    for category, count in sorted(stats["categories"].items()):
         print(f"  - {category}: {count}")
 
     print("\n⚠️  需要补充的字段 / Fields Requiring Completion:")
@@ -157,13 +154,13 @@ def print_validation_report(errors: List[str], stats: Dict):
     else:
         print("\n✅ 所有验证通过！/ All validations passed!")
 
-    print("\n" + "="*70)
+    print("\n" + "=" * 70)
 
 
 def main():
     """主函数 / Main function"""
     project_root = Path(__file__).parent.parent
-    csv_file = project_root / 'THE_RESOURCES_TABLE.csv'
+    csv_file = project_root / "THE_RESOURCES_TABLE.csv"
 
     print(f"🔍 验证 CSV 文件: {csv_file}")
     print(f"🔍 Validating CSV file: {csv_file}\n")
@@ -202,5 +199,5 @@ def main():
     return 0 if not all_errors else 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     exit(main())

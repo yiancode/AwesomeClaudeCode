@@ -1,7 +1,21 @@
 # Ruff configuration for AwesomeClaudeCode
 # https://docs.astral.sh/ruff/configuration/
 
-# Enable specific linting rules
+# Global settings
+line-length = 120
+
+# Exclude directories
+exclude = [
+    ".git",
+    ".venv",
+    "venv",
+    "__pycache__",
+    "build",
+    "dist",
+    "*.egg-info",
+]
+
+# Linting configuration
 [lint]
 # Select the rules to check
 # F - Pyflakes (critical errors only)
@@ -16,20 +30,7 @@ ignore = [
     "W293",  # Blank line contains whitespace - cosmetic
 ]
 
-# Exclude directories
-exclude = [
-    ".git",
-    ".venv",
-    "venv",
-    "__pycache__",
-    "build",
-    "dist",
-    "*.egg-info",
-]
-
-# Set line length
-line-length = 120
-
+# Format configuration
 [format]
 # Use double quotes for strings
 quote-style = "double"

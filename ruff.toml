@@ -36,6 +36,3 @@ quote-style = "double"
 
 # Indent with 4 spaces
 indent-style = "space"
-
-# Line length for formatting
-line-length = 120

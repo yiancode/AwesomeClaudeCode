@@ -1,6 +1,14 @@
 name: Generate README
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'THE_RESOURCES_TABLE.csv'
+      - 'templates/**'
+      - 'scripts/generate_readme.py'
+      - 'candidates/**'  # 爬虫更新候选资源时也触发
   pull_request:
     paths:
       - 'THE_RESOURCES_TABLE.csv'
@@ -16,7 +24,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.head_ref }}
+          ref: ${{ github.event_name == 'pull_request' && github.head_ref || github.ref }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
@@ -49,10 +57,38 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
           git commit -m "docs: 自动生成 README [skip ci]"
-          git push
+
+          # 推送前先拉取最新变更，避免冲突
+          # Pull latest changes before pushing to avoid conflicts
+          echo "拉取最新变更..."
+          git pull --rebase origin ${{ github.ref_name }} || git pull --rebase origin main
+
+          # 推送变更，最多重试 3 次
+          # Push changes with up to 3 retries
+          MAX_RETRIES=3
+          RETRY_COUNT=0
+
+          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+            echo "尝试推送 (第 $((RETRY_COUNT + 1)) 次)..."
+            if git push origin ${{ github.ref_name }} || git push origin HEAD:main; then
+              echo "✅ 推送成功"
+              exit 0
+            else
+              RETRY_COUNT=$((RETRY_COUNT + 1))
+              if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
+                echo "⚠️ 推送失败，等待 5 秒后重试..."
+                sleep 5
+                echo "拉取最新变更..."
+                git pull --rebase origin ${{ github.ref_name }} || git pull --rebase origin main
+              fi
+            fi
+          done
+
+          echo "❌ 推送失败，已重试 $MAX_RETRIES 次"
+          exit 1
 
       - name: Comment on PR
-        if: steps.verify_diff.outputs.changed == 'true'
+        if: steps.verify_diff.outputs.changed == 'true' && github.event_name == 'pull_request'
         uses: actions/github-script@v7
         with:
           script: |

@@ -16,7 +16,29 @@
 #   cmd-xyz123:
 #     skip_validation: true  # 完全跳过验证 / Skip validation entirely
 
-overrides: {}
+overrides:
+  # 反爬虫机制导致的 403 错误 / 403 errors due to anti-bot mechanisms
+  off-85c51f88:  # Claude Code GitHub Issues
+    skip_validation: true
+    reason: "GitHub returns 406 for automated requests"
+
+  eco-752f8d6b:  # Reddit r/ClaudeCode
+    skip_validation: true
+    reason: "Reddit returns 403 for automated requests"
+
+  eco-859bac2d:  # Claude 3
+    skip_validation: true
+    reason: "Claude.ai returns 403 for automated requests (anti-bot)"
+
+  # 需要认证的文档 / Documents requiring authentication
+  off-eb98ecbd:  # LLMs.txt 格式文档
+    skip_validation: true
+    reason: "Returns 401 - requires authentication"
+
+  off-ebb5112a:  # 完整版 LLMs.txt
+    skip_validation: true
+    reason: "Returns 401 - requires authentication"
+
   # 本地文档链接 - 跳过 URL 验证 / Local documentation - skip URL validation
   # 以下资源指向本地 docs/ 目录，无需验证外部 URL
   # The following resources point to local docs/ directory, no need to validate external URLs

@@ -1,0 +1,71 @@
+{
+  "_comment": "资源发现日志 / Resource discovery log",
+  "last_run": "2025-12-18T09:07:05.529190",
+  "discovered_repos": [
+    {
+      "full_name": "centminmod/my-claude-code-setup",
+      "url": "https://github.com/centminmod/my-claude-code-setup",
+      "discovered_at": "2025-12-18T09:07:05.524741",
+      "relevance_score": 100
+    },
+    {
+      "full_name": "Piebald-AI/claude-code-system-prompts",
+      "url": "https://github.com/Piebald-AI/claude-code-system-prompts",
+      "discovered_at": "2025-12-18T09:07:05.525108",
+      "relevance_score": 100
+    },
+    {
+      "full_name": "CoplayDev/unity-mcp",
+      "url": "https://github.com/CoplayDev/unity-mcp",
+      "discovered_at": "2025-12-18T09:07:05.525457",
+      "relevance_score": 90
+    },
+    {
+      "full_name": "arinspunk/claude-talk-to-figma-mcp",
+      "url": "https://github.com/arinspunk/claude-talk-to-figma-mcp",
+      "discovered_at": "2025-12-18T09:07:05.525879",
+      "relevance_score": 85
+    },
+    {
+      "full_name": "alvinunreal/awesome-claude",
+      "url": "https://github.com/alvinunreal/awesome-claude",
+      "discovered_at": "2025-12-18T09:07:05.526359",
+      "relevance_score": 80
+    },
+    {
+      "full_name": "maxritter/claude-codepro",
+      "url": "https://github.com/maxritter/claude-codepro",
+      "discovered_at": "2025-12-18T09:07:05.526783",
+      "relevance_score": 80
+    },
+    {
+      "full_name": "yzfly/Awesome-MCP-ZH",
+      "url": "https://github.com/yzfly/Awesome-MCP-ZH",
+      "discovered_at": "2025-12-18T09:07:05.527520",
+      "relevance_score": 75
+    },
+    {
+      "full_name": "dinoki-ai/osaurus",
+      "url": "https://github.com/dinoki-ai/osaurus",
+      "discovered_at": "2025-12-18T09:07:05.528052",
+      "relevance_score": 75
+    },
+    {
+      "full_name": "hesreallyhim/awesome-claude-code",
+      "url": "https://github.com/hesreallyhim/awesome-claude-code",
+      "discovered_at": "2025-12-18T09:07:05.528593",
+      "relevance_score": 70
+    },
+    {
+      "full_name": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "discovered_at": "2025-12-18T09:07:05.529186",
+      "relevance_score": 70
+    }
+  ],
+  "stats": {
+    "total_discovered": 10,
+    "total_added": 10,
+    "total_skipped": 0
+  }
+}

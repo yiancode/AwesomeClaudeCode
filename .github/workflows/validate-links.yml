@@ -41,7 +41,8 @@ jobs:
         id: check_results
         run: |
           if [ -f validation_report.txt ]; then
-            if grep -q "❌" validation_report.txt || grep -q "broken" validation_report.txt; then
+            # 检查是否有新失效链接或总失效链接数大于 0
+            if grep -q "Newly broken links: [1-9]" validation_report.txt || grep -q "Total broken links: [1-9]" validation_report.txt; then
               echo "has_failures=true" >> $GITHUB_OUTPUT
             else
               echo "has_failures=false" >> $GITHUB_OUTPUT

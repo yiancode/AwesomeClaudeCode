@@ -206,7 +206,7 @@ jobs:
           LC_ALL: zh_CN.UTF-8
 
       - name: Upload trends report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: trends-report
           path: trends_report.md

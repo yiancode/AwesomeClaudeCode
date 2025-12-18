@@ -77,14 +77,42 @@ jobs:
         run: |
           git diff --quiet candidates/ || echo "changed=true" >> $GITHUB_OUTPUT
 
-      - name: Commit changes
+      - name: Commit and push changes
         if: steps.verify_diff.outputs.changed == 'true' && github.event.inputs.dry_run != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add candidates/
           git commit -m "feat: 多源资源爬取发现新资源 [skip ci]"
-          git push
+
+          # 推送前先拉取最新变更，避免冲突
+          # Pull latest changes before pushing to avoid conflicts
+          echo "拉取最新变更..."
+          git pull --rebase origin ${{ github.ref_name }}
+
+          # 推送变更，最多重试 3 次
+          # Push changes with up to 3 retries
+          MAX_RETRIES=3
+          RETRY_COUNT=0
+
+          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+            echo "尝试推送 (第 $((RETRY_COUNT + 1)) 次)..."
+            if git push origin ${{ github.ref_name }}; then
+              echo "✅ 推送成功"
+              exit 0
+            else
+              RETRY_COUNT=$((RETRY_COUNT + 1))
+              if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
+                echo "⚠️ 推送失败，等待 5 秒后重试..."
+                sleep 5
+                echo "拉取最新变更..."
+                git pull --rebase origin ${{ github.ref_name }}
+              fi
+            fi
+          done
+
+          echo "❌ 推送失败，已重试 $MAX_RETRIES 次"
+          exit 1
 
       - name: Create summary Issue
         if: steps.verify_diff.outputs.changed == 'true' && github.event.inputs.dry_run != 'true'
@@ -161,14 +189,46 @@ jobs:
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
           REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
 
-      - name: Commit changes
+      - name: Commit and push changes
         if: github.event.inputs.dry_run != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add candidates/
-          git diff --staged --quiet || git commit -m "feat: Reddit 爬取发现新资源 [skip ci]"
-          git push || true
+
+          # 检查是否有变更
+          if git diff --staged --quiet; then
+            echo "没有变更需要提交"
+            exit 0
+          fi
+
+          git commit -m "feat: Reddit 爬取发现新资源 [skip ci]"
+
+          # 推送前先拉取最新变更
+          echo "拉取最新变更..."
+          git pull --rebase origin ${{ github.ref_name }} || exit 0
+
+          # 推送变更，最多重试 3 次
+          MAX_RETRIES=3
+          RETRY_COUNT=0
+
+          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+            echo "尝试推送 (第 $((RETRY_COUNT + 1)) 次)..."
+            if git push origin ${{ github.ref_name }}; then
+              echo "✅ 推送成功"
+              exit 0
+            else
+              RETRY_COUNT=$((RETRY_COUNT + 1))
+              if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
+                echo "⚠️ 推送失败，等待 5 秒后重试..."
+                sleep 5
+                git pull --rebase origin ${{ github.ref_name }} || exit 0
+              fi
+            fi
+          done
+
+          echo "⚠️ 推送失败，已重试 $MAX_RETRIES 次（非关键错误）"
+          exit 0  # 不影响整体 workflow
 
   crawl-hackernews:
     runs-on: ubuntu-latest
@@ -203,11 +263,43 @@ jobs:
             --limit ${{ github.event.inputs.limit || '10' }} \
             ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
 
-      - name: Commit changes
+      - name: Commit and push changes
         if: github.event.inputs.dry_run != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add candidates/
-          git diff --staged --quiet || git commit -m "feat: Hacker News 爬取发现新资源 [skip ci]"
-          git push || true
+
+          # 检查是否有变更
+          if git diff --staged --quiet; then
+            echo "没有变更需要提交"
+            exit 0
+          fi
+
+          git commit -m "feat: Hacker News 爬取发现新资源 [skip ci]"
+
+          # 推送前先拉取最新变更
+          echo "拉取最新变更..."
+          git pull --rebase origin ${{ github.ref_name }} || exit 0
+
+          # 推送变更，最多重试 3 次
+          MAX_RETRIES=3
+          RETRY_COUNT=0
+
+          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+            echo "尝试推送 (第 $((RETRY_COUNT + 1)) 次)..."
+            if git push origin ${{ github.ref_name }}; then
+              echo "✅ 推送成功"
+              exit 0
+            else
+              RETRY_COUNT=$((RETRY_COUNT + 1))
+              if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
+                echo "⚠️ 推送失败，等待 5 秒后重试..."
+                sleep 5
+                git pull --rebase origin ${{ github.ref_name }} || exit 0
+              fi
+            fi
+          done
+
+          echo "⚠️ 推送失败，已重试 $MAX_RETRIES 次（非关键错误）"
+          exit 0  # 不影响整体 workflow

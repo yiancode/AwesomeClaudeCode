@@ -52,7 +52,7 @@ def extract_domain(url):
         parsed = urlparse(url)
         domain = parsed.netloc or parsed.path.split('/')[0]
         return domain.replace('www.', '')
-    except:
+    except Exception:
         return ''
 
 def generate_description(row):
@@ -140,7 +140,7 @@ def extract_author_from_github_url(url):
                     author = path_parts[0]
                     author_profile = f"https://github.com/{author}"
                     return author, author_profile
-    except:
+    except Exception:
         pass
     return '', ''
 

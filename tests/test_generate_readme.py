@@ -38,23 +38,17 @@ def test_load_categories():
 
         # 验证至少有13个分类
         if len(categories) < 13:
-            failures.append(
-                f"❌ 分类数量不足: {len(categories)}，应至少 13 个"
-            )
+            failures.append(f"❌ 分类数量不足: {len(categories)}，应至少 13 个")
 
         # 验证每个分类都有必需的字段
         required_category_fields = ["id", "name", "name_zh", "prefix"]
         for i, category in enumerate(categories):
             for field in required_category_fields:
                 if field not in category:
-                    failures.append(
-                        f"❌ 分类 {i}: 缺少必需字段 '{field}'"
-                    )
+                    failures.append(f"❌ 分类 {i}: 缺少必需字段 '{field}'")
 
         # 验证 official-resources 分类存在且置顶
-        official_cat = next(
-            (c for c in categories if c.get("id") == "official-resources"), None
-        )
+        official_cat = next((c for c in categories if c.get("id") == "official-resources"), None)
         if not official_cat:
             failures.append("❌ 未找到 'official-resources' 分类")
         elif not official_cat.get("is_pinned"):
@@ -82,9 +76,7 @@ def test_load_csv_resources():
 
         # 验证资源数量（应该有100+个）
         if len(resources) < 100:
-            failures.append(
-                f"❌ 资源数量过少: {len(resources)}，应至少 100 个"
-            )
+            failures.append(f"❌ 资源数量过少: {len(resources)}，应至少 100 个")
 
         # 验证第一个资源的基本字段
         if resources:
@@ -92,9 +84,7 @@ def test_load_csv_resources():
             required_fields = ["ID", "DisplayName", "PrimaryLink"]
             for field in required_fields:
                 if field not in first_resource:
-                    failures.append(
-                        f"❌ 第一个资源缺少字段 '{field}'"
-                    )
+                    failures.append(f"❌ 第一个资源缺少字段 '{field}'")
 
     except FileNotFoundError:
         failures.append("❌ THE_RESOURCES_TABLE.csv 文件不存在")
@@ -110,9 +100,7 @@ def test_generate_readme():
 
     try:
         # 使用临时文件
-        with tempfile.NamedTemporaryFile(
-            mode="w", suffix=".md", delete=False, encoding="utf-8"
-        ) as tmp_file:
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".md", delete=False, encoding="utf-8") as tmp_file:
             temp_readme = Path(tmp_file.name)
 
         # 生成 README
@@ -161,9 +149,7 @@ def test_generate_readme():
 
         # 验证文件长度合理（应该有足够的内容）
         if len(content) < 10000:  # 至少10KB内容
-            failures.append(
-                f"❌ README 内容过短: {len(content)} 字符，应至少 10000 字符"
-            )
+            failures.append(f"❌ README 内容过短: {len(content)} 字符，应至少 10000 字符")
 
         # 清理临时文件
         temp_readme.unlink()
@@ -191,14 +177,10 @@ def test_readme_chinese_encoding():
         content = readme_path.read_text(encoding="utf-8")
 
         # 验证中文字符数量合理（应该有大量中文）
-        chinese_char_count = sum(
-            1 for char in content if "\u4e00" <= char <= "\u9ff"
-        )
+        chinese_char_count = sum(1 for char in content if "\u4e00" <= char <= "\u9fff")
 
         if chinese_char_count < 1000:  # 至少1000个中文字符
-            failures.append(
-                f"❌ README 中文字符过少: {chinese_char_count}，应至少 1000 个"
-            )
+            failures.append(f"❌ README 中文字符过少: {chinese_char_count}，应至少 1000 个")
 
     except UnicodeDecodeError:
         failures.append("❌ README.md UTF-8 编码错误")
@@ -279,10 +261,7 @@ def run_all_tests():
     # 最终结果
     print("=" * 80)
     if all_failures:
-        print(
-            f"❌ 验证失败 - {len(all_failures)} 个问题，"
-            f"共 {total_tests} 个测试"
-        )
+        print(f"❌ 验证失败 - {len(all_failures)} 个问题，共 {total_tests} 个测试")
         print()
         print("失败详情:")
         for failure in all_failures:

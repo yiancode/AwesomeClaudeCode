@@ -203,7 +203,7 @@ def test_svg_chinese_encoding():
 
             # 验证 UTF-8 编码正确（通过成功读取验证）
             # 验证包含中文字符
-            has_chinese = any("\u4e00" <= char <= "\u9ff" for char in content)
+            has_chinese = any("\u4e00" <= char <= "\u9fff" for char in content)
 
             # logo SVG 应该包含中文
             if "logo" in svg_file.name and not has_chinese:
@@ -235,16 +235,10 @@ def test_svg_file_sizes():
         file_size = svg_file.stat().st_size
 
         if file_size < min_size:
-            failures.append(
-                f"❌ {svg_file.name} 文件过小: {file_size} bytes "
-                f"（应 >= {min_size} bytes）"
-            )
+            failures.append(f"❌ {svg_file.name} 文件过小: {file_size} bytes （应 >= {min_size} bytes）")
 
         if file_size > max_size:
-            failures.append(
-                f"❌ {svg_file.name} 文件过大: {file_size} bytes "
-                f"（应 <= {max_size} bytes）"
-            )
+            failures.append(f"❌ {svg_file.name} 文件过大: {file_size} bytes （应 <= {max_size} bytes）")
 
     return failures
 
@@ -286,10 +280,7 @@ def run_all_tests():
     # 最终结果
     print("=" * 80)
     if all_failures:
-        print(
-            f"❌ 验证失败 - {len(all_failures)} 个问题，"
-            f"共 {total_tests} 个测试"
-        )
+        print(f"❌ 验证失败 - {len(all_failures)} 个问题，共 {total_tests} 个测试")
         print()
         print("失败详情:")
         for failure in all_failures:

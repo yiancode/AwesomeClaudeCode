@@ -143,9 +143,7 @@ def test_scripts_chinese_output():
         ]
         for message in chinese_messages:
             if message not in content:
-                failures.append(
-                    f"❌ generate_readme.py 缺少中文消息: '{message}'"
-                )
+                failures.append(f"❌ generate_readme.py 缺少中文消息: '{message}'")
 
     except Exception as e:
         failures.append(f"❌ 读取 generate_readme.py 失败: {e}")
@@ -204,12 +202,10 @@ def test_utf8_encoding_consistency():
             content = file_path.read_text(encoding="utf-8")
 
             # 验证包含中文字符
-            has_chinese = any("\u4e00" <= char <= "\u9ff" for char in content)
+            has_chinese = any("\u4e00" <= char <= "\u9fff" for char in content)
 
             if not has_chinese:
-                failures.append(
-                    f"⚠️  {file_path.name} 未检测到中文字符（可能正常）"
-                )
+                failures.append(f"⚠️  {file_path.name} 未检测到中文字符（可能正常）")
 
         except UnicodeDecodeError:
             failures.append(f"❌ {file_path.name} UTF-8 编码错误")
@@ -236,20 +232,14 @@ def test_chinese_priority_in_display():
         # 验证中文字段优先逻辑存在
         # 查找类似 "DisplayName_ZH" or "DisplayName" 的模式
         if "DisplayName_ZH" not in content:
-            failures.append(
-                "❌ generate_readme.py 未使用 DisplayName_ZH 字段"
-            )
+            failures.append("❌ generate_readme.py 未使用 DisplayName_ZH 字段")
 
         if "Description_ZH" not in content:
-            failures.append(
-                "❌ generate_readme.py 未使用 Description_ZH 字段"
-            )
+            failures.append("❌ generate_readme.py 未使用 Description_ZH 字段")
 
         # 验证优先逻辑（应该有 or 逻辑）
         if "or" not in content or ".get(" not in content:
-            failures.append(
-                "⚠️  generate_readme.py 可能缺少字段优先选择逻辑"
-            )
+            failures.append("⚠️  generate_readme.py 可能缺少字段优先选择逻辑")
 
     except Exception as e:
         failures.append(f"❌ 读取 generate_readme.py 失败: {e}")
@@ -296,10 +286,7 @@ def run_all_tests():
     # 最终结果
     print("=" * 80)
     if all_failures:
-        print(
-            f"❌ 验证失败 - {len(all_failures)} 个问题，"
-            f"共 {total_tests} 个测试"
-        )
+        print(f"❌ 验证失败 - {len(all_failures)} 个问题，共 {total_tests} 个测试")
         print()
         print("失败详情:")
         for failure in all_failures:

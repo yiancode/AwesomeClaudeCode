@@ -347,6 +347,11 @@ def validate_links(csv_file, max_links=None, ignore_overrides=False):
             print(f"Skipping {row['DisplayName']} - fields locked by override")
             continue
 
+        # Skip resources that are already inactive (IsActive=FALSE)
+        if row.get(ACTIVE_HEADER_NAME, "TRUE").upper() == "FALSE":
+            # print(f"Skipping {row['DisplayName']} - resource is inactive")
+            continue
+
         primary_url = row.get(PRIMARY_LINK_HEADER_NAME, "").strip()
         # secondary_url = row.get(SECONDARY_LINK_HEADER_NAME, "").strip()  # Ignoring secondary URLs
 

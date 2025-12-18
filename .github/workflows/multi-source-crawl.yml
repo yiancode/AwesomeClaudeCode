@@ -116,7 +116,7 @@ jobs:
 
       - name: Create summary Issue
         if: steps.verify_diff.outputs.changed == 'true' && github.event.inputs.dry_run != 'true'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
             const date = new Date().toISOString().split('T')[0];

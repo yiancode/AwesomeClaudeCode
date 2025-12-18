@@ -27,6 +27,7 @@ select = ["F", "E", "W"]
 ignore = [
     "F401",  # Unused imports - not critical for functionality
     "F841",  # Unused local variables - may be for future use
+    "E402",  # Module level import not at top - needed for sys.path modification
     "E501",  # Line too long - handled by formatter
     "W291",  # Trailing whitespace - cosmetic
     "W293",  # Blank line contains whitespace - cosmetic

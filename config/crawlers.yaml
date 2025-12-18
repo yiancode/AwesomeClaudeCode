@@ -5,7 +5,9 @@
 # Reddit 爬虫配置 / Reddit Crawler Configuration
 reddit:
   # 是否启用 / Enable
-  enabled: true
+  # 禁用原因：Reddit API 频繁返回 403 错误，无法正常访问
+  # Disabled due to frequent 403 errors from Reddit API
+  enabled: false
 
   # 目标 subreddits
   subreddits:

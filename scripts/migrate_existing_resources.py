@@ -317,10 +317,10 @@ def main():
 
     print("\n✨ 迁移完成！/ Migration complete!")
     print(f"\n下一步：")
-    print(f"Next steps:")
+    print("Next steps:")
     print(f"1. 检查 {output_csv}")
     print(f"2. 阅读 {report_file}")
-    print(f"3. 手动补充元数据")
+    print("3. 手动补充元数据")
     print(f"4. 运行 'make generate' 生成 README")
 
 

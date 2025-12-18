@@ -115,7 +115,7 @@ def create_h2_svg_file(text: str, filename: str, assets_dir: str, icon: str = ""
     right_bound = int(max(620, 400 + half_text + 30))
     viewbox_width = right_bound - left_bound
 
-    svg_content = f"""<svg width="100%" height="100" viewBox="{left_bound} 0 {viewbox_width} 100" xmlns="http://www.w3.org/2000/svg">
+    svg_content = """<svg width="100%" height="100" viewBox="{left_bound} 0 {viewbox_width} 100" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- 微妙的发光效果 - 减少模糊以提高可读性 -->
     <!-- Subtle glow for hero text - reduced blur for better readability -->
@@ -167,7 +167,7 @@ def create_h2_svg_file(text: str, filename: str, assets_dir: str, icon: str = ""
 
   <!-- 主 hero 文本 - 更大、更粗，带微妙的深色轮廓以提高对比度 -->
   <!-- Main hero text - larger, bolder, with subtle dark outline for contrast -->
-  <text x="400" y="58" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif" font-size="38" font-weight="900" fill="url(#heroGrad)" text-anchor="middle" filter="url(#heroGlow)" letter-spacing="0.5" stroke="#221111" stroke-width="0.5" paint-order="stroke fill">
+  <text x="400" y="58" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-seri" font-size="38" font-weight="900" fill="url(#heroGrad)" text-anchor="middle" filter="url(#heroGlow)" letter-spacing="0.5" stroke="#221111" stroke-width="0.5" paint-order="stroke fill">
     {text_escaped}
   </text>
 
@@ -242,7 +242,7 @@ def create_h3_svg_file(text: str, filename: str, assets_dir: str) -> str:
     text_width = len(text) * 14
     total_width = text_width + 50  # 为装饰元素添加填充 Add padding for decorative elements
 
-    svg_content = f"""<svg width="100%" height="36" viewBox="0 0 {total_width} 36" xmlns="http://www.w3.org/2000/svg">
+    svg_content = """<svg width="100%" height="36" viewBox="0 0 {total_width} 36" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- 非常微妙的发光 Very subtle glow -->
     <filter id="minimalGlow">
@@ -273,7 +273,7 @@ def create_h3_svg_file(text: str, filename: str, assets_dir: str) -> str:
   </g>
 
   <!-- 标题文本 Header text -->
-  <text x="30" y="24" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif" font-size="18" font-weight="600" fill="url(#minimalGrad)" filter="url(#minimalGlow)">
+  <text x="30" y="24" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-seri" font-size="18" font-weight="600" fill="url(#minimalGrad)" filter="url(#minimalGlow)">
     {text_escaped}
     <animate attributeName="opacity" values="0.93;1;0.93" dur="4s" repeatCount="indefinite"/>
   </text>
@@ -341,10 +341,10 @@ def generate_resource_badge_svg(display_name: str, author_name: str = "") -> str
     # 如果提供作者则构建作者文本元素 Build author text element if author provided
     author_element = ""
     if author_name:
-        author_element = f"""
-  <text class="author" x="{name_end_x + 10}" y="30" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif" font-size="14" font-weight="400">by {author_escaped}</text>"""
+        author_element = """
+  <text class="author" x="{name_end_x + 10}" y="30" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-seri" font-size="14" font-weight="400">by {author_escaped}</text>"""
 
-    svg = f"""<svg width="{svg_width}" height="44" xmlns="http://www.w3.org/2000/svg">
+    svg = """<svg width="{svg_width}" height="44" xmlns="http://www.w3.org/2000/svg">
   <style>
     @media (prefers-color-scheme: light) {{
       .line {{ stroke: #5c5247; }}
@@ -370,7 +370,7 @@ def generate_resource_badge_svg(display_name: str, author_name: str = "") -> str
   <text class="initials" x="20" y="30" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="700" text-anchor="middle">{initials}</text>
 
   <!-- 资源名称 Resource name -->
-  <text class="name" x="48" y="30" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif" font-size="17" font-weight="600">{name_escaped}</text>{author_element}
+  <text class="name" x="48" y="30" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-seri" font-size="17" font-weight="600">{name_escaped}</text>{author_element}
 
   <!-- 底部横线 Bottom rule -->
   <line class="line" x1="48" y1="37" x2="{svg_width - 4}" y2="37" stroke-width="1.25" opacity="0.5"/>

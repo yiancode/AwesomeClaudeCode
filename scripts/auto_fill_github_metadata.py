@@ -165,7 +165,7 @@ def update_csv_with_github_data(csv_path: Path, github_token: Optional[str] = No
 
     if dry_run:
         print(f"\n⚠️ DRY RUN 模式：不写入文件")
-        print(f"⚠️ DRY RUN mode: Not writing to file")
+        print("⚠️ DRY RUN mode: Not writing to file")
         return
 
     # 写回 CSV

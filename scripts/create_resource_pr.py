@@ -195,7 +195,7 @@ def create_branch_and_pr(resources: List[dict], csv_file: Path) -> tuple:
     print(f"\n📬 创建 Pull Request...")
 
     pr_title = f"✨ 添加 {resource_count} 个新资源"
-    pr_body = f"""## 📦 新资源提交
+    pr_body = """## 📦 新资源提交
 
 本 PR 自动生成，包含以下待审核资源：
 

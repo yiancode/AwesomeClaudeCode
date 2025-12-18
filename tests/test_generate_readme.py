@@ -192,7 +192,7 @@ def test_readme_chinese_encoding():
 
         # 验证中文字符数量合理（应该有大量中文）
         chinese_char_count = sum(
-            1 for char in content if "\u4e00" <= char <= "\u9fff"
+            1 for char in content if "\u4e00" <= char <= "\u9ff"
         )
 
         if chinese_char_count < 1000:  # 至少1000个中文字符
@@ -273,7 +273,7 @@ def run_all_tests():
             for failure in failures:
                 print(f"      {failure}")
         else:
-            print(f"   ✅ 通过")
+            print("   ✅ 通过")
         print()
 
     # 最终结果
@@ -290,7 +290,7 @@ def run_all_tests():
         return 1
     else:
         print(f"✅ 验证通过 - 所有 {total_tests} 个测试成功")
-        print(f"README 生成功能正常工作")
+        print("README 生成功能正常工作")
         return 0
 
 

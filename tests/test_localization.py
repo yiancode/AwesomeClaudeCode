@@ -204,7 +204,7 @@ def test_utf8_encoding_consistency():
             content = file_path.read_text(encoding="utf-8")
 
             # 验证包含中文字符
-            has_chinese = any("\u4e00" <= char <= "\u9fff" for char in content)
+            has_chinese = any("\u4e00" <= char <= "\u9ff" for char in content)
 
             if not has_chinese:
                 failures.append(
@@ -290,7 +290,7 @@ def run_all_tests():
             for failure in failures:
                 print(f"      {failure}")
         else:
-            print(f"   ✅ 通过")
+            print("   ✅ 通过")
         print()
 
     # 最终结果
@@ -307,7 +307,7 @@ def run_all_tests():
         return 1
     else:
         print(f"✅ 验证通过 - 所有 {total_tests} 个测试成功")
-        print(f"本地化功能正常工作")
+        print("本地化功能正常工作")
         return 0
 
 

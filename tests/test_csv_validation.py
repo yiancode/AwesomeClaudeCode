@@ -95,7 +95,7 @@ def test_csv_structure():
     # 验证字段顺序正确（前19个字段）
     expected_order = ALL_FIELDS[:len(fieldnames)]
     if list(fieldnames) != expected_order:
-        failures.append(f"❌ 字段顺序不正确")
+        failures.append("❌ 字段顺序不正确")
         failures.append(f"   期望: {expected_order}")
         failures.append(f"   实际: {list(fieldnames)}")
 
@@ -248,7 +248,7 @@ def test_url_format():
             if not primary_link.startswith("docs/"):
                 failures.append(
                     f"❌ 第 {i} 行资源 {resource_id}: PrimaryLink '{primary_link}' "
-                    f"格式不正确（应以 http:// 或 https:// 开头）"
+                    "格式不正确（应以 http:// 或 https:// 开头）"
                 )
 
     return failures
@@ -324,7 +324,7 @@ def run_all_tests():
             for failure in failures:
                 print(f"      {failure}")
         else:
-            print(f"   ✅ 通过")
+            print("   ✅ 通过")
         print()
 
     # 最终结果
@@ -342,7 +342,7 @@ def run_all_tests():
         return 1
     else:
         print(f"✅ 验证通过 - 所有 {total_tests} 个测试成功")
-        print(f"CSV 文件数据完整且格式正确")
+        print("CSV 文件数据完整且格式正确")
         return 0
 
 

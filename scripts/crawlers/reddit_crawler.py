@@ -75,7 +75,7 @@ class RedditCrawler(BaseCrawler):
                 self.session.headers['Authorization'] = f'Bearer {access_token}'
                 print("   ✅ Reddit OAuth 认证成功")
             else:
-                print(f"   ⚠️ Reddit OAuth 失败，使用公开端点")
+                print("   ⚠️ Reddit OAuth 失败，使用公开端点")
                 self.use_api = False
 
         except Exception as e:
@@ -189,7 +189,7 @@ class RedditCrawler(BaseCrawler):
                 return False
 
         # 排除自我推广/广告类
-        if post.get('is_self', False) and not post.get('selftext'):
+        if post.get('is_sel', False) and not post.get('selftext'):
             return False
 
         return True

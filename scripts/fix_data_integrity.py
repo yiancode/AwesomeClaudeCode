@@ -30,9 +30,9 @@ def generate_unique_id(display_name, primary_link, category_prefix):
 def get_category_prefix(category):
     """获取分类前缀"""
     prefix_map = {
-        'official-resources': 'off',
+        'official-resources': 'of',
         'skills': 'skill',
-        'workflows': 'wf',
+        'workflows': 'w',
         'tooling': 'tool',
         'statusline': 'status',
         'hooks': 'hook',
@@ -68,15 +68,15 @@ def generate_description(row):
     desc_en = ''
     if 'github.com' in primary_link.lower():
         if 'claude-code' in display_name.lower() or 'claude code' in display_name.lower():
-            desc_en = f"A resource for Claude Code development and usage"
+            desc_en = "A resource for Claude Code development and usage"
         elif 'mcp' in display_name.lower() or 'server' in display_name.lower():
-            desc_en = f"MCP server implementation for Claude Code integration"
+            desc_en = "MCP server implementation for Claude Code integration"
         elif 'tool' in category:
-            desc_en = f"Development tool for Claude Code"
+            desc_en = "Development tool for Claude Code"
         elif 'workflow' in category:
-            desc_en = f"Workflow and knowledge guide for Claude Code"
+            desc_en = "Workflow and knowledge guide for Claude Code"
         else:
-            desc_en = f"Open source project related to Claude Code"
+            desc_en = "Open source project related to Claude Code"
     elif 'anthropic.com' in domain or 'claude.ai' in domain:
         desc_en = "Official Anthropic documentation and resources"
     elif 'context7.com' in domain:
@@ -100,15 +100,15 @@ def generate_description(row):
     desc_zh = ''
     if 'github.com' in primary_link.lower():
         if 'claude-code' in display_name.lower() or 'claude code' in display_name.lower():
-            desc_zh = f"Claude Code 开发和使用资源"
+            desc_zh = "Claude Code 开发和使用资源"
         elif 'mcp' in display_name.lower() or 'server' in display_name.lower():
-            desc_zh = f"Claude Code 集成的 MCP 服务器实现"
+            desc_zh = "Claude Code 集成的 MCP 服务器实现"
         elif 'tool' in category:
-            desc_zh = f"Claude Code 开发工具"
+            desc_zh = "Claude Code 开发工具"
         elif 'workflow' in category:
-            desc_zh = f"Claude Code 工作流和知识指南"
+            desc_zh = "Claude Code 工作流和知识指南"
         else:
-            desc_zh = f"与 Claude Code 相关的开源项目"
+            desc_zh = "与 Claude Code 相关的开源项目"
     elif 'anthropic.com' in domain or 'claude.ai' in domain:
         desc_zh = "Anthropic 官方文档和资源"
     elif 'context7.com' in domain:
@@ -260,7 +260,7 @@ def fix_data_integrity(csv_path, output_path=None, dry_run=False):
     if final_duplicates:
         print(f"  ⚠ 仍有 {len(final_duplicates)} 个重复ID")
     else:
-        print(f"  ✓ 所有ID唯一")
+        print("  ✓ 所有ID唯一")
 
     empty_desc = sum(1 for r in fixed_rows if not r.get('Description') or r['Description'].strip() == '')
     print(f"  - 缺失英文描述: {empty_desc}")

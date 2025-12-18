@@ -135,7 +135,7 @@ def github_search(
     per_page = min(100, max_results)
 
     while len(repos) < max_results:
-        url = f"https://api.github.com/search/repositories"
+        url = "https://api.github.com/search/repositories"
         params = {
             'q': query,
             'sort': 'stars',

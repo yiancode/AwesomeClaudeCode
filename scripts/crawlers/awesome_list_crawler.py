@@ -251,7 +251,7 @@ class AwesomeListCrawler(BaseCrawler):
         # 提取 GitHub repo 信息
         github_repo = self._extract_github_repo(list_url)
         if not github_repo:
-            print(f"         ⚠️ 无效的 GitHub URL")
+            print("         ⚠️ 无效的 GitHub URL")
             return resources
 
         owner, repo = github_repo
@@ -259,7 +259,7 @@ class AwesomeListCrawler(BaseCrawler):
         # 获取 README 内容
         readme_content = self._get_readme_content(owner, repo)
         if not readme_content:
-            print(f"         ⚠️ 无法获取 README")
+            print("         ⚠️ 无法获取 README")
             return resources
 
         # 解析链接

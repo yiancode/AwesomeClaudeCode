@@ -169,7 +169,7 @@ def main():
     print(f"🔍 Validating CSV file: {csv_file}\n")
 
     if not csv_file.exists():
-        print(f"❌ 错误：文件不存在 / Error: File not found")
+        print("❌ 错误：文件不存在 / Error: File not found")
         return
 
     # 加载数据 / Load data

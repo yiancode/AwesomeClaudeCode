@@ -454,7 +454,7 @@ def main():
         print(f"⚠️  发现重复资源 (在 {dup_location} 中)")
         print(f"⚠️  Duplicate resource found (in {dup_location})")
         # 输出结果供 GitHub Actions 使用
-        print(f"::set-output name=status::duplicate")
+        print("::set-output name=status::duplicate")
         print(f"::set-output name=duplicate_location::{dup_location}")
         sys.exit(0)  # 不是错误，只是重复
 
@@ -464,7 +464,7 @@ def main():
         print(f"⚠️  URL 验证失败: {error}")
         print(f"⚠️  URL validation failed: {error}")
         # 仍然可以继续，但标记状态
-        print(f"::set-output name=url_status::invalid")
+        print("::set-output name=url_status::invalid")
         print(f"::set-output name=url_error::{error}")
     else:
         print(f"   ✅ URL 有效 (HTTP {status_code})")
@@ -491,7 +491,7 @@ def main():
     print("✅ Processing complete!")
 
     # 输出结果供 GitHub Actions 使用
-    print(f"::set-output name=status::success")
+    print("::set-output name=status::success")
     print(f"::set-output name=resource_id::{resource['ID']}")
     print(f"::set-output name=resource_name::{resource['DisplayName']}")
     print(f"::set-output name=category::{resource['Category']}")

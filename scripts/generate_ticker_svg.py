@@ -193,14 +193,14 @@ def generate_repo_group(repo: dict[str, Any], x_offset: int, colors: dict[str, s
         delta_str = f" {delta_text_escaped}" if show_delta else ""
         metrics = f" | {star_str}{delta_str}"
         star_x = owner_start_x + (len(owner) * approx_char_width) + 22
-        return f"""
+        return """
         <text x="{star_x}" y="{y_pos}" font-family="'Courier New', monospace" font-size="16" font-weight="normal"
               fill="{colors['stars']}" opacity="0.95">{escape_xml(metrics)}</text>"""
 
     if not flip:
         # 名称在上，owner 在下
         # Names on top, owner just below
-        return f"""      <!-- Repo: {repo['full_name']} -->
+        return """      <!-- Repo: {repo['full_name']} -->
       <g transform="translate({x_offset}, 0)">
         <!-- Repo name -->
         <text x="140" y="32" font-family="'Courier New', monospace" font-size="34" font-weight="bold"
@@ -212,7 +212,7 @@ def generate_repo_group(repo: dict[str, Any], x_offset: int, colors: dict[str, s
     else:
         # Owner 在上，名称在下（下半部分）
         # Owner on top, name just below (in lower half)
-        return f"""      <!-- Repo: {repo['full_name']} -->
+        return """      <!-- Repo: {repo['full_name']} -->
       <g transform="translate({x_offset}, 0)">
         <!-- Owner name -->
         <text x="{owner_start_x}" y="102" font-family="'Courier New', monospace" font-size="{owner_font_size}" font-weight="normal"
@@ -247,15 +247,15 @@ def generate_ticker_svg(repos: list[dict[str, Any]], theme: str = "dark") -> str
             "bg_opacity_start": "0.95",
             "bg_opacity_mid": "0.98",
             "border_1": "#33ff33",
-            "border_2": "#00ffff",
+            "border_2": "#00fff",
             "border_3": "#66ff66",
             "border_4": "#00ff99",
             "label_bg": "#001100",
             "label_title": "#33ff33",
-            "label_subtitle": "#00ffff",
+            "label_subtitle": "#00fff",
             "pulse": "#33ff33",
-            "text": "#ffffff",
-            "stars": "#00ffff",
+            "text": "#fffff",
+            "stars": "#00fff",
             "watchers": "#66ff66",
             "forks": "#00ff99",
             "fade_color": "#001a00",
@@ -308,7 +308,7 @@ def generate_ticker_svg(repos: list[dict[str, Any]], theme: str = "dark") -> str
     content_width = x_pos
     duration = max(28, content_width // 55)  # slightly slower to aid legibility on mobile
 
-    return f"""<svg width="900" height="150" xmlns="http://www.w3.org/2000/svg">
+    return """<svg width="900" height="150" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- ticker 背景渐变 Gradient for ticker background -->
     <linearGradient id="tickerBg" x1="0%" y1="0%" x2="100%" y2="0%">

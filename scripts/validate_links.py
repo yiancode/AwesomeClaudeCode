@@ -339,12 +339,12 @@ def validate_links(csv_file, max_links=None, ignore_overrides=False):
 
         # Skip entire validation if skip_validation is true
         if skip_validation:
-            print(f"Skipping {row['Display Name']} - validation disabled by override")
+            print(f"Skipping {row['DisplayName']} - validation disabled by override")
             continue
 
         # Skip validation for locked fields
         if "active" in locked_fields and "last_checked" in locked_fields:
-            print(f"Skipping {row['Display Name']} - fields locked by override")
+            print(f"Skipping {row['DisplayName']} - fields locked by override")
             continue
 
         primary_url = row.get(PRIMARY_LINK_HEADER_NAME, "").strip()
@@ -401,13 +401,13 @@ def validate_links(csv_file, max_links=None, ignore_overrides=False):
             # Check if this is a newly discovered broken link
             if was_active:
                 newly_broken_links.append(link_info)
-                print(f"❌ NEW: {row.get('Display Name', 'Unknown')}: {primary_status}")
+                print(f"❌ NEW: {row.get('DisplayName', 'Unknown')}: {primary_status}")
             else:
-                print(f"Already broken: {row.get('Display Name', 'Unknown')}: {primary_status}")
+                print(f"Already broken: {row.get('DisplayName', 'Unknown')}: {primary_status}")
         elif not is_active and "active" in locked_fields:
-            print(f"🔒 {row.get('Display Name', 'Unknown')}: Inactive (locked by override)")
+            print(f"🔒 {row.get('DisplayName', 'Unknown')}: Inactive (locked by override)")
         else:
-            print(f"✓ {row.get('Display Name', 'Unknown')}")
+            print(f"✓ {row.get('DisplayName', 'Unknown')}")
 
         processed += 1
 

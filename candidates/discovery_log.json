@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2025-12-18T09:07:05.529190",
+  "last_run": "2025-12-19T03:38:24.715761",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -61,11 +61,71 @@
       "url": "https://github.com/thedotmack/claude-mem",
       "discovered_at": "2025-12-18T09:07:05.529186",
       "relevance_score": 70
+    },
+    {
+      "full_name": "ComposioHQ/awesome-claude-skills",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "discovered_at": "2025-12-19T03:38:24.704570",
+      "relevance_score": 70
+    },
+    {
+      "full_name": "siteboon/claudecodeui",
+      "url": "https://github.com/siteboon/claudecodeui",
+      "discovered_at": "2025-12-19T03:38:24.705684",
+      "relevance_score": 70
+    },
+    {
+      "full_name": "travisvn/awesome-claude-skills",
+      "url": "https://github.com/travisvn/awesome-claude-skills",
+      "discovered_at": "2025-12-19T03:38:24.706773",
+      "relevance_score": 70
+    },
+    {
+      "full_name": "zebbern/claude-code-guide",
+      "url": "https://github.com/zebbern/claude-code-guide",
+      "discovered_at": "2025-12-19T03:38:24.707956",
+      "relevance_score": 70
+    },
+    {
+      "full_name": "dryeab/mcp-telegram",
+      "url": "https://github.com/dryeab/mcp-telegram",
+      "discovered_at": "2025-12-19T03:38:24.709370",
+      "relevance_score": 70
+    },
+    {
+      "full_name": "PACHAKUTlQ/ClaudeCage",
+      "url": "https://github.com/PACHAKUTlQ/ClaudeCage",
+      "discovered_at": "2025-12-19T03:38:24.710576",
+      "relevance_score": 70
+    },
+    {
+      "full_name": "czlonkowski/n8n-mcp",
+      "url": "https://github.com/czlonkowski/n8n-mcp",
+      "discovered_at": "2025-12-19T03:38:24.711790",
+      "relevance_score": 70
+    },
+    {
+      "full_name": "doobidoo/mcp-memory-service",
+      "url": "https://github.com/doobidoo/mcp-memory-service",
+      "discovered_at": "2025-12-19T03:38:24.713147",
+      "relevance_score": 70
+    },
+    {
+      "full_name": "zaidmukaddam/scira-mcp-chat",
+      "url": "https://github.com/zaidmukaddam/scira-mcp-chat",
+      "discovered_at": "2025-12-19T03:38:24.714432",
+      "relevance_score": 70
+    },
+    {
+      "full_name": "kimsungwhee/apple-docs-mcp",
+      "url": "https://github.com/kimsungwhee/apple-docs-mcp",
+      "discovered_at": "2025-12-19T03:38:24.715756",
+      "relevance_score": 70
     }
   ],
   "stats": {
-    "total_discovered": 10,
-    "total_added": 10,
+    "total_discovered": 20,
+    "total_added": 20,
     "total_skipped": 0
   }
 }

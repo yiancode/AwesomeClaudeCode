@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2025-12-19T03:38:24.715761",
+  "last_run": "2025-12-20T03:20:47.013617",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -121,11 +121,71 @@
       "url": "https://github.com/kimsungwhee/apple-docs-mcp",
       "discovered_at": "2025-12-19T03:38:24.715756",
       "relevance_score": 70
+    },
+    {
+      "full_name": "IvanMurzak/Unity-MCP",
+      "url": "https://github.com/IvanMurzak/Unity-MCP",
+      "discovered_at": "2025-12-20T03:20:46.999277",
+      "relevance_score": 70
+    },
+    {
+      "full_name": "fcakyon/claude-codex-settings",
+      "url": "https://github.com/fcakyon/claude-codex-settings",
+      "discovered_at": "2025-12-20T03:20:47.000742",
+      "relevance_score": 70
+    },
+    {
+      "full_name": "code-yeongyu/oh-my-opencode",
+      "url": "https://github.com/code-yeongyu/oh-my-opencode",
+      "discovered_at": "2025-12-20T03:20:47.002180",
+      "relevance_score": 65
+    },
+    {
+      "full_name": "davepoon/claude-code-subagents-collection",
+      "url": "https://github.com/davepoon/claude-code-subagents-collection",
+      "discovered_at": "2025-12-20T03:20:47.003707",
+      "relevance_score": 65
+    },
+    {
+      "full_name": "claude-php/Claude-PHP-SDK",
+      "url": "https://github.com/claude-php/Claude-PHP-SDK",
+      "discovered_at": "2025-12-20T03:20:47.005395",
+      "relevance_score": 65
+    },
+    {
+      "full_name": "tadata-org/fastapi_mcp",
+      "url": "https://github.com/tadata-org/fastapi_mcp",
+      "discovered_at": "2025-12-20T03:20:47.006944",
+      "relevance_score": 65
+    },
+    {
+      "full_name": "jamubc/gemini-mcp-tool",
+      "url": "https://github.com/jamubc/gemini-mcp-tool",
+      "discovered_at": "2025-12-20T03:20:47.008552",
+      "relevance_score": 65
+    },
+    {
+      "full_name": "CoderGamester/mcp-unity",
+      "url": "https://github.com/CoderGamester/mcp-unity",
+      "discovered_at": "2025-12-20T03:20:47.010177",
+      "relevance_score": 65
+    },
+    {
+      "full_name": "AI-QL/tuui",
+      "url": "https://github.com/AI-QL/tuui",
+      "discovered_at": "2025-12-20T03:20:47.011928",
+      "relevance_score": 65
+    },
+    {
+      "full_name": "TensorBlock/awesome-mcp-servers",
+      "url": "https://github.com/TensorBlock/awesome-mcp-servers",
+      "discovered_at": "2025-12-20T03:20:47.013612",
+      "relevance_score": 65
     }
   ],
   "stats": {
-    "total_discovered": 20,
-    "total_added": 20,
+    "total_discovered": 30,
+    "total_added": 30,
     "total_skipped": 0
   }
 }

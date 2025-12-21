@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2025-12-20T03:20:47.013617",
+  "last_run": "2025-12-21T03:43:12.566826",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -181,11 +181,71 @@
       "url": "https://github.com/TensorBlock/awesome-mcp-servers",
       "discovered_at": "2025-12-20T03:20:47.013612",
       "relevance_score": 65
+    },
+    {
+      "full_name": "bytebase/dbhub",
+      "url": "https://github.com/bytebase/dbhub",
+      "discovered_at": "2025-12-21T03:43:12.545973",
+      "relevance_score": 65
+    },
+    {
+      "full_name": "mcp-use/mcp-use",
+      "url": "https://github.com/mcp-use/mcp-use",
+      "discovered_at": "2025-12-21T03:43:12.548130",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "Wei-Shaw/claude-relay-service",
+      "url": "https://github.com/Wei-Shaw/claude-relay-service",
+      "discovered_at": "2025-12-21T03:43:12.550322",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "zilliztech/claude-context",
+      "url": "https://github.com/zilliztech/claude-context",
+      "discovered_at": "2025-12-21T03:43:12.552537",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "greggh/claude-code.nvim",
+      "url": "https://github.com/greggh/claude-code.nvim",
+      "discovered_at": "2025-12-21T03:43:12.555001",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "VoltAgent/awesome-claude-skills",
+      "url": "https://github.com/VoltAgent/awesome-claude-skills",
+      "discovered_at": "2025-12-21T03:43:12.557380",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "github/github-mcp-server",
+      "url": "https://github.com/github/github-mcp-server",
+      "discovered_at": "2025-12-21T03:43:12.559698",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "microsoft/mcp-for-beginners",
+      "url": "https://github.com/microsoft/mcp-for-beginners",
+      "discovered_at": "2025-12-21T03:43:12.562066",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "awslabs/mcp",
+      "url": "https://github.com/awslabs/mcp",
+      "discovered_at": "2025-12-21T03:43:12.564418",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "xpzouying/xiaohongshu-mcp",
+      "url": "https://github.com/xpzouying/xiaohongshu-mcp",
+      "discovered_at": "2025-12-21T03:43:12.566821",
+      "relevance_score": 60
     }
   ],
   "stats": {
-    "total_discovered": 30,
-    "total_added": 30,
+    "total_discovered": 40,
+    "total_added": 40,
     "total_skipped": 0
   }
 }

@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2025-12-21T03:43:12.566826",
+  "last_run": "2025-12-22T03:47:57.767501",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -241,11 +241,71 @@
       "url": "https://github.com/xpzouying/xiaohongshu-mcp",
       "discovered_at": "2025-12-21T03:43:12.566821",
       "relevance_score": 60
+    },
+    {
+      "full_name": "AgentDeskAI/browser-tools-mcp",
+      "url": "https://github.com/AgentDeskAI/browser-tools-mcp",
+      "discovered_at": "2025-12-22T03:47:57.744001",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "BrowserMCP/mcp",
+      "url": "https://github.com/BrowserMCP/mcp",
+      "discovered_at": "2025-12-22T03:47:57.746523",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "mrexodia/ida-pro-mcp",
+      "url": "https://github.com/mrexodia/ida-pro-mcp",
+      "discovered_at": "2025-12-22T03:47:57.749004",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "antvis/mcp-server-chart",
+      "url": "https://github.com/antvis/mcp-server-chart",
+      "discovered_at": "2025-12-22T03:47:57.751489",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "cameroncooke/XcodeBuildMCP",
+      "url": "https://github.com/cameroncooke/XcodeBuildMCP",
+      "discovered_at": "2025-12-22T03:47:57.754301",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "sparfenyuk/mcp-proxy",
+      "url": "https://github.com/sparfenyuk/mcp-proxy",
+      "discovered_at": "2025-12-22T03:47:57.756870",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "IBM/mcp-context-forge",
+      "url": "https://github.com/IBM/mcp-context-forge",
+      "discovered_at": "2025-12-22T03:47:57.759484",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "taylorwilsdon/google_workspace_mcp",
+      "url": "https://github.com/taylorwilsdon/google_workspace_mcp",
+      "discovered_at": "2025-12-22T03:47:57.762123",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "zinja-coder/jadx-ai-mcp",
+      "url": "https://github.com/zinja-coder/jadx-ai-mcp",
+      "discovered_at": "2025-12-22T03:47:57.764793",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "bgauryy/octocode-mcp",
+      "url": "https://github.com/bgauryy/octocode-mcp",
+      "discovered_at": "2025-12-22T03:47:57.767495",
+      "relevance_score": 60
     }
   ],
   "stats": {
-    "total_discovered": 40,
-    "total_added": 40,
+    "total_discovered": 50,
+    "total_added": 50,
     "total_skipped": 0
   }
 }

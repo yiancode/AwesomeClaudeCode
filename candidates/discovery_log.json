@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2025-12-24T03:38:28.299139",
+  "last_run": "2025-12-25T03:41:01.231884",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -421,11 +421,71 @@
       "url": "https://github.com/liaokongVFX/MCP-Chinese-Getting-Started-Guide",
       "discovered_at": "2025-12-24T03:38:28.299134",
       "relevance_score": 50
+    },
+    {
+      "full_name": "ykdojo/claude-code-tips",
+      "url": "https://github.com/ykdojo/claude-code-tips",
+      "discovered_at": "2025-12-25T03:41:01.192975",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "smtg-ai/claude-squad",
+      "url": "https://github.com/smtg-ai/claude-squad",
+      "discovered_at": "2025-12-25T03:41:01.197319",
+      "relevance_score": 50
+    },
+    {
+      "full_name": "haris-musa/excel-mcp-server",
+      "url": "https://github.com/haris-musa/excel-mcp-server",
+      "discovered_at": "2025-12-25T03:41:01.201248",
+      "relevance_score": 50
+    },
+    {
+      "full_name": "grab/cursor-talk-to-figma-mcp",
+      "url": "https://github.com/grab/cursor-talk-to-figma-mcp",
+      "discovered_at": "2025-12-25T03:41:01.205349",
+      "relevance_score": 50
+    },
+    {
+      "full_name": "alioshr/memory-bank-mcp",
+      "url": "https://github.com/alioshr/memory-bank-mcp",
+      "discovered_at": "2025-12-25T03:41:01.209324",
+      "relevance_score": 50
+    },
+    {
+      "full_name": "rekog-labs/MCP-Nest",
+      "url": "https://github.com/rekog-labs/MCP-Nest",
+      "discovered_at": "2025-12-25T03:41:01.213735",
+      "relevance_score": 50
+    },
+    {
+      "full_name": "Njengah/claude-code-cheat-sheet",
+      "url": "https://github.com/Njengah/claude-code-cheat-sheet",
+      "discovered_at": "2025-12-25T03:41:01.219072",
+      "relevance_score": 50
+    },
+    {
+      "full_name": "terryso/claude-auto-resume",
+      "url": "https://github.com/terryso/claude-auto-resume",
+      "discovered_at": "2025-12-25T03:41:01.223218",
+      "relevance_score": 50
+    },
+    {
+      "full_name": "ferrislucas/iterm-mcp",
+      "url": "https://github.com/ferrislucas/iterm-mcp",
+      "discovered_at": "2025-12-25T03:41:01.227329",
+      "relevance_score": 50
+    },
+    {
+      "full_name": "ravitemer/mcp-hub",
+      "url": "https://github.com/ravitemer/mcp-hub",
+      "discovered_at": "2025-12-25T03:41:01.231867",
+      "relevance_score": 50
     }
   ],
   "stats": {
-    "total_discovered": 70,
-    "total_added": 70,
+    "total_discovered": 80,
+    "total_added": 80,
     "total_skipped": 0
   }
 }

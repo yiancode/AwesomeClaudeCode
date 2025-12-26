@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2025-12-25T03:41:01.231884",
+  "last_run": "2025-12-26T03:39:07.851018",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -481,11 +481,71 @@
       "url": "https://github.com/ravitemer/mcp-hub",
       "discovered_at": "2025-12-25T03:41:01.231867",
       "relevance_score": 50
+    },
+    {
+      "full_name": "anthropics/claude-code-security-review",
+      "url": "https://github.com/anthropics/claude-code-security-review",
+      "discovered_at": "2025-12-26T03:39:07.810637",
+      "relevance_score": 50
+    },
+    {
+      "full_name": "cexll/myclaude",
+      "url": "https://github.com/cexll/myclaude",
+      "discovered_at": "2025-12-26T03:39:07.814999",
+      "relevance_score": 50
+    },
+    {
+      "full_name": "winfunc/opcode",
+      "url": "https://github.com/winfunc/opcode",
+      "discovered_at": "2025-12-26T03:39:07.819374",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "oraios/serena",
+      "url": "https://github.com/oraios/serena",
+      "discovered_at": "2025-12-26T03:39:07.823784",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "farion1231/cc-switch",
+      "url": "https://github.com/farion1231/cc-switch",
+      "discovered_at": "2025-12-26T03:39:07.828235",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "UfoMiao/zcf",
+      "url": "https://github.com/UfoMiao/zcf",
+      "discovered_at": "2025-12-26T03:39:07.832752",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "iOfficeAI/AionUi",
+      "url": "https://github.com/iOfficeAI/AionUi",
+      "discovered_at": "2025-12-26T03:39:07.837271",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "FullAgent/fulling",
+      "url": "https://github.com/FullAgent/fulling",
+      "discovered_at": "2025-12-26T03:39:07.841838",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "wshobson/commands",
+      "url": "https://github.com/wshobson/commands",
+      "discovered_at": "2025-12-26T03:39:07.846375",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "marcuspat/turbo-flow-claude",
+      "url": "https://github.com/marcuspat/turbo-flow-claude",
+      "discovered_at": "2025-12-26T03:39:07.851012",
+      "relevance_score": 45
     }
   ],
   "stats": {
-    "total_discovered": 80,
-    "total_added": 80,
+    "total_discovered": 90,
+    "total_added": 90,
     "total_skipped": 0
   }
 }

@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2025-12-26T03:39:07.851018",
+  "last_run": "2025-12-27T03:36:11.416851",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -541,11 +541,71 @@
       "url": "https://github.com/marcuspat/turbo-flow-claude",
       "discovered_at": "2025-12-26T03:39:07.851012",
       "relevance_score": 45
+    },
+    {
+      "full_name": "sansan0/TrendRadar",
+      "url": "https://github.com/sansan0/TrendRadar",
+      "discovered_at": "2025-12-27T03:36:11.372970",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "upstash/context7",
+      "url": "https://github.com/upstash/context7",
+      "discovered_at": "2025-12-27T03:36:11.378407",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "yusufkaraaslan/Skill_Seekers",
+      "url": "https://github.com/yusufkaraaslan/Skill_Seekers",
+      "discovered_at": "2025-12-27T03:36:11.383103",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "Klavis-AI/klavis",
+      "url": "https://github.com/Klavis-AI/klavis",
+      "discovered_at": "2025-12-27T03:36:11.387838",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "0x4m4/hexstrike-ai",
+      "url": "https://github.com/0x4m4/hexstrike-ai",
+      "discovered_at": "2025-12-27T03:36:11.392615",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "OpenBMB/UltraRAG",
+      "url": "https://github.com/OpenBMB/UltraRAG",
+      "discovered_at": "2025-12-27T03:36:11.397397",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "vllora/vllora",
+      "url": "https://github.com/vllora/vllora",
+      "discovered_at": "2025-12-27T03:36:11.402193",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "SuperClaude-Org/SuperClaude_Framework",
+      "url": "https://github.com/SuperClaude-Org/SuperClaude_Framework",
+      "discovered_at": "2025-12-27T03:36:11.407062",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "BeehiveInnovations/pal-mcp-server",
+      "url": "https://github.com/BeehiveInnovations/pal-mcp-server",
+      "discovered_at": "2025-12-27T03:36:11.411930",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "opactorai/Claudable",
+      "url": "https://github.com/opactorai/Claudable",
+      "discovered_at": "2025-12-27T03:36:11.416846",
+      "relevance_score": 40
     }
   ],
   "stats": {
-    "total_discovered": 90,
-    "total_added": 90,
+    "total_discovered": 100,
+    "total_added": 100,
     "total_skipped": 0
   }
 }

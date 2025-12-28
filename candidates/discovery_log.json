@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2025-12-27T03:36:11.416851",
+  "last_run": "2025-12-28T03:52:44.116651",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -601,11 +601,71 @@
       "url": "https://github.com/opactorai/Claudable",
       "discovered_at": "2025-12-27T03:36:11.416846",
       "relevance_score": 40
+    },
+    {
+      "full_name": "BoringDystopiaDevelopment/awesome-claude",
+      "url": "https://github.com/BoringDystopiaDevelopment/awesome-claude",
+      "discovered_at": "2025-12-28T03:52:44.069436",
+      "relevance_score": 80
+    },
+    {
+      "full_name": "lst97/claude-code-sub-agents",
+      "url": "https://github.com/lst97/claude-code-sub-agents",
+      "discovered_at": "2025-12-28T03:52:44.074545",
+      "relevance_score": 40
+    },
+    {
+      "full_name": "alirezarezvani/claude-skills",
+      "url": "https://github.com/alirezarezvani/claude-skills",
+      "discovered_at": "2025-12-28T03:52:44.079620",
+      "relevance_score": 40
+    },
+    {
+      "full_name": "u14app/deep-research",
+      "url": "https://github.com/u14app/deep-research",
+      "discovered_at": "2025-12-28T03:52:44.084716",
+      "relevance_score": 40
+    },
+    {
+      "full_name": "universal-tool-calling-protocol/code-mode",
+      "url": "https://github.com/universal-tool-calling-protocol/code-mode",
+      "discovered_at": "2025-12-28T03:52:44.089874",
+      "relevance_score": 40
+    },
+    {
+      "full_name": "claude-did-this/claude-hub",
+      "url": "https://github.com/claude-did-this/claude-hub",
+      "discovered_at": "2025-12-28T03:52:44.095017",
+      "relevance_score": 40
+    },
+    {
+      "full_name": "eyaltoledano/claude-task-master",
+      "url": "https://github.com/eyaltoledano/claude-task-master",
+      "discovered_at": "2025-12-28T03:52:44.100739",
+      "relevance_score": 40
+    },
+    {
+      "full_name": "diet103/claude-code-infrastructure-showcase",
+      "url": "https://github.com/diet103/claude-code-infrastructure-showcase",
+      "discovered_at": "2025-12-28T03:52:44.105993",
+      "relevance_score": 40
+    },
+    {
+      "full_name": "OneRedOak/claude-code-workflows",
+      "url": "https://github.com/OneRedOak/claude-code-workflows",
+      "discovered_at": "2025-12-28T03:52:44.111315",
+      "relevance_score": 40
+    },
+    {
+      "full_name": "Pimzino/claude-code-spec-workflow",
+      "url": "https://github.com/Pimzino/claude-code-spec-workflow",
+      "discovered_at": "2025-12-28T03:52:44.116645",
+      "relevance_score": 40
     }
   ],
   "stats": {
-    "total_discovered": 100,
-    "total_added": 100,
+    "total_discovered": 110,
+    "total_added": 110,
     "total_skipped": 0
   }
 }

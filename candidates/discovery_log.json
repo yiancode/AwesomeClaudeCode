@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2025-12-28T03:52:44.116651",
+  "last_run": "2025-12-29T03:54:36.352917",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -661,11 +661,71 @@
       "url": "https://github.com/Pimzino/claude-code-spec-workflow",
       "discovered_at": "2025-12-28T03:52:44.116645",
       "relevance_score": 40
+    },
+    {
+      "full_name": "Cranot/claude-code-guide",
+      "url": "https://github.com/Cranot/claude-code-guide",
+      "discovered_at": "2025-12-29T03:54:36.300273",
+      "relevance_score": 40
+    },
+    {
+      "full_name": "leonardsellem/n8n-mcp-server",
+      "url": "https://github.com/leonardsellem/n8n-mcp-server",
+      "discovered_at": "2025-12-29T03:54:36.305976",
+      "relevance_score": 40
+    },
+    {
+      "full_name": "slopus/happy",
+      "url": "https://github.com/slopus/happy",
+      "discovered_at": "2025-12-29T03:54:36.311756",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "automazeio/ccpm",
+      "url": "https://github.com/automazeio/ccpm",
+      "discovered_at": "2025-12-29T03:54:36.317576",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "router-for-me/CLIProxyAPI",
+      "url": "https://github.com/router-for-me/CLIProxyAPI",
+      "discovered_at": "2025-12-29T03:54:36.323346",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "brennercruvinel/CCPlugins",
+      "url": "https://github.com/brennercruvinel/CCPlugins",
+      "discovered_at": "2025-12-29T03:54:36.329195",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "nizos/tdd-guard",
+      "url": "https://github.com/nizos/tdd-guard",
+      "discovered_at": "2025-12-29T03:54:36.335011",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "SawyerHood/dev-browser",
+      "url": "https://github.com/SawyerHood/dev-browser",
+      "discovered_at": "2025-12-29T03:54:36.340844",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "heshengtao/super-agent-party",
+      "url": "https://github.com/heshengtao/super-agent-party",
+      "discovered_at": "2025-12-29T03:54:36.346769",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "centralmind/gateway",
+      "url": "https://github.com/centralmind/gateway",
+      "discovered_at": "2025-12-29T03:54:36.352909",
+      "relevance_score": 35
     }
   ],
   "stats": {
-    "total_discovered": 110,
-    "total_added": 110,
+    "total_discovered": 120,
+    "total_added": 120,
     "total_skipped": 0
   }
 }

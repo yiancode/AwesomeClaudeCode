@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2025-12-29T03:54:36.352917",
+  "last_run": "2025-12-30T03:42:13.558039",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -721,11 +721,71 @@
       "url": "https://github.com/centralmind/gateway",
       "discovered_at": "2025-12-29T03:54:36.352909",
       "relevance_score": 35
+    },
+    {
+      "full_name": "steipete/CodexBar",
+      "url": "https://github.com/steipete/CodexBar",
+      "discovered_at": "2025-12-30T03:42:13.503128",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "webdevtodayjason/sub-agents",
+      "url": "https://github.com/webdevtodayjason/sub-agents",
+      "discovered_at": "2025-12-30T03:42:13.509119",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "saigontechnology/AgentCrew",
+      "url": "https://github.com/saigontechnology/AgentCrew",
+      "discovered_at": "2025-12-30T03:42:13.515088",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "hmjz100/Z.ai2api",
+      "url": "https://github.com/hmjz100/Z.ai2api",
+      "discovered_at": "2025-12-30T03:42:13.521089",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "bytedance/UI-TARS-desktop",
+      "url": "https://github.com/bytedance/UI-TARS-desktop",
+      "discovered_at": "2025-12-30T03:42:13.527177",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "icip-cas/PPTAgent",
+      "url": "https://github.com/icip-cas/PPTAgent",
+      "discovered_at": "2025-12-30T03:42:13.533257",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "gyoridavid/short-video-maker",
+      "url": "https://github.com/gyoridavid/short-video-maker",
+      "discovered_at": "2025-12-30T03:42:13.539404",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "context-space/context-space",
+      "url": "https://github.com/context-space/context-space",
+      "discovered_at": "2025-12-30T03:42:13.545570",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "yigitkonur/claude-code-orchestrator",
+      "url": "https://github.com/yigitkonur/claude-code-orchestrator",
+      "discovered_at": "2025-12-30T03:42:13.551796",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "DeepMyst/Mysti",
+      "url": "https://github.com/DeepMyst/Mysti",
+      "discovered_at": "2025-12-30T03:42:13.558034",
+      "relevance_score": 35
     }
   ],
   "stats": {
-    "total_discovered": 120,
-    "total_added": 120,
+    "total_discovered": 130,
+    "total_added": 130,
     "total_skipped": 0
   }
 }

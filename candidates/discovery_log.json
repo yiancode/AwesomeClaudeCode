@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2025-12-30T03:42:13.558039",
+  "last_run": "2025-12-31T03:41:58.548886",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -781,11 +781,71 @@
       "url": "https://github.com/DeepMyst/Mysti",
       "discovered_at": "2025-12-30T03:42:13.558034",
       "relevance_score": 35
+    },
+    {
+      "full_name": "shareAI-lab/learn-claude-code",
+      "url": "https://github.com/shareAI-lab/learn-claude-code",
+      "discovered_at": "2025-12-31T03:41:58.481134",
+      "relevance_score": 50
+    },
+    {
+      "full_name": "alirezarezvani/claude-code-skill-factory",
+      "url": "https://github.com/alirezarezvani/claude-code-skill-factory",
+      "discovered_at": "2025-12-31T03:41:58.488540",
+      "relevance_score": 40
+    },
+    {
+      "full_name": "gotalab/cc-sdd",
+      "url": "https://github.com/gotalab/cc-sdd",
+      "discovered_at": "2025-12-31T03:41:58.495962",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "huangjunsen0406/py-xiaozhi",
+      "url": "https://github.com/huangjunsen0406/py-xiaozhi",
+      "discovered_at": "2025-12-31T03:41:58.503350",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "Kilo-Org/kilocode",
+      "url": "https://github.com/Kilo-Org/kilocode",
+      "discovered_at": "2025-12-31T03:41:58.510902",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "discovered_at": "2025-12-31T03:41:58.518407",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "ryoppippi/ccusage",
+      "url": "https://github.com/ryoppippi/ccusage",
+      "discovered_at": "2025-12-31T03:41:58.525981",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "VoltAgent/voltagent",
+      "url": "https://github.com/VoltAgent/voltagent",
+      "discovered_at": "2025-12-31T03:41:58.533573",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "BloopAI/vibe-kanban",
+      "url": "https://github.com/BloopAI/vibe-kanban",
+      "discovered_at": "2025-12-31T03:41:58.541171",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "discovered_at": "2025-12-31T03:41:58.548881",
+      "relevance_score": 30
     }
   ],
   "stats": {
-    "total_discovered": 130,
-    "total_added": 130,
+    "total_discovered": 140,
+    "total_added": 140,
     "total_skipped": 0
   }
 }

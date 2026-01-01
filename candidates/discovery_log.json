@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2025-12-31T03:41:58.548886",
+  "last_run": "2026-01-01T03:55:08.033772",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -841,11 +841,71 @@
       "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
       "discovered_at": "2025-12-31T03:41:58.548881",
       "relevance_score": 30
+    },
+    {
+      "full_name": "davepoon/buildwithclaude",
+      "url": "https://github.com/davepoon/buildwithclaude",
+      "discovered_at": "2026-01-01T03:55:07.969410",
+      "relevance_score": 70
+    },
+    {
+      "full_name": "parcadei/Continuous-Claude-v2",
+      "url": "https://github.com/parcadei/Continuous-Claude-v2",
+      "discovered_at": "2026-01-01T03:55:07.976502",
+      "relevance_score": 70
+    },
+    {
+      "full_name": "breaking-brake/cc-wf-studio",
+      "url": "https://github.com/breaking-brake/cc-wf-studio",
+      "discovered_at": "2026-01-01T03:55:07.983541",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "universal-tool-calling-protocol/python-utcp",
+      "url": "https://github.com/universal-tool-calling-protocol/python-utcp",
+      "discovered_at": "2026-01-01T03:55:07.990632",
+      "relevance_score": 30
+    },
+    {
+      "full_name": "disler/claude-code-hooks-mastery",
+      "url": "https://github.com/disler/claude-code-hooks-mastery",
+      "discovered_at": "2026-01-01T03:55:07.997702",
+      "relevance_score": 30
+    },
+    {
+      "full_name": "GWUDCAP/cc-sessions",
+      "url": "https://github.com/GWUDCAP/cc-sessions",
+      "discovered_at": "2026-01-01T03:55:08.004799",
+      "relevance_score": 30
+    },
+    {
+      "full_name": "steveyegge/beads",
+      "url": "https://github.com/steveyegge/beads",
+      "discovered_at": "2026-01-01T03:55:08.011979",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "sirmalloc/ccstatusline",
+      "url": "https://github.com/sirmalloc/ccstatusline",
+      "discovered_at": "2026-01-01T03:55:08.019159",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "intellectronica/ruler",
+      "url": "https://github.com/intellectronica/ruler",
+      "discovered_at": "2026-01-01T03:55:08.026358",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "superagent-ai/vibekit",
+      "url": "https://github.com/superagent-ai/vibekit",
+      "discovered_at": "2026-01-01T03:55:08.033765",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 140,
-    "total_added": 140,
+    "total_discovered": 150,
+    "total_added": 150,
     "total_skipped": 0
   }
 }

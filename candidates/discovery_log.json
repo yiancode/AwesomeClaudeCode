@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-01-01T03:55:08.033772",
+  "last_run": "2026-01-02T03:45:20.414508",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -901,11 +901,71 @@
       "url": "https://github.com/superagent-ai/vibekit",
       "discovered_at": "2026-01-01T03:55:08.033765",
       "relevance_score": 25
+    },
+    {
+      "full_name": "snipeship/ccflare",
+      "url": "https://github.com/snipeship/ccflare",
+      "discovered_at": "2026-01-02T03:45:20.353145",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "TheAuditorTool/Auditor",
+      "url": "https://github.com/TheAuditorTool/Auditor",
+      "discovered_at": "2026-01-02T03:45:20.359844",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "dipampaul17/AgentGuard",
+      "url": "https://github.com/dipampaul17/AgentGuard",
+      "discovered_at": "2026-01-02T03:45:20.366590",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "rshdhere/vibecheck",
+      "url": "https://github.com/rshdhere/vibecheck",
+      "discovered_at": "2026-01-02T03:45:20.373440",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "google-gemini/gemini-cli",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "discovered_at": "2026-01-02T03:45:20.380185",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "xinnan-tech/xiaozhi-esp32-server",
+      "url": "https://github.com/xinnan-tech/xiaozhi-esp32-server",
+      "discovered_at": "2026-01-02T03:45:20.386975",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "massgen/MassGen",
+      "url": "https://github.com/massgen/MassGen",
+      "discovered_at": "2026-01-02T03:45:20.393806",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "gmickel/Claude-Code-Kickstarter",
+      "url": "https://github.com/gmickel/Claude-Code-Kickstarter",
+      "discovered_at": "2026-01-02T03:45:20.400634",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "MotiaDev/motia",
+      "url": "https://github.com/MotiaDev/motia",
+      "discovered_at": "2026-01-02T03:45:20.407548",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "bytedance/deer-flow",
+      "url": "https://github.com/bytedance/deer-flow",
+      "discovered_at": "2026-01-02T03:45:20.414502",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 150,
-    "total_added": 150,
+    "total_discovered": 160,
+    "total_added": 160,
     "total_skipped": 0
   }
 }

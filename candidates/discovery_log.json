@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-01-02T03:45:20.414508",
+  "last_run": "2026-01-03T03:28:00.248580",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -961,11 +961,71 @@
       "url": "https://github.com/bytedance/deer-flow",
       "discovered_at": "2026-01-02T03:45:20.414502",
       "relevance_score": 25
+    },
+    {
+      "full_name": "GantisStorm/autonomous-coding-harness",
+      "url": "https://github.com/GantisStorm/autonomous-coding-harness",
+      "discovered_at": "2026-01-03T03:28:00.168650",
+      "relevance_score": 30
+    },
+    {
+      "full_name": "charmbracelet/crush",
+      "url": "https://github.com/charmbracelet/crush",
+      "discovered_at": "2026-01-03T03:28:00.177393",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "DayuanJiang/next-ai-draw-io",
+      "url": "https://github.com/DayuanJiang/next-ai-draw-io",
+      "discovered_at": "2026-01-03T03:28:00.186102",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "trycua/cua",
+      "url": "https://github.com/trycua/cua",
+      "discovered_at": "2026-01-03T03:28:00.194897",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "bmad-code-org/BMAD-METHOD",
+      "url": "https://github.com/bmad-code-org/BMAD-METHOD",
+      "discovered_at": "2026-01-03T03:28:00.203731",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "yichuan-w/LEANN",
+      "url": "https://github.com/yichuan-w/LEANN",
+      "discovered_at": "2026-01-03T03:28:00.212647",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "langchain-ai/deepagents",
+      "url": "https://github.com/langchain-ai/deepagents",
+      "discovered_at": "2026-01-03T03:28:00.221698",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "MrLesk/Backlog.md",
+      "url": "https://github.com/MrLesk/Backlog.md",
+      "discovered_at": "2026-01-03T03:28:00.230697",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "Fission-AI/OpenSpec",
+      "url": "https://github.com/Fission-AI/OpenSpec",
+      "discovered_at": "2026-01-03T03:28:00.239604",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "coleam00/context-engineering-intro",
+      "url": "https://github.com/coleam00/context-engineering-intro",
+      "discovered_at": "2026-01-03T03:28:00.248575",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 160,
-    "total_added": 160,
+    "total_discovered": 170,
+    "total_added": 170,
     "total_skipped": 0
   }
 }

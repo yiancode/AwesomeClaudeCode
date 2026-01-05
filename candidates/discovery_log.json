@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-01-04T03:56:20.011015",
+  "last_run": "2026-01-05T04:00:41.092465",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1081,11 +1081,35 @@
       "url": "https://github.com/anthropics/skills",
       "discovered_at": "2026-01-04T03:56:20.011003",
       "relevance_score": 20
+    },
+    {
+      "full_name": "lbjlaq/Antigravity-Manager",
+      "url": "https://github.com/lbjlaq/Antigravity-Manager",
+      "discovered_at": "2026-01-05T04:00:41.067910",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "HKUDS/DeepCode",
+      "url": "https://github.com/HKUDS/DeepCode",
+      "discovered_at": "2026-01-05T04:00:41.076083",
+      "relevance_score": 20
+    },
+    {
+      "full_name": "HKUDS/AI-Trader",
+      "url": "https://github.com/HKUDS/AI-Trader",
+      "discovered_at": "2026-01-05T04:00:41.084293",
+      "relevance_score": 20
+    },
+    {
+      "full_name": "iflow-ai/iflow-cli",
+      "url": "https://github.com/iflow-ai/iflow-cli",
+      "discovered_at": "2026-01-05T04:00:41.092460",
+      "relevance_score": 20
     }
   ],
   "stats": {
-    "total_discovered": 180,
-    "total_added": 180,
+    "total_discovered": 184,
+    "total_added": 184,
     "total_skipped": 0
   }
 }

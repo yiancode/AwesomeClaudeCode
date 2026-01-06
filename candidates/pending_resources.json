@@ -8399,6 +8399,41 @@
       "_stars": 4061,
       "_language": "Shell",
       "_topics": []
+    },
+    {
+      "ID": "eco-11576ef0",
+      "DisplayName": "strix",
+      "DisplayName_ZH": "strix",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/usestrix/strix",
+      "SecondaryLink": "https://strix.ai",
+      "Author": "usestrix",
+      "AuthorProfile": "https://github.com/usestrix",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/01/06",
+      "LastModified": "2026/01/06",
+      "LastChecked": "2026/01/06",
+      "License": "Apache-2.0",
+      "Description": "Open-source AI agents for penetration testing",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-01-06T03:43:30.364347",
+      "_status": "pending",
+      "_relevance_score": 25,
+      "_stars": 18554,
+      "_language": "Python",
+      "_topics": [
+        "agents",
+        "artificial-intelligence",
+        "cybersecurity",
+        "generative-ai",
+        "llm",
+        "penetration-testing"
+      ]
     }
   ]
 }

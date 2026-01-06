@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-01-05T04:00:41.092465",
+  "last_run": "2026-01-06T03:43:30.373237",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1105,11 +1105,17 @@
       "url": "https://github.com/iflow-ai/iflow-cli",
       "discovered_at": "2026-01-05T04:00:41.092460",
       "relevance_score": 20
+    },
+    {
+      "full_name": "usestrix/strix",
+      "url": "https://github.com/usestrix/strix",
+      "discovered_at": "2026-01-06T03:43:30.373232",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 184,
-    "total_added": 184,
+    "total_discovered": 185,
+    "total_added": 185,
     "total_skipped": 0
   }
 }

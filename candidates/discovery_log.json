@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-01-06T03:43:30.373237",
+  "last_run": "2026-01-07T03:43:55.837450",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1111,11 +1111,29 @@
       "url": "https://github.com/usestrix/strix",
       "discovered_at": "2026-01-06T03:43:30.373232",
       "relevance_score": 25
+    },
+    {
+      "full_name": "Vvkmnn/claude-historian-mcp",
+      "url": "https://github.com/Vvkmnn/claude-historian-mcp",
+      "discovered_at": "2026-01-07T03:43:55.820791",
+      "relevance_score": 100
+    },
+    {
+      "full_name": "tonysurfly/awesome-claude",
+      "url": "https://github.com/tonysurfly/awesome-claude",
+      "discovered_at": "2026-01-07T03:43:55.829155",
+      "relevance_score": 80
+    },
+    {
+      "full_name": "GMaN1911/claude-cognitive",
+      "url": "https://github.com/GMaN1911/claude-cognitive",
+      "discovered_at": "2026-01-07T03:43:55.837445",
+      "relevance_score": 50
     }
   ],
   "stats": {
-    "total_discovered": 185,
-    "total_added": 185,
+    "total_discovered": 188,
+    "total_added": 188,
     "total_skipped": 0
   }
 }

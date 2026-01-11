@@ -8833,6 +8833,34 @@
       "_stars": 13561,
       "_language": "Python",
       "_topics": []
+    },
+    {
+      "ID": "wf-256fb47a",
+      "DisplayName": "planning-with-files",
+      "DisplayName_ZH": "planning-with-files",
+      "Category": "workflows",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/OthmanAdi/planning-with-files",
+      "SecondaryLink": "",
+      "Author": "OthmanAdi",
+      "AuthorProfile": "https://github.com/OthmanAdi",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/01/11",
+      "LastModified": "2026/01/11",
+      "LastChecked": "2026/01/11",
+      "License": "MIT",
+      "Description": "Claude Code skill implementing Manus-style persistent markdown planning — the workflow pattern behind the $2B acquisition.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-01-11T03:55:03.164997",
+      "_status": "pending",
+      "_relevance_score": 35,
+      "_stars": 6831,
+      "_language": "Shell",
+      "_topics": []
     }
   ]
 }

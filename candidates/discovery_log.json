@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-01-10T03:37:45.165529",
+  "last_run": "2026-01-11T03:55:03.174650",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1177,11 +1177,17 @@
       "url": "https://github.com/coleam00/Archon",
       "discovered_at": "2026-01-10T03:37:45.165523",
       "relevance_score": 25
+    },
+    {
+      "full_name": "OthmanAdi/planning-with-files",
+      "url": "https://github.com/OthmanAdi/planning-with-files",
+      "discovered_at": "2026-01-11T03:55:03.174644",
+      "relevance_score": 35
     }
   ],
   "stats": {
-    "total_discovered": 196,
-    "total_added": 196,
+    "total_discovered": 197,
+    "total_added": 197,
     "total_skipped": 0
   }
 }

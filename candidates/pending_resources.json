@@ -8861,6 +8861,39 @@
       "_stars": 6831,
       "_language": "Shell",
       "_topics": []
+    },
+    {
+      "ID": "eco-a61fbe45",
+      "DisplayName": "get-shit-done",
+      "DisplayName_ZH": "get-shit-done",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/glittercowboy/get-shit-done",
+      "SecondaryLink": "",
+      "Author": "glittercowboy",
+      "AuthorProfile": "https://github.com/glittercowboy",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/01/12",
+      "LastModified": "2026/01/12",
+      "LastChecked": "2026/01/12",
+      "License": "MIT",
+      "Description": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-01-12T03:54:54.853195",
+      "_status": "pending",
+      "_relevance_score": 35,
+      "_stars": 1776,
+      "_language": "JavaScript",
+      "_topics": [
+        "claude-code",
+        "context-engineering",
+        "meta-prompting",
+        "spec-driven-development"
+      ]
     }
   ]
 }

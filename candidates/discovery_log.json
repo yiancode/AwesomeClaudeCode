@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-01-12T03:54:54.863745",
+  "last_run": "2026-01-13T03:43:24.041708",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1189,11 +1189,23 @@
       "url": "https://github.com/glittercowboy/get-shit-done",
       "discovered_at": "2026-01-12T03:54:54.863740",
       "relevance_score": 35
+    },
+    {
+      "full_name": "frankbria/ralph-claude-code",
+      "url": "https://github.com/frankbria/ralph-claude-code",
+      "discovered_at": "2026-01-13T03:43:24.031949",
+      "relevance_score": 50
+    },
+    {
+      "full_name": "ericshang98/Perfect-Web-Clone",
+      "url": "https://github.com/ericshang98/Perfect-Web-Clone",
+      "discovered_at": "2026-01-13T03:43:24.041698",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 198,
-    "total_added": 198,
+    "total_discovered": 200,
+    "total_added": 200,
     "total_skipped": 0
   }
 }

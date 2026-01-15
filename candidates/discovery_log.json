@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-01-14T03:52:37.168051",
+  "last_run": "2026-01-15T03:46:09.617146",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1213,11 +1213,17 @@
       "url": "https://github.com/tripleyak/SkillForge",
       "discovered_at": "2026-01-14T03:52:37.168042",
       "relevance_score": 30
+    },
+    {
+      "full_name": "conorluddy/ios-simulator-skill",
+      "url": "https://github.com/conorluddy/ios-simulator-skill",
+      "discovered_at": "2026-01-15T03:46:09.617139",
+      "relevance_score": 55
     }
   ],
   "stats": {
-    "total_discovered": 202,
-    "total_added": 202,
+    "total_discovered": 203,
+    "total_added": 203,
     "total_skipped": 0
   }
 }

@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-01-16T03:44:29.268011",
+  "last_run": "2026-01-18T03:50:46.675811",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1231,11 +1231,17 @@
       "url": "https://github.com/ahujasid/blender-mcp",
       "discovered_at": "2026-01-16T03:44:29.268006",
       "relevance_score": 40
+    },
+    {
+      "full_name": "clawdbot/clawdbot",
+      "url": "https://github.com/clawdbot/clawdbot",
+      "discovered_at": "2026-01-18T03:50:46.675804",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 205,
-    "total_added": 205,
+    "total_discovered": 206,
+    "total_added": 206,
     "total_skipped": 0
   }
 }

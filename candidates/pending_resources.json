@@ -9142,6 +9142,41 @@
       "_stars": 15399,
       "_language": "Python",
       "_topics": []
+    },
+    {
+      "ID": "eco-948eaf92",
+      "DisplayName": "clawdbot",
+      "DisplayName_ZH": "clawdbot",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/clawdbot/clawdbot",
+      "SecondaryLink": "https://clawd.bot",
+      "Author": "clawdbot",
+      "AuthorProfile": "https://github.com/clawdbot",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/01/18",
+      "LastModified": "2026/01/18",
+      "LastChecked": "2026/01/18",
+      "License": "MIT",
+      "Description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-01-18T03:50:46.664846",
+      "_status": "pending",
+      "_relevance_score": 25,
+      "_stars": 4901,
+      "_language": "TypeScript",
+      "_topics": [
+        "ai",
+        "assistant",
+        "clawd",
+        "crustacean",
+        "own-your-data",
+        "personal"
+      ]
     }
   ]
 }

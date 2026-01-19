@@ -9177,6 +9177,42 @@
         "own-your-data",
         "personal"
       ]
+    },
+    {
+      "ID": "tool-b1255c40",
+      "DisplayName": "adversarial-spec",
+      "DisplayName_ZH": "adversarial-spec",
+      "Category": "tooling",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/zscole/adversarial-spec",
+      "SecondaryLink": "",
+      "Author": "zscole",
+      "AuthorProfile": "https://github.com/zscole",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/01/19",
+      "LastModified": "2026/01/19",
+      "LastChecked": "2026/01/19",
+      "License": "MIT",
+      "Description": "A Claude Code plugin that iteratively refines product specifications by debating between multiple LLMs until all models reach consensus.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-01-19T03:55:49.401067",
+      "_status": "pending",
+      "_relevance_score": 45,
+      "_stars": 445,
+      "_language": "Python",
+      "_topics": [
+        "anthropic",
+        "claude-ai",
+        "claude-code",
+        "claude-code-plugin",
+        "claude-skills",
+        "llm",
+        "orchestration"
+      ]
     }
   ]
 }

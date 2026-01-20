@@ -9213,6 +9213,40 @@
         "llm",
         "orchestration"
       ]
+    },
+    {
+      "ID": "tool-be394af3",
+      "DisplayName": "open-claude-cowork",
+      "DisplayName_ZH": "open-claude-cowork",
+      "Category": "tooling",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/ComposioHQ/open-claude-cowork",
+      "SecondaryLink": "",
+      "Author": "ComposioHQ",
+      "AuthorProfile": "https://github.com/ComposioHQ",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/01/20",
+      "LastModified": "2026/01/20",
+      "LastChecked": "2026/01/20",
+      "License": "",
+      "Description": "Open Source version of Claude Cowork built with Claude Code and Composio Tool Router",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-01-20T03:49:06.655653",
+      "_status": "pending",
+      "_relevance_score": 60,
+      "_stars": 525,
+      "_language": "JavaScript",
+      "_topics": [
+        "anthropic",
+        "anthropic-claude",
+        "claude-code",
+        "claude-cowork",
+        "claude-cowork-win"
+      ]
     }
   ]
 }

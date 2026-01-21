@@ -9247,6 +9247,35 @@
         "claude-cowork",
         "claude-cowork-win"
       ]
+    },
+    {
+      "ID": "mcp-bc8edd08",
+      "DisplayName": "TamarEngel/jira-github-mcp",
+      "DisplayName_ZH": "TamarEngel/jira-github-mcp",
+      "Category": "mcp-servers",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/TamarEngel/jira-github-mcp",
+      "SecondaryLink": "",
+      "Author": "",
+      "AuthorProfile": "",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/01/21",
+      "LastModified": "2026/01/21",
+      "LastChecked": "2026/01/21",
+      "License": "",
+      "Description": "MCP server that integrates Jira and GitHub to automate end-to-end developer workflows, from issue tracking to branches, commits, pull requests, and merges inside the IDE.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "awesome-list",
+      "_source_crawler": "Awesome Lists",
+      "_discovered_at": "2026-01-21T04:08:57.095005",
+      "_status": "pending",
+      "_relevance_score": 50,
+      "_source_score": 0,
+      "_source_list": "Awesome MCP Servers",
+      "_github_stars": 0
     }
   ]
 }

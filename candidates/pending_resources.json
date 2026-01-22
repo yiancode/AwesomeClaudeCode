@@ -9276,6 +9276,34 @@
       "_source_score": 0,
       "_source_list": "Awesome MCP Servers",
       "_github_stars": 0
+    },
+    {
+      "ID": "eco-f5d72617",
+      "DisplayName": "gastown",
+      "DisplayName_ZH": "gastown",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/steveyegge/gastown",
+      "SecondaryLink": "",
+      "Author": "steveyegge",
+      "AuthorProfile": "https://github.com/steveyegge",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/01/22",
+      "LastModified": "2026/01/22",
+      "LastChecked": "2026/01/22",
+      "License": "MIT",
+      "Description": "Gas Town - multi-agent workspace manager",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-01-22T03:52:42.644735",
+      "_status": "pending",
+      "_relevance_score": 25,
+      "_stars": 5175,
+      "_language": "Go",
+      "_topics": []
     }
   ]
 }

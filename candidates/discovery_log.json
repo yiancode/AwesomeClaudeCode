@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-01-22T03:52:42.654956",
+  "last_run": "2026-01-23T03:47:33.206385",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1255,11 +1255,23 @@
       "url": "https://github.com/steveyegge/gastown",
       "discovered_at": "2026-01-22T03:52:42.654949",
       "relevance_score": 25
+    },
+    {
+      "full_name": "hamed-elfayome/Claude-Usage-Tracker",
+      "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
+      "discovered_at": "2026-01-23T03:47:33.196558",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "21st-dev/1code",
+      "url": "https://github.com/21st-dev/1code",
+      "discovered_at": "2026-01-23T03:47:33.206380",
+      "relevance_score": 35
     }
   ],
   "stats": {
-    "total_discovered": 209,
-    "total_added": 209,
+    "total_discovered": 211,
+    "total_added": 211,
     "total_skipped": 0
   }
 }

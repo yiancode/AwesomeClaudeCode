@@ -9626,6 +9626,45 @@
         "typescript",
         "workshop"
       ]
+    },
+    {
+      "ID": "skill-ff81ab01",
+      "DisplayName": "oh-my-claudecode",
+      "DisplayName_ZH": "oh-my-claudecode",
+      "Category": "skills",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+      "SecondaryLink": "https://yeachan-heo.github.io/oh-my-claudecode-website",
+      "Author": "Yeachan-Heo",
+      "AuthorProfile": "https://github.com/Yeachan-Heo",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/01/26",
+      "LastModified": "2026/01/26",
+      "LastChecked": "2026/01/26",
+      "License": "MIT",
+      "Description": "Multi-agent orchestration for Claude Code with 5 execution modes: Autopilot (autonomous), Ultrapilot (3-5x parallel), Swarm (coordinated agents), Pipeline (sequential chains), Ecomode (token-effici...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-01-26T04:01:46.380399",
+      "_status": "pending",
+      "_relevance_score": 60,
+      "_stars": 2644,
+      "_language": "TypeScript",
+      "_topics": [
+        "agentic-coding",
+        "ai-agents",
+        "automation",
+        "claude",
+        "claude-code",
+        "multi-agent-systems",
+        "oh-my-opencode",
+        "opencode",
+        "parallel-execution",
+        "vibe-coding"
+      ]
     }
   ]
 }

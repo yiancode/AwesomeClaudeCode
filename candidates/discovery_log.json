@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-01-26T04:01:46.391240",
+  "last_run": "2026-01-28T03:50:17.326023",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1297,11 +1297,23 @@
       "url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
       "discovered_at": "2026-01-26T04:01:46.391234",
       "relevance_score": 60
+    },
+    {
+      "full_name": "adenhq/hive",
+      "url": "https://github.com/adenhq/hive",
+      "discovered_at": "2026-01-28T03:50:17.314752",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "moltbot/moltbot",
+      "url": "https://github.com/moltbot/moltbot",
+      "discovered_at": "2026-01-28T03:50:17.326016",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 216,
-    "total_added": 216,
+    "total_discovered": 218,
+    "total_added": 218,
     "total_skipped": 0
   }
 }

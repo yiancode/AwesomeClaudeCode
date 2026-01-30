@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-01-28T03:50:17.326023",
+  "last_run": "2026-01-30T04:14:30.193835",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1309,11 +1309,29 @@
       "url": "https://github.com/moltbot/moltbot",
       "discovered_at": "2026-01-28T03:50:17.326016",
       "relevance_score": 25
+    },
+    {
+      "full_name": "NevaMind-AI/memU",
+      "url": "https://github.com/NevaMind-AI/memU",
+      "discovered_at": "2026-01-30T04:14:30.172154",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "VoltAgent/awesome-agent-skills",
+      "url": "https://github.com/VoltAgent/awesome-agent-skills",
+      "discovered_at": "2026-01-30T04:14:30.183495",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "discovered_at": "2026-01-30T04:14:30.193830",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 218,
-    "total_added": 218,
+    "total_discovered": 221,
+    "total_added": 221,
     "total_skipped": 0
   }
 }

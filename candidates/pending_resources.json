@@ -9917,6 +9917,48 @@
         "openai",
         "runtime"
       ]
+    },
+    {
+      "ID": "mcp-5a94b14d",
+      "DisplayName": "drift",
+      "DisplayName_ZH": "drift",
+      "Category": "mcp-servers",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/dadbodgeoff/drift",
+      "SecondaryLink": "",
+      "Author": "dadbodgeoff",
+      "AuthorProfile": "https://github.com/dadbodgeoff",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/02/02",
+      "LastModified": "2026/02/02",
+      "LastChecked": "2026/02/02",
+      "License": "NOASSERTION",
+      "Description": "Codebase intelligence for AI. Detects patterns & conventions + remembers decisions across sessions. MCP server for any IDE. Offline CLI.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-02-02T04:29:28.721518",
+      "_status": "pending",
+      "_relevance_score": 45,
+      "_stars": 609,
+      "_language": "TypeScript",
+      "_topics": [
+        "ai-tools",
+        "cli",
+        "code-quality",
+        "csharp",
+        "java",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "pattern-detection",
+        "php",
+        "python",
+        "typescript",
+        "vscode-extension"
+      ]
     }
   ]
 }

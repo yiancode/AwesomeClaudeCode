@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-02-02T04:29:28.731754",
+  "last_run": "2026-02-03T04:21:02.706797",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1339,11 +1339,23 @@
       "url": "https://github.com/dadbodgeoff/drift",
       "discovered_at": "2026-02-02T04:29:28.731749",
       "relevance_score": 45
+    },
+    {
+      "full_name": "maxritter/claude-pilot",
+      "url": "https://github.com/maxritter/claude-pilot",
+      "discovered_at": "2026-02-03T04:21:02.697359",
+      "relevance_score": 80
+    },
+    {
+      "full_name": "VoltAgent/awesome-openclaw-skills",
+      "url": "https://github.com/VoltAgent/awesome-openclaw-skills",
+      "discovered_at": "2026-02-03T04:21:02.706788",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 223,
-    "total_added": 223,
+    "total_discovered": 225,
+    "total_added": 225,
     "total_skipped": 0
   }
 }

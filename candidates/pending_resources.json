@@ -10046,6 +10046,34 @@
         "openclaw",
         "openclaw-skills"
       ]
+    },
+    {
+      "ID": "tool-8b104053",
+      "DisplayName": "knowledge-work-plugins",
+      "DisplayName_ZH": "knowledge-work-plugins",
+      "Category": "tooling",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/anthropics/knowledge-work-plugins",
+      "SecondaryLink": "",
+      "Author": "anthropics",
+      "AuthorProfile": "https://github.com/anthropics",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/02/04",
+      "LastModified": "2026/02/04",
+      "LastChecked": "2026/02/04",
+      "License": "Apache-2.0",
+      "Description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-02-04T04:15:21.973213",
+      "_status": "pending",
+      "_relevance_score": 35,
+      "_stars": 2535,
+      "_language": "Python",
+      "_topics": []
     }
   ]
 }

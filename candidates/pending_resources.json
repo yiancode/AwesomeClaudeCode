@@ -10074,6 +10074,36 @@
       "_stars": 2535,
       "_language": "Python",
       "_topics": []
+    },
+    {
+      "ID": "eco-e9b8d381",
+      "DisplayName": "Claude Code 2.1.27: OOM crash in 20s, 19 incidents in 14 days",
+      "DisplayName_ZH": "Claude Code 2.1.27: OOM crash in 20s, 19 incidents in 14 days",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://gist.github.com/LEX8888/675867b7f130b7ad614905c9dd86b57a",
+      "SecondaryLink": "",
+      "Author": "Nerios",
+      "AuthorProfile": "",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/02/04",
+      "LastModified": "2026/02/04",
+      "LastChecked": "2026/02/04",
+      "License": "",
+      "Description": "<p>Article URL: <a href=\"https://gist.github.com/LEX8888/675867b7f130b7ad614905c9dd86b57a\">https://gist.github.com/LEX8888/675867b7f130b7ad614905c9dd86b57a</a></p>\n<p>Comments URL: <a href=\"https:/...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "rss",
+      "_source_crawler": "RSS",
+      "_discovered_at": "2026-02-04T04:44:37.621469",
+      "_status": "pending",
+      "_relevance_score": 50,
+      "_source_score": 0,
+      "_rss_feed": "Hacker News Claude",
+      "_original_link": "https://gist.github.com/LEX8888/675867b7f130b7ad614905c9dd86b57a",
+      "_published": "Tue, 03 Feb 2026 18:31:14 +0000"
     }
   ]
 }

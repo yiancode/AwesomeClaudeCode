@@ -10104,6 +10104,43 @@
       "_rss_feed": "Hacker News Claude",
       "_original_link": "https://gist.github.com/LEX8888/675867b7f130b7ad614905c9dd86b57a",
       "_published": "Tue, 03 Feb 2026 18:31:14 +0000"
+    },
+    {
+      "ID": "mcp-26fc1f21",
+      "DisplayName": "awesome-claude-plugins",
+      "DisplayName_ZH": "awesome-claude-plugins",
+      "Category": "mcp-servers",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/ComposioHQ/awesome-claude-plugins",
+      "SecondaryLink": "",
+      "Author": "ComposioHQ",
+      "AuthorProfile": "https://github.com/ComposioHQ",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/02/06",
+      "LastModified": "2026/02/06",
+      "LastChecked": "2026/02/06",
+      "License": "",
+      "Description": "A curated list of Plugins that let you extend Claude Code with custom commands, agents, hooks, and MCP servers through the plugin system.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-02-06T04:21:07.599550",
+      "_status": "pending",
+      "_relevance_score": 70,
+      "_stars": 725,
+      "_language": "JavaScript",
+      "_topics": [
+        "anthropic",
+        "claude-ai",
+        "claude-code",
+        "claude-cowork",
+        "claude-desktop",
+        "claude-plugins",
+        "claude-skills",
+        "plugins"
+      ]
     }
   ]
 }

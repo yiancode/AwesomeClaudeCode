@@ -10217,6 +10217,39 @@
         "whatsapp",
         "zh-cn"
       ]
+    },
+    {
+      "ID": "eco-d8d48711",
+      "DisplayName": "Anthropic Claude Max $200/mo: They claim 99% uptime, I calculated 84% Loss: $780",
+      "DisplayName_ZH": "Anthropic Claude Max $200/mo: They claim 99% uptime, I calculated 84% Loss: $780",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://gist.github.com/LEX8888/0caac27b96fa164e2a8ac57e9a5f2365",
+      "SecondaryLink": "",
+      "Author": "Nerios",
+      "AuthorProfile": "https://news.ycombinator.com/user?id=Nerios",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/02/07",
+      "LastModified": "2026/02/07",
+      "LastChecked": "2026/02/07",
+      "License": "",
+      "Description": "Anthropic Claude Max $200/mo: They claim 99% uptime, I calculated 84% Loss: $780",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "hackernews",
+      "_source_crawler": "Hacker News",
+      "_discovered_at": "2026-02-07T04:42:11.485142",
+      "_status": "pending",
+      "_relevance_score": 60,
+      "_source_score": 25,
+      "_hn_id": "46884481",
+      "_hn_url": "https://news.ycombinator.com/item?id=46884481",
+      "_hn_points": 25,
+      "_hn_comments": 27,
+      "_original_url": "https://gist.github.com/LEX8888/0caac27b96fa164e2a8ac57e9a5f2365",
+      "_created_at": "2026-02-04T11:21:59Z"
     }
   ]
 }

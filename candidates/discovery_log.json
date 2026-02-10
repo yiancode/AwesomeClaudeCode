@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-02-09T04:32:31.594116",
+  "last_run": "2026-02-10T04:35:41.587288",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1387,11 +1387,29 @@
       "url": "https://github.com/Zie619/n8n-workflows",
       "discovered_at": "2026-02-09T04:32:31.594111",
       "relevance_score": 25
+    },
+    {
+      "full_name": "gsd-build/get-shit-done",
+      "url": "https://github.com/gsd-build/get-shit-done",
+      "discovered_at": "2026-02-10T04:35:41.566526",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "github/spec-kit",
+      "url": "https://github.com/github/spec-kit",
+      "discovered_at": "2026-02-10T04:35:41.577069",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "HKUDS/nanobot",
+      "url": "https://github.com/HKUDS/nanobot",
+      "discovered_at": "2026-02-10T04:35:41.587283",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 231,
-    "total_added": 231,
+    "total_discovered": 234,
+    "total_added": 234,
     "total_skipped": 0
   }
 }

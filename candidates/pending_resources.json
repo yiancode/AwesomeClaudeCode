@@ -10514,6 +10514,49 @@
         "prompt-toolkit",
         "prompt-tuning"
       ]
+    },
+    {
+      "ID": "skill-c9930492",
+      "DisplayName": "AI-Research-SKILLs",
+      "DisplayName_ZH": "AI-Research-SKILLs",
+      "Category": "skills",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/Orchestra-Research/AI-Research-SKILLs",
+      "SecondaryLink": "http://orchestra-research.com",
+      "Author": "Orchestra-Research",
+      "AuthorProfile": "https://github.com/Orchestra-Research",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/02/15",
+      "LastModified": "2026/02/15",
+      "LastChecked": "2026/02/15",
+      "License": "MIT",
+      "Description": "Comprehensive open-source library of AI research and engineering skills for any AI model. Package the skills and your claude code/codex/gemini agent will be an AI research agent with full horsepowe...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-02-15T04:27:18.872345",
+      "_status": "pending",
+      "_relevance_score": 45,
+      "_stars": 3404,
+      "_language": "TeX",
+      "_topics": [
+        "ai",
+        "ai-research",
+        "claude",
+        "claude-code",
+        "claude-skills",
+        "codex",
+        "gemini",
+        "gpt-5",
+        "grpo",
+        "huggingface",
+        "machine-leanring",
+        "megatron",
+        "skills",
+        "vllm"
+      ]
     }
   ]
 }

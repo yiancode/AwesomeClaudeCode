@@ -10557,6 +10557,40 @@
         "skills",
         "vllm"
       ]
+    },
+    {
+      "ID": "eco-8578f896",
+      "DisplayName": "shannon",
+      "DisplayName_ZH": "shannon",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/KeygraphHQ/shannon",
+      "SecondaryLink": "https://keygraph.io/",
+      "Author": "KeygraphHQ",
+      "AuthorProfile": "https://github.com/KeygraphHQ",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/02/16",
+      "LastModified": "2026/02/16",
+      "LastChecked": "2026/02/16",
+      "License": "AGPL-3.0",
+      "Description": "Fully autonomous AI hacker to find actual exploits in your web apps. Shannon has achieved a 96.15% success rate on the hint-free, source-aware XBOW Benchmark.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-02-16T04:31:17.752146",
+      "_status": "pending",
+      "_relevance_score": 25,
+      "_stars": 22503,
+      "_language": "TypeScript",
+      "_topics": [
+        "penetration-testing",
+        "pentesting",
+        "security-audit",
+        "security-automation",
+        "security-tools"
+      ]
     }
   ]
 }

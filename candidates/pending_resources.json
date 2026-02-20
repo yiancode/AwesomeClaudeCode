@@ -10639,6 +10639,53 @@
         "skills",
         "tdd"
       ]
+    },
+    {
+      "ID": "eco-a666747e",
+      "DisplayName": "hive",
+      "DisplayName_ZH": "hive",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/aden-hive/hive",
+      "SecondaryLink": "",
+      "Author": "aden-hive",
+      "AuthorProfile": "https://github.com/aden-hive",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/02/20",
+      "LastModified": "2026/02/20",
+      "LastChecked": "2026/02/20",
+      "License": "Apache-2.0",
+      "Description": "Outcome driven agent development framework that evolves",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-02-20T04:21:14.132675",
+      "_status": "pending",
+      "_relevance_score": 45,
+      "_stars": 7929,
+      "_language": "Python",
+      "_topics": [
+        "agent",
+        "agent-framework",
+        "agent-skills",
+        "ai-evaluation",
+        "anthropic",
+        "automation",
+        "autonomous-agents",
+        "awesome",
+        "claude",
+        "claude-code",
+        "human-in-the-loop",
+        "observability-ai",
+        "openai",
+        "python",
+        "self-hosted",
+        "self-improving",
+        "self-improving-agent",
+        "self-improving-ai"
+      ]
     }
   ]
 }

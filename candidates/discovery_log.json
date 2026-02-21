@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-02-20T04:21:14.145055",
+  "last_run": "2026-02-21T04:11:24.140670",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1447,11 +1447,23 @@
       "url": "https://github.com/aden-hive/hive",
       "discovered_at": "2026-02-20T04:21:14.145047",
       "relevance_score": 45
+    },
+    {
+      "full_name": "marckrenn/claude-code-changelog",
+      "url": "https://github.com/marckrenn/claude-code-changelog",
+      "discovered_at": "2026-02-21T04:11:24.128525",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "zeroclaw-labs/zeroclaw",
+      "url": "https://github.com/zeroclaw-labs/zeroclaw",
+      "discovered_at": "2026-02-21T04:11:24.140665",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 241,
-    "total_added": 241,
+    "total_discovered": 243,
+    "total_added": 243,
     "total_skipped": 0
   }
 }

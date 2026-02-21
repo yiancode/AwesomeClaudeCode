@@ -10686,6 +10686,73 @@
         "self-improving-agent",
         "self-improving-ai"
       ]
+    },
+    {
+      "ID": "eco-74ff1275",
+      "DisplayName": "claude-code-changelog",
+      "DisplayName_ZH": "claude-code-changelog",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/marckrenn/claude-code-changelog",
+      "SecondaryLink": "https://x.com/ClaudeCodeLog",
+      "Author": "marckrenn",
+      "AuthorProfile": "https://github.com/marckrenn",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/02/21",
+      "LastModified": "2026/02/21",
+      "LastChecked": "2026/02/21",
+      "License": "",
+      "Description": "Tracking prompts, feature flags and metadata of Claude Code releases. Subscribe to ↓",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-02-21T04:11:24.116303",
+      "_status": "pending",
+      "_relevance_score": 60,
+      "_stars": 562,
+      "_language": null,
+      "_topics": [
+        "ai-agents",
+        "anthropic",
+        "anthropic-claude",
+        "claude-code",
+        "claude-code-system-prompts",
+        "system-prompts",
+        "system-prompts-leak"
+      ]
+    },
+    {
+      "ID": "eco-76e5d7fa",
+      "DisplayName": "zeroclaw",
+      "DisplayName_ZH": "zeroclaw",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/zeroclaw-labs/zeroclaw",
+      "SecondaryLink": "https://zeroclawlabs.ai",
+      "Author": "zeroclaw-labs",
+      "AuthorProfile": "https://github.com/zeroclaw-labs",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/02/21",
+      "LastModified": "2026/02/21",
+      "LastChecked": "2026/02/21",
+      "License": "NOASSERTION",
+      "Description": "Fast, small, and fully autonomous AI assistant infrastructure — deploy anywhere, swap anything 🦀",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-02-21T04:11:24.128559",
+      "_status": "pending",
+      "_relevance_score": 25,
+      "_stars": 15876,
+      "_language": "Rust",
+      "_topics": [
+        "official",
+        "official-website"
+      ]
     }
   ]
 }

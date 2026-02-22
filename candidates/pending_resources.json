@@ -10841,6 +10841,40 @@
       "_rss_feed": "Hacker News MCP",
       "_original_link": "https://www.npmjs.com/package/mcp-security-auditor",
       "_published": "Thu, 19 Feb 2026 12:32:17 +0000"
+    },
+    {
+      "ID": "skill-bd586603",
+      "DisplayName": "claude-skills",
+      "DisplayName_ZH": "claude-skills",
+      "Category": "skills",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/Jeffallan/claude-skills",
+      "SecondaryLink": "",
+      "Author": "Jeffallan",
+      "AuthorProfile": "https://github.com/Jeffallan",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/02/22",
+      "LastModified": "2026/02/22",
+      "LastChecked": "2026/02/22",
+      "License": "MIT",
+      "Description": "66 Specialized Skills for Full-Stack Developers. Transform Claude Code into your expert pair programmer.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-02-22T04:23:28.422849",
+      "_status": "pending",
+      "_relevance_score": 60,
+      "_stars": 3556,
+      "_language": "Python",
+      "_topics": [
+        "ai-agents",
+        "claude",
+        "claude-code",
+        "claude-marketplace",
+        "claude-skills"
+      ]
     }
   ]
 }

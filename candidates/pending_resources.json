@@ -11027,6 +11027,36 @@
         "model-context-protocol",
         "spec-driven-development"
       ]
+    },
+    {
+      "ID": "cmd-d7607304",
+      "DisplayName": "I built a kanban board where Claude's AI agents handle the entire dev pipeline — plan, code review, test, and auto-commit",
+      "DisplayName_ZH": "I built a kanban board where Claude's AI agents handle the entire dev pipeline — plan, code review, test, and auto-commit",
+      "Category": "slash-commands",
+      "SubCategory": "general",
+      "PrimaryLink": "http:",
+      "SecondaryLink": "",
+      "Author": "/u/cyanluna",
+      "AuthorProfile": "",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/02/25",
+      "LastModified": "2026/02/25",
+      "LastChecked": "2026/02/25",
+      "License": "",
+      "Description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/ClaudeAI/comments/1rdgfrq/i_built_a_kanban_board_where_claudes_ai_agents/\"> <img alt=\"I built a kanban board where Claude's AI agents handle the e...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "rss",
+      "_source_crawler": "RSS",
+      "_discovered_at": "2026-02-25T04:57:44.814798",
+      "_status": "pending",
+      "_relevance_score": 40,
+      "_source_score": 0,
+      "_rss_feed": "Reddit ClaudeAI",
+      "_original_link": "https://www.reddit.com/r/ClaudeAI/comments/1rdgfrq/i_built_a_kanban_board_where_claudes_ai_agents/",
+      "_published": "2026-02-24T13:37:13+00:00"
     }
   ]
 }

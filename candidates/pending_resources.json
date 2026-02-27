@@ -11102,6 +11102,34 @@
         "model-router",
         "token-management"
       ]
+    },
+    {
+      "ID": "skill-26bd29ad",
+      "DisplayName": "visual-explainer",
+      "DisplayName_ZH": "visual-explainer",
+      "Category": "skills",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/nicobailon/visual-explainer",
+      "SecondaryLink": "",
+      "Author": "nicobailon",
+      "AuthorProfile": "https://github.com/nicobailon",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/02/27",
+      "LastModified": "2026/02/27",
+      "LastChecked": "2026/02/27",
+      "License": "MIT",
+      "Description": "Agent skill that generates rich HTML pages or slide decks for diagrams, diff reviews, plan audits, data tables, and project recaps",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-02-27T04:19:02.942130",
+      "_status": "pending",
+      "_relevance_score": 25,
+      "_stars": 3310,
+      "_language": "HTML",
+      "_topics": []
     }
   ]
 }

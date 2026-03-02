@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-02-28T03:59:54.462693",
+  "last_run": "2026-03-02T04:20:30.388906",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1507,11 +1507,29 @@
       "url": "https://github.com/ruvnet/ruflo",
       "discovered_at": "2026-02-28T03:59:54.462687",
       "relevance_score": 35
+    },
+    {
+      "full_name": "webfuse-com/awesome-claude",
+      "url": "https://github.com/webfuse-com/awesome-claude",
+      "discovered_at": "2026-03-02T04:20:30.367154",
+      "relevance_score": 80
+    },
+    {
+      "full_name": "mohamed-ashraf-elsaed/claude-agent-sdk-laravel",
+      "url": "https://github.com/mohamed-ashraf-elsaed/claude-agent-sdk-laravel",
+      "discovered_at": "2026-03-02T04:20:30.378063",
+      "relevance_score": 75
+    },
+    {
+      "full_name": "PeonPing/peon-ping",
+      "url": "https://github.com/PeonPing/peon-ping",
+      "discovered_at": "2026-03-02T04:20:30.388901",
+      "relevance_score": 35
     }
   ],
   "stats": {
-    "total_discovered": 251,
-    "total_added": 251,
+    "total_discovered": 254,
+    "total_added": 254,
     "total_skipped": 0
   }
 }

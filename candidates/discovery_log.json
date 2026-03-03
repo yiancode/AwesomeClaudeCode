@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-03-02T04:20:30.388906",
+  "last_run": "2026-03-03T04:20:47.631608",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1525,11 +1525,23 @@
       "url": "https://github.com/PeonPing/peon-ping",
       "discovered_at": "2026-03-02T04:20:30.388901",
       "relevance_score": 35
+    },
+    {
+      "full_name": "zebbern/claude-code-discord",
+      "url": "https://github.com/zebbern/claude-code-discord",
+      "discovered_at": "2026-03-03T04:20:47.618596",
+      "relevance_score": 70
+    },
+    {
+      "full_name": "anthropics/financial-services-plugins",
+      "url": "https://github.com/anthropics/financial-services-plugins",
+      "discovered_at": "2026-03-03T04:20:47.631603",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 254,
-    "total_added": 254,
+    "total_discovered": 256,
+    "total_added": 256,
     "total_skipped": 0
   }
 }

@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-03-03T04:20:47.631608",
+  "last_run": "2026-03-04T04:13:58.051861",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1537,11 +1537,41 @@
       "url": "https://github.com/anthropics/financial-services-plugins",
       "discovered_at": "2026-03-03T04:20:47.631603",
       "relevance_score": 25
+    },
+    {
+      "full_name": "superset-sh/superset",
+      "url": "https://github.com/superset-sh/superset",
+      "discovered_at": "2026-03-04T04:13:57.999523",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "discovered_at": "2026-03-04T04:13:58.012793",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "EveryInc/compound-engineering-plugin",
+      "url": "https://github.com/EveryInc/compound-engineering-plugin",
+      "discovered_at": "2026-03-04T04:13:58.025808",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "vercel-labs/agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "discovered_at": "2026-03-04T04:13:58.038987",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "abhigyanpatwari/GitNexus",
+      "url": "https://github.com/abhigyanpatwari/GitNexus",
+      "discovered_at": "2026-03-04T04:13:58.051855",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 256,
-    "total_added": 256,
+    "total_discovered": 261,
+    "total_added": 261,
     "total_skipped": 0
   }
 }

@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-03-04T04:13:58.051861",
+  "last_run": "2026-03-05T04:18:19.747301",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1567,11 +1567,23 @@
       "url": "https://github.com/abhigyanpatwari/GitNexus",
       "discovered_at": "2026-03-04T04:13:58.051855",
       "relevance_score": 25
+    },
+    {
+      "full_name": "YishenTu/claudian",
+      "url": "https://github.com/YishenTu/claudian",
+      "discovered_at": "2026-03-05T04:18:19.733116",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "marcuspat/turbo-flow",
+      "url": "https://github.com/marcuspat/turbo-flow",
+      "discovered_at": "2026-03-05T04:18:19.747292",
+      "relevance_score": 30
     }
   ],
   "stats": {
-    "total_discovered": 261,
-    "total_added": 261,
+    "total_discovered": 263,
+    "total_added": 263,
     "total_skipped": 0
   }
 }

@@ -11644,6 +11644,43 @@
         "swarm",
         "swarm-intelligence"
       ]
+    },
+    {
+      "ID": "eco-0483299a",
+      "DisplayName": "cmux",
+      "DisplayName_ZH": "cmux",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/manaflow-ai/cmux",
+      "SecondaryLink": "https://cmux.dev",
+      "Author": "manaflow-ai",
+      "AuthorProfile": "https://github.com/manaflow-ai",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/03/06",
+      "LastModified": "2026/03/06",
+      "LastChecked": "2026/03/06",
+      "License": "AGPL-3.0",
+      "Description": "Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-03-06T04:14:42.905676",
+      "_status": "pending",
+      "_relevance_score": 25,
+      "_stars": 4281,
+      "_language": "Swift",
+      "_topics": [
+        "amp",
+        "claude-code",
+        "codex",
+        "gemini",
+        "ghostty",
+        "opencode",
+        "terminal",
+        "tmux"
+      ]
     }
   ]
 }

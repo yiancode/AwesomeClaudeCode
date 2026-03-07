@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-03-06T04:14:42.919449",
+  "last_run": "2026-03-07T04:05:42.444467",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1585,11 +1585,29 @@
       "url": "https://github.com/manaflow-ai/cmux",
       "discovered_at": "2026-03-06T04:14:42.919442",
       "relevance_score": 25
+    },
+    {
+      "full_name": "code-yeongyu/oh-my-openagent",
+      "url": "https://github.com/code-yeongyu/oh-my-openagent",
+      "discovered_at": "2026-03-07T04:05:42.421453",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "vercel-labs/json-render",
+      "url": "https://github.com/vercel-labs/json-render",
+      "discovered_at": "2026-03-07T04:05:42.432964",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "sipeed/picoclaw",
+      "url": "https://github.com/sipeed/picoclaw",
+      "discovered_at": "2026-03-07T04:05:42.444462",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 264,
-    "total_added": 264,
+    "total_discovered": 267,
+    "total_added": 267,
     "total_skipped": 0
   }
 }

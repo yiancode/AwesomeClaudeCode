@@ -11841,6 +11841,48 @@
       "_rss_feed": "Hacker News Anthropic",
       "_original_link": "https://www.anthropic.com/news/mozilla-firefox-security",
       "_published": "Fri, 06 Mar 2026 11:53:18 +0000"
+    },
+    {
+      "ID": "cmd-357d6524",
+      "DisplayName": "rtk",
+      "DisplayName_ZH": "rtk",
+      "Category": "slash-commands",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/rtk-ai/rtk",
+      "SecondaryLink": "https://www.rtk-ai.app",
+      "Author": "rtk-ai",
+      "AuthorProfile": "https://github.com/rtk-ai",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/03/08",
+      "LastModified": "2026/03/08",
+      "LastChecked": "2026/03/08",
+      "License": "MIT",
+      "Description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-03-08T04:17:41.872746",
+      "_status": "pending",
+      "_relevance_score": 35,
+      "_stars": 4346,
+      "_language": "Rust",
+      "_topics": [
+        "agentic-coding",
+        "ai-coding",
+        "anthropic",
+        "claude-code",
+        "cli",
+        "command-line-tool",
+        "cost-reduction",
+        "developer-tools",
+        "llm",
+        "open-source",
+        "productivity",
+        "rust",
+        "token-optimization"
+      ]
     }
   ]
 }

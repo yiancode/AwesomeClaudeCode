@@ -11883,6 +11883,42 @@
         "rust",
         "token-optimization"
       ]
+    },
+    {
+      "ID": "cmd-6c8a6207",
+      "DisplayName": "pm-skills",
+      "DisplayName_ZH": "pm-skills",
+      "Category": "slash-commands",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/phuryn/pm-skills",
+      "SecondaryLink": "https://www.productcompass.pm/p/pm-skills-marketplace-claude",
+      "Author": "phuryn",
+      "AuthorProfile": "https://github.com/phuryn",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/03/09",
+      "LastModified": "2026/03/09",
+      "LastChecked": "2026/03/09",
+      "License": "MIT",
+      "Description": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-03-09T04:23:46.207603",
+      "_status": "pending",
+      "_relevance_score": 25,
+      "_stars": 5792,
+      "_language": null,
+      "_topics": [
+        "agent-skill-repository",
+        "agent-skills",
+        "agentic-skills",
+        "claude-code-marketplace",
+        "claude-code-plugins",
+        "claude-cowork-plugin",
+        "product-management"
+      ]
     }
   ]
 }

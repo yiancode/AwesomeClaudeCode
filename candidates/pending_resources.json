@@ -11975,6 +11975,45 @@
       "_stars": 14520,
       "_language": "TypeScript",
       "_topics": []
+    },
+    {
+      "ID": "skill-ca31dba6",
+      "DisplayName": "auto-commenter",
+      "DisplayName_ZH": "auto-commenter",
+      "Category": "skills",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/rokpiy/auto-commenter",
+      "SecondaryLink": "",
+      "Author": "rokpiy",
+      "AuthorProfile": "https://github.com/rokpiy",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/03/12",
+      "LastModified": "2026/03/12",
+      "LastChecked": "2026/03/12",
+      "License": "MIT",
+      "Description": "A Claude skill that automatically posts personalized, authentic comments in your target communities.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-03-12T04:19:52.386025",
+      "_status": "pending",
+      "_relevance_score": 35,
+      "_stars": 530,
+      "_language": null,
+      "_topics": [
+        "automation",
+        "chatgpt",
+        "claude-ai",
+        "comment",
+        "cursor-ai",
+        "mcp",
+        "openclaw",
+        "openclaw-skills",
+        "playwright",
+        "reddit"
+      ]
     }
   ]
 }

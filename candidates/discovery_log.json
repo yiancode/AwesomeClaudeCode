@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-03-12T04:19:52.400456",
+  "last_run": "2026-03-13T04:18:47.942883",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1633,11 +1633,35 @@
       "url": "https://github.com/rokpiy/auto-commenter",
       "discovered_at": "2026-03-12T04:19:52.400450",
       "relevance_score": 35
+    },
+    {
+      "full_name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "discovered_at": "2026-03-13T04:18:47.904263",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "Wei-Shaw/sub2api",
+      "url": "https://github.com/Wei-Shaw/sub2api",
+      "discovered_at": "2026-03-13T04:18:47.917957",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "koala73/worldmonitor",
+      "url": "https://github.com/koala73/worldmonitor",
+      "discovered_at": "2026-03-13T04:18:47.930360",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "enescingoz/awesome-n8n-templates",
+      "url": "https://github.com/enescingoz/awesome-n8n-templates",
+      "discovered_at": "2026-03-13T04:18:47.942878",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 272,
-    "total_added": 272,
+    "total_discovered": 276,
+    "total_added": 276,
     "total_skipped": 0
   }
 }

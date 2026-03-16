@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-03-15T04:37:40.287662",
+  "last_run": "2026-03-16T04:45:08.154634",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1693,11 +1693,23 @@
       "url": "https://github.com/Crestdrasnip/Claude-Zeroclaw",
       "discovered_at": "2026-03-15T04:37:40.287657",
       "relevance_score": 60
+    },
+    {
+      "full_name": "shuvonsec/claude-bug-bounty",
+      "url": "https://github.com/shuvonsec/claude-bug-bounty",
+      "discovered_at": "2026-03-16T04:45:08.142321",
+      "relevance_score": 50
+    },
+    {
+      "full_name": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "discovered_at": "2026-03-16T04:45:08.154629",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 282,
-    "total_added": 282,
+    "total_discovered": 284,
+    "total_added": 284,
     "total_skipped": 0
   }
 }

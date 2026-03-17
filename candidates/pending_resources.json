@@ -12557,6 +12557,43 @@
       "_stars": 15557,
       "_language": "Python",
       "_topics": []
+    },
+    {
+      "ID": "eco-e8557312",
+      "DisplayName": "CodePilot",
+      "DisplayName_ZH": "CodePilot",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/op7418/CodePilot",
+      "SecondaryLink": "https://www.codepilot.sh/",
+      "Author": "op7418",
+      "AuthorProfile": "https://github.com/op7418",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/03/17",
+      "LastModified": "2026/03/17",
+      "LastChecked": "2026/03/17",
+      "License": "NOASSERTION",
+      "Description": "A desktop GUI for Claude Code — chat, code, and manage projects visually. Built with Electron + Next.js.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-03-17T04:24:14.168378",
+      "_status": "pending",
+      "_relevance_score": 55,
+      "_stars": 4116,
+      "_language": "TypeScript",
+      "_topics": [
+        "ai",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "desktop-app",
+        "electron",
+        "gui",
+        "nextjs"
+      ]
     }
   ]
 }

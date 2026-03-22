@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-03-21T04:09:57.080949",
+  "last_run": "2026-03-22T04:25:25.878205",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1729,11 +1729,23 @@
       "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
       "discovered_at": "2026-03-21T04:09:57.080937",
       "relevance_score": 70
+    },
+    {
+      "full_name": "nidhinjs/prompt-master",
+      "url": "https://github.com/nidhinjs/prompt-master",
+      "discovered_at": "2026-03-22T04:25:25.864039",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "calesthio/Crucix",
+      "url": "https://github.com/calesthio/Crucix",
+      "discovered_at": "2026-03-22T04:25:25.878195",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 288,
-    "total_added": 288,
+    "total_discovered": 290,
+    "total_added": 290,
     "total_skipped": 0
   }
 }

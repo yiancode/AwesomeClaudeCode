@@ -12704,6 +12704,71 @@
         "paper-writing",
         "research-automation"
       ]
+    },
+    {
+      "ID": "tool-fdc5dec7",
+      "DisplayName": "prompt-master",
+      "DisplayName_ZH": "prompt-master",
+      "Category": "tooling",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/nidhinjs/prompt-master",
+      "SecondaryLink": "",
+      "Author": "nidhinjs",
+      "AuthorProfile": "https://github.com/nidhinjs",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/03/22",
+      "LastModified": "2026/03/22",
+      "LastChecked": "2026/03/22",
+      "License": "MIT",
+      "Description": "A Claude skill that writes the accurate prompts for any AI tool. Zero tokens or credits wasted. Full context and memory retention",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-03-22T04:25:25.849769",
+      "_status": "pending",
+      "_relevance_score": 35,
+      "_stars": 1978,
+      "_language": null,
+      "_topics": [
+        "claude-ai",
+        "claude-skills",
+        "llm",
+        "prompt-engineering"
+      ]
+    },
+    {
+      "ID": "eco-e6000a88",
+      "DisplayName": "Crucix",
+      "DisplayName_ZH": "Crucix",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/calesthio/Crucix",
+      "SecondaryLink": "https://crucix.live",
+      "Author": "calesthio",
+      "AuthorProfile": "https://github.com/calesthio",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/03/22",
+      "LastModified": "2026/03/22",
+      "LastChecked": "2026/03/22",
+      "License": "AGPL-3.0",
+      "Description": "Your personal intelligence agent. Watches the world from multiple data sources and pings you when something changes.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-03-22T04:25:25.864103",
+      "_status": "pending",
+      "_relevance_score": 25,
+      "_stars": 6069,
+      "_language": "JavaScript",
+      "_topics": [
+        "ai",
+        "intelligence",
+        "osint"
+      ]
     }
   ]
 }

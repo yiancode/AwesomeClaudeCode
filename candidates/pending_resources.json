@@ -12861,6 +12861,36 @@
         "self-evolving-ai",
         "tauri"
       ]
+    },
+    {
+      "ID": "skill-1da0595b",
+      "DisplayName": "Cover Image Skill for OpenClaw, Claude Code",
+      "DisplayName_ZH": "Cover Image Skill for OpenClaw, Claude Code",
+      "Category": "skills",
+      "SubCategory": "general",
+      "PrimaryLink": "https://www.npmjs.com/package/blog-cover-image-cli",
+      "SecondaryLink": "",
+      "Author": "sam_josh1",
+      "AuthorProfile": "",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/03/25",
+      "LastModified": "2026/03/25",
+      "LastChecked": "2026/03/25",
+      "License": "",
+      "Description": "<p>Article URL: <a href=\"https://www.npmjs.com/package/blog-cover-image-cli\">https://www.npmjs.com/package/blog-cover-image-cli</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?i...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "rss",
+      "_source_crawler": "RSS",
+      "_discovered_at": "2026-03-25T04:59:04.726271",
+      "_status": "pending",
+      "_relevance_score": 40,
+      "_source_score": 0,
+      "_rss_feed": "Hacker News Claude",
+      "_original_link": "https://www.npmjs.com/package/blog-cover-image-cli",
+      "_published": "Tue, 24 Mar 2026 17:37:17 +0000"
     }
   ]
 }

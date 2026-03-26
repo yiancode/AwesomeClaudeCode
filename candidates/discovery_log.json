@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-03-23T04:34:27.672013",
+  "last_run": "2026-03-26T04:38:43.409148",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1753,11 +1753,29 @@
       "url": "https://github.com/xg-gh-25/SwarmAI",
       "discovered_at": "2026-03-23T04:34:27.672007",
       "relevance_score": 20
+    },
+    {
+      "full_name": "Donchitos/Claude-Code-Game-Studios",
+      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+      "discovered_at": "2026-03-26T04:38:43.380023",
+      "relevance_score": 65
+    },
+    {
+      "full_name": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "discovered_at": "2026-03-26T04:38:43.394693",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "ruvnet/RuView",
+      "url": "https://github.com/ruvnet/RuView",
+      "discovered_at": "2026-03-26T04:38:43.409140",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 292,
-    "total_added": 292,
+    "total_discovered": 295,
+    "total_added": 295,
     "total_skipped": 0
   }
 }

@@ -13384,6 +13384,36 @@
         "thronglets",
         "vercel-ai"
       ]
+    },
+    {
+      "ID": "eco-421b0c91",
+      "DisplayName": "Claude Code Spinner Verbs",
+      "DisplayName_ZH": "Claude Code Spinner Verbs",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://gist.github.com/mandarBadve/59cdd9a1e61ac919c89e2a0af63e1fdd",
+      "SecondaryLink": "",
+      "Author": "mb__",
+      "AuthorProfile": "",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/04/04",
+      "LastModified": "2026/04/04",
+      "LastChecked": "2026/04/04",
+      "License": "",
+      "Description": "<p>Article URL: <a href=\"https://gist.github.com/mandarBadve/59cdd9a1e61ac919c89e2a0af63e1fdd\">https://gist.github.com/mandarBadve/59cdd9a1e61ac919c89e2a0af63e1fdd</a></p>\n<p>Comments URL: <a href=...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "rss",
+      "_source_crawler": "RSS",
+      "_discovered_at": "2026-04-04T04:55:37.933489",
+      "_status": "pending",
+      "_relevance_score": 50,
+      "_source_score": 0,
+      "_rss_feed": "Hacker News Claude",
+      "_original_link": "https://gist.github.com/mandarBadve/59cdd9a1e61ac919c89e2a0af63e1fdd",
+      "_published": "Fri, 03 Apr 2026 16:43:33 +0000"
     }
   ]
 }

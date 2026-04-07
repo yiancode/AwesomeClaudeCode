@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-04-01T04:52:12.675800",
+  "last_run": "2026-04-07T04:38:55.021854",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1825,11 +1825,23 @@
       "url": "https://github.com/Shangri-la-0428/oasyce_psyche",
       "discovered_at": "2026-04-01T04:52:12.675785",
       "relevance_score": 20
+    },
+    {
+      "full_name": "JCodesMore/ai-website-cloner-template",
+      "url": "https://github.com/JCodesMore/ai-website-cloner-template",
+      "discovered_at": "2026-04-07T04:38:55.006609",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "openai/codex-plugin-cc",
+      "url": "https://github.com/openai/codex-plugin-cc",
+      "discovered_at": "2026-04-07T04:38:55.021846",
+      "relevance_score": 35
     }
   ],
   "stats": {
-    "total_discovered": 304,
-    "total_added": 304,
+    "total_discovered": 306,
+    "total_added": 306,
     "total_skipped": 0
   }
 }

@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-04-08T04:42:56.949878",
+  "last_run": "2026-04-09T04:39:43.871165",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1891,11 +1891,29 @@
       "url": "https://github.com/sanbuphy/learn-coding-agent",
       "discovered_at": "2026-04-08T04:42:56.949872",
       "relevance_score": 25
+    },
+    {
+      "full_name": "repowise-dev/claude-code-prompts",
+      "url": "https://github.com/repowise-dev/claude-code-prompts",
+      "discovered_at": "2026-04-09T04:39:43.839940",
+      "relevance_score": 50
+    },
+    {
+      "full_name": "0Chencc/clawgod",
+      "url": "https://github.com/0Chencc/clawgod",
+      "discovered_at": "2026-04-09T04:39:43.856047",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "paoloanzn/free-code",
+      "url": "https://github.com/paoloanzn/free-code",
+      "discovered_at": "2026-04-09T04:39:43.871154",
+      "relevance_score": 35
     }
   ],
   "stats": {
-    "total_discovered": 315,
-    "total_added": 315,
+    "total_discovered": 318,
+    "total_added": 318,
     "total_skipped": 0
   }
 }

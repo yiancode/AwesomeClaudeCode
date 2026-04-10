@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-04-09T04:39:43.871165",
+  "last_run": "2026-04-10T04:52:19.287862",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1909,11 +1909,17 @@
       "url": "https://github.com/paoloanzn/free-code",
       "discovered_at": "2026-04-09T04:39:43.871154",
       "relevance_score": 35
+    },
+    {
+      "full_name": "VoltAgent/awesome-design-md",
+      "url": "https://github.com/VoltAgent/awesome-design-md",
+      "discovered_at": "2026-04-10T04:52:19.287852",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 318,
-    "total_added": 318,
+    "total_discovered": 319,
+    "total_added": 319,
     "total_skipped": 0
   }
 }

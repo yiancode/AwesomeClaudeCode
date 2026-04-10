@@ -14009,6 +14009,42 @@
       "_stars": 7442,
       "_language": "TypeScript",
       "_topics": []
+    },
+    {
+      "ID": "eco-4b4cf6b0",
+      "DisplayName": "awesome-design-md",
+      "DisplayName_ZH": "awesome-design-md",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/VoltAgent/awesome-design-md",
+      "SecondaryLink": "https://github.com/VoltAgent/voltagent",
+      "Author": "VoltAgent",
+      "AuthorProfile": "https://github.com/VoltAgent",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/04/10",
+      "LastModified": "2026/04/10",
+      "LastChecked": "2026/04/10",
+      "License": "MIT",
+      "Description": "Collection of DESIGN.md files that capture design systems from popular websites. Drop one into your project and let coding agents build matching UI.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-04-10T04:52:19.271015",
+      "_status": "pending",
+      "_relevance_score": 25,
+      "_stars": 39183,
+      "_language": null,
+      "_topics": [
+        "awesome-list",
+        "design-md",
+        "design-system",
+        "design-tokens",
+        "figma",
+        "google-stitch",
+        "landing-page"
+      ]
     }
   ]
 }

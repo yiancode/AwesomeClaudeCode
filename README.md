@@ -177,6 +177,7 @@
 - **[Context7 文档](https://context7.com/answerdotai/claudette)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
 - **[MCP Think Tool](https://github.com/cgize/claude-mcp-think-tool)** by [cgize](https://github.com/cgize) `MIT` - Claude Desktop 思考工具
 - **[Context7 文档](https://context7.com/cgize/claude-mcp-think-tool)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
+- **[toprank](https://github.com/nowork-studio/toprank)** by [nowork-studio](https://github.com/nowork-studio) `MIT` - Claude Code 插件，提供 9 个 SEO 和 Google Ads 技能。连接 Google Search Console、PageSpeed Insights 和 Google Ads API，自动重写 meta 标签、生成 JSON-LD 结构化数据，并将修改直接推送到 WordPress/Strapi/Contentful/Ghost。107 stars.
 
 
 ## 🌐 生态系统

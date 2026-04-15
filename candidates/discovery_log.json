@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-04-13T05:20:53.195300",
+  "last_run": "2026-04-15T04:50:41.058157",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1957,11 +1957,29 @@
       "url": "https://github.com/holaboss-ai/holaOS",
       "discovered_at": "2026-04-13T05:20:53.195293",
       "relevance_score": 35
+    },
+    {
+      "full_name": "forrestchang/andrej-karpathy-skills",
+      "url": "https://github.com/forrestchang/andrej-karpathy-skills",
+      "discovered_at": "2026-04-15T04:50:41.025761",
+      "relevance_score": 95
+    },
+    {
+      "full_name": "777genius/claude_agent_teams_ui",
+      "url": "https://github.com/777genius/claude_agent_teams_ui",
+      "discovered_at": "2026-04-15T04:50:41.042756",
+      "relevance_score": 80
+    },
+    {
+      "full_name": "punt-labs/beadle",
+      "url": "https://github.com/punt-labs/beadle",
+      "discovered_at": "2026-04-15T04:50:41.058147",
+      "relevance_score": 20
     }
   ],
   "stats": {
-    "total_discovered": 326,
-    "total_added": 326,
+    "total_discovered": 329,
+    "total_added": 329,
     "total_skipped": 0
   }
 }

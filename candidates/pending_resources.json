@@ -14423,6 +14423,36 @@
         "claude-code-plugin",
         "claude-sdk"
       ]
+    },
+    {
+      "ID": "eco-63dc53c4",
+      "DisplayName": "Cursor Agent is Anthropic's Claude Code SDK running behind a local HTTP proxy",
+      "DisplayName_ZH": "Cursor Agent is Anthropic's Claude Code SDK running behind a local HTTP proxy",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://gist.github.com/jasonkneen/4c065df2d7a95610e4fd30c3e3398b17",
+      "SecondaryLink": "",
+      "Author": "freely0085",
+      "AuthorProfile": "",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/04/15",
+      "LastModified": "2026/04/15",
+      "LastChecked": "2026/04/15",
+      "License": "",
+      "Description": "<p>Article URL: <a href=\"https://gist.github.com/jasonkneen/4c065df2d7a95610e4fd30c3e3398b17\">https://gist.github.com/jasonkneen/4c065df2d7a95610e4fd30c3e3398b17</a></p>\n<p>Comments URL: <a href=\"h...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "rss",
+      "_source_crawler": "RSS",
+      "_discovered_at": "2026-04-15T05:29:17.595472",
+      "_status": "pending",
+      "_relevance_score": 75,
+      "_source_score": 0,
+      "_rss_feed": "Hacker News Anthropic",
+      "_original_link": "https://gist.github.com/jasonkneen/4c065df2d7a95610e4fd30c3e3398b17",
+      "_published": "Mon, 13 Apr 2026 12:19:56 +0000"
     }
   ]
 }

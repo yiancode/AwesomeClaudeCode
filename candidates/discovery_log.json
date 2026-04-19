@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-04-15T04:50:41.058157",
+  "last_run": "2026-04-19T04:55:27.633305",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -1975,11 +1975,23 @@
       "url": "https://github.com/punt-labs/beadle",
       "discovered_at": "2026-04-15T04:50:41.058147",
       "relevance_score": 20
+    },
+    {
+      "full_name": "multica-ai/andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "discovered_at": "2026-04-19T04:55:27.615672",
+      "relevance_score": 95
+    },
+    {
+      "full_name": "titanwings/colleague-skill",
+      "url": "https://github.com/titanwings/colleague-skill",
+      "discovered_at": "2026-04-19T04:55:27.633291",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 329,
-    "total_added": 329,
+    "total_discovered": 331,
+    "total_added": 331,
     "total_skipped": 0
   }
 }

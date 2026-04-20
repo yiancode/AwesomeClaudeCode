@@ -14509,6 +14509,43 @@
       "_stars": 14937,
       "_language": "Python",
       "_topics": []
+    },
+    {
+      "ID": "eco-e4c45484",
+      "DisplayName": "openwolf",
+      "DisplayName_ZH": "openwolf",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/cytostack/openwolf",
+      "SecondaryLink": "https://openwolf.com",
+      "Author": "cytostack",
+      "AuthorProfile": "https://github.com/cytostack",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/04/20",
+      "LastModified": "2026/04/20",
+      "LastChecked": "2026/04/20",
+      "License": "AGPL-3.0",
+      "Description": "Sharper context. Fewer tokens. Open-source middleware for Claude Code.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-04-20T05:18:50.258202",
+      "_status": "pending",
+      "_relevance_score": 40,
+      "_stars": 638,
+      "_language": "TypeScript",
+      "_topics": [
+        "anthropic",
+        "claude-ai",
+        "claude-code",
+        "cli",
+        "developer-tools",
+        "middleware",
+        "open-source",
+        "token-optimization"
+      ]
     }
   ]
 }

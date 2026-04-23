@@ -14546,6 +14546,46 @@
         "open-source",
         "token-optimization"
       ]
+    },
+    {
+      "ID": "eco-1c708e23",
+      "DisplayName": "hyperframes",
+      "DisplayName_ZH": "hyperframes",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/heygen-com/hyperframes",
+      "SecondaryLink": "",
+      "Author": "heygen-com",
+      "AuthorProfile": "https://github.com/heygen-com",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/04/23",
+      "LastModified": "2026/04/23",
+      "LastChecked": "2026/04/23",
+      "License": "Apache-2.0",
+      "Description": "Write HTML. Render video. Built for agents.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-04-23T04:55:27.701879",
+      "_status": "pending",
+      "_relevance_score": 35,
+      "_stars": 9428,
+      "_language": "TypeScript",
+      "_topics": [
+        "ai",
+        "animation",
+        "ffmpeg",
+        "framework",
+        "gsap",
+        "html",
+        "mcp",
+        "puppeteer",
+        "rendering",
+        "typescript",
+        "video"
+      ]
     }
   ]
 }

@@ -14625,6 +14625,36 @@
         "slides",
         "vibe-coding"
       ]
+    },
+    {
+      "ID": "eco-2ab8741a",
+      "DisplayName": "An update on recent Claude Code quality reports",
+      "DisplayName_ZH": "An update on recent Claude Code quality reports",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://www.anthropic.com/engineering/april-23-postmortem",
+      "SecondaryLink": "",
+      "Author": "mfiguiere",
+      "AuthorProfile": "",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/04/25",
+      "LastModified": "2026/04/25",
+      "LastChecked": "2026/04/25",
+      "License": "",
+      "Description": "<p>Article URL: <a href=\"https://www.anthropic.com/engineering/april-23-postmortem\">https://www.anthropic.com/engineering/april-23-postmortem</a></p>\n<p>Comments URL: <a href=\"https://news.ycombina...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "rss",
+      "_source_crawler": "RSS",
+      "_discovered_at": "2026-04-25T05:19:09.672672",
+      "_status": "pending",
+      "_relevance_score": 65,
+      "_source_score": 0,
+      "_rss_feed": "Hacker News Claude",
+      "_original_link": "https://www.anthropic.com/engineering/april-23-postmortem",
+      "_published": "Thu, 23 Apr 2026 17:48:38 +0000"
     }
   ]
 }

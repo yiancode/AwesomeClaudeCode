@@ -14586,6 +14586,45 @@
         "typescript",
         "video"
       ]
+    },
+    {
+      "ID": "skill-970eb984",
+      "DisplayName": "frontend-slides",
+      "DisplayName_ZH": "frontend-slides",
+      "Category": "skills",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/zarazhangrui/frontend-slides",
+      "SecondaryLink": "",
+      "Author": "zarazhangrui",
+      "AuthorProfile": "https://github.com/zarazhangrui",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/04/25",
+      "LastModified": "2026/04/25",
+      "LastChecked": "2026/04/25",
+      "License": "MIT",
+      "Description": "Create beautiful slides on the web using Claude's frontend skills",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-04-25T04:41:24.466534",
+      "_status": "pending",
+      "_relevance_score": 50,
+      "_stars": 15558,
+      "_language": "Shell",
+      "_topics": [
+        "ai-slides",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "claude-skill",
+        "generative-ui",
+        "html",
+        "presentation",
+        "slides",
+        "vibe-coding"
+      ]
     }
   ]
 }

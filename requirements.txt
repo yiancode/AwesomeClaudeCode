@@ -7,7 +7,7 @@ python-dotenv>=1.0.0
 
 # 可选 / Optional (for GitHub metadata extraction and crawling)
 PyGithub>=2.1.1
-feedparser>=6.0.10  # RSS feed parsing
+feedparser>=6.0.12  # RSS feed parsing
 
 # 测试 / Testing
 pytest>=7.0.0

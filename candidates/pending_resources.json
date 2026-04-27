@@ -14737,6 +14737,34 @@
         "redteam-tools",
         "skills"
       ]
+    },
+    {
+      "ID": "skill-1ae169fb",
+      "DisplayName": "skills",
+      "DisplayName_ZH": "skills",
+      "Category": "skills",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/mattpocock/skills",
+      "SecondaryLink": "",
+      "Author": "mattpocock",
+      "AuthorProfile": "https://github.com/mattpocock",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/04/27",
+      "LastModified": "2026/04/27",
+      "LastChecked": "2026/04/27",
+      "License": "MIT",
+      "Description": "Agent Skills for real engineers. Straight from my .claude directory.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-04-27T05:30:43.164047",
+      "_status": "pending",
+      "_relevance_score": 35,
+      "_stars": 24927,
+      "_language": "Shell",
+      "_topics": []
     }
   ]
 }

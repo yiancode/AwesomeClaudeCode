@@ -3,7 +3,7 @@
 # 必需 / Required
 pyyaml>=6.0
 requests>=2.31.0
-python-dotenv>=1.0.0
+python-dotenv>=1.2.2
 
 # 可选 / Optional (for GitHub metadata extraction and crawling)
 PyGithub>=2.1.1

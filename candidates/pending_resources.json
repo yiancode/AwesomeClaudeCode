@@ -14825,6 +14825,45 @@
       "_rss_feed": "Hacker News Anthropic",
       "_original_link": "https://www.anthropic.com/features/project-deal",
       "_published": "Sun, 26 Apr 2026 15:06:44 +0000"
+    },
+    {
+      "ID": "mcp-4057363e",
+      "DisplayName": "MeiGen-AI-Design-MCP",
+      "DisplayName_ZH": "MeiGen-AI-Design-MCP",
+      "Category": "mcp-servers",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/jau123/MeiGen-AI-Design-MCP",
+      "SecondaryLink": "https://meigen.ai",
+      "Author": "jau123",
+      "AuthorProfile": "https://github.com/jau123",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/04/30",
+      "LastModified": "2026/04/30",
+      "LastChecked": "2026/04/30",
+      "License": "MIT",
+      "Description": "Supports GPT Image 2, Nanobanana & ComfyUI, with a 1,400+ prompt library, carefully crafted hooks and a multi-task orchestration system",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-04-30T05:36:00.630401",
+      "_status": "pending",
+      "_relevance_score": 60,
+      "_stars": 812,
+      "_language": "TypeScript",
+      "_topics": [
+        "ai-image-generation",
+        "claude",
+        "claude-code",
+        "comfyui",
+        "lovart",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "openclaw",
+        "prompt-engineering"
+      ]
     }
   ]
 }

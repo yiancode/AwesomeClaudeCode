@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-04-30T05:36:00.647343",
+  "last_run": "2026-05-01T05:47:49.705108",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2029,11 +2029,23 @@
       "url": "https://github.com/jau123/MeiGen-AI-Design-MCP",
       "discovered_at": "2026-04-30T05:36:00.647337",
       "relevance_score": 60
+    },
+    {
+      "full_name": "Leonxlnx/taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "discovered_at": "2026-05-01T05:47:49.687915",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "lemonade-sdk/lemonade",
+      "url": "https://github.com/lemonade-sdk/lemonade",
+      "discovered_at": "2026-05-01T05:47:49.705098",
+      "relevance_score": 35
     }
   ],
   "stats": {
-    "total_discovered": 338,
-    "total_added": 338,
+    "total_discovered": 340,
+    "total_added": 340,
     "total_skipped": 0
   }
 }

@@ -14954,6 +14954,36 @@
         "ryzen",
         "vulkan"
       ]
+    },
+    {
+      "ID": "eco-5c716a8e",
+      "DisplayName": "Claudemesh - Let your local Claude Code sessions find and talk to each other",
+      "DisplayName_ZH": "Claudemesh - Let your local Claude Code sessions find and talk to each other",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://www.npmjs.com/package/claudemesh",
+      "SecondaryLink": "",
+      "Author": "pro_methe5",
+      "AuthorProfile": "",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/05/02",
+      "LastModified": "2026/05/02",
+      "LastChecked": "2026/05/02",
+      "License": "",
+      "Description": "<p>Article URL: <a href=\"https://www.npmjs.com/package/claudemesh\">https://www.npmjs.com/package/claudemesh</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=47973602\">https://...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "rss",
+      "_source_crawler": "RSS",
+      "_discovered_at": "2026-05-02T05:41:33.267902",
+      "_status": "pending",
+      "_relevance_score": 40,
+      "_source_score": 0,
+      "_rss_feed": "Hacker News Claude",
+      "_original_link": "https://www.npmjs.com/package/claudemesh",
+      "_published": "Fri, 01 May 2026 11:38:04 +0000"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-05-01T05:47:49.705108",
+  "last_run": "2026-05-03T05:36:23.222402",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2041,11 +2041,17 @@
       "url": "https://github.com/lemonade-sdk/lemonade",
       "discovered_at": "2026-05-01T05:47:49.705098",
       "relevance_score": 35
+    },
+    {
+      "full_name": "vinithareddypoli/Claude-Code-EdgeRouter",
+      "url": "https://github.com/vinithareddypoli/Claude-Code-EdgeRouter",
+      "discovered_at": "2026-05-03T05:36:23.222393",
+      "relevance_score": 60
     }
   ],
   "stats": {
-    "total_discovered": 340,
-    "total_added": 340,
+    "total_discovered": 341,
+    "total_added": 341,
     "total_skipped": 0
   }
 }

@@ -15131,6 +15131,41 @@
         "personal-knowledge-management",
         "second-brain"
       ]
+    },
+    {
+      "ID": "eco-a8489cdb",
+      "DisplayName": "DeepSeek-TUI",
+      "DisplayName_ZH": "DeepSeek-TUI",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/Hmbown/DeepSeek-TUI",
+      "SecondaryLink": "",
+      "Author": "Hmbown",
+      "AuthorProfile": "https://github.com/Hmbown",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/05/07",
+      "LastModified": "2026/05/07",
+      "LastChecked": "2026/05/07",
+      "License": "MIT",
+      "Description": "Coding agent for DeepSeek models that runs in your terminal",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-05-07T05:37:46.998408",
+      "_status": "pending",
+      "_relevance_score": 25,
+      "_stars": 15474,
+      "_language": "Rust",
+      "_topics": [
+        "cli",
+        "deepseek",
+        "llm",
+        "rust",
+        "terminal",
+        "tui"
+      ]
     }
   ]
 }

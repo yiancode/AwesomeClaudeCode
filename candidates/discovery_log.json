@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-05-07T05:37:47.014127",
+  "last_run": "2026-05-08T05:10:06.139459",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2065,11 +2065,23 @@
       "url": "https://github.com/Hmbown/DeepSeek-TUI",
       "discovered_at": "2026-05-07T05:37:47.014117",
       "relevance_score": 25
+    },
+    {
+      "full_name": "777genius/agent-teams-ai",
+      "url": "https://github.com/777genius/agent-teams-ai",
+      "discovered_at": "2026-05-08T05:10:06.121912",
+      "relevance_score": 65
+    },
+    {
+      "full_name": "anthropics/financial-services",
+      "url": "https://github.com/anthropics/financial-services",
+      "discovered_at": "2026-05-08T05:10:06.139446",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 344,
-    "total_added": 344,
+    "total_discovered": 346,
+    "total_added": 346,
     "total_skipped": 0
   }
 }

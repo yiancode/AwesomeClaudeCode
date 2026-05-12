@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-05-10T05:42:58.197238",
+  "last_run": "2026-05-12T05:44:14.949310",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2107,11 +2107,23 @@
       "url": "https://github.com/notlikeDev/CCPlugins",
       "discovered_at": "2026-05-10T05:42:58.197229",
       "relevance_score": 35
+    },
+    {
+      "full_name": "WenyuChiou/awesome-agentic-ai-zh",
+      "url": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
+      "discovered_at": "2026-05-12T05:44:14.931181",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "Tencent/WeKnora",
+      "url": "https://github.com/Tencent/WeKnora",
+      "discovered_at": "2026-05-12T05:44:14.949300",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 351,
-    "total_added": 351,
+    "total_discovered": 353,
+    "total_added": 353,
     "total_skipped": 0
   }
 }

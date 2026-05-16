@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-05-12T05:44:14.949310",
+  "last_run": "2026-05-16T05:32:26.722695",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2119,11 +2119,17 @@
       "url": "https://github.com/Tencent/WeKnora",
       "discovered_at": "2026-05-12T05:44:14.949300",
       "relevance_score": 25
+    },
+    {
+      "full_name": "brokermr810/QuantDinger",
+      "url": "https://github.com/brokermr810/QuantDinger",
+      "discovered_at": "2026-05-16T05:32:26.722688",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 353,
-    "total_added": 353,
+    "total_discovered": 354,
+    "total_added": 354,
     "total_skipped": 0
   }
 }

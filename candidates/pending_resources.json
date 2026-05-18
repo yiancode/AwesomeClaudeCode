@@ -15619,6 +15619,42 @@
         "strategy",
         "trade"
       ]
+    },
+    {
+      "ID": "mcp-32f96315",
+      "DisplayName": "semble",
+      "DisplayName_ZH": "semble",
+      "Category": "mcp-servers",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/MinishLab/semble",
+      "SecondaryLink": "https://minish.ai/packages/semble/introduction/",
+      "Author": "MinishLab",
+      "AuthorProfile": "https://github.com/MinishLab",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/05/18",
+      "LastModified": "2026/05/18",
+      "LastChecked": "2026/05/18",
+      "License": "MIT",
+      "Description": "Fast and Accurate Code Search for Agents. Uses ~98% fewer tokens than grep+read",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-05-18T06:21:14.762330",
+      "_status": "pending",
+      "_relevance_score": 35,
+      "_stars": 1549,
+      "_language": "Python",
+      "_topics": [
+        "agents",
+        "code-search",
+        "embeddings",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "retrieval"
+      ]
     }
   ]
 }

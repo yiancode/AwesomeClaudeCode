@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-05-19T06:15:43.403363",
+  "last_run": "2026-05-20T06:15:42.122997",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2149,11 +2149,17 @@
       "url": "https://github.com/rohitg00/agentmemory",
       "discovered_at": "2026-05-19T06:15:43.403353",
       "relevance_score": 35
+    },
+    {
+      "full_name": "Imbad0202/academic-research-skills",
+      "url": "https://github.com/Imbad0202/academic-research-skills",
+      "discovered_at": "2026-05-20T06:15:42.122986",
+      "relevance_score": 45
     }
   ],
   "stats": {
-    "total_discovered": 358,
-    "total_added": 358,
+    "total_discovered": 359,
+    "total_added": 359,
     "total_skipped": 0
   }
 }

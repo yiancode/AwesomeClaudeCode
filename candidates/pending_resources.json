@@ -15769,6 +15769,43 @@
         "memory",
         "openclaw"
       ]
+    },
+    {
+      "ID": "skill-ec80d71b",
+      "DisplayName": "academic-research-skills",
+      "DisplayName_ZH": "academic-research-skills",
+      "Category": "skills",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/Imbad0202/academic-research-skills",
+      "SecondaryLink": "https://buymeacoffee.com/crucify020v",
+      "Author": "Imbad0202",
+      "AuthorProfile": "https://github.com/Imbad0202",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/05/20",
+      "LastModified": "2026/05/20",
+      "LastChecked": "2026/05/20",
+      "License": "NOASSERTION",
+      "Description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-05-20T06:15:42.104149",
+      "_status": "pending",
+      "_relevance_score": 45,
+      "_stars": 14558,
+      "_language": "Python",
+      "_topics": [
+        "academic-pipeline",
+        "academic-writing",
+        "ai-research",
+        "claude",
+        "claude-code",
+        "literature-review",
+        "peer-review",
+        "prompt-engineering"
+      ]
     }
   ]
 }

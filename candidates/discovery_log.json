@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-05-21T06:17:00.703090",
+  "last_run": "2026-05-22T06:15:07.780672",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2167,11 +2167,23 @@
       "url": "https://github.com/bgauryy/Octocode",
       "discovered_at": "2026-05-21T06:17:00.703078",
       "relevance_score": 45
+    },
+    {
+      "full_name": "Tinkeringg-Lab/claude-code",
+      "url": "https://github.com/Tinkeringg-Lab/claude-code",
+      "discovered_at": "2026-05-22T06:15:07.762132",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "bethington/ghidra-mcp",
+      "url": "https://github.com/bethington/ghidra-mcp",
+      "discovered_at": "2026-05-22T06:15:07.780658",
+      "relevance_score": 60
     }
   ],
   "stats": {
-    "total_discovered": 361,
-    "total_added": 361,
+    "total_discovered": 363,
+    "total_added": 363,
     "total_skipped": 0
   }
 }

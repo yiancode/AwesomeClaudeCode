@@ -15974,6 +15974,44 @@
         "reverse-engineering",
         "static-analysis"
       ]
+    },
+    {
+      "ID": "mcp-a1cfb9a6",
+      "DisplayName": "claude-code-handbook",
+      "DisplayName_ZH": "claude-code-handbook",
+      "Category": "mcp-servers",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/ThamJiaHe/claude-code-handbook",
+      "SecondaryLink": "",
+      "Author": "ThamJiaHe",
+      "AuthorProfile": "https://github.com/ThamJiaHe",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/05/23",
+      "LastModified": "2026/05/23",
+      "LastChecked": "2026/05/23",
+      "License": "MIT",
+      "Description": "Comprehensive guide for writing professional Claude Standard prompts with MCP, Skills, and Superpowers integration. Official Anthropic best practices for Claude 4.x models.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-05-23T05:44:54.686621",
+      "_status": "pending",
+      "_relevance_score": 80,
+      "_stars": 159,
+      "_language": "Python",
+      "_topics": [
+        "ai",
+        "anthropic-claude",
+        "claude",
+        "claude-ai",
+        "claude-code",
+        "claude-skills",
+        "llm",
+        "mcp",
+        "prompt-engineering"
+      ]
     }
   ]
 }

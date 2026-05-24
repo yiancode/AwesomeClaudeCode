@@ -16012,6 +16012,41 @@
         "mcp",
         "prompt-engineering"
       ]
+    },
+    {
+      "ID": "eco-5d7ec3b2",
+      "DisplayName": "CodeWhale",
+      "DisplayName_ZH": "CodeWhale",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/Hmbown/CodeWhale",
+      "SecondaryLink": "https://deepseek-tui.com/",
+      "Author": "Hmbown",
+      "AuthorProfile": "https://github.com/Hmbown",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/05/24",
+      "LastModified": "2026/05/24",
+      "LastChecked": "2026/05/24",
+      "License": "MIT",
+      "Description": "Coding agent for DeepSeek models that runs in your terminal",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-05-24T06:08:19.109220",
+      "_status": "pending",
+      "_relevance_score": 25,
+      "_stars": 33975,
+      "_language": "Rust",
+      "_topics": [
+        "cli",
+        "deepseek",
+        "llm",
+        "rust",
+        "terminal",
+        "tui"
+      ]
     }
   ]
 }

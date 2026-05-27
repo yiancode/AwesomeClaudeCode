@@ -16047,6 +16047,34 @@
         "terminal",
         "tui"
       ]
+    },
+    {
+      "ID": "tool-94ec5d23",
+      "DisplayName": "codegraph",
+      "DisplayName_ZH": "codegraph",
+      "Category": "tooling",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/colbymchenry/codegraph",
+      "SecondaryLink": "https://colbymchenry.github.io/codegraph/",
+      "Author": "colbymchenry",
+      "AuthorProfile": "https://github.com/colbymchenry",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/05/27",
+      "LastModified": "2026/05/27",
+      "LastChecked": "2026/05/27",
+      "License": "MIT",
+      "Description": "Pre-indexed code knowledge graph for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-05-27T06:35:36.863859",
+      "_status": "pending",
+      "_relevance_score": 35,
+      "_stars": 28533,
+      "_language": "TypeScript",
+      "_topics": []
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-05-27T06:35:36.882633",
+  "last_run": "2026-05-28T06:19:11.790746",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2197,11 +2197,29 @@
       "url": "https://github.com/colbymchenry/codegraph",
       "discovered_at": "2026-05-27T06:35:36.882622",
       "relevance_score": 35
+    },
+    {
+      "full_name": "can4hou6joeng4/boss-agent-cli",
+      "url": "https://github.com/can4hou6joeng4/boss-agent-cli",
+      "discovered_at": "2026-05-28T06:19:11.753789",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "agentbreeder/agentbreeder",
+      "url": "https://github.com/agentbreeder/agentbreeder",
+      "discovered_at": "2026-05-28T06:19:11.773470",
+      "relevance_score": 40
+    },
+    {
+      "full_name": "garrytan/gbrain",
+      "url": "https://github.com/garrytan/gbrain",
+      "discovered_at": "2026-05-28T06:19:11.790741",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 366,
-    "total_added": 366,
+    "total_discovered": 369,
+    "total_added": 369,
     "total_skipped": 0
   }
 }

@@ -16509,6 +16509,39 @@
         "openai-codex",
         "opencode"
       ]
+    },
+    {
+      "ID": "eco-ef5fb5aa",
+      "DisplayName": "Expanding Project Glasswing",
+      "DisplayName_ZH": "Expanding Project Glasswing",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://www.anthropic.com/news/expanding-project-glasswing",
+      "SecondaryLink": "",
+      "Author": "surprisetalk",
+      "AuthorProfile": "https://news.ycombinator.com/user?id=surprisetalk",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/06/03",
+      "LastModified": "2026/06/03",
+      "LastChecked": "2026/06/03",
+      "License": "",
+      "Description": "<a href=\"https:&#x2F;&#x2F;techcrunch.com&#x2F;2026&#x2F;06&#x2F;02&#x2F;anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;techcrunch...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "hackernews",
+      "_source_crawler": "Hacker News",
+      "_discovered_at": "2026-06-03T08:22:41.312752",
+      "_status": "pending",
+      "_relevance_score": 60,
+      "_source_score": 173,
+      "_hn_id": "48369863",
+      "_hn_url": "https://news.ycombinator.com/item?id=48369863",
+      "_hn_points": 173,
+      "_hn_comments": 235,
+      "_original_url": "https://www.anthropic.com/news/expanding-project-glasswing",
+      "_created_at": "2026-06-02T13:15:14Z"
     }
   ]
 }

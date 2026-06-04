@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-06-02T06:49:07.336914",
+  "last_run": "2026-06-04T06:50:21.752741",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2239,11 +2239,17 @@
       "url": "https://github.com/iFurySt/open-codex-computer-use",
       "discovered_at": "2026-06-02T06:49:07.336908",
       "relevance_score": 30
+    },
+    {
+      "full_name": "Yuan1z0825/nature-skills",
+      "url": "https://github.com/Yuan1z0825/nature-skills",
+      "discovered_at": "2026-06-04T06:50:21.752728",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 373,
-    "total_added": 373,
+    "total_discovered": 374,
+    "total_added": 374,
     "total_skipped": 0
   }
 }

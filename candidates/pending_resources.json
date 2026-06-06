@@ -16664,6 +16664,36 @@
         "self-hosted",
         "wiki"
       ]
+    },
+    {
+      "ID": "eco-42899a63",
+      "DisplayName": "Claude Code, no need to worry about sunk costs anymore",
+      "DisplayName_ZH": "Claude Code, no need to worry about sunk costs anymore",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://www.npmjs.com/package/schwabe",
+      "SecondaryLink": "",
+      "Author": "schwabenschwabe",
+      "AuthorProfile": "",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/06/06",
+      "LastModified": "2026/06/06",
+      "LastChecked": "2026/06/06",
+      "License": "",
+      "Description": "<p>Article URL: <a href=\"https://www.npmjs.com/package/schwabe\">https://www.npmjs.com/package/schwabe</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=48415344\">https://news.y...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "rss",
+      "_source_crawler": "RSS",
+      "_discovered_at": "2026-06-06T06:33:31.138720",
+      "_status": "pending",
+      "_relevance_score": 40,
+      "_source_score": 0,
+      "_rss_feed": "Hacker News Claude",
+      "_original_link": "https://www.npmjs.com/package/schwabe",
+      "_published": "Fri, 05 Jun 2026 17:05:19 +0000"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-06-08T06:53:15.443394",
+  "last_run": "2026-06-09T06:15:44.598116",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2275,11 +2275,41 @@
       "url": "https://github.com/pewdiepie-archdaemon/odysseus",
       "discovered_at": "2026-06-08T06:53:15.443386",
       "relevance_score": 25
+    },
+    {
+      "full_name": "FireSwordsmithStable/claude-agent-sdk-setup",
+      "url": "https://github.com/FireSwordsmithStable/claude-agent-sdk-setup",
+      "discovered_at": "2026-06-09T06:15:44.526286",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "Egonex-AI/Understand-Anything",
+      "url": "https://github.com/Egonex-AI/Understand-Anything",
+      "discovered_at": "2026-06-09T06:15:44.545429",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "discovered_at": "2026-06-09T06:15:44.563011",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "esengine/DeepSeek-Reasonix",
+      "url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "discovered_at": "2026-06-09T06:15:44.580530",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "glifocat/nanoclaw-docs",
+      "url": "https://github.com/glifocat/nanoclaw-docs",
+      "discovered_at": "2026-06-09T06:15:44.598110",
+      "relevance_score": 20
     }
   ],
   "stats": {
-    "total_discovered": 379,
-    "total_added": 379,
+    "total_discovered": 384,
+    "total_added": 384,
     "total_skipped": 0
   }
 }

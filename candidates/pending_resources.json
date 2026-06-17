@@ -17083,6 +17083,35 @@
         "vibe-coding",
         "vibe-hacking"
       ]
+    },
+    {
+      "ID": "mcp-dd291028",
+      "DisplayName": "Tool Definition Quality Score (TDQS)",
+      "DisplayName_ZH": "Tool Definition Quality Score (TDQS)",
+      "Category": "mcp-servers",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/glama-ai/tool-definition-quality-score",
+      "SecondaryLink": "",
+      "Author": "",
+      "AuthorProfile": "",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/06/17",
+      "LastModified": "2026/06/17",
+      "LastChecked": "2026/06/17",
+      "License": "",
+      "Description": "An open framework for scoring how well an MCP tool definition communicates to an AI agent – the Tool Definition Quality Score (TDQS).",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "awesome-list",
+      "_source_crawler": "Awesome Lists",
+      "_discovered_at": "2026-06-17T08:31:43.020276",
+      "_status": "pending",
+      "_relevance_score": 25,
+      "_source_score": 5,
+      "_source_list": "Awesome MCP Servers",
+      "_github_stars": 5
     }
   ]
 }

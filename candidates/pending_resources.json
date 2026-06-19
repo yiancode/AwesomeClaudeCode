@@ -17161,6 +17161,45 @@
         "skill-marketplace",
         "skills"
       ]
+    },
+    {
+      "ID": "eco-2526d3ae",
+      "DisplayName": "ponytail",
+      "DisplayName_ZH": "ponytail",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/DietrichGebert/ponytail",
+      "SecondaryLink": "",
+      "Author": "DietrichGebert",
+      "AuthorProfile": "https://github.com/DietrichGebert",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/06/19",
+      "LastModified": "2026/06/19",
+      "LastChecked": "2026/06/19",
+      "License": "MIT",
+      "Description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-06-19T07:20:04.433226",
+      "_status": "pending",
+      "_relevance_score": 35,
+      "_stars": 37806,
+      "_language": "JavaScript",
+      "_topics": [
+        "agent-skills",
+        "ai-agents",
+        "claude",
+        "claude-code",
+        "claude-code-plugin",
+        "cursor-rules",
+        "developer-tools",
+        "llm",
+        "prompt-engineering",
+        "yagni"
+      ]
     }
   ]
 }

@@ -17566,6 +17566,45 @@
         "token-tracker",
         "usage-tracking"
       ]
+    },
+    {
+      "ID": "eco-f536f8b8",
+      "DisplayName": "AgriQuant-AI",
+      "DisplayName_ZH": "AgriQuant-AI",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/AgriQuantAI/AgriQuant-AI",
+      "SecondaryLink": "https://agriquant.ai",
+      "Author": "AgriQuantAI",
+      "AuthorProfile": "https://github.com/AgriQuantAI",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/06/26",
+      "LastModified": "2026/06/26",
+      "LastChecked": "2026/06/26",
+      "License": "",
+      "Description": "AI-powered weather intelligence for agricultural commodity futures. Predicts price moves 48-72 hours early across OJ, Coffee, Cocoa, Sugar, Corn and Wheat using Claude Sonnet + satellite data",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-06-26T06:17:37.224975",
+      "_status": "pending",
+      "_relevance_score": 30,
+      "_stars": 832,
+      "_language": "Python",
+      "_topics": [
+        "agricultural-commodities",
+        "claude-ai",
+        "futures-trading",
+        "machine-learning",
+        "noaa",
+        "python",
+        "quantitative-finance",
+        "satellite-data",
+        "timescaledb",
+        "weather-prediction"
+      ]
     }
   ]
 }

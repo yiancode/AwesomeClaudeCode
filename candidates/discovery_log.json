@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-06-25T06:15:15.361455",
+  "last_run": "2026-06-26T06:17:37.249474",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2371,11 +2371,17 @@
       "url": "https://github.com/stormzhang/token-tracker",
       "discovered_at": "2026-06-25T06:15:15.361446",
       "relevance_score": 35
+    },
+    {
+      "full_name": "AgriQuantAI/AgriQuant-AI",
+      "url": "https://github.com/AgriQuantAI/AgriQuant-AI",
+      "discovered_at": "2026-06-26T06:17:37.249457",
+      "relevance_score": 30
     }
   ],
   "stats": {
-    "total_discovered": 395,
-    "total_added": 395,
+    "total_discovered": 396,
+    "total_added": 396,
     "total_skipped": 0
   }
 }

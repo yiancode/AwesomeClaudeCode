@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-06-30T06:19:59.406352",
+  "last_run": "2026-07-01T06:40:03.514305",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2395,11 +2395,17 @@
       "url": "https://github.com/agentscope-ai/QwenPaw",
       "discovered_at": "2026-06-30T06:19:59.406344",
       "relevance_score": 25
+    },
+    {
+      "full_name": "vibheksoni/stealth-browser-mcp",
+      "url": "https://github.com/vibheksoni/stealth-browser-mcp",
+      "discovered_at": "2026-07-01T06:40:03.514296",
+      "relevance_score": 40
     }
   ],
   "stats": {
-    "total_discovered": 399,
-    "total_added": 399,
+    "total_discovered": 400,
+    "total_added": 400,
     "total_skipped": 0
   }
 }

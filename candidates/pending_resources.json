@@ -17768,6 +17768,36 @@
         "web-automation",
         "web-scraping"
       ]
+    },
+    {
+      "ID": "eco-c75997f2",
+      "DisplayName": "Claude Code Anti-China tracker: verification report",
+      "DisplayName_ZH": "Claude Code Anti-China tracker: verification report",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://gist.github.com/AdnaneKhan/0a0edb5620d5214282ef4027caad8950",
+      "SecondaryLink": "",
+      "Author": "king_zee",
+      "AuthorProfile": "",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/07/01",
+      "LastModified": "2026/07/01",
+      "LastChecked": "2026/07/01",
+      "License": "",
+      "Description": "<p>Article URL: <a href=\"https://gist.github.com/AdnaneKhan/0a0edb5620d5214282ef4027caad8950\">https://gist.github.com/AdnaneKhan/0a0edb5620d5214282ef4027caad8950</a></p>\n<p>Comments URL: <a href=\"h...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "rss",
+      "_source_crawler": "RSS",
+      "_discovered_at": "2026-07-01T07:15:44.507308",
+      "_status": "pending",
+      "_relevance_score": 50,
+      "_source_score": 0,
+      "_rss_feed": "Hacker News Claude",
+      "_original_link": "https://gist.github.com/AdnaneKhan/0a0edb5620d5214282ef4027caad8950",
+      "_published": "Tue, 30 Jun 2026 16:21:32 +0000"
     }
   ]
 }

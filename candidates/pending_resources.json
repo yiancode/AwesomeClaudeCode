@@ -17798,6 +17798,46 @@
       "_rss_feed": "Hacker News Claude",
       "_original_link": "https://gist.github.com/AdnaneKhan/0a0edb5620d5214282ef4027caad8950",
       "_published": "Tue, 30 Jun 2026 16:21:32 +0000"
+    },
+    {
+      "ID": "skill-68a6c284",
+      "DisplayName": "graphify",
+      "DisplayName_ZH": "graphify",
+      "Category": "skills",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/Graphify-Labs/graphify",
+      "SecondaryLink": "https://graphifylabs.ai/",
+      "Author": "Graphify-Labs",
+      "AuthorProfile": "https://github.com/Graphify-Labs",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/07/04",
+      "LastModified": "2026/07/04",
+      "LastChecked": "2026/07/04",
+      "License": "MIT",
+      "Description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a querya...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-07-04T05:52:41.860516",
+      "_status": "pending",
+      "_relevance_score": 35,
+      "_stars": 77226,
+      "_language": "Python",
+      "_topics": [
+        "antigravity",
+        "claude-code",
+        "codex",
+        "gemini",
+        "graphrag",
+        "knowledge-graph",
+        "leiden",
+        "openclaw",
+        "rag",
+        "skills",
+        "tree-sitter"
+      ]
     }
   ]
 }

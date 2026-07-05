@@ -17838,6 +17838,44 @@
         "skills",
         "tree-sitter"
       ]
+    },
+    {
+      "ID": "tool-f1940ff1",
+      "DisplayName": "cc-fleet",
+      "DisplayName_ZH": "cc-fleet",
+      "Category": "tooling",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/ethanhq/cc-fleet",
+      "SecondaryLink": "",
+      "Author": "ethanhq",
+      "AuthorProfile": "https://github.com/ethanhq",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/07/05",
+      "LastModified": "2026/07/05",
+      "LastChecked": "2026/07/05",
+      "License": "Apache-2.0",
+      "Description": "🚢 Run Claude Code's ⚙️ Dynamic Workflows, 👥 Agent Teams & ⚡ Subagents on any third-party model — DeepSeek · GLM · Kimi · Qwen … or your Codex subscription. No Anthropic subscription needed. ｜ 🚢 让 C...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-07-05T06:12:06.957991",
+      "_status": "pending",
+      "_relevance_score": 65,
+      "_stars": 185,
+      "_language": "Go",
+      "_topics": [
+        "ai",
+        "ai-agents",
+        "anthropic",
+        "anthropic-claude",
+        "bash-cli",
+        "claude",
+        "claude-code",
+        "claude-plugin",
+        "claude-skills"
+      ]
     }
   ]
 }

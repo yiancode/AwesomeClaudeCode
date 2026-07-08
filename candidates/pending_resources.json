@@ -17925,6 +17925,36 @@
         "subagents",
         "tutorial"
       ]
+    },
+    {
+      "ID": "eco-57d9bbed",
+      "DisplayName": "The Making of Claude Code",
+      "DisplayName_ZH": "The Making of Claude Code",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://www.anthropic.com/features/making-of-claude-code",
+      "SecondaryLink": "",
+      "Author": "kanamekun",
+      "AuthorProfile": "",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/07/08",
+      "LastModified": "2026/07/08",
+      "LastChecked": "2026/07/08",
+      "License": "",
+      "Description": "<p>Article URL: <a href=\"https://www.anthropic.com/features/making-of-claude-code\">https://www.anthropic.com/features/making-of-claude-code</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinato...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "rss",
+      "_source_crawler": "RSS",
+      "_discovered_at": "2026-07-08T05:56:05.630395",
+      "_status": "pending",
+      "_relevance_score": 90,
+      "_source_score": 0,
+      "_rss_feed": "Hacker News Claude",
+      "_original_link": "https://www.anthropic.com/features/making-of-claude-code",
+      "_published": "Tue, 07 Jul 2026 06:19:20 +0000"
     }
   ]
 }

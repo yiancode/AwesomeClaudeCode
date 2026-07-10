@@ -18004,6 +18004,43 @@
         "mcp",
         "skill-library"
       ]
+    },
+    {
+      "ID": "eco-bfeff07f",
+      "DisplayName": "voicebox",
+      "DisplayName_ZH": "voicebox",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/jamiepine/voicebox",
+      "SecondaryLink": "https://voicebox.sh",
+      "Author": "jamiepine",
+      "AuthorProfile": "https://github.com/jamiepine",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/07/10",
+      "LastModified": "2026/07/10",
+      "LastChecked": "2026/07/10",
+      "License": "MIT",
+      "Description": "The open-source AI voice studio. Clone, dictate, create.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-07-10T06:11:52.339705",
+      "_status": "pending",
+      "_relevance_score": 25,
+      "_stars": 40112,
+      "_language": "TypeScript",
+      "_topics": [
+        "ai",
+        "cuda",
+        "mlx",
+        "qwen3-tts",
+        "qwen3-tts-ui",
+        "voice-ai",
+        "voice-clone",
+        "whisper"
+      ]
     }
   ]
 }

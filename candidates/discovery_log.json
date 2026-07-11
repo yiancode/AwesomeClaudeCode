@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-07-10T06:11:52.360940",
+  "last_run": "2026-07-11T05:19:15.298121",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2431,11 +2431,23 @@
       "url": "https://github.com/jamiepine/voicebox",
       "discovered_at": "2026-07-10T06:11:52.360930",
       "relevance_score": 25
+    },
+    {
+      "full_name": "composio-community/awesome-claude-plugins",
+      "url": "https://github.com/composio-community/awesome-claude-plugins",
+      "discovered_at": "2026-07-11T05:19:15.276989",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "oomol-lab/open-connector",
+      "url": "https://github.com/oomol-lab/open-connector",
+      "discovered_at": "2026-07-11T05:19:15.298114",
+      "relevance_score": 45
     }
   ],
   "stats": {
-    "total_discovered": 405,
-    "total_added": 405,
+    "total_discovered": 407,
+    "total_added": 407,
     "total_skipped": 0
   }
 }

@@ -42,15 +42,15 @@
 
 ## 📊 统计 | Statistics
 
-- **总资源数 | Total Resources**: 71
+- **总资源数 | Total Resources**: 72
 - **官方资源 | Official**: 39
-- **社区资源 | Community**: 32
+- **社区资源 | Community**: 33
 
 **分类分布 | Category Distribution**:
 
 - 官方资源: 39
 - MCP 服务器: 20
-- 开源项目: 8
+- 开源项目: 9
 - 生态系统: 4
 
 
@@ -68,7 +68,7 @@
 - 📂 [CLAUDE.md 文件](#claude-md-files) (0)
 - 📱 [替代客户端](#alternative-clients) (0)
 - 🔌 [MCP 服务器](#mcp-servers) (20)
-- 📦 [开源项目](#open-source-projects) (8)
+- 📦 [开源项目](#open-source-projects) (9)
 - 📂 [案例研究](#case-studies) (0)
 - 🌐 [生态系统](#ecosystem) (4)
 
@@ -177,6 +177,7 @@
 - **[Context7 文档](https://context7.com/answerdotai/claudette)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
 - **[MCP Think Tool](https://github.com/cgize/claude-mcp-think-tool)** by [cgize](https://github.com/cgize) `MIT` - Claude Desktop 思考工具
 - **[Context7 文档](https://context7.com/cgize/claude-mcp-think-tool)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
+- **[OpenAgentRelay](https://github.com/ShakespeareLabs/open-agent-relay)** by [ShakespeareLabs](https://github.com/ShakespeareLabs) `Apache-2.0` - 将任意本地 Agent 或自动化工具转化为团队可调用的能力
 
 
 ## 🌐 生态系统
@@ -222,7 +223,7 @@ Thanks to all contributors for your efforts!
 ## 📊 项目统计 | Project Statistics
 
 - 📅 **创建时间 | Created**: 2025-12-15
-- 🔄 **最后更新 | Last Updated**: 2025-12-18
+- 🔄 **最后更新 | Last Updated**: 2026-07-14
 - 📝 **维护者 | Maintainer**: [@yiancode](https://github.com/yiancode)
 - 📜 **许可证 | License**: MIT License
 

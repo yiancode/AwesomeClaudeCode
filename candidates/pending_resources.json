@@ -18377,6 +18377,35 @@
         "video-generation",
         "video-production"
       ]
+    },
+    {
+      "ID": "mcp-2af98271",
+      "DisplayName": "PyPI",
+      "DisplayName_ZH": "PyPI",
+      "Category": "mcp-servers",
+      "SubCategory": "general",
+      "PrimaryLink": "https://pypi.org/project/mcp-blast-radius/0.2.0/",
+      "SecondaryLink": "",
+      "Author": "",
+      "AuthorProfile": "",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/07/15",
+      "LastModified": "2026/07/15",
+      "LastChecked": "2026/07/15",
+      "License": "",
+      "Description": "[aparajithn/agent-utils-mcp](https://github.com/aparajithn/agent-utils-mcp) [![agent-utils-mcp MCP server](https://glama.ai/mcp/servers/@aparajithn/agent-utils-mcp/badges/score.svg)](https://glama....",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "awesome-list",
+      "_source_crawler": "Awesome Lists",
+      "_discovered_at": "2026-07-15T05:36:41.882574",
+      "_status": "pending",
+      "_relevance_score": 40,
+      "_source_score": 0,
+      "_source_list": "Awesome MCP Servers",
+      "_github_stars": 0
     }
   ]
 }

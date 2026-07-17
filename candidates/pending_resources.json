@@ -18406,6 +18406,47 @@
       "_source_score": 0,
       "_source_list": "Awesome MCP Servers",
       "_github_stars": 0
+    },
+    {
+      "ID": "eco-ce3a785e",
+      "DisplayName": "ai-job-search",
+      "DisplayName_ZH": "ai-job-search",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/MadsLorentzen/ai-job-search",
+      "SecondaryLink": "",
+      "Author": "MadsLorentzen",
+      "AuthorProfile": "https://github.com/MadsLorentzen",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/07/17",
+      "LastModified": "2026/07/17",
+      "LastChecked": "2026/07/17",
+      "License": "MIT",
+      "Description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-07-17T05:19:32.151008",
+      "_status": "pending",
+      "_relevance_score": 35,
+      "_stars": 23245,
+      "_language": "TypeScript",
+      "_topics": [
+        "ai",
+        "ai-agents",
+        "career",
+        "claude-code",
+        "cover-letter",
+        "cv",
+        "interview-preparation",
+        "job-application",
+        "job-hunting",
+        "job-search",
+        "latex",
+        "resume"
+      ]
     }
   ]
 }

@@ -18447,6 +18447,47 @@
         "latex",
         "resume"
       ]
+    },
+    {
+      "ID": "tool-5fea943a",
+      "DisplayName": "voyager",
+      "DisplayName_ZH": "voyager",
+      "Category": "tooling",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/Nagi-ovo/voyager",
+      "SecondaryLink": "https://voyager.nagi.fun/en",
+      "Author": "Nagi-ovo",
+      "AuthorProfile": "https://github.com/Nagi-ovo",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/07/18",
+      "LastModified": "2026/07/18",
+      "LastChecked": "2026/07/18",
+      "License": "GPL-3.0",
+      "Description": "Voyager — an all-in-one enhancement suite for AI Studio, Gemini, Claude & ChatGPT: timelines, folders, prompts, usage tracking, chat export, plugins, and more. / 面向 AI Studio、Gemini、Claude 与 ChatGP...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-07-18T04:53:54.216810",
+      "_status": "pending",
+      "_relevance_score": 35,
+      "_stars": 19206,
+      "_language": "TypeScript",
+      "_topics": [
+        "ai-studio",
+        "browser-extension",
+        "bun",
+        "chat-management",
+        "chatgpt",
+        "chrome-extension",
+        "claude-ai",
+        "edge-addon",
+        "firefox-addons",
+        "gemini",
+        "safari-extension",
+        "vibe-coding"
+      ]
     }
   ]
 }

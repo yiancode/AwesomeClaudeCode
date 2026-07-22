@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-07-20T05:47:14.789474",
+  "last_run": "2026-07-22T05:26:09.736176",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2509,11 +2509,23 @@
       "url": "https://github.com/OpenByteInc/QuantDinger",
       "discovered_at": "2026-07-20T05:47:14.789465",
       "relevance_score": 25
+    },
+    {
+      "full_name": "diegosouzapw/OmniRoute",
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "discovered_at": "2026-07-22T05:26:09.715287",
+      "relevance_score": 75
+    },
+    {
+      "full_name": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "discovered_at": "2026-07-22T05:26:09.736171",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 418,
-    "total_added": 418,
+    "total_discovered": 420,
+    "total_added": 420,
     "total_skipped": 0
   }
 }

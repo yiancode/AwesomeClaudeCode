@@ -18819,6 +18819,36 @@
         "model-context-protocol",
         "modelcontextprotocol"
       ]
+    },
+    {
+      "ID": "client-a82c659a",
+      "DisplayName": "AgentCost – local CLI,attributes token cost in Claude Code/Cursor/Codex sessions",
+      "DisplayName_ZH": "AgentCost – local CLI,attributes token cost in Claude Code/Cursor/Codex sessions",
+      "Category": "alternative-clients",
+      "SubCategory": "general",
+      "PrimaryLink": "https://pypi.org/project/agentcost-cli/0.1.0/",
+      "SecondaryLink": "",
+      "Author": "Kashifdevfe1",
+      "AuthorProfile": "",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/07/25",
+      "LastModified": "2026/07/25",
+      "LastChecked": "2026/07/25",
+      "License": "",
+      "Description": "<p>Article URL: <a href=\"https://pypi.org/project/agentcost-cli/0.1.0/\">https://pypi.org/project/agentcost-cli/0.1.0/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=49034205...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "rss",
+      "_source_crawler": "RSS",
+      "_discovered_at": "2026-07-25T05:46:31.572395",
+      "_status": "pending",
+      "_relevance_score": 40,
+      "_source_score": 0,
+      "_rss_feed": "Hacker News Claude",
+      "_original_link": "https://pypi.org/project/agentcost-cli/0.1.0/",
+      "_published": "Fri, 24 Jul 2026 11:45:33 +0000"
     }
   ]
 }

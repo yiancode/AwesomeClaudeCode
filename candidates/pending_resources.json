@@ -18849,6 +18849,47 @@
       "_rss_feed": "Hacker News Claude",
       "_original_link": "https://pypi.org/project/agentcost-cli/0.1.0/",
       "_published": "Fri, 24 Jul 2026 11:45:33 +0000"
+    },
+    {
+      "ID": "eco-b55df435",
+      "DisplayName": "trilith",
+      "DisplayName_ZH": "trilith",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/Umairkhan2324/trilith",
+      "SecondaryLink": "",
+      "Author": "Umairkhan2324",
+      "AuthorProfile": "https://github.com/Umairkhan2324",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/07/26",
+      "LastModified": "2026/07/26",
+      "LastChecked": "2026/07/26",
+      "License": "Apache-2.0",
+      "Description": "Trilith v0.1 beta — context engineering for agents (budgeted memory, 3 tiers, audit trail). Core is Python; use via REST or adapters (LangGraph / OpenAI Agents / Claude / TS). Needs trilith serve l...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-07-26T05:38:34.735904",
+      "_status": "pending",
+      "_relevance_score": 30,
+      "_stars": 4,
+      "_language": "Python",
+      "_topics": [
+        "agentic-ai",
+        "claude-sdk",
+        "context-engineering",
+        "context-management",
+        "langchain",
+        "langgraph",
+        "mcp",
+        "multi-agent-systems",
+        "open-source",
+        "openai-agents-sdk",
+        "python3",
+        "typescript"
+      ]
     }
   ]
 }

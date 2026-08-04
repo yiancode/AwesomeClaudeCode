@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-07-26T05:38:34.758181",
+  "last_run": "2026-08-04T05:20:58.005740",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2539,11 +2539,23 @@
       "url": "https://github.com/Umairkhan2324/trilith",
       "discovered_at": "2026-07-26T05:38:34.758170",
       "relevance_score": 30
+    },
+    {
+      "full_name": "bawadou/claude-engineer",
+      "url": "https://github.com/bawadou/claude-engineer",
+      "discovered_at": "2026-08-04T05:20:57.991206",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "skyhook-io/radar",
+      "url": "https://github.com/skyhook-io/radar",
+      "discovered_at": "2026-08-04T05:20:58.005732",
+      "relevance_score": 45
     }
   ],
   "stats": {
-    "total_discovered": 423,
-    "total_added": 423,
+    "total_discovered": 425,
+    "total_added": 425,
     "total_skipped": 0
   }
 }

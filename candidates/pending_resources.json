@@ -19005,6 +19005,36 @@
         "model-context-protocol",
         "self-hosted"
       ]
+    },
+    {
+      "ID": "eco-44f01381",
+      "DisplayName": "1 in 6 public Claude Code configs contains a permission rule that does nothing",
+      "DisplayName_ZH": "1 in 6 public Claude Code configs contains a permission rule that does nothing",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://gist.github.com/sfox100/128e8ef9f68109efe1322a56c5e67977",
+      "SecondaryLink": "",
+      "Author": "sfox100",
+      "AuthorProfile": "",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/08/05",
+      "LastModified": "2026/08/05",
+      "LastChecked": "2026/08/05",
+      "License": "",
+      "Description": "<p>Article URL: <a href=\"https://gist.github.com/sfox100/128e8ef9f68109efe1322a56c5e67977\">https://gist.github.com/sfox100/128e8ef9f68109efe1322a56c5e67977</a></p>\n<p>Comments URL: <a href=\"https:/...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "rss",
+      "_source_crawler": "RSS",
+      "_discovered_at": "2026-08-05T05:49:53.831348",
+      "_status": "pending",
+      "_relevance_score": 50,
+      "_source_score": 0,
+      "_rss_feed": "Hacker News Claude",
+      "_original_link": "https://gist.github.com/sfox100/128e8ef9f68109efe1322a56c5e67977",
+      "_published": "Mon, 03 Aug 2026 14:01:04 +0000"
     }
   ]
 }

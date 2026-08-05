@@ -176,6 +176,7 @@
 - **[Claudette](https://github.com/answerdotai/claudette)** by [AnswerDotAI](https://github.com/AnswerDotAI) `Apache-2.0` - 轻量级 Claude API 客户端
 - **[Context7 文档](https://context7.com/answerdotai/claudette)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
 - **[MCP Think Tool](https://github.com/cgize/claude-mcp-think-tool)** by [cgize](https://github.com/cgize) `MIT` - Claude Desktop 思考工具
+- **[Suede Creator Skills](https://github.com/JasonColapietro/suede-creator-skills)** by [JasonColapietro](https://github.com/JasonColapietro) - 70 个面向 Claude Code 与 Codex 的开源 Agent Skills，覆盖代码审查与评级、AI 评测、CI 门禁、设计、文案、SEO 与应用发布
 - **[Context7 文档](https://context7.com/cgize/claude-mcp-think-tool)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
 
 

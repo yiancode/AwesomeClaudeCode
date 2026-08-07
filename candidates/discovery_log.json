@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-08-04T05:20:58.005740",
+  "last_run": "2026-08-07T04:30:06.043167",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2551,11 +2551,17 @@
       "url": "https://github.com/skyhook-io/radar",
       "discovered_at": "2026-08-04T05:20:58.005732",
       "relevance_score": 45
+    },
+    {
+      "full_name": "Syngnat/GoNavi",
+      "url": "https://github.com/Syngnat/GoNavi",
+      "discovered_at": "2026-08-07T04:30:06.043160",
+      "relevance_score": 45
     }
   ],
   "stats": {
-    "total_discovered": 425,
-    "total_added": 425,
+    "total_discovered": 426,
+    "total_added": 426,
     "total_skipped": 0
   }
 }

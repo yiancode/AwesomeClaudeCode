@@ -19182,6 +19182,49 @@
         "socratic-method",
         "spec-driven-development"
       ]
+    },
+    {
+      "ID": "eco-c7871622",
+      "DisplayName": "OfficeCLI",
+      "DisplayName_ZH": "OfficeCLI",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/iOfficeAI/OfficeCLI",
+      "SecondaryLink": "https://officecli.ai",
+      "Author": "iOfficeAI",
+      "AuthorProfile": "https://github.com/iOfficeAI",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/08/11",
+      "LastModified": "2026/08/11",
+      "LastChecked": "2026/08/11",
+      "License": "Apache-2.0",
+      "Description": "OfficeCLI is the first and best Office suite  purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation req...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-08-11T03:49:57.539616",
+      "_status": "pending",
+      "_relevance_score": 25,
+      "_stars": 27494,
+      "_language": "C#",
+      "_topics": [
+        "agent",
+        "ai",
+        "claude-code",
+        "cli",
+        "codex",
+        "docx",
+        "excel",
+        "office",
+        "openclaw",
+        "pptx",
+        "presentation",
+        "skills",
+        "word",
+        "xlsx"
+      ]
     }
   ]
 }

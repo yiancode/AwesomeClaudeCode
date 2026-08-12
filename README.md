@@ -42,15 +42,15 @@
 
 ## 📊 统计 | Statistics
 
-- **总资源数 | Total Resources**: 71
+- **总资源数 | Total Resources**: 72
 - **官方资源 | Official**: 39
-- **社区资源 | Community**: 32
+- **社区资源 | Community**: 33
 
 **分类分布 | Category Distribution**:
 
 - 官方资源: 39
 - MCP 服务器: 20
-- 开源项目: 8
+- 开源项目: 9
 - 生态系统: 4
 
 
@@ -68,7 +68,7 @@
 - 📂 [CLAUDE.md 文件](#claude-md-files) (0)
 - 📱 [替代客户端](#alternative-clients) (0)
 - 🔌 [MCP 服务器](#mcp-servers) (20)
-- 📦 [开源项目](#open-source-projects) (8)
+- 📦 [开源项目](#open-source-projects) (9)
 - 📂 [案例研究](#case-studies) (0)
 - 🌐 [生态系统](#ecosystem) (4)
 
@@ -176,7 +176,7 @@
 - **[Claudette](https://github.com/answerdotai/claudette)** by [AnswerDotAI](https://github.com/AnswerDotAI) `Apache-2.0` - 轻量级 Claude API 客户端
 - **[Context7 文档](https://context7.com/answerdotai/claudette)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
 - **[MCP Think Tool](https://github.com/cgize/claude-mcp-think-tool)** by [cgize](https://github.com/cgize) `MIT` - Claude Desktop 思考工具
-- **[Suede Creator Skills](https://github.com/JasonColapietro/suede-creator-skills)** by [JasonColapietro](https://github.com/JasonColapietro) - 70 个面向 Claude Code 与 Codex 的开源 Agent Skills，覆盖代码审查与评级、AI 评测、CI 门禁、设计、文案、SEO 与应用发布
+- **[Suede Creator Skills](https://github.com/JasonColapietro/suede-creator-skills)** by [JasonColapietro](https://github.com/JasonColapietro) `MIT` - 71 个面向 Claude Code 与 Codex 的开源 Agent Skills 合集，覆盖代码审查、AI 评测、CI 门禁、设计、文案、SEO 与应用发布
 - **[Context7 文档](https://context7.com/cgize/claude-mcp-think-tool)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
 
 
@@ -223,7 +223,7 @@ Thanks to all contributors for your efforts!
 ## 📊 项目统计 | Project Statistics
 
 - 📅 **创建时间 | Created**: 2025-12-15
-- 🔄 **最后更新 | Last Updated**: 2025-12-18
+- 🔄 **最后更新 | Last Updated**: 2026-08-12
 - 📝 **维护者 | Maintainer**: [@yiancode](https://github.com/yiancode)
 - 📜 **许可证 | License**: MIT License
 

@@ -19225,6 +19225,53 @@
         "word",
         "xlsx"
       ]
+    },
+    {
+      "ID": "eco-1d66c63c",
+      "DisplayName": "herdr",
+      "DisplayName_ZH": "herdr",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/herdrdev/herdr",
+      "SecondaryLink": "https://herdr.dev",
+      "Author": "herdrdev",
+      "AuthorProfile": "https://github.com/herdrdev",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/08/12",
+      "LastModified": "2026/08/12",
+      "LastChecked": "2026/08/12",
+      "License": "Apache-2.0",
+      "Description": "the runtime your coding agents live on",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-08-12T04:13:35.850230",
+      "_status": "pending",
+      "_relevance_score": 25,
+      "_stars": 27779,
+      "_language": "Rust",
+      "_topics": [
+        "agent",
+        "agent-orchestration",
+        "ai",
+        "ai-agents",
+        "claude-code",
+        "cli",
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "devtools",
+        "multiplexer",
+        "rust",
+        "terminal",
+        "terminal-multiplexer",
+        "terminal-ui",
+        "tmux",
+        "tui",
+        "workspace-manager"
+      ]
     }
   ]
 }

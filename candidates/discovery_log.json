@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-08-12T04:13:35.873338",
+  "last_run": "2026-08-13T04:17:44.502839",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2581,11 +2581,17 @@
       "url": "https://github.com/herdrdev/herdr",
       "discovered_at": "2026-08-12T04:13:35.873323",
       "relevance_score": 25
+    },
+    {
+      "full_name": "hugohe3/ppt-master",
+      "url": "https://github.com/hugohe3/ppt-master",
+      "discovered_at": "2026-08-13T04:17:44.502833",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 430,
-    "total_added": 430,
+    "total_discovered": 431,
+    "total_added": 431,
     "total_skipped": 0
   }
 }

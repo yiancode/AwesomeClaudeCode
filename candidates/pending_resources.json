@@ -19335,6 +19335,45 @@
       "_hn_comments": 1335,
       "_original_url": "https://www.anthropic.com/news/claude-opus-5",
       "_created_at": "2026-07-24T16:57:41Z"
+    },
+    {
+      "ID": "eco-26454b4b",
+      "DisplayName": "ppt-master",
+      "DisplayName_ZH": "ppt-master",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/hugohe3/ppt-master",
+      "SecondaryLink": "https://hugohe3.github.io/ppt-master/",
+      "Author": "hugohe3",
+      "AuthorProfile": "https://github.com/hugohe3",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/08/13",
+      "LastModified": "2026/08/13",
+      "LastChecked": "2026/08/13",
+      "License": "MIT",
+      "Description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and supp...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-08-13T04:17:44.481222",
+      "_status": "pending",
+      "_relevance_score": 25,
+      "_stars": 45863,
+      "_language": "Python",
+      "_topics": [
+        "ai-agent",
+        "aippt",
+        "office",
+        "powerpoint",
+        "powerpoint-generation",
+        "ppt",
+        "pptx",
+        "presentation",
+        "slide",
+        "slides"
+      ]
     }
   ]
 }

@@ -11,4 +11,4 @@ feedparser>=6.0.10  # RSS feed parsing
 
 # 测试 / Testing
 pytest>=7.0.0
-pytest-cov>=4.0.0
+pytest-cov>=7.1.0

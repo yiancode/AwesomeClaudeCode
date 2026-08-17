@@ -19374,6 +19374,50 @@
         "slide",
         "slides"
       ]
+    },
+    {
+      "ID": "tool-5486dec8",
+      "DisplayName": "oh-my-pi",
+      "DisplayName_ZH": "oh-my-pi",
+      "Category": "tooling",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/can1357/oh-my-pi",
+      "SecondaryLink": "https://omp.sh",
+      "Author": "can1357",
+      "AuthorProfile": "https://github.com/can1357",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/08/17",
+      "LastModified": "2026/08/17",
+      "LastChecked": "2026/08/17",
+      "License": "MIT",
+      "Description": "⌥  AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-08-17T03:06:22.010974",
+      "_status": "pending",
+      "_relevance_score": 55,
+      "_stars": 25276,
+      "_language": "TypeScript",
+      "_topics": [
+        "ai-agent",
+        "ai-coding-agent",
+        "anthropic",
+        "bun",
+        "claude",
+        "cli",
+        "coding-assistant",
+        "llm",
+        "mcp",
+        "multi-provider",
+        "openai",
+        "rust",
+        "terminal",
+        "tui",
+        "typescript"
+      ]
     }
   ]
 }

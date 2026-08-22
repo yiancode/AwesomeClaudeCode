@@ -19418,6 +19418,43 @@
         "tui",
         "typescript"
       ]
+    },
+    {
+      "ID": "eco-f0faec98",
+      "DisplayName": "diagram-design",
+      "DisplayName_ZH": "diagram-design",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/cathrynlavery/diagram-design",
+      "SecondaryLink": "https://cathrynlavery.github.io/diagram-design/",
+      "Author": "cathrynlavery",
+      "AuthorProfile": "https://github.com/cathrynlavery",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/08/22",
+      "LastModified": "2026/08/22",
+      "LastChecked": "2026/08/22",
+      "License": "MIT",
+      "Description": "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-08-22T03:00:20.074169",
+      "_status": "pending",
+      "_relevance_score": 35,
+      "_stars": 25051,
+      "_language": "HTML",
+      "_topics": [
+        "agent-skills",
+        "claude-code",
+        "codex",
+        "data-visualization",
+        "diagrams",
+        "drawio",
+        "mermaid",
+        "svg"
+      ]
     }
   ]
 }

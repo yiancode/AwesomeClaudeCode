@@ -19455,6 +19455,48 @@
         "mermaid",
         "svg"
       ]
+    },
+    {
+      "ID": "tool-707bcf52",
+      "DisplayName": "Agentic-Bug-Hunter",
+      "DisplayName_ZH": "Agentic-Bug-Hunter",
+      "Category": "tooling",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/Awarexone/Agentic-Bug-Hunter",
+      "SecondaryLink": "https://shuvonsec.com",
+      "Author": "Awarexone",
+      "AuthorProfile": "https://github.com/Awarexone",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/08/25",
+      "LastModified": "2026/08/25",
+      "LastChecked": "2026/08/25",
+      "License": "MIT",
+      "Description": "AI-powered bug bounty hunting toolkit that works with or without subscription.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-08-25T03:05:40.846445",
+      "_status": "pending",
+      "_relevance_score": 25,
+      "_stars": 4412,
+      "_language": "Python",
+      "_topics": [
+        "ai-security",
+        "bug-bounty",
+        "bugcrowd",
+        "claude-ai",
+        "claude-code",
+        "cti",
+        "ethical-hacking",
+        "hackerone",
+        "hacking",
+        "hacking-tool",
+        "penetration-testing",
+        "recon",
+        "vulnerability-scanner"
+      ]
     }
   ]
 }

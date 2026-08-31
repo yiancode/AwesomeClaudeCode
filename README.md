@@ -176,7 +176,7 @@
 - **[Claudette](https://github.com/answerdotai/claudette)** by [AnswerDotAI](https://github.com/AnswerDotAI) `Apache-2.0` - 轻量级 Claude API 客户端
 - **[Context7 文档](https://context7.com/answerdotai/claudette)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
 - **[MCP Think Tool](https://github.com/cgize/claude-mcp-think-tool)** by [cgize](https://github.com/cgize) `MIT` - Claude Desktop 思考工具
-- **[Suede Creator Skills](https://github.com/JasonColapietro/suede-creator-skills)** by [JasonColapietro](https://github.com/JasonColapietro) `MIT` - 71 个面向 Claude Code 与 Codex 的开源 Agent Skills 合集，覆盖代码审查、AI 评测、CI 门禁、设计、文案、SEO 与应用发布
+- **[Suede Creator Skills](https://github.com/JasonColapietro/suede-creator-skills)** by [JasonColapietro](https://github.com/JasonColapietro) `MIT` - 面向 Claude Code 与 Codex 的开源 Agent Skills 合集，覆盖代码审查、AI 评测、CI 门禁、设计、文案、SEO 与应用发布
 - **[Context7 文档](https://context7.com/cgize/claude-mcp-think-tool)** by [Context7](https://context7.com) - Context7 文档 的镜像和文档
 
 
@@ -223,7 +223,7 @@ Thanks to all contributors for your efforts!
 ## 📊 项目统计 | Project Statistics
 
 - 📅 **创建时间 | Created**: 2025-12-15
-- 🔄 **最后更新 | Last Updated**: 2026-08-12
+- 🔄 **最后更新 | Last Updated**: 2026-08-30
 - 📝 **维护者 | Maintainer**: [@yiancode](https://github.com/yiancode)
 - 📜 **许可证 | License**: MIT License
 

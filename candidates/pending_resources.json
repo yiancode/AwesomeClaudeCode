@@ -19688,6 +19688,39 @@
         "terraform",
         "uml"
       ]
+    },
+    {
+      "ID": "eco-9c85c9bd",
+      "DisplayName": "Claude Fable 5.1 and Claude Mythos 5.1",
+      "DisplayName_ZH": "Claude Fable 5.1 and Claude Mythos 5.1",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "SecondaryLink": "",
+      "Author": "denysvitali",
+      "AuthorProfile": "https://news.ycombinator.com/user?id=denysvitali",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/09/02",
+      "LastModified": "2026/09/02",
+      "LastChecked": "2026/09/02",
+      "License": "",
+      "Description": "What&#x27;s new in Claude Fable 5.1\n – <a href=\"https:&#x2F;&#x2F;platform.claude.com&#x2F;docs&#x2F;en&#x2F;models&#x2F;fable-5-1&#x2F;whats-new-fable-5-1\" rel=\"nofollow\">https:&#x2F;&#x2F;platfor...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "hackernews",
+      "_source_crawler": "Hacker News",
+      "_discovered_at": "2026-09-02T07:46:27.018205",
+      "_status": "pending",
+      "_relevance_score": 60,
+      "_source_score": 1171,
+      "_hn_id": "49525378",
+      "_hn_url": "https://news.ycombinator.com/item?id=49525378",
+      "_hn_points": 1171,
+      "_hn_comments": 1085,
+      "_original_url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "_created_at": "2026-09-01T17:53:53Z"
     }
   ]
 }

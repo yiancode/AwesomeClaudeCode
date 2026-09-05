@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-09-02T07:01:28.852394",
+  "last_run": "2026-09-05T06:52:35.254701",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2629,11 +2629,17 @@
       "url": "https://github.com/Agents365-ai/drawio-skill",
       "discovered_at": "2026-09-02T07:01:28.852381",
       "relevance_score": 35
+    },
+    {
+      "full_name": "XiaoDuoYa/codex-with-chatgpt",
+      "url": "https://github.com/XiaoDuoYa/codex-with-chatgpt",
+      "discovered_at": "2026-09-05T06:52:35.254689",
+      "relevance_score": 35
     }
   ],
   "stats": {
-    "total_discovered": 438,
-    "total_added": 438,
+    "total_discovered": 439,
+    "total_added": 439,
     "total_skipped": 0
   }
 }

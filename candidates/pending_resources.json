@@ -19756,6 +19756,52 @@
         "model-context-protocol",
         "oauth"
       ]
+    },
+    {
+      "ID": "mcp-47ba946d",
+      "DisplayName": "Graft",
+      "DisplayName_ZH": "Graft",
+      "Category": "mcp-servers",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/trailhq/Graft",
+      "SecondaryLink": "https://graft.nanonets.ai",
+      "Author": "trailhq",
+      "AuthorProfile": "https://github.com/trailhq",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/09/09",
+      "LastModified": "2026/09/09",
+      "LastChecked": "2026/09/09",
+      "License": "MIT",
+      "Description": "Turbocharge Claude Code, Cursor, Codex, Gemini & every coding agent: faster, cheaper, with contextual understanding specific to your codebase.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-09-09T07:17:16.169377",
+      "_status": "pending",
+      "_relevance_score": 55,
+      "_stars": 6568,
+      "_language": "TypeScript",
+      "_topics": [
+        "ai-agents",
+        "anthropic",
+        "claude-code",
+        "cli",
+        "code-graph",
+        "codex",
+        "context-engineering",
+        "cursor",
+        "developer-tools",
+        "gemini",
+        "knowledge-graph",
+        "llm",
+        "mcp",
+        "mcp-server",
+        "open-source",
+        "openai",
+        "tree-sitter"
+      ]
     }
   ]
 }

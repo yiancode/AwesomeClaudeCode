@@ -19802,6 +19802,52 @@
         "openai",
         "tree-sitter"
       ]
+    },
+    {
+      "ID": "mcp-f3ea32c1",
+      "DisplayName": "editor",
+      "DisplayName_ZH": "editor",
+      "Category": "mcp-servers",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/pascalorg/editor",
+      "SecondaryLink": "https://editor.pascal.app",
+      "Author": "pascalorg",
+      "AuthorProfile": "https://github.com/pascalorg",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/09/10",
+      "LastModified": "2026/09/10",
+      "LastChecked": "2026/09/10",
+      "License": "MIT",
+      "Description": "Open-source 3D architectural editor with a local CLI, MCP tools, and practical workflows for humans and AI agents.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-09-10T07:13:32.937970",
+      "_status": "pending",
+      "_relevance_score": 45,
+      "_stars": 23117,
+      "_language": "TypeScript",
+      "_topics": [
+        "3d",
+        "agent-skills",
+        "ai-agents",
+        "architecture",
+        "bim",
+        "cad",
+        "editor",
+        "floorplan",
+        "local-first",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "nextjs",
+        "parametric-design",
+        "react-three-fiber",
+        "threejs",
+        "typescript"
+      ]
     }
   ]
 }

@@ -19848,6 +19848,47 @@
         "threejs",
         "typescript"
       ]
+    },
+    {
+      "ID": "skill-4df3c651",
+      "DisplayName": "academic-pptx-skill",
+      "DisplayName_ZH": "academic-pptx-skill",
+      "Category": "skills",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/Gabberflast/academic-pptx-skill",
+      "SecondaryLink": "",
+      "Author": "Gabberflast",
+      "AuthorProfile": "https://github.com/Gabberflast",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/09/11",
+      "LastModified": "2026/09/11",
+      "LastChecked": "2026/09/11",
+      "License": "MIT",
+      "Description": "A Claude Skill for creating academic presentations (conference talks, seminar slides, thesis defenses, grant briefings). Enforces action titles, structured argument, exhibit discipline, citation st...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-09-11T07:12:38.359726",
+      "_status": "pending",
+      "_relevance_score": 55,
+      "_stars": 868,
+      "_language": null,
+      "_topics": [
+        "academic",
+        "academic-presentations",
+        "agent-skills",
+        "anthropic",
+        "claude",
+        "claude-ai",
+        "claude-skills",
+        "data-visualization",
+        "pptx",
+        "presentation-design",
+        "presentations",
+        "slides"
+      ]
     }
   ]
 }

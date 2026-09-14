@@ -158,6 +158,7 @@
 - **[sim-xia/blind-auditor](https://github.com/Sim-xia/Blind-Auditor)** by [sim-xia](https://github.com/sim-xia) - 🐍 🏠 🍎 🪟 🐧 A zero-cost MCP server that forces AI to self-correct generation messages using prompt injection, independent self-audition and context isolation.
 - **[sonirico/mcp-shell](https://github.com/sonirico/mcp-shell)** by [sonirico](https://github.com/sonirico) - 🏎️ 🏠 🍎 🪟 🐧 Give hands to AI. MCP server to run shell commands securely, auditably, and on demand on isolated environments like docker.
 
+- **[ContextStream](https://contextstream.io)** / [mcp-server](https://github.com/contextstream/mcp-server) by [contextstream](https://github.com/contextstream) - Shared project context for Cursor, Claude Code, Codex, Grok. Hosted MCP: https://mcp.contextstream.io/mcp. Intelligence isn’t the bottleneck. Context is.
 
 ## 📦 开源项目
 *Open Source Projects*

@@ -19973,6 +19973,35 @@
         "system-design",
         "text-to-diagram"
       ]
+    },
+    {
+      "ID": "mcp-ee6d1997",
+      "DisplayName": "field survey of 1,108 public MCP servers",
+      "DisplayName_ZH": "field survey of 1,108 public MCP servers",
+      "Category": "mcp-servers",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/alexar76/warden/blob/main/docs/mcp-survey.md",
+      "SecondaryLink": "",
+      "Author": "",
+      "AuthorProfile": "",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/09/16",
+      "LastModified": "2026/09/16",
+      "LastChecked": "2026/09/16",
+      "License": "",
+      "Description": "[ljppanda/mcp-longjobs](https://github.com/ljppanda/mcp-longjobs) [![ljppanda/mcp-longjobs MCP server](https://glama.ai/mcp/servers/ljppanda/mcp-longjobs/badges/score.svg)](https://glama.ai/mcp/ser...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "awesome-list",
+      "_source_crawler": "Awesome Lists",
+      "_discovered_at": "2026-09-16T08:25:21.778532",
+      "_status": "pending",
+      "_relevance_score": 50,
+      "_source_score": 0,
+      "_source_list": "Awesome MCP Servers",
+      "_github_stars": 0
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-09-15T07:34:12.468691",
+  "last_run": "2026-09-20T07:40:13.296349",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2665,11 +2665,17 @@
       "url": "https://github.com/tt-a1i/archify",
       "discovered_at": "2026-09-15T07:34:12.468685",
       "relevance_score": 25
+    },
+    {
+      "full_name": "tonhowtf/omniget",
+      "url": "https://github.com/tonhowtf/omniget",
+      "discovered_at": "2026-09-20T07:40:13.296334",
+      "relevance_score": 45
     }
   ],
   "stats": {
-    "total_discovered": 444,
-    "total_added": 444,
+    "total_discovered": 445,
+    "total_added": 445,
     "total_skipped": 0
   }
 }

@@ -20239,6 +20239,50 @@
         "threat-detection",
         "threat-intelligence"
       ]
+    },
+    {
+      "ID": "mcp-83308479",
+      "DisplayName": "Concat",
+      "DisplayName_ZH": "Concat",
+      "Category": "mcp-servers",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/jub0t/Concat",
+      "SecondaryLink": "https://concatenate.pages.dev",
+      "Author": "jub0t",
+      "AuthorProfile": "https://github.com/jub0t",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/09/27",
+      "LastModified": "2026/09/27",
+      "LastChecked": "2026/09/27",
+      "License": "AGPL-3.0",
+      "Description": "The truly free, and open-source cross-platform CapCut replacement (supports MCPs).",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-09-27T07:57:35.300585",
+      "_status": "pending",
+      "_relevance_score": 45,
+      "_stars": 3759,
+      "_language": "Rust",
+      "_topics": [
+        "ai",
+        "artificial-intelligence",
+        "auto-captions",
+        "capcut-alternative",
+        "content-creator",
+        "desktop-app",
+        "mcp",
+        "model-context-protocol",
+        "open-source",
+        "rust",
+        "speech-to-text",
+        "tiktok",
+        "video-editing",
+        "video-editor",
+        "youtube"
+      ]
     }
   ]
 }

@@ -125,7 +125,7 @@
 - **[Context7 文档](https://context7.com/anthropics/anthropic-cookbook)** by [Context7](https://context7.com) - (173.4K tokens, 542 snippets)
 - **[Anthropic 快速开始](https://github.com/anthropics/anthropic-quickstarts)** by [anthropics](https://github.com/anthropics) - 快速入门项目
 - **[Context7 文档](https://context7.com/anthropics/anthropic-quickstarts)** by [Context7](https://context7.com) - (11.7K tokens, 41 snippets)
-
+- **[usenetstate/statsnet-mcp](https://github.com/usenetstate/statsnet-mcp)** by [usenetstate](https://github.com/usenetstate) - Background check any company in the world: registration, executives, courts and finances. Remote: `https://statsnet.co/mcp` · Registry: `io.github.usenetstate/statsnet`.
 
 ## 🔌 MCP 服务器
 *MCP Servers*

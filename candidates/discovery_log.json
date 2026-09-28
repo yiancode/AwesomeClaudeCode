@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-09-27T07:57:35.320183",
+  "last_run": "2026-09-28T08:33:52.189998",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2701,11 +2701,23 @@
       "url": "https://github.com/jub0t/Concat",
       "discovered_at": "2026-09-27T07:57:35.320176",
       "relevance_score": 45
+    },
+    {
+      "full_name": "voyager-crew/voyager",
+      "url": "https://github.com/voyager-crew/voyager",
+      "discovered_at": "2026-09-28T08:33:52.168383",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "simbajigege/book2skills",
+      "url": "https://github.com/simbajigege/book2skills",
+      "discovered_at": "2026-09-28T08:33:52.189980",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 450,
-    "total_added": 450,
+    "total_discovered": 452,
+    "total_added": 452,
     "total_skipped": 0
   }
 }

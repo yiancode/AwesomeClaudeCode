@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-09-30T08:17:26.243109",
+  "last_run": "2026-10-05T08:48:22.301623",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2725,11 +2725,17 @@
       "url": "https://github.com/Twigpine/openclaude",
       "discovered_at": "2026-09-30T08:17:26.243105",
       "relevance_score": 40
+    },
+    {
+      "full_name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "discovered_at": "2026-10-05T08:48:22.301613",
+      "relevance_score": 35
     }
   ],
   "stats": {
-    "total_discovered": 454,
-    "total_added": 454,
+    "total_discovered": 455,
+    "total_added": 455,
     "total_skipped": 0
   }
 }

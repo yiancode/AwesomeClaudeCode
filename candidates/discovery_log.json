@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-10-05T08:48:22.301623",
+  "last_run": "2026-10-08T08:45:32.771166",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2731,11 +2731,23 @@
       "url": "https://github.com/morluto/rea",
       "discovered_at": "2026-10-05T08:48:22.301613",
       "relevance_score": 35
+    },
+    {
+      "full_name": "feder-cr/invisible_playwright_mcp",
+      "url": "https://github.com/feder-cr/invisible_playwright_mcp",
+      "discovered_at": "2026-10-08T08:45:32.748324",
+      "relevance_score": 50
+    },
+    {
+      "full_name": "coreyhaines31/marketingskills",
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "discovered_at": "2026-10-08T08:45:32.771158",
+      "relevance_score": 45
     }
   ],
   "stats": {
-    "total_discovered": 455,
-    "total_added": 455,
+    "total_discovered": 457,
+    "total_added": 457,
     "total_skipped": 0
   }
 }

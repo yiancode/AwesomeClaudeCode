@@ -20785,6 +20785,39 @@
         "seo",
         "skill-md"
       ]
+    },
+    {
+      "ID": "eco-4628c962",
+      "DisplayName": "hindsight",
+      "DisplayName_ZH": "hindsight",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/vectorize-io/hindsight",
+      "SecondaryLink": "https://hindsight.vectorize.io/",
+      "Author": "vectorize-io",
+      "AuthorProfile": "https://github.com/vectorize-io",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/10/10",
+      "LastModified": "2026/10/10",
+      "LastChecked": "2026/10/10",
+      "License": "MIT",
+      "Description": "Hindsight: Agent Memory That Learns",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-10-10T08:21:37.052808",
+      "_status": "pending",
+      "_relevance_score": 25,
+      "_stars": 47851,
+      "_language": "Python",
+      "_topics": [
+        "agentic-ai",
+        "agents",
+        "ai-memory",
+        "memory"
+      ]
     }
   ]
 }

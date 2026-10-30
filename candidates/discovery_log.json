@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-10-29T08:18:27.601301",
+  "last_run": "2026-10-30T08:26:40.854270",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2857,11 +2857,23 @@
       "url": "https://github.com/citrolabs/ego-lite",
       "discovered_at": "2026-10-29T08:18:27.601292",
       "relevance_score": 35
+    },
+    {
+      "full_name": "liketrek/TREK",
+      "url": "https://github.com/liketrek/TREK",
+      "discovered_at": "2026-10-30T08:26:40.838684",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "HKUDS/DeepTutor",
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "discovered_at": "2026-10-30T08:26:40.854264",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 476,
-    "total_added": 476,
+    "total_discovered": 478,
+    "total_added": 478,
     "total_skipped": 0
   }
 }

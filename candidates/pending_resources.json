@@ -21894,6 +21894,39 @@
         "tool-calling",
         "vision"
       ]
+    },
+    {
+      "ID": "eco-ac1de5df",
+      "DisplayName": "Claude Code regularly sends each background agent’s transcript to its model",
+      "DisplayName_ZH": "Claude Code regularly sends each background agent’s transcript to its model",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+      "SecondaryLink": "",
+      "Author": "NikZaal",
+      "AuthorProfile": "https://news.ycombinator.com/user?id=NikZaal",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/10/31",
+      "LastModified": "2026/10/31",
+      "LastChecked": "2026/10/31",
+      "License": "",
+      "Description": "Claude Code regularly sends each background agent’s transcript to its model",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "hackernews",
+      "_source_crawler": "Hacker News",
+      "_discovered_at": "2026-10-31T09:26:49.893566",
+      "_status": "pending",
+      "_relevance_score": 70,
+      "_source_score": 583,
+      "_hn_id": "50284255",
+      "_hn_url": "https://news.ycombinator.com/item?id=50284255",
+      "_hn_points": 583,
+      "_hn_comments": 235,
+      "_original_url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+      "_created_at": "2026-10-29T03:33:42Z"
     }
   ]
 }

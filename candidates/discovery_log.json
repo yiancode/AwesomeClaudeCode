@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-10-30T08:26:40.854270",
+  "last_run": "2026-10-31T08:16:03.380166",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2869,11 +2869,17 @@
       "url": "https://github.com/HKUDS/DeepTutor",
       "discovered_at": "2026-10-30T08:26:40.854264",
       "relevance_score": 25
+    },
+    {
+      "full_name": "taswar/ClaudeOpus5.5-Csharp-Demo",
+      "url": "https://github.com/taswar/ClaudeOpus5.5-Csharp-Demo",
+      "discovered_at": "2026-10-31T08:16:03.380153",
+      "relevance_score": 65
     }
   ],
   "stats": {
-    "total_discovered": 478,
-    "total_added": 478,
+    "total_discovered": 479,
+    "total_added": 479,
     "total_skipped": 0
   }
 }

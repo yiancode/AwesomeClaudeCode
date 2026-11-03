@@ -21927,6 +21927,42 @@
       "_hn_comments": 235,
       "_original_url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
       "_created_at": "2026-10-29T03:33:42Z"
+    },
+    {
+      "ID": "eco-2315ffcc",
+      "DisplayName": "photocraft",
+      "DisplayName_ZH": "photocraft",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/storytold/photocraft",
+      "SecondaryLink": "https://getartcraft.com/apps/photocraft",
+      "Author": "storytold",
+      "AuthorProfile": "https://github.com/storytold",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/11/03",
+      "LastModified": "2026/11/03",
+      "LastChecked": "2026/11/03",
+      "License": "Apache-2.0",
+      "Description": "PhotoCraft: An open-source, photo editor written by scratch in pure Rust",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-11-03T09:20:26.519613",
+      "_status": "pending",
+      "_relevance_score": 25,
+      "_stars": 76373,
+      "_language": "Rust",
+      "_topics": [
+        "art",
+        "image-editing",
+        "image-editing-software",
+        "image-editor",
+        "images",
+        "photo-editing",
+        "rust"
+      ]
     }
   ]
 }

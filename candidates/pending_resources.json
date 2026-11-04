@@ -21963,6 +21963,36 @@
         "photo-editing",
         "rust"
       ]
+    },
+    {
+      "ID": "client-20cdaf34",
+      "DisplayName": "Show HN: Election-vibe – US midterm results in your terminal and Claude Code",
+      "DisplayName_ZH": "Show HN: Election-vibe – US midterm results in your terminal and Claude Code",
+      "Category": "alternative-clients",
+      "SubCategory": "general",
+      "PrimaryLink": "https://www.npmjs.com/package/election-vibe",
+      "SecondaryLink": "",
+      "Author": "arturogarrido",
+      "AuthorProfile": "",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/11/04",
+      "LastModified": "2026/11/04",
+      "LastChecked": "2026/11/04",
+      "License": "",
+      "Description": "<p>Article URL: <a href=\"https://www.npmjs.com/package/election-vibe\">https://www.npmjs.com/package/election-vibe</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50338267\">ht...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "rss",
+      "_source_crawler": "RSS",
+      "_discovered_at": "2026-11-04T10:41:23.388057",
+      "_status": "pending",
+      "_relevance_score": 40,
+      "_source_score": 0,
+      "_rss_feed": "Hacker News Claude",
+      "_original_link": "https://www.npmjs.com/package/election-vibe",
+      "_published": "Mon, 02 Nov 2026 15:35:50 +0000"
     }
   ]
 }

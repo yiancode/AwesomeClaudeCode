@@ -240,6 +240,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - [awesome-claude-code](https://github.com/lancekrogers/awesome-claude-code) - 英文版 Awesome Claude Code
 - [Claude API Documentation](https://docs.anthropic.com/en/docs/claude-code) - 官方文档
+- [OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay) - 在 harness 之下录制 Claude Code 的一次运行（模型流量、shell 退出码、每轮文件改动、MCP 调用汇到一条时间线），之后可断网离线回放，或从任意检查点分叉到别的模型对比决策
 
 ---
 

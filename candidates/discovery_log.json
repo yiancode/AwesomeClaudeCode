@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-11-06T09:11:22.386902",
+  "last_run": "2026-11-08T08:50:31.363010",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2899,11 +2899,29 @@
       "url": "https://github.com/Nutlope/hallmark",
       "discovered_at": "2026-11-06T09:11:22.386897",
       "relevance_score": 35
+    },
+    {
+      "full_name": "OpenMontageInc/OpenMontage",
+      "url": "https://github.com/OpenMontageInc/OpenMontage",
+      "discovered_at": "2026-11-08T08:50:31.313428",
+      "relevance_score": 35
+    },
+    {
+      "full_name": "alchaincyf/nuwa-skill",
+      "url": "https://github.com/alchaincyf/nuwa-skill",
+      "discovered_at": "2026-11-08T08:50:31.338856",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "Ebony-Vinyl/dsh-our-free-model",
+      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "discovered_at": "2026-11-08T08:50:31.363001",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 483,
-    "total_added": 483,
+    "total_discovered": 486,
+    "total_added": 486,
     "total_skipped": 0
   }
 }

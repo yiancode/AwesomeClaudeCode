@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-11-08T08:50:31.363010",
+  "last_run": "2026-11-10T09:34:45.296414",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2917,11 +2917,29 @@
       "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
       "discovered_at": "2026-11-08T08:50:31.363001",
       "relevance_score": 25
+    },
+    {
+      "full_name": "PotterRemember37/Capri-AI-Desktop",
+      "url": "https://github.com/PotterRemember37/Capri-AI-Desktop",
+      "discovered_at": "2026-11-10T09:34:45.254043",
+      "relevance_score": 45
+    },
+    {
+      "full_name": "tashfeenahmed/freellmapi",
+      "url": "https://github.com/tashfeenahmed/freellmapi",
+      "discovered_at": "2026-11-10T09:34:45.275748",
+      "relevance_score": 25
+    },
+    {
+      "full_name": "awesome-dsh-plugin/awesome-dsh-plugin",
+      "url": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
+      "discovered_at": "2026-11-10T09:34:45.296400",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 486,
-    "total_added": 486,
+    "total_discovered": 489,
+    "total_added": 489,
     "total_skipped": 0
   }
 }

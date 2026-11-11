@@ -1,6 +1,6 @@
 {
   "_comment": "资源发现日志 / Resource discovery log",
-  "last_run": "2026-11-10T09:34:45.296414",
+  "last_run": "2026-11-11T09:09:54.402992",
   "discovered_repos": [
     {
       "full_name": "centminmod/my-claude-code-setup",
@@ -2935,11 +2935,23 @@
       "url": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
       "discovered_at": "2026-11-10T09:34:45.296400",
       "relevance_score": 25
+    },
+    {
+      "full_name": "haidrrrry/claude-remotion-skill",
+      "url": "https://github.com/haidrrrry/claude-remotion-skill",
+      "discovered_at": "2026-11-11T09:09:54.378725",
+      "relevance_score": 60
+    },
+    {
+      "full_name": "JustVugg/colibri",
+      "url": "https://github.com/JustVugg/colibri",
+      "discovered_at": "2026-11-11T09:09:54.402986",
+      "relevance_score": 25
     }
   ],
   "stats": {
-    "total_discovered": 489,
-    "total_added": 489,
+    "total_discovered": 491,
+    "total_added": 491,
     "total_skipped": 0
   }
 }

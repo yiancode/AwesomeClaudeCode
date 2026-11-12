@@ -22436,6 +22436,41 @@
       "_stars": 49846,
       "_language": "C",
       "_topics": []
+    },
+    {
+      "ID": "skill-34602e0c",
+      "DisplayName": "skills",
+      "DisplayName_ZH": "skills",
+      "Category": "skills",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/emilkowalski/skills",
+      "SecondaryLink": "https://aiforui.dev/skills",
+      "Author": "emilkowalski",
+      "AuthorProfile": "https://github.com/emilkowalski",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/11/12",
+      "LastModified": "2026/11/12",
+      "LastChecked": "2026/11/12",
+      "License": "MIT",
+      "Description": "Skills for Designers and Engineers.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-11-12T09:37:33.381494",
+      "_status": "pending",
+      "_relevance_score": 25,
+      "_stars": 56237,
+      "_language": "Markdown",
+      "_topics": [
+        "agent-skills",
+        "animation",
+        "claude-code",
+        "codex",
+        "cursor",
+        "design-engineering"
+      ]
     }
   ]
 }

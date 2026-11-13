@@ -22471,6 +22471,43 @@
         "cursor",
         "design-engineering"
       ]
+    },
+    {
+      "ID": "eco-d2e7f6ac",
+      "DisplayName": "t3code",
+      "DisplayName_ZH": "t3code",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/pingdotgg/t3code",
+      "SecondaryLink": "https://t3.codes",
+      "Author": "pingdotgg",
+      "AuthorProfile": "https://github.com/pingdotgg",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/11/13",
+      "LastModified": "2026/11/13",
+      "LastChecked": "2026/11/13",
+      "License": "MIT",
+      "Description": "The best way to control Claude Code, Codex and more from any computer or phone",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-11-13T09:22:38.844349",
+      "_status": "pending",
+      "_relevance_score": 45,
+      "_stars": 58847,
+      "_language": "TypeScript",
+      "_topics": [
+        "agent-orchestration",
+        "agents",
+        "ai",
+        "chatgpt",
+        "claude",
+        "claude-code",
+        "code",
+        "vibe-coding"
+      ]
     }
   ]
 }

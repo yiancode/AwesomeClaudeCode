@@ -22697,6 +22697,36 @@
         "usdc",
         "x402"
       ]
+    },
+    {
+      "ID": "eco-f838c5c2",
+      "DisplayName": "Claude Code makes a finished subagent send its report twice (70-second repro)",
+      "DisplayName_ZH": "Claude Code makes a finished subagent send its report twice (70-second repro)",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://gist.github.com/carrollco/bec001c7d337b49a7449bc8f9558854c",
+      "SecondaryLink": "",
+      "Author": "cagster",
+      "AuthorProfile": "",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/11/21",
+      "LastModified": "2026/11/21",
+      "LastChecked": "2026/11/21",
+      "License": "",
+      "Description": "<p>Article URL: <a href=\"https://gist.github.com/carrollco/bec001c7d337b49a7449bc8f9558854c\">https://gist.github.com/carrollco/bec001c7d337b49a7449bc8f9558854c</a></p>\n<p>Comments URL: <a href=\"htt...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "rss",
+      "_source_crawler": "RSS",
+      "_discovered_at": "2026-11-21T10:48:17.214748",
+      "_status": "pending",
+      "_relevance_score": 50,
+      "_source_score": 0,
+      "_rss_feed": "Hacker News Claude",
+      "_original_link": "https://gist.github.com/carrollco/bec001c7d337b49a7449bc8f9558854c",
+      "_published": "Thu, 19 Nov 2026 01:13:40 +0000"
     }
   ]
 }

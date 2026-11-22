@@ -22727,6 +22727,42 @@
       "_rss_feed": "Hacker News Claude",
       "_original_link": "https://gist.github.com/carrollco/bec001c7d337b49a7449bc8f9558854c",
       "_published": "Thu, 19 Nov 2026 01:13:40 +0000"
+    },
+    {
+      "ID": "eco-4ec6d5af",
+      "DisplayName": "daily_stock_analysis",
+      "DisplayName_ZH": "daily_stock_analysis",
+      "Category": "ecosystem",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "SecondaryLink": "https://dsa.zhulinsen.tech",
+      "Author": "ZhuLinsen",
+      "AuthorProfile": "https://github.com/ZhuLinsen",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/11/22",
+      "LastModified": "2026/11/22",
+      "LastChecked": "2026/11/22",
+      "License": "MIT",
+      "Description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cos...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-11-22T09:36:55.813490",
+      "_status": "pending",
+      "_relevance_score": 25,
+      "_stars": 73662,
+      "_language": "Python",
+      "_topics": [
+        "a-stock",
+        "ai-agent",
+        "aigc",
+        "llm",
+        "quant",
+        "quantitative-finance",
+        "quantitative-trading"
+      ]
     }
   ]
 }

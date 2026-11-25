@@ -22763,6 +22763,39 @@
         "quantitative-finance",
         "quantitative-trading"
       ]
+    },
+    {
+      "ID": "mcp-32764484",
+      "DisplayName": "Mcpseal: Grade an MCP server for safety before you install it",
+      "DisplayName_ZH": "Mcpseal: Grade an MCP server for safety before you install it",
+      "Category": "mcp-servers",
+      "SubCategory": "general",
+      "PrimaryLink": "https://www.npmjs.com/package/@hashshabbir/mcp-pack",
+      "SecondaryLink": "",
+      "Author": "husham",
+      "AuthorProfile": "https://news.ycombinator.com/user?id=husham",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/11/25",
+      "LastModified": "2026/11/25",
+      "LastChecked": "2026/11/25",
+      "License": "",
+      "Description": "Mcpseal: Grade an MCP server for safety before you install it",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "hackernews",
+      "_source_crawler": "Hacker News",
+      "_discovered_at": "2026-11-25T12:23:40.296966",
+      "_status": "pending",
+      "_relevance_score": 40,
+      "_source_score": 5,
+      "_hn_id": "50623202",
+      "_hn_url": "https://news.ycombinator.com/item?id=50623202",
+      "_hn_points": 5,
+      "_hn_comments": 6,
+      "_original_url": "https://www.npmjs.com/package/@hashshabbir/mcp-pack",
+      "_created_at": "2026-11-24T03:19:38Z"
     }
   ]
 }

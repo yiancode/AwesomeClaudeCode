@@ -22796,6 +22796,45 @@
       "_hn_comments": 6,
       "_original_url": "https://www.npmjs.com/package/@hashshabbir/mcp-pack",
       "_created_at": "2026-11-24T03:19:38Z"
+    },
+    {
+      "ID": "mcp-2331b7a8",
+      "DisplayName": "coral",
+      "DisplayName_ZH": "coral",
+      "Category": "mcp-servers",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/withcoral/coral",
+      "SecondaryLink": "https://withcoral.com",
+      "Author": "withcoral",
+      "AuthorProfile": "https://github.com/withcoral",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/11/26",
+      "LastModified": "2026/11/26",
+      "LastChecked": "2026/11/26",
+      "License": "Apache-2.0",
+      "Description": "Execution rails for agents. Equip your AI to work with sensitive enterprise systems. Give agents precise permissions and custom tools that work faster with fewer tokens.",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-11-26T10:42:07.846927",
+      "_status": "pending",
+      "_relevance_score": 35,
+      "_stars": 5031,
+      "_language": "Rust",
+      "_topics": [
+        "agent-security",
+        "ai-agents",
+        "code-mode",
+        "mcp",
+        "mcp-gateway",
+        "mcp-server",
+        "model-context-protocol",
+        "rust",
+        "self-hosted",
+        "typescript"
+      ]
     }
   ]
 }

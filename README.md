@@ -42,9 +42,9 @@
 
 ## 📊 统计 | Statistics
 
-- **总资源数 | Total Resources**: 71
+- **总资源数 | Total Resources**: 72
 - **官方资源 | Official**: 39
-- **社区资源 | Community**: 32
+- **社区资源 | Community**: 33
 
 **分类分布 | Category Distribution**:
 
@@ -52,6 +52,7 @@
 - MCP 服务器: 20
 - 开源项目: 8
 - 生态系统: 4
+- 替代客户端: 1
 
 
 ---
@@ -66,7 +67,7 @@
 - 🪝 [钩子](#hooks) (0)
 - 🔪 [斜杠命令](#slash-commands) (0)
 - 📂 [CLAUDE.md 文件](#claude-md-files) (0)
-- 📱 [替代客户端](#alternative-clients) (0)
+- 📱 [替代客户端](#alternative-clients) (1)
 - 🔌 [MCP 服务器](#mcp-servers) (20)
 - 📦 [开源项目](#open-source-projects) (8)
 - 📂 [案例研究](#case-studies) (0)
@@ -125,6 +126,19 @@
 - **[Context7 文档](https://context7.com/anthropics/anthropic-cookbook)** by [Context7](https://context7.com) - (173.4K tokens, 542 snippets)
 - **[Anthropic 快速开始](https://github.com/anthropics/anthropic-quickstarts)** by [anthropics](https://github.com/anthropics) - 快速入门项目
 - **[Context7 文档](https://context7.com/anthropics/anthropic-quickstarts)** by [Context7](https://context7.com) - (11.7K tokens, 41 snippets)
+
+
+## 📱 替代客户端
+*Alternative Clients*
+
+> 替代客户端是用于与 Claude Code 交互的替代 UI 和前端，可在移动端或桌面端使用。
+
+
+
+### 通用
+*General*
+
+- **[Sillage](https://github.com/MarlBurroW/sillage)** by [MarlBurroW](https://github.com/MarlBurroW) `MIT` - 一个自托管、采用 MIT 许可、移动优先的 Web 界面，用于在你自己的机器上驱动原生 Claude Code 和 Codex CLI。会话在客户端关闭后仍然保留，可对所有对话进行全文搜索，提供带文件浏览器、编辑器、差异视图和终端的 IDE 面板，智能体通过其自带的 MCP 服务器读取看板，并支持可安装的 PWA 与推送通知。单个 Docker 容器。
 
 
 ## 🔌 MCP 服务器
@@ -222,7 +236,7 @@ Thanks to all contributors for your efforts!
 ## 📊 项目统计 | Project Statistics
 
 - 📅 **创建时间 | Created**: 2025-12-15
-- 🔄 **最后更新 | Last Updated**: 2025-12-18
+- 🔄 **最后更新 | Last Updated**: 2026-10-19
 - 📝 **维护者 | Maintainer**: [@yiancode](https://github.com/yiancode)
 - 📜 **许可证 | License**: MIT License
 

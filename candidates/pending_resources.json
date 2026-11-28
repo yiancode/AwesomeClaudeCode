@@ -22835,6 +22835,51 @@
         "self-hosted",
         "typescript"
       ]
+    },
+    {
+      "ID": "cmd-5e38703f",
+      "DisplayName": "Claude-BugHunter",
+      "DisplayName_ZH": "Claude-BugHunter",
+      "Category": "slash-commands",
+      "SubCategory": "general",
+      "PrimaryLink": "https://github.com/elementalsouls/Claude-BugHunter",
+      "SecondaryLink": "https://elementalsouls.github.io/Claude-BugHunter/",
+      "Author": "elementalsouls",
+      "AuthorProfile": "https://github.com/elementalsouls",
+      "IsActive": "TRUE",
+      "DateAdded": "2026/11/28",
+      "LastModified": "2026/11/28",
+      "LastChecked": "2026/11/28",
+      "License": "MIT",
+      "Description": "A Claude Code skill bundle for bug hunting and external red-team work - 85 skills, 16 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise ide...",
+      "Description_ZH": "",
+      "Tags_ZH": "",
+      "IsPinned": "FALSE",
+      "Section": "community",
+      "_source": "github-discovery",
+      "_discovered_at": "2026-11-28T10:05:47.865826",
+      "_status": "pending",
+      "_relevance_score": 70,
+      "_stars": 26580,
+      "_language": "Python",
+      "_topics": [
+        "ai-security",
+        "anthropic",
+        "application-security",
+        "bug-bounty",
+        "bugbounty",
+        "bugcrowd",
+        "claude",
+        "claude-code",
+        "claude-skills",
+        "ethical-hacking",
+        "hackerone",
+        "offensive-security",
+        "pentesting",
+        "red-team",
+        "security-tools",
+        "web-security"
+      ]
     }
   ]
 }
